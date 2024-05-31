@@ -1,6 +1,6 @@
 
 - install sphinx
-- install [sphinx markdown extension](https://www.sphinx-doc.org/en/master/usage/markdown.html)
+- install [myst-parser](https://www.sphinx-doc.org/en/master/usage/markdown.html) (used by sphinx markdown extension)
 
 to build, from this `docs/` directory:
 ```
