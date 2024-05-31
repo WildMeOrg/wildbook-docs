@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Wildbook &#8212; First Test  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b3523f8e" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=0868e8a2" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=b3ba4146"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="wildbook">
+<h1>Wildbook<a class="headerlink" href="#wildbook" title="Permalink to this heading">¶</a></h1>
+<p>Wildbook is an open source software framework to support mark-recapture, molecular ecology, and social ecology studies. The biological and statistical communities already support a number of excellent tools, such as Program MARK,GenAlEx, and SOCPROG for use in analyzing wildlife data. Wildbook is a complementary software application that:</p>
+<ul class="simple">
+<li><p>provides a scalable and collaborative platform for intelligent wildlife data storage and management, including advanced, consolidated searching</p></li>
+<li><p>provides an easy-to-use software suite of functionality that can be extended to meet the needs of wildlife projects, especially where individual identification is used</p></li>
+<li><p>provides an API to support the easy export of data to cross-disciplinary analysis applications (e.g., GenePop ) and other software (e.g., Google Earth)</p></li>
+<li><p>provides a platform that supports the exposure of data in biodiversity databases (e.g., GBIF and OBIS)</p></li>
+<li><p>provides a platform for animal biometrics that supports easy data access and facilitates matching application deployment for multiple species</p></li>
+</ul>
+<section id="getting-started-with-wildbook">
+<h2>Getting Started with Wildbook<a class="headerlink" href="#getting-started-with-wildbook" title="Permalink to this heading">¶</a></h2>
+<p>Wildbook is a long-standing tool that support a wide variety of researchers and species. The Wild Me team is working on revamping the tool as a true open source project, so if you have ideas and are excited to help, reach out to us on the <a class="reference external" href="https://discord.gg/zw4tr3RE4R">Wild Me Development Discord</a>!</p>
+</section>
+<section id="pull-request-workflow">
+<h2>Pull Request Workflow<a class="headerlink" href="#pull-request-workflow" title="Permalink to this heading">¶</a></h2>
+<p>All contributions should be made from a fork off of the Wildbook repo. While there are a number of repositories for specific Wildbook communities, large scale development is driven from the main repository.</p>
+<section id="fork-wildbook">
+<h3>Fork Wildbook<a class="headerlink" href="#fork-wildbook" title="Permalink to this heading">¶</a></h3>
+<p>To start, you will need to be signed in to your GitHub account, have admin access to your OS’s terminal, and have Git installed.</p>
+<ol class="arabic simple">
+<li><p>From your browser, in the top right corner of the <a class="reference external" href="https://github.com/WildMeOrg/Wildbook">Wildbook repo</a>, click the <strong>Fork</strong> button. Confirm to be redirected to your own fork (check the url for your USERNAME in the namespace).</p></li>
+<li><p>In your terminal, enter the command <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/USERNAME/Wildbook</span></code></p></li>
+<li><p>Once the Wildbook directory becomes available in your working directory, move to it with the command <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">Wildbook</span></code></p></li>
+<li><p>Add a reference to the original repo, denoting it as the upstream repo.</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">upstream</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">WildMeOrg</span><span class="o">/</span><span class="n">Wildbook</span>
+<span class="n">git</span> <span class="n">fetch</span> <span class="n">upstream</span>
+</pre></div>
+</div>
+</section>
+<section id="create-local-branch">
+<h3>Create Local Branch<a class="headerlink" href="#create-local-branch" title="Permalink to this heading">¶</a></h3>
+<p>You will want to work in a branch when doing any feature development you want to provide to the original project.</p>
+<ol class="arabic simple">
+<li><p>Verify you are on the main branch. The branch you have checked out will be used as the base for your new branch, so you typically want to start from main.
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">main</span></code></p></li>
+<li><p>Create your feature branch. It can be helpful to include the issue number (ISSUENUMBER) you are working to address.
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">ISSUENUMBER-FEATUREBRANCHNAME</span></code></p></li>
+<li><p>Change to your feature branch so your changes are grouped together.
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">ISSUENUMBER-FEATUREBRANCHNAME</span></code></p></li>
+<li><p>Update your branch (this is not needed if you just created new branch, but is a good habit to get into).
+<code class="docutils literal notranslate"> <span class="pre">git</span> <span class="pre">pull</span> <span class="pre">upstream</span> <span class="pre">main</span></code></p></li>
+</ol>
+</section>
+<section id="set-up-development-environment-with-docker">
+<h3>Set Up Development Environment with Docker<a class="headerlink" href="#set-up-development-environment-with-docker" title="Permalink to this heading">¶</a></h3>
+<p>For easiest development, you will need to set up your development environment to work with Docker. See <code class="docutils literal notranslate"><span class="pre">devops/development/README.md</span></code> for detailed instructions.</p>
+</section>
+<section id="deploy-frontend">
+<h3>Deploy frontend<a class="headerlink" href="#deploy-frontend" title="Permalink to this heading">¶</a></h3>
+<p>To setup frontend, we need to deploy the React build to Wildbook, please follow the detailed instructions provided in the <code class="docutils literal notranslate"><span class="pre">frontend/README.md</span></code> file within the project directory.</p>
+</section>
+<section id="making-local-changes">
+<h3>Making Local Changes<a class="headerlink" href="#making-local-changes" title="Permalink to this heading">¶</a></h3>
+<p>Make the code changes necessary for the issue you’re working on. The following git commands may prove useful.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span></code>: lastest commits of current branch</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code>: current staged and unstaged modifications</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">diff</span> <span class="pre">--staged</span></code>:  the differences between the staging area and the last commit</p></li>
+<li><p>`git add <filename>: add files that have changes to staging in preparation for commit</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code>: commits the stagged files, opens a text editor for you to write a commit log</p></li>
+</ul>
+</section>
+<section id="submit-pr">
+<h3>Submit PR<a class="headerlink" href="#submit-pr" title="Permalink to this heading">¶</a></h3>
+<p>Up to this point, all changes have been done to your local copy of Wildbook. You need to push the new commits to a remote branch to start the PR process.</p>
+<ol class="arabic simple">
+<li><p>Now’s the time clean up your PR if you choose to squash commits, but this is not required. If you’re looking for more information on these practices, see this <a class="reference external" href="https://yangsu.github.io/pull-request-tutorial/">pull request tutorial</a>.</p></li>
+<li><p>Push to the remote version of your branch <code class="docutils literal notranslate"> <span class="pre">git</span> <span class="pre">push</span> <span class="pre">&lt;remote&gt;</span> <span class="pre">&lt;local</span> <span class="pre">branch&gt;</span></code>
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">ISSUENUMBER-FEATUREBRANCHNAME</span></code></p></li>
+<li><p>When prompted, provide your username and GitHub Personal Access Token. If you do not have a GitHub Personal Access Token, or do not have one with the correct permissions for your newly forked repository, you will need to <a class="reference external" href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">create a Personal Access Token</a>.</p></li>
+<li><p>Check the fork’s page on GitHub to verify that you see a new branch with your added commits. You should see a line saying “This branch is X commits ahead” and a <strong>Pull request</strong> link.</p></li>
+<li><p>Click the <strong>Pull request</strong> link to open a form that says “Able to merge”. (If it says there are merge conflicts, go the  for help).</p></li>
+<li><p>Use an explicit title for the PR and provide details in the comment area. Details can include text, or images, and should provide details as to what was done and why design decisions were made.</p></li>
+<li><p>Click <strong>Create a pull request</strong>.</p></li>
+</ol>
+</section>
+<section id="respond-to-feedback">
+<h3>Respond to feedback<a class="headerlink" href="#respond-to-feedback" title="Permalink to this heading">¶</a></h3>
+<p>At this point, it’s on us to get you feedback on your submission! Someone from the Wild Me team will review the project and provide any feedback that may be necessary. If changes are recommended, you’ll need to checkout the branch you were working from, update the branch, and make these changes locally.</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">ISSUENUMBER-FEATUREBRANCHNAME</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">upstream</span> <span class="pre">main</span></code></p></li>
+<li><p>Make required changes</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">&lt;filename&gt;</span></code> for all files impacted by changes</p></li>
+<li><p>Determine which method would be most appropriate for updating your PR</p></li>
+</ol>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">--ammend</span></code> if the changes are small stylistic changes</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code> if the changes involved significant rework and require additional details</p></li>
+</ul>
+</section>
+</section>
+<section id="machine-learning-in-wildbook">
+<h2>Machine Learning in Wildbook<a class="headerlink" href="#machine-learning-in-wildbook" title="Permalink to this heading">¶</a></h2>
+<p>Wildbook leverages <a class="reference external" href="https://github.com/WildbookOrg/wildbook-ia">Wildbook IA (WBIA)</a> as the machine learning engine, which pulls data from Wildbook servers to detect features in images and identify individual animals. WBIA brings massive-scale computer vision to wildlife research.</p>
+</section>
+<section id="need-direct-help">
+<h2>Need direct help?<a class="headerlink" href="#need-direct-help" title="Permalink to this heading">¶</a></h2>
+<p>Wild Me (wildme.org) engineering staff provide support for Wildbook. You can contact us at: opensource&#64;wildme.org</p>
+<p>We provide support during regular office hours on Mondays and Tuesdays.</p>
+</section>
+<section id="support-resources">
+<h2>Support resources<a class="headerlink" href="#support-resources" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>User documentation is available at <a class="reference external" href="http://docs.wildme.org">Wild Me Documentation</a></p></li>
+<li><p>For user support, visit the <a class="reference external" href="https://community.wildme.org">Wild Me Community Forum</a></p></li>
+<li><p>For developer support, visit the <a class="reference external" href="https://discord.gg/zw4tr3RE4R">Wild Me Development Discord</a></p></li>
+<li><p>Email the team at opensource&#64;wildme.org</p></li>
+</ul>
+</section>
+<section id="contribution-guidelines">
+<h2>Contribution Guidelines<a class="headerlink" href="#contribution-guidelines" title="Permalink to this heading">¶</a></h2>
+<section id="variable-naming-conventions">
+<h3>Variable naming conventions<a class="headerlink" href="#variable-naming-conventions" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Camel case</p></li>
+<li><p>Don’t use single-letter variable names (no matter how temporary you think the code is)</p></li>
+<li><p>Code should be clear enough to speak for itself without comments, but use your judgement on if a comment is necessary</p></li>
+<li><p>Code for clarity rather than for efficiency (one-liners are cool, but not at the expense of future obfuscation)</p></li>
+</ul>
+</section>
+<section id="overall-outline-of-code-framework">
+<h3>Overall outline of code framework&lt;<a class="headerlink" href="#overall-outline-of-code-framework" title="Permalink to this heading">¶</a></h3>
+<p>Spell out how .jsp files relate to servlet files relate to java files, etc. Someone new to the codebase should be able to orient themselves based on your notes.</p>
+</section>
+<section id="java-jsp-style">
+<h3>Java/jsp style<a class="headerlink" href="#java-jsp-style" title="Permalink to this heading">¶</a></h3>
+<p>Initialize variables and type signatures at the abstract/interface level when possible.</p>
+<p>Instead of:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ArrayList</span> <span class="n">encounters</span> <span class="o">=</span> <span class="n">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Encounter</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="o">...</span>
+<span class="n">public</span> <span class="nb">int</span> <span class="n">getMax</span><span class="p">(</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="nb">int</span><span class="o">&gt;</span> <span class="n">numbers</span><span class="p">)</span> <span class="p">{</span>
+</pre></div>
+</div>
+<p>Try:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">List</span> <span class="n">encounters</span> <span class="o">=</span> <span class="n">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Encounter</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="o">...</span>
+<span class="n">public</span> <span class="nb">int</span> <span class="n">getMax</span><span class="p">(</span><span class="n">Collection</span><span class="o">&lt;</span><span class="nb">int</span><span class="o">&gt;</span> <span class="n">numbers</span><span class="p">)</span> <span class="p">{</span>
+</pre></div>
+</div>
+<p>It’s easier to read and more intuitive for a function to take a Map or List than a HashMap or ArrayList.</p>
+<p>The List interface defines how we want that variable to behave, and whether it’s an ArrayList or LinkedList is incidental. Keeping the variable and method signatures abstract means we can change the implementation later (eg swapping ArrayList-&gt;LinkedList) without changing the rest of our code.
+https://stackoverflow.com/questions/2279030/type-list-vs-type-arraylist-in-java</p>
+<p>Related: when writing utility methods, making the input type as abstract as possible makes the method versatile. See Util.asSortedList in Wildbook: since the input is an abstract Collection, it can accept a List, Set, PriorityQueue, or Vector as input, and return a sorted List.</p>
+<p>Runtime (not style): Use Sets (not Lists or arrays) if you’re only keeping track of collection membership / item uniqueness.</p>
+<p>Instead of:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    	List&lt;MarkedIndividual&gt; uniqueIndividuals = new ArrayList&lt;MarkedIndividual&gt;();
+    	for(Encounter currentEncounter: encounters){
+		MarkedIndividual currentInd = enc.getIndividual();
+		if !(uniqueIndividuals.contains(currentInd) {
+			uniqueIndividuals.add(currentInd);
+			doStuff();
+</pre></div>
+</div>
+<p>Try:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Set&lt;MarkedIndividual&gt; uniqueIndividuals = new HashSet&lt;MarkedIndividual&gt;();	
+    	for(Encounter currentEncounter: encounters){
+		MarkedIndividual currentInd = enc.getIndividual();
+		if !(uniqueIndividuals.contains(currentInd) {
+			uniqueIndividuals.add(currentInd);
+			doStuff();
+</pre></div>
+</div>
+<p>The reason is a little deep in the data types. Sets are defined as unordered collections of unique elements; and Lists/arrays are ordered collections with no bearing on element-uniqueness. If the order of a collection doesn’t matter and you’re just checking membership, you’ll have faster runtime using a Set.</p>
+<p>Sets implement contains, add, and remove methods much faster than lists [contains is O(log(n)) vs O(n) runtime]. A list has to iterate through the entire list every time it runs contains (it checks each item once at a time) while a set (especially a HashSet) keeps track of an item index for quick lookup.</p>
+<p>Use for-each loops aka “enhanced for loops” to make loops more concise and readable.</p>
+<p>Instead of:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="nb">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">encounters</span><span class="o">.</span><span class="n">length</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+	<span class="n">Encounter</span> <span class="n">enc</span> <span class="o">=</span> <span class="n">encounters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+	<span class="n">doStuff</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>try:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="n">Encounter</span> <span class="n">enc</span><span class="p">:</span> <span class="n">encounters</span><span class="p">)</span> <span class="p">{</span>
+	<span class="n">doStuff</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>Note that in both cases you might want to check if <code class="docutils literal notranslate"><span class="pre">encounters</span> <span class="pre">==</span> <span class="pre">null</span></code> if relevant, but you rarely need to check if <code class="docutils literal notranslate"><span class="pre">encounters.length()&gt;0</span></code> because the for-loops take care of that.</p>
+<p>Also note that if you want access to the <code class="docutils literal notranslate"><span class="pre">i</span></code> variable for logging or otherwise, the classic for-loop is best.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Util.stringExists</span></code> is shorthand for a common string check:</p>
+<p>Instead of:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>	if (str!=Null &amp;&amp; !str.equals(&quot;&quot;)) {
+		doStuff();
+</pre></div>
+</div>
+<p>Try:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>	<span class="k">if</span> <span class="p">(</span><span class="n">Util</span><span class="o">.</span><span class="n">stringExists</span><span class="p">(</span><span class="nb">str</span><span class="p">))</span> <span class="p">{</span>
+		<span class="n">doStuff</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>This method also checks for the strings “none” and “unknown” which have given us trouble in displays in the past.</p>
+</section>
+</section>
+<section id="history">
+<h2>History<a class="headerlink" href="#history" title="Permalink to this heading">¶</a></h2>
+<p>Wildbook started as a collaborative software platform for globally-coordinated whale shark (Rhincodon typus ) research as deployed in the Wildbook for Whale Sharks (now part of http://www.sharkbook.ai). After many requests to use our software outside of whale shark research, it is now an open source, community-maintained standard for mark-recapture studies.</p>
+<p>Wildbook is a registered trademark of <a class="reference external" href="https://conservationxlabs.com/">Conservation X Labs</a>, a 501(c)(3) non-profit organization, and is supported by the <a class="reference external" href="https://wildme.org">Wild Me</a> team.</p>
+</section>
+</section>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">First Test</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, Wild Me.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/wildbook_readme.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
