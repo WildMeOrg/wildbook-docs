@@ -6,9 +6,9 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'First Test'
-copyright = '2024, Wild Me'
-author = 'Wild Me'
+project = 'Wild Me Documentation'
+copyright = '2024 Wild Me / Conservation X Labs'
+author = 'Wild Me / Conservation X Labs'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
