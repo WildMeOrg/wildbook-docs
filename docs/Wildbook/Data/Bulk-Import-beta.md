@@ -90,7 +90,9 @@ The MediaAssets you upload are sent to Detection, where Annotations are added fo
 
 #### Send to Identification
 
-This option will appear after your images have been sent to Detection. The MediaAssets you have uploaded are sent through Detection, and any found Annotations are sent on to the Identification process. Bulk Detection and Identification can very significantly impact the Wildbook Image Analysis queue machine learning jobs. Other users can expect slowdowns waiting for Bulk Detection and ID jobs to finish.
+This option will appear after your images have been sent to Detection. The MediaAssets you have uploaded are sent through Detection, and any found Annotations are sent on to the Identification process. Select which locations to process Identification for and **Send to Identification**.
+
+Bulk Detection and Identification can very significantly impact the Wildbook Image Analysis queue machine learning jobs. Other users can expect slowdowns waiting for Bulk Detection and ID jobs to finish.
 
 ***
 

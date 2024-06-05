@@ -7,7 +7,7 @@ The **My Account** page allows you to edit the details of your Wildbook account,
 To access the **My Account** page:
 
 1. Sign in to your **Wildbook** platform.
-2. Select **My Account** from the **Administer** menu.
+2. Click on your **Profile** image from the **Navigation** bar and select **User Profile**.
 
 ## Understanding the My Account page
 
@@ -23,18 +23,12 @@ You can adjust the following fields of your account.
 * **Password**: To update your password, enter the same password in both the **New Password** and **Confirm New Password** fields. If you do not enter in both, none of your changes will be retained when you update.
 * **Full Name**: The name you want to display associated with the account.
 * **Email Address**: The email address associated with your account. This email will be used for system-generated emails.
-
-$$INFO
-title: Info
-*E-mail address is becoming mandatory. Update your profile to include a unique email address.*
-$$
-
 * **Receive automated email**: Check to receive email notifications when there are changes to your data, including matching and naming.
 * **Affiliation**: Text field to allow you to display your affiliation, such as your organization.
 
 $$INFO
 title: Info
-*We are planning to deprecate Affiliation as Wildbook Organizations replace this functionality. If you are using affiliation to tag data, we recommend migrating the information to another field.*
+*We will deprecate Affiliation as Wildbook Organizations replace this functionality. If you are using the affiliation field to tag data, we recommend migrating the information to another field.*
 $$
 
 * **Project URL**: A text field to hold a link to your research project's home page.
@@ -43,7 +37,7 @@ $$
 
 $$INFO
 title: Info
-*We are planning to deprecate Research project as [Wildbook Projects](https://docs.wildme.org/product-docs/en/wildbook/data/projects/) replaces this functionality.*
+*We will deprecate Research project as [Wildbook Projects](https://docs.wildme.org/product-docs/en/wildbook/data/projects/) replaces this functionality.*
 $$
 
 ***

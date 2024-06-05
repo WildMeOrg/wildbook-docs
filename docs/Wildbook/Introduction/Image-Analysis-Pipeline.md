@@ -83,29 +83,6 @@ Hotspotter paper link: http://cs.rpi.edu/hotspotter/crall-hotspotter-wacv-2013.p
 
 ***
 
-### CurvRank v2
-
-**CurvRank** is used to identify individuals by matching ‘curves’ or ‘edges’, such as the trailing edge of a whale tail or dolphin fin. The curves that are highlighted are those which are unique and can be used to distinguish an individual. Curvatures are represented in a comparable format in which they are robust to deformation through changes in the pose of the animal.
-
-![Mapped trailing edge of a whale's tail fluke](https://www.flukebook.org/images/CurvRank_matches.jpg){width=""}
-
-*Curvatures of a Humpback Whale's tail mapped against another image, identifying it as the same individual.*
-
-CurvRank paper link: https://openaccess.thecvf.com/content\_ICCV\_2017\_workshops/papers/w41/Weideman\_Integral\_Curvature\_Representation\_ICCV\_2017\_paper.pdf
-
-***
-
-### finFindR
-
-**finFindR** is not too dissimilar from CurvRank. It finds individually identifying curvatures, specifically of dorsal fins from species such as bottlenose dolphins and humpback whales. finFindR creates a matrix to represent each curvature. New images are compared against this matrix, in order to identify the individual.
-
-![Dorsal fin of a Bottlenose Dolphin](https://www.nmmf.org/wp-content/uploads/2019/09/finfindr-capture.jpg){width="" height=""}
-*Curvatures of the dorsal fin of a bottlenose dolphin are compared, matching both images as the same individual.*
-
-fiFindR paper link: https://www.biorxiv.org/content/10.1101/825661v1[https://www.biorxiv.org/content/10.1101/825661v1](https://www.biorxiv.org/content/10.1101/825661v1)
-
-***
-
 ### Deepsense
 
 **Deepsense** is used specifically for identifying right whales. It uses aerial photos that show the varying patterns of callouses on their heads. Deepsense is very fast and accurate, but it needs to be retrained when new, individual whales are added to the catalog. The quality of data is incredibly important as performance reduces with poorly curated catalogs.

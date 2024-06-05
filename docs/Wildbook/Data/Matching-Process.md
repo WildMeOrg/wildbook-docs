@@ -127,9 +127,9 @@ A banner labeled **Matching results for** at the top of the page provides a link
 
 Click to expand the **Instructions** section to get instructions for reviewing matches on the page. Some of those are repeated here:
 
-* Hover mouse over results to **compare candidates** to target.
+* Click on results to **compare candidates** to target.
 * Links to the corresponding **encounters** and **individuals** are next to each match score.
-* Select **correct match** by hovering over the correct result and checking the checkbox
+* Select **correct match** by clicking on the correct result and checking the checkbox
 * Use the buttons to switch between result types:
     * **Individual Scores:** This is the default. It computes one match score for every *individual* in the database. This is the aggregate of each image score for that individual.
     * **Image Scores:** computes the match score for every annotation in the database when compared to the query annotation
@@ -137,7 +137,7 @@ Click to expand the **Instructions** section to get instructions for reviewing m
 
 #### Results: One ranked set per annotation per algorithm
 
-Each block of ranked results represents the top-*N* matches (default top 12) to an Annotation in descending order. Rank 1 is the top suggested match, and each successive match is presented with relatively less confidence. Roll over each row in the list to review the potentially matched annotations. The annotation from your encounter appears on the left, labeled as the TARGET image. Potential candidates for matching appear on the right side, labeled to match their position in the list.
+Each block of ranked results represents the top-*N* matches (default top 12) to an Annotation in descending order. Rank 1 is the top suggested match, and each successive match is presented with relatively less confidence. Click on each row in the list to review the potentially matched annotations. The annotation from your encounter appears on the left, labeled as the TARGET image. Potential candidates for matching appear on the right side, labeled to match their position in the list.
 
 ***
 
@@ -146,7 +146,7 @@ Each block of ranked results represents the top-*N* matches (default top 12) to 
 ***
 
 * **Rank:** The position in the listing (1,2,3,4, etc.).
-* **Match score:** The match score represents the numeric value returned from the algorithm. These scores are not standardized between algorithms or platforms and are generally not bounded. For more information about interpreting algorithm scores, see [Identification](https://docs.wildme.org/product-docs/en/wildbook/introduction/image-analysis-pipeline/#identification).
+* **Match score:** The match score represents the numeric value returned from the algorithm. *These scores are not standardized between algorithms or platforms and are generally not bounded.* For more information about interpreting algorithm scores, see [Identification](https://docs.wildme.org/product-docs/en/wildbook/introduction/image-analysis-pipeline/#identification).
 * **Encounter link:** Opens a new tab to the potential match encounter.
 * **Inspect:** Opens a new page focused on the features being matched. Areas that are highlighted display potentially matched features. Not every algorithm will provide additional detail. Only the first 12 matches may have additional detail.
 * **Checkbox**: Select the checkbox to indicate that an encounter is a match with the target annotation.
@@ -158,10 +158,10 @@ Each block of ranked results represents the top-*N* matches (default top 12) to 
 In addition to setting the Individual ID from the [Encounter page](https://docs.wildme.org/product-docs/en/wildbook/introduction/encounter/), you can set the ID directly from the match results using the checkbox on any listed result. By clicking the checkbox, one of the following results will be suggested:
 
 * *If the annotation is on an encounter for which the ID has not yet been set and the candidate annotation does not have an ID*, selecting the checkbox will display a new option in the upper right that includes:
-    * a typeahead form field that allows you to enter a new ID to assign to both encounters or to look up an existing ID to assign to both encounters.
-    * The button **Set individual on both encounters** that allows you to set the ID from the form field. Both annotations and their respective encounters now belong to the same marked individual.
-* *If the annotation is on an encounter for which the ID has not yet been set and the candidate annotation has an ID set*, selecting the checkbox will display a new button in the upper right **Set to individual**. Click the button to assign the suggested individual ID to the annotation and its Encounter. Both annotations and their respective encounters now belong to the same marked individual.
-* *If the annotation is on an encounter for which the ID has been set and the candidate annotation has a different ID set*, selecting the checkbox will display a new button in the upper right **Merge individuals**. Click **Merge individuals** to merge the two Marked Individuals into a single record, assigning all encounters from both previously individuals to a single individual.
+    * a field that allows you to enter a new ID to assign to multiple encounters or to look up an existing ID to assign to the encounters.
+    * The button **Set individual on all encounters** that allows you to set the ID from the form field. The selected annotations and their respective encounters now belong to the same marked individual.
+* *If the annotation is on an encounter for which the ID has not yet been set and the candidate annotation has an ID set*, selecting the checkbox will display a new button in the upper right **Set to individual**. Click the button to assign the suggested individual ID to the annotation and its Encounter. The annotations and their respective encounters now belong to the same marked individual.
+* *If the annotation is on an encounter for which the ID has been set and the candidate annotation has a different ID set*, selecting the checkbox will display **Merge individuals**. Click **Merge individuals** to merge the two Marked Individuals into a single record, assigning all encounters from both previously individuals to a single individual. If more than one Marked Individual is selected from the list of matches, **You cannot merge more than 2 individuals here** will display.
 
 ***
 

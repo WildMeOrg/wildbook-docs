@@ -3,7 +3,7 @@
 A project is a processing tool for groups of disparate encounters. Encounters are compared to other encounters in the project, and as they are recognized as individuals, they are assigned project IDs.
 
 Common use cases for a project are a census (population count of identified subset of platform data) or reconciliation of multiple catalogs (de-duplication between catalogs).
-This feature was partially supported by `IndoCet`.
+_This feature had financial backing from `IndoCet`._
 
 ## Understanding projects
 

@@ -10,6 +10,10 @@ When you've performed a [search ](https://docs.wildme.org/product-docs/en/wildbo
 
 Exports an Excel file of results corresponding to the [Bulk Import format](https://docs.wildme.org/product-docs/en/wildbook/data/bulk-import-beta/) of Wildbook.
 
+### Encounter Annotation Export
+
+Generates an Excel file that is used with the [WildEx Annotation Export app](https://docs.wildme.org/product-docs/en/wildbook/data/wildex-image-export-app/) to export annotated images and their related metadata.
+
 ### Exported Excel spreadsheet (.xls) file in OBIS format
 
 Exports an Excel file in the Darwin Core format compatible with import into [OBIS.org](https://www.obis.org), [GBIF.org](https://www.gbif.org), or a similar biodiversity database using the [Darwin Core data format](https://dwc.tdwg.org/terms/).
