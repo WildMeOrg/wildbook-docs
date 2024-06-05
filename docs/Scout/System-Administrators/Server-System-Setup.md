@@ -58,35 +58,40 @@ After the Ubuntu Linux boots for the first time, select the following options du
 
 ## Storage
 
+$$WARNING
+title: System User Access
+Ensure the Ubuntu user account has write permissions for all folders and is the same account used to start the Scout container.
+$$
+
 Scout is designed to process large volumes of aerial survey imagery, which may come in terabytes. Ensure you have adequate image storage available.
 
 1. Create a directory for image storage, such as `/data/scout`
-	- Subsequent instructions in this documentation refers to the path as `/data/scout` for all file creation. 
-1. Create a subfolder in the directory such as `/data/scout/images` which will store images that will be added to Scout.
-	- As soon as this subfolder is created, you can begin copying your images into it.
-1. The first should be for data storage. We recommend `/data/scout/db`
-1. The second is for temporary use during processing. We recommend `/data/scout/tmp`
-
-***
+    * Subsequent instructions in this documentation refers to the path as `/data/scout` for all file creation.
+2. Create a subfolder in the directory such as `/data/scout/images` which will store images that will be added to Scout.
+    * As soon as this subfolder is created, you can begin copying your images into it.
+3. The first should be for data storage. We recommend `/data/scout/db`
+4. The second is for temporary use during processing. We recommend `/data/scout/tmp`
 
 ### CUDA toolkit
 
 To update your system’s CUDA Toolkit:
 
 1. Visit [CUDA Toolkit resources](https://developer.nvidia.com/cuda-downloads?target_os=Linux&amp;amp;target_arch=x86_64&amp;amp;Distribution=Ubuntu)
-1. Select the version of Ubuntu you are using.
-1. Select **deb(local)** for your installer type.
-1. Follow the download instructions for the toolkit installation.
-1. Follow the download instructions for the driver installation.
-1. Once installed, you will need to reboot the server to ensure the toolkit is available.
+2. Select the version of Ubuntu you are using.
+3. Select **deb(local)** for your installer type.
+4. Follow the download instructions for the toolkit installation.
+5. Follow the download instructions for the driver installation.
+6. Once installed, you will need to reboot the server to ensure the toolkit is available.
 
 ### NVIDIA Docker
 
-Ensure Docker is installed and the daemon is running.
+Ensure Docker is installed.
+
 To install NVIDIA Docker:
+
 1. Visit [NVIDIA Docker resources](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker).
-1. Follow the Installation instructions.
-1. Follow the Configuring Docker instructions.
+2. Follow the Installation instructions.
+3. Follow the Configuring Docker instructions.
 
 ### Verify GPU compute with ScoutBot demo
 

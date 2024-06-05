@@ -21,7 +21,11 @@ Example of a viable laptop to use as a server: [Lenovo ThinkPad](https://www.len
 
 ## Client
 
-The Scout web app is currently supported on all Chromium browsers (Chrome, Edge, etc).
+The Scout web app is currently supported on the following browsers:
+
+* Chrome
+* Brave
+* Vivaldi
 
 ## Network
 

@@ -2,6 +2,11 @@
 
 System setup must be completed before you can complete Scout Installation.
 
+$$WARNING
+title: System User Access
+Ensure the Ubuntu user account has write permissions for all folders and is the same account used to start the Scout container.
+$$
+
 ## Installation
 
 $$INFO
@@ -13,23 +18,16 @@ Enter the following in the Ubuntu Terminal: `docker pull wildme/scout:latest` to
 
 ## Setup
 
-$$INFO
-title: Info
-Now that you've successfully installed Scout, you can work offline or online to complete setup.
-$$
-
-Enter the run command in the Ubuntu Terminal to launch Scout for setup. 
+The remaining steps of Setup can be completed offline. Enter the run command in the Ubuntu Terminal to launch Scout for setup.
 
 **GPU processing with System File Storage**
-`` docker run --privileged -p 1337:1337 --rm -it --gpus all --mount type=bind,source=/data,target=/data -e ENV_IP="`ip route get 1 | sed 's/^.*src \([^ ]*\).*$/\1/;q'`" -v /data/scout/db:/data/db -v /data/scout/tmp:/tmp/scout-tmp wildme/scout:latest``
-
+``  docker run --privileged -p 1337:1337 --rm -it --gpus all --mount type=bind,source=/data,target=/data -e ENV_IP="`ip route get 1 | sed 's/^.*src \([^ ]*\).*$/\1/;q'`" -v /data/scout/db:/data/db -v /data/scout/tmp:/tmp/scout-tmp wildme/scout:latest ``
 
 During first installation, you are prompted to enter a source image directory where the images are stored.
  
 Enter the full path of the upload image directory based on your configuration:
 
-* Image storage: /data/scout/images
-* System File Storage: /data/scout/db:/data/db and /data/scout/tmp:/tmp/scout-tmp
+* Image storage: `/data/scout/images`
 
 A successful Scout installation provides some critical information that a *Lab Lead* needs. This includes:
 
