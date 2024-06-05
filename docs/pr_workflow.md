@@ -17,14 +17,16 @@ _Note: The same forking process is used for [Scout](https://github.com/WildMeOrg
 
 ## Create Local Branch
 You will want to work in a branch when doing any feature development you want to provide to the original project.
-1. Verify you are on the main branch. The branch you have checked out will be used as the base for your new branch, so you typically want to start from main.
-`git checkout main`
+1. Verify you are on the master branch. The branch you have checked out will be used as the base for your new branch, so you typically want to start from master.
+`git checkout master`
 1. Create your feature branch. It can be helpful to include the issue number (ISSUENUMBER) you are working to address.
 `git branch ISSUENUMBER-FEATUREBRANCHNAME`
 1. Change to your feature branch so your changes are grouped together.
 `git checkout ISSUENUMBER-FEATUREBRANCHNAME`
 1. Update your branch (this is not needed if you just created new branch, but is a good habit to get into).
-` git pull upstream main`
+` git pull upstream master`
+
+_Note: The primary branch you'll be working from for Scout or WildbookExport is `main`._
 
 ## Set Up Development Environment with Docker
 For easiest development, you will need to set up your development environment to work with Docker. See `devops/development/README.md` for detailed instructions.
@@ -57,9 +59,18 @@ Up to this point, all changes have been done to your local copy of Wildbook. You
 At this point, it's on us to get you feedback on your submission! Someone from the Wild Me team will review the project and provide any feedback that may be necessary. If changes are recommended, you'll need to checkout the branch you were working from, update the branch, and make these changes locally.
 
 1. `git checkout ISSUENUMBER-FEATUREBRANCHNAME`
-1. `git pull upstream main`
+1. `git pull upstream master`
 1. Make required changes
 1. `git add <filename>` for all files impacted by changes
 1. Determine which method would be most appropriate for updating your PR  
   * `git commit --ammend` if the changes are small stylistic changes
   * `git commit` if the changes involved significant rework and require additional details
+
+## Other branches
+The code for specific Wildbook platforms is available in different branches under the Wildbook repo. The only contributions made to these repos are:
+* standardizations by the Wild Me team to get rid of historical custom code
+* merges of master into the branch by the Wild Me team
+* updates to `.properties` files, such as translations, custom fields, or species management
+* updates to `IA.json` to manage locationIDs available in the system
+
+All custom feature work that is pushed to a non-`master` branch will be closed unless discussed and approved by the Wild Me team in advance.
