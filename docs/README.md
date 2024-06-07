@@ -1,6 +1,7 @@
 - clone wildme-docs
 - install sphinx
-- install [myst-parser](https://www.sphinx-doc.org/en/master/usage/markdown.html) (used by sphinx markdown extension)
+- install [sphinx-book-there](https://sphinx-book-theme.readthedocs.io/en/stable/tutorials/get-started.html): `pip install sphinx-book-theme`
+- install [myst-parser](https://www.sphinx-doc.org/en/master/usage/markdown.html) (used by sphinx markdown extension): `pip install myst-parser`
 
 to build, from this `docs/` directory:
 ```
