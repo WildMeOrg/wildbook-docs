@@ -41,11 +41,11 @@ A single animal that has been given an identifying name and **Annotation** withi
 
 ***
 
-# Account Registration
+## Account Registration
 
 When you first access a Codex site, you see the home page. You can view information on this specific instance by scrolling down the page, which displays content including how Codex works, facts and figures, social links, and buttons with calls to action. To get started, register an account.
 
-## Registering a new account
+### Registering a new account
 
 1. From the home page, click the **Login** button in the top right corner.
 2. Click the **Request an invitation** link.
@@ -54,7 +54,7 @@ When you first access a Codex site, you see the home page. You can view informat
 5. Click the **SEND REQUEST** button.
 6. You will receive an email with your temporary login information. Follow the instructions in the email to finish the registration process for your Codex account.
 
-## Logging into your account
+### Logging into your account
 
 1. Click the **Login** button at the top right of the page.
 2. Provide your **Email address** and the temporary **Password** you received from your welcome email in the fields.
@@ -67,7 +67,7 @@ When you first access a Codex site, you see the home page. You can view informat
 
 ***
 
-# Change Your Password
+## Change Your Password
 
 To reset the password for your Codex account:
 
@@ -82,7 +82,7 @@ To reset the password for your Codex account:
 
 ***
 
-# **Matching and Submitting Encounters**
+## **Matching and Submitting Encounters**
 
 1. On the Codex Home page, click the **plus icon (+)** on the top right corner of the page.
 2. In the space provided, you can *drag* *and* *drop* the images you want to import. You can also select **browse files** to import the images on your device.
@@ -99,17 +99,17 @@ To reset the password for your Codex account:
 
 ***
 
-# Next Steps
+## Next Steps
 
 Codex is a scalable and collaborative platform so that anyone from around the globe can participate. Sharing information such as images and data regarding them will make all the difference in collecting data for studying the wildlife population.
 
 Codex is designed with a suite of functionality that can be extended to meet the needs of wildlife projects, especially where individual identification is used.
 
-## Extend Collaboration Invites
+### Extend Collaboration Invites
 
 You might want to extend invitations to collaborate with other Codex users. Visit **[Extend Collaboration Invites - Codex](https://docs.wildme.org/product-docs/en/codex/getting-started-with-codex/collaboration-invites/#extend-collaboration-invites-codex)** to learn more about how to add, edit and revoke collaborations.
 
-## Request Further Configuration
+### Request Further Configuration
 
 A Codex platform might need some configurations to improve the quality of your research. Here are some of the common configuration changes:
 
@@ -120,11 +120,11 @@ A Codex platform might need some configurations to improve the quality of your r
 
 If these categories apply, please request support on the[ ](https://community.wildme.org/c/feature-requests/6)**[Wild Me Community Forums - Feature Requests](https://community.wildme.org/c/feature-requests/6)**.
 
-## Bulk Import Legacy Data for Matching
+### Bulk Import Legacy Data for Matching
 
 Many researchers have data from previous studies that need importing into Codex, such as the history of an animal and discoveries over distance/time. See **[Bulk Reporting](https://docs.wildme.org/product-docs/en/codex/getting-started-with-codex/bulk-reporting/)** for more information on how to convert your data to an Excel-based format for import into Codex.
 
-### How to Upload Images
+#### How to Upload Images
 
 1. From your *Codex homepage*, click the **Actions** button in the upper right corner of the screen.
 2. Select **Bulk import**. You can only upload images in `.jpg`, `.jpeg`, and `.png` formats.
@@ -135,7 +135,7 @@ Many researchers have data from previous studies that need importing into Codex,
 7. Add more photos by clicking **Add more** on the upper right corner of the page.
 8. Select **CONTINUE**.
 
-### How to Upload Metadata
+#### How to Upload Metadata
 
 10. Select **UPLOAD SPREADSHEET** to upload a `.csv` file.
 11. Once your `.csv` file is uploaded; you will be directed to a page to verify your uploaded data.
