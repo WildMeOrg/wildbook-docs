@@ -5,7 +5,7 @@ Wildbook
    :maxdepth: 1
 
    Getting-Started-with-Wildbook
-   Introduction
-   Data/Matching-Process
-   Security
-   Specifications-and-System-Requirements
+   Introduction/index
+   Data/index
+   Security/index
+   Specifications-and-System-Requirements/index
