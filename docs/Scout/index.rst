@@ -5,7 +5,7 @@ Scout
    :maxdepth: 1
 
    Scout
-   System-Administrators/System-Requirements
-   Lab-Lead/First-Scout-Login
-   All-Users/Logging-In
+   System-Administrators/index
+   Lab-Lead/index
+   All-Users/index
    Support-and-FAQ
