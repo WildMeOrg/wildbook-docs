@@ -1,17 +1,17 @@
-# **User Management**
+# User Management
 
 1. Click on the **drop-down icon** on the top-right corner of your Codex user page.
 2. Select **Control panel.**
 3. If you have an admin account, select **MANAGE USERS.**
 
-## **Creating a New User**
+## Creating a New User
 
 1. Fill out the **Email Address, Password, and Roles** fields.
 2. Choose a unique email address.
 3. There are no minimum requirements for a password, but the provided password needs to be changed after logging in for the first time.
 4. Check the user roles below.
 
-### **User Roles**
+### User Roles
 
 * **Contributor** \- users that are limited to only submit Sightings
 * **Researcher** \- users that can manage their own data \(Sightings and Individuals\) and collaborations\,  match and merge individuals\, and search
@@ -20,7 +20,7 @@
 
 ***
 
-## **Edit User**
+## Edit User
 
 1. To search for a particular user, click the **search icon** (three horizontal lines) on the *Edit Users* section of the page.
 2. Modify user information by selecting the **edit icon** (pen) next to their user information.
@@ -29,7 +29,7 @@
 
 ***
 
-## **Deactivating User**
+## Deactivating User
 
 *Note: Make sure to remove all roles associated with the user account you want to disable and change their password. We recommend disabling over deleting a user account if their data is trusted.*
 

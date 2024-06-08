@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to the Wild Me documentation site!
-======================================
+==============================================
 
 Are you a current or potential user of any of the Wild Me tools? Get started here:
 
