@@ -18,6 +18,10 @@ If your colleague has already left or has chosen not to accept your Collaboratio
 
 Wild Me staff will not mediate any issues that arise between users over account ownership.
 
+## I told the browser to not show me confirmation dialogues. How do I get them back?
+
+Go to your browser's history management and clear your cookies. You will need to re-sign to the platform.
+
 ***
 
 # Scout
