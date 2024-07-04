@@ -30,6 +30,7 @@ Because we are transitioning between tech stacks, there are some places where co
   * `header.jsp`
   * `header.jsx`
   * `servletResponseTemplate.htm`
+* If changing a dropdown in a .jsp page, use the library `select 2`. It provides a single line component update that adds in the ability to filter the dropdown. For example: `$('#selectCode').select2({width: '100%'});`
 
 ### React
 * _Prefer Bootstrap Classes_: Always use Bootstrap's utility classes for styling when possible. This ensures consistency across the project and leverages Bootstrap's responsive features. Only use custom CSS or inline styles when the desired styling cannot be achieved with Bootstrap.
@@ -38,6 +39,9 @@ Because we are transitioning between tech stacks, there are some places where co
 * _State Management_: Carefully manage state to avoid unnecessary re-renders. Use local state (with `useState`) for data that affects only one component, and consider using context or state management libraries (like Redux or MobX) for shared state across many components.
 * _UseEffect Best Practices_: When using `useEffect`, always include all dependencies in the dependency array to avoid bugs related to stale state and props. Also, be sure to return a cleanup function to avoid memory leaks, especially when subscribing to external data sources.
 * _Props Validation_: Use `PropTypes` to validate props passed to a component, or consider using TypeScript for static type checking throughout the application. This can prevent many runtime errors and improve developer productivity.
+
+#### Tip and Tricks
+* If bootstrap components are stubbornly refusing to change color, try `accent-color`.
 
 ### Language files
 `.properties` files in the `resources/bundles` language folders are used to generate translations for different supported languages. If you add a new string to the system, add the string to the appropriate `.properties` file, and make sure the string is available across `en`, `de`, `es`, `fr`, and `it`. Either provide the English string in all files, or provide the translated string in each one.
