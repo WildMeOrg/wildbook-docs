@@ -11,22 +11,22 @@ Are you a current or potential user of any of the Wild Me tools? Get started her
 .. toctree::
    :maxdepth: 1
 
-   Wildbook/index
+   wildbook/index
 
 .. toctree::
    :maxdepth: 1
 
-   Scout/index
+   scout/index
 
 .. toctree::
    :maxdepth: 1
 
-   Codex/index
+   codex/index
 
 .. toctree::
    :maxdepth: 1
 
-   FAQ/index
+   faq/index
 
 Want to put your talents to use fighting the 6th mass extinction? We're excited to have you! Get started here:
 

@@ -5,6 +5,6 @@ Community Contribution
    :maxdepth: 1
 
    contribute
-   pr_workflow
-   code_guide
+   pr-workflow
+   code-guide
    roadmap
