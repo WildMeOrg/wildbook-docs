@@ -1,6 +1,6 @@
 # Sighting page
 
-A Sighting page provides information regarding a [sighting](https://docs.wildme.org/product-docs/en/codex/getting-started-with-codex/#sighting), to include the photographs and annotations, time and date, and queue status. Sightings can contain Animals or Individuals.
+A Sighting page provides information regarding a [sighting](https://wildmeorg.github.io/wildme-docs/codex/getting-started-with-codex/getting-started-with-codex.html#sighting), to include the photographs and annotations, time and date, and queue status. Sightings can contain Animals or Individuals.
 
 ## Header
 
