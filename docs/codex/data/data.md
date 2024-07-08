@@ -1,6 +1,6 @@
 # Data Terms
 
-e following terms are used to describe ecological data in the Codex platform.
+The following terms are used to describe ecological data in the Codex platform.
 
 ## Animal vs Individual
 
