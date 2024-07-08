@@ -3,9 +3,9 @@ This repo contains all the documentation for all Wild Me products, including Wil
 
 ## Planned changes
 The documentation will eventually support:
-- TODO #12 release versions to match product functionality
-- TODO #14 language support
-- TODO #15 generated API documentation
+- #12 release versions to match product functionality
+- #14 language support
+- #15 generated API documentation
 
 ## Local Setup
 1. Install the prereqs:
@@ -26,4 +26,4 @@ To build:
 3. Files will be in `docs/_build/product-docs/en/html/`
 
 ## Contribute to docs
-TODO #11
+#11 TBD
