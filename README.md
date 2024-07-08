@@ -23,7 +23,14 @@ To build:
     source .venv/bin/activate
     make html
     ```
-3. Files will be in `docs/_build/product-docs/en/html/`
+3. Files will be in `docs/_build/html/`
+
+If you aren't seeing your changes, try `make clean html` to force a complete rebuild.
+
+To see files as they will appear online, including url paths:
+1. `cd` to `docs/_build/html`
+2. `python -m SimpleHTTPServer` or `python3 -m http.server`
+3. Open `http://localhost:8000` in your browser
 
 ## Contribute to docs
 #11 TBD
