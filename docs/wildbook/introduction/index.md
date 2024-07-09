@@ -1,5 +1,16 @@
 # Introduction to Wildbook
 
+```{toctree}
+:hidden:
+
+image-analysis-pipeline
+data-entry
+encounter
+marked-individual
+sighting
+security-overview
+```
+
 Wildbook is a web-based, multi-user software platform to help researchers collaboratively track individual animals in wildlife populations and estimate population sizes. Each Wildbook installation can be used by multiple researchers for multiple species.
 
 This introduction covers the most common interactions within Wildbook platforms. It is intended to support Wildbook users and researchers collecting data in the field and to illustrate how to use Wildbook for data storage, curation, searching, and analysis.

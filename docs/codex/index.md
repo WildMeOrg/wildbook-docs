@@ -1,4 +1,14 @@
-# An Introduction to Codex
+# Codex
+
+```{toctree}
+:hidden:
+
+getting-started-with-codex/index
+data/index
+security/index
+manage-users
+support-and-faq
+```
 
 Codex is a web-based, multi-user software platform designed to help researchers collaboratively track individual animals in wildlife populations and estimate population size. Each Codex installation can be used by multiple researchers and organizations to study multiple species across diverse regions. Codex is also valuable as a catalog reconciliation tool.
 

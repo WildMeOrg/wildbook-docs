@@ -1,5 +1,12 @@
 # Control Panel
 
+```{toctree}
+:hidden:
+
+manage-fields
+site-status
+```
+
 From the homepage of Codex, click the arrow button in the top right corner and select **Control panel** from the drop-down menu. This will take you to the control panel page which displays buttons for different functions.
 
 Admins have access to all of the functions.

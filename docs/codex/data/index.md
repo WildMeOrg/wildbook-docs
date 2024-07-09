@@ -1,4 +1,15 @@
-# Data Terms
+# Data
+
+```{toctree}
+:hidden:
+
+search
+matching
+sighting-page
+individual-page
+optimizing-photographs
+managing-the-public-queue
+```
 
 The following terms are used to describe ecological data in the Codex platform.
 

@@ -1,4 +1,15 @@
 # Getting Started with Codex
+```{toctree}
+:hidden:
+
+citizen-scientist-submissions
+standard-reporting
+bulk-reporting
+image-analysis
+collaboration-invites
+curate-sightings
+merge-individuals
+```
 
 Codex is an open-source software framework supporting collaborative mark recapture, molecular ecology, and social ecology studies. It helps blend structured wildlife research with artificial intelligence, citizen science, and computer vision to accelerate population analysis and develop new insights to fight extinction.
 
