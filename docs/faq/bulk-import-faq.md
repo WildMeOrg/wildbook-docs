@@ -74,12 +74,9 @@ Wildbooks are always being improved as a result of testing and user feedback. So
 
 ***
 
-## Scout
-
-Work in progress
-
-***
 
 ## Codex
+
+### I need help with Bulk Import.
 
 Additional help with [Bulk Imports](https://docs.wildme.org/product-docs/en/codex/getting-started-with-codex/bulk-reporting/) in Codex is available in our docs.

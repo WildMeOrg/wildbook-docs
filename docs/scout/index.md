@@ -1,4 +1,13 @@
-# Welcome to Scout
+# Scout
+
+```{toctree}
+:hidden:
+
+system-administrators/index
+lab-lead/index
+all-users/index
+support-and-faq
+```
 
 Wild Me's Scout is designed to support processing aerial survey data taken from planes. Current machine learning is focused on supporting terrestrial surveys.
 

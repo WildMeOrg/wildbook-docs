@@ -40,12 +40,6 @@ If a user doesn't own any of the previous encounters of the individual they want
 
 ***
 
-## Scout
-
-Work in progress
-
-***
-
 ## Codex
 
 Additional help with [Individuals](https://docs.wildme.org/product-docs/en/codex/data/individual-page/) in Codex is available in our docs.

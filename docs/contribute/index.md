@@ -1,5 +1,13 @@
 # Ways to Contribute
 
+```{toctree}
+:hidden:
+
+pr-workflow
+code-guide
+roadmap
+```
+
 > [!NOTE]
 > We currently only support development setup on Linux (Ubuntu), but will do our best to support Windows and Mac developers.
 

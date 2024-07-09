@@ -46,15 +46,3 @@ You need to have an edit [Collaboration](https://docs.wildme.org/product-docs/en
 Wildbook will only run identification for the exact location you put in your bulk import spreadsheet. If you want to expand the location range, you can [re-run the match manually](https://docs.wildme.org/product-docs/en/wildbook/data/matching-process/#manually-starting-a-match) on the encounter page and check the boxes for the additional sub-regions to include in the Location ID section.
 
 Alternately, you can choose “ALL LOCATIONS” when you resend to identification from the bulk import page, but be aware that this option will take longer for identification to complete.
-
-***
-
-## Scout
-
-Work in progress
-
-***
-
-## Codex
-
-Work in progress

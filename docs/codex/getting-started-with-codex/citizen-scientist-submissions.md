@@ -1,4 +1,4 @@
-# Citizen Science Contributions to Conservation
+# Citizen Science Contributions
 
 Researchers have a limited amount of funding and personnel to spread across the global challenge of monitoring species populations. To support their work and our future, we encourage anyone from the public to present any number of images to Wild Me platforms. Your photos help create larger and more accurate pools of data on animal species across the globe, and that support directly leads to more effective conservation action to save endangered species. By contributing your photos and data, you can hugely benefit the entire conservation community by ensuring we have the best-equipped researchers and policymakers to establish suitable management strategies, shape public conservation policies, and publish effective research to support conservation work in years to come.
 

@@ -1,5 +1,12 @@
 # Security Overview
 
+```{toctree}
+:hidden:
+
+my-account
+silo-security/index
+```
+
 Wildbook provides broad flexibility in securing **data ownership** and **visibility**. For example, a Wildbook could be completely secured to only ever be accessible to a User who has logged in, blocking any public visibility of data. In another configuration, Wildbook can be a very visible repository of global data (see the [Wildbook for Whale Sharks](https://www.whaleshark.org) for an example) but only allow for data curation by authenticated and pre-approved researchers and volunteers. And there are many possible configurations in between. Check with the Administrator of your Wildbook(s) for more information about the security model followed.
 
 ## General Security Models

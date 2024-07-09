@@ -1,5 +1,16 @@
 # Silo Security
 
+```{toctree}
+:hidden:
+
+org-admin
+site-admin
+photo-keywords
+data-integrity
+library-management
+bulk-import-logs
+```
+
 The **Silo Security model** lets users decide who they share their data with. The users who most commonly use it are those working on academic research or at-risk species.
 
 Permissions are granted at Encounter-level, meaning a user can access any **Sighting**, **Individual**, or **Survey** as long as they have access to the **Encounter** those belong to.
