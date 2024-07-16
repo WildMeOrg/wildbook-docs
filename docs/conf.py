@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Wild Me Documentation'
+project = 'Wildbook'
 copyright = '2024 Conservation X Labs'
 author = 'Wild Me'
 
