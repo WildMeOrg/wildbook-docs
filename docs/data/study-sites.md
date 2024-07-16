@@ -12,7 +12,7 @@ When you [report an Encounter](report-encounter.md), you can set its **location 
 
 ![encounter Location ID](../assets/images/wb-submit-locationid.png)
 
-[You can start a manual match from the Encounter](matching-process.md), which allows you to multi-select location IDs to match an Annotation against, as shown below.
+[You can start a manual match from the Encounter](matching-process.md#manually-starting-a-match), which allows you to multi-select location IDs to match an Annotation against, as shown below.
 
 ![match Criteria](../assets/images/wb-encounter-customalg.png)
 
