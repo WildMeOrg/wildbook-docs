@@ -9,7 +9,7 @@ When you [Report an Encounter](report-encounter.md) of a single animal, if you s
 1. Send each submitted image to **Detection** to find one or more **Annotations** in each photo. In the event that **Detection** doesn’t find any animal in the photo, users can use **[Manual Annotation](manual-annotation-beta.md))**.
 2. Depending on the type of **Annotations** returned (its **"Image Analysis Class"**), such as **"whale\_orca"** or **"panthera\_uncia"**, route each Annotation to one or more ID algorithms.
 3. If the location **ID** (or **"study site"**) was set during the submission, the pipeline will limit candidate matches to only that study site.
-4. Consolidate all Annotation match results into a single page for your review and ID assignment **(e.g., setting an existing individual ID or assigning a new ID).** See [Reviewing Match Results](matching-process.md) to understand the results page. The Encounter page also allows you to set individual ID later, and you can return to these match results in the future as well.
+4. Consolidate all Annotation match results into a single page for your review and ID assignment **(e.g., setting an existing individual ID or assigning a new ID).** See [Reviewing Match Results](matching-process.md#reviewing-match-results) to understand the results page. The Encounter page also allows you to set individual ID later, and you can return to these match results in the future as well.
 
 Because **Detection** and **Identification** reside in a queue of computer vision actions requested by all users of your Wildbook, you may not immediately see the results of the [Image Analysis Pipeline](../introduction/image-analysis-pipeline.md).
 
@@ -110,7 +110,7 @@ Each block of ranked results represents the top-*N* matches (default top 12) to 
 ![match Results Section](../assets/images/wb-matchresults-table.png)
 
 * **Rank:** The position in the listing (1,2,3,4, etc.).
-* **Match score:** The match score represents the numeric value returned from the algorithm. *These scores are not standardized between algorithms or platforms and are generally not bounded.* For more information about interpreting algorithm scores, see [Identification](../introduction/image-analysis-pipeline.md).
+* **Match score:** The match score represents the numeric value returned from the algorithm. *These scores are not standardized between algorithms or platforms and are generally not bounded.* For more information about interpreting algorithm scores, see [Identification](../introduction/image-analysis-pipeline.md#identification).
 * **Encounter link:** Opens a new tab to the potential match encounter.
 * **Inspect:** Opens a new page focused on the features being matched. Areas that are highlighted display potentially matched features. Not every algorithm will provide additional detail. Only the first 12 matches may have additional detail.
 * **Checkbox**: Select the checkbox to indicate that an encounter is a match with the target annotation.
@@ -143,15 +143,15 @@ From the Encounter image gallery, click on the menu icon of the image and select
 
 To create your region, use the the rotation icons to align the top blue line of the box with the dorsal fins. Grab anywhere else on the box to resize. Once you've set your region, toggle the radio buttons to set the anchor points for where the fins meet the body and map the spots. If you misplace a spot, click it again to remove it. The minimum number of spots you should add, not including the markers for the fins, is 3-5. **Save** your spot data when you're finished.
 
-For whale sharks, click the **return to encounter** button. From the image menu of your new spot mapped region, follow the steps in [Manually Starting a Match](matching-process.md). Note that while you can run a scan task on whale sharks using the steps below, it produces less accurate results.
+For whale sharks, click the **return to encounter** button. From the image menu of your new spot mapped region, follow the steps in [Manually Starting a Match](matching-process.md#manually-starting-a-match). Note that while you can run a scan task on whale sharks using the steps below, it produces less accurate results.
 
 For grey nurse sharks and broadnose sevengill sharks, click the **start ScanTask** button. Click the **Go to sharkGrid administration to monitor for completion** link. **My Pending scanTasks** will display the spot map you just worked on. When it's ready, your completed tasks will appear in **My Completed scanTasks**.
 
-Each scan will show the results of two algorithms: [Modified Groth and I3s](../introduction/image-analysis-pipeline.md). The match score for Modified Groth means that the higher the score, the more likely the match is a correct one. For I3s, it’s the opposite: the higher the score, the less likely the match is a correct one.
+Each scan will show the results of two algorithms: [Modified Groth and I3s](../introduction/image-analysis-pipeline.md#modified-groth-and-i3s-spot-pattern-matching). The match score for Modified Groth means that the higher the score, the more likely the match is a correct one. For I3s, it’s the opposite: the higher the score, the less likely the match is a correct one.
 
-If you’ve found a match, go back to your Encounter and edit the **[Identity](../introduction/encounter.md)** section to add to an existing Marked Individual or create a new one. Select matched by **Pattern match**.
+If you’ve found a match, go back to your Encounter and edit the **[Identity](../introduction/encounter.md#identity)** section to add to an existing Marked Individual or create a new one. Select matched by **Pattern match**.
 
-Next, set the workflow state in the **[Metadata](../introduction/encounter.md)** section to **approved**.
+Next, set the workflow state in the **[Metadata](../introduction/encounter.md#metadata)** section to **approved**.
 
 In addition to match candidates based on spot mapping placement, you may also be shown Nearby Matches. If a match is made between two locations for a given species, those locations are used for Nearby Matches in all future match sets.
 
