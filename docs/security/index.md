@@ -7,7 +7,7 @@ my-account
 silo-security/index
 ```
 
-Wildbook provides broad flexibility in securing **data ownership** and **visibility**. For example, a Wildbook could be completely secured to only ever be accessible to a User who has logged in, blocking any public visibility of data. In another configuration, Wildbook can be a very visible repository of global data (see the [Wildbook for Whale Sharks](https://www.whaleshark.org) for an example) but only allow for data curation by authenticated and pre-approved researchers and volunteers. And there are many possible configurations in between. Check with the Administrator of your Wildbook(s) for more information about the security model followed.
+Wildbook provides broad flexibility in securing **data ownership** and **visibility**. For example, a Wildbook could be completely secured to only ever be accessible to a User who has logged in, blocking any public visibility of data. In another configuration, Wildbook can be a very visible repository of global data (see the [Sharks Wildbook](https://www.sharkbook.ai) for an example) but only allow for data curation by authenticated and pre-approved researchers and volunteers. And there are many possible configurations in between. Check with the Administrator of your Wildbook(s) for more information about the security model followed.
 
 ## General Security Models
 
@@ -15,7 +15,7 @@ Wildbooks generally follow **two security models**.
 
 ### Silo Security
 
-[Silo Security](https://wildbook.docs.wildme.org/security/silo-security/) provides a secure sandbox for individual Users to enter and curate their data. Here is a quick summary:
+[Silo Security](silo-security/index.md) provides a secure sandbox for individual Users to enter and curate their data. Here is a quick summary:
 
 * Your User data is visible only to you.
 * You can share data visibility and data curation with other, specific Users in Wildbook via pairwise Collaborations, which must be reciprocally approved at the "view-only" and "edit" levels, respectively.

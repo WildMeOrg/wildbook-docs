@@ -126,4 +126,4 @@ All comments that researchers have provided for a given individual are available
 
 ### Troubleshooting
 
-You can find answers to frequently asked questions about merging Marked Individuals [here](https://wildbook.docs.wildme.org/faq/merging-faq/).
+You can find answers to frequently asked questions about merging Marked Individuals [here](../faq/merging-faq.md).

@@ -8,11 +8,11 @@ Study sites defined in Wildbook can be used to search and filter data, define lo
 
 ## Reporting an Encounter with a Location ID
 
-When you [report an Encounter](https://wildbook.docs.wildme.org/data/report-an-encounter/), you can set its **location ID** directly. **Location IDs** are hierarchical and nested, allowing for regional organization.
+When you [report an Encounter](report-encounter.md), you can set its **location ID** directly. **Location IDs** are hierarchical and nested, allowing for regional organization.
 
 ![encounter Location ID](../assets/images/wb-submit-locationid.png)
 
-[You can start a manual match from the Encounter](https://wildbook.docs.wildme.org/data/matching-process/#manually-starting-a-match), which allows you to multi-select location IDs to match an Annotation against, as shown below.
+[You can start a manual match from the Encounter](matching-process.md), which allows you to multi-select location IDs to match an Annotation against, as shown below.
 
 ![match Criteria](../assets/images/wb-encounter-customalg.png)
 

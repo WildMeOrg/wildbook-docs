@@ -2,7 +2,7 @@
 
 As technology advances, video and photography equipment are improving in quality, availability, and affordability. Wildlife photography is very popular and there is an abundance of animal images available online. These images have the potential to become critical wildlife data sources. If lots of wildlife images could be easily obtained and combined with metadata (**location**, **date**, and **behavior**), then ecologists could use this information to predict and prevent animal population declines.
 
-Regarding this concept, Wildbook uses a sophisticated machine learning (ML) server called [Wildbook Image Analysis (WBIA)](https://wildbook.docs.wildme.org/introduction/). This server uses a detection pipeline to find animals in photographs. Once an animal has been detected, it is then directed to a specific identification (ID) algorithm that will identify the individual animal. Relying on manual data processing, such as matching photos by eye, can be slow and inaccurate. WIBA focuses on using technology to process data, which improves both speed and precision. This is beneficial for users contributing images to Wildbook. This combination of artificial intelligence and citizen science is vital for discovering new ways to fight extinction.
+Regarding this concept, Wildbook uses a sophisticated machine learning (ML) server called Wildbook Image Analysis (WBIA)index.md. This server uses a detection pipeline to find animals in photographs. Once an animal has been detected, it is then directed to a specific identification (ID) algorithm that will identify the individual animal. Relying on manual data processing, such as matching photos by eye, can be slow and inaccurate. WIBA focuses on using technology to process data, which improves both speed and precision. This is beneficial for users contributing images to Wildbook. This combination of artificial intelligence and citizen science is vital for discovering new ways to fight extinction.
 
 Here is a link to a [poster presentation](https://cthulhu.dyn.wildme.io/public/posters/parham_wacv_2018.pdf) summarizing some stages of the WBIA’s detection pipeline.
 
@@ -139,8 +139,8 @@ Here is a link to an [example training video](https://www.youtube.com/watch?v=qD
 
 ### What happens if detection doesn’t find one or more animals in the photo?
 
-Even machine learning makes mistakes. Users can use [Manual Annotation](https://wildbook.docs.wildme.org/data/manual-annotation-beta/) if detection doesn’t find an animal.
+Even machine learning makes mistakes. Users can use [Manual Annotation](../data/manual-annotation-beta.md) if detection doesn’t find an animal.
 
 ### I am a software developer of ML engineer. How can I learn more about WBIA?
 
-Here is a link to [Wildbook Image Analysis Overview.](https://wildbook.docs.wildme.org/introduction/)
+Here is a link to [Wildbook Image Analysis Overview.](index.md)

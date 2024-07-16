@@ -21,7 +21,7 @@ Included Wildbook features:
 * A high performance **PostgreSQL** database for storing multiple wildlife-related data types
 * Two servers:
     * **Data Management Server** \- Coordinates UI browser display and data storage
-    * [Wildbook Image Analysis ("WBIA")](https://wildbook.docs.wildme.org/introduction/) \- Manages the computer vision pipeline and and artificial intelligence \(AI\) models and training tools\. WBIA does not come pre\-configured to detect and/or identify animals from a species\. Pre\-trained machine learning \(ML\) models for the species must be used\, or new models must be created and configured using training data\.
+    * Wildbook Image Analysis ("WBIA") \- Manages the computer vision pipeline and and artificial intelligence \(AI\) models and training tools\. WBIA does not come pre\-configured to detect and/or identify animals from a species\. Pre\-trained machine learning \(ML\) models for the species must be used\, or new models must be created and configured using training data\.
 * **Artificial intelligence** (AI) tools to enhance image curation by:
     * Finding one or more animals in a photo or photos **("Detection")**
     * Individually identifying each animal detected **("Identification")**
@@ -77,8 +77,8 @@ When you first access Wildbook, you’ll land on the **Home page.** This can be 
 
 Under the **Submit** menu, there are two options: **Report an Encounter** and **Bulk Import**. Both options are used to submit data. Submissions include photos, videos, and related metadata, requiring at least the date of sighting, location, and species. Additional metadata fields are available.
 
-* **[Report an Encounter](https://wildbook.docs.wildme.org/data/report-an-encounter/)** can be used by anyone to submit a single encounter of one or multiple individuals.
-* **Bulk Import** requires a user to log in to the platform before following the instructions to upload photos and their affiliated Excel data spreadsheet(s). The **[Bulk Import](https://wildbook.docs.wildme.org/data/bulk-import-beta/)** function allows users to submit both legacy and batched volumes of data in large quantities as opposed to [Report an Encounter](https://wildbook.docs.wildme.org/data/report-an-encounter/), which allows for only single uploads.
+* [Report an Encounter](../data/report-encounter.md) can be used by anyone to submit a single encounter of one or multiple individuals.
+* **Bulk Import** requires a user to log in to the platform before following the instructions to upload photos and their affiliated Excel data spreadsheet(s). The [Bulk Import](../data/bulk-import-beta.md) function allows users to submit both legacy and batched volumes of data in large quantities as opposed to [Report an Encounter](../data/report-encounter.md), which allows for only single uploads.
 
 #### Learn Menu
 
@@ -142,4 +142,4 @@ Under the **Administer** menu, you have the following options:
 
 * **My Account** provides a collection of information about the signed-in user, including password reset and profile picture management, a list of accepted collaborations, and statistics about the data associated with the account.
 
-For information about your user accounts and security, see [My Account](https://wildbook.docs.wildme.org/security/my-account/).
+For information about your user accounts and security, see [My Account](../security/my-account.md).

@@ -18,7 +18,7 @@ Throughout the Wildbook platform, Sightings may also be called Occurrences. We a
 
 To see Sighting information, you must be signed into the system. Once signed in, you can use *Search* \> *Sighting Search* to find Sightings that meet certain criteria. Additionally, there may be a Sighting menu that will allow you to see all Sightings you have access to by clicking View All.
 
-Additionally, you can access a Sighting associated with a specific Encounter; from the [Encounter page](https://wildbook.docs.wildme.org/introduction/encounter/), navigating to the Identity section and clicking on the Occurrence ID.
+Additionally, you can access a Sighting associated with a specific Encounter; from the [Encounter page](encounter.md), navigating to the Identity section and clicking on the Occurrence ID.
 
 ## Sighting Page Format
 

@@ -91,7 +91,7 @@ Defining the boundaries of study areas is an important aspect of mark-recapture 
 * **Encounter.decimalLatitude/decimalLongitude** \- assigns an Encounter to precisley measured GPS coodinates
 * **Encounter.verbatimLocality** \- a general description of location provided by the data submitter from which locationID may be determined\.
 
-**Encounter.locationID** may be the most valuable form of location identifier in Wildbook. GPS location may not be known, and verbatim descriptions of location may vary significantly by submitter. LocationID is powerful because it specifically defines whether a data point should be included or excluded from a study area during mark-recapture analysis and can be used to define which animals to match against in the [Wildbook Image Analysis pipeline](https://wildbook.docs.wildme.org/introduction/image-analysis-pipeline/).
+**Encounter.locationID** may be the most valuable form of location identifier in Wildbook. GPS location may not be known, and verbatim descriptions of location may vary significantly by submitter. LocationID is powerful because it specifically defines whether a data point should be included or excluded from a study area during mark-recapture analysis and can be used to define which animals to match against in the [Wildbook Image Analysis pipeline](../introduction/image-analysis-pipeline.md).
 
 To configure the list of study sites in your Wildbook, [configure the location ID](https://github.com/WildMeOrg/Wildbook/blob/flukebook/src/main/resources/bundles/locationID.json) and change the values in locationID.json[.](https://github.com/WildMeOrg/Wildbook/blob/flukebook/src/main/resources/bundles/locationID.json)
 

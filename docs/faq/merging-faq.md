@@ -1,6 +1,6 @@
 # Merging FAQ
 
-Additional help with [Marked Individuals](https://wildbook.docs.wildme.org/introduction/marked-individual) in Wildbook is available in our docs.
+Additional help with [Marked Individuals](../introduction/marked-individual.md) in Wildbook is available in our docs.
 
 ## I’ve discovered that two individuals in the system are the same animal, but they don’t show up in each other’s match results. How do I merge them?
 

@@ -26,7 +26,7 @@ Remember, the image names must correspond exactly to the `"Encounter.MediaAsset"
 
 ## Spreadsheet Set-up
 
-In the header of an Excel (.xlsx) file, create a column for each field you want to upload to Wildbook. [See Fields Available for a list of supported fields.](https://wildbook.docs.wildme.org/data/bulk-import-beta/#fields-available) This must include at least:
+In the header of an Excel (.xlsx) file, create a column for each field you want to upload to Wildbook. [See Fields Available for a list of supported fields.](#fields-available) This must include at least:
 
 1. **Location Reference**: Encounter.verbatimLocality, Encounter.locationID, and/or Encounter.decimalLatitude and Encounter.decimalLongitude
 2. **Date and Time Reference:** Encounter.year, Encounter.month, Encounter.day, etc. *(Note: At a minimum, include the year)*
@@ -35,10 +35,10 @@ In the header of an Excel (.xlsx) file, create a column for each field you want 
 
 *(Note: All other fields are optional.)* Because this flow is only accessible to authorized users, the Encounters are uploaded as approved Encounters if **Encounter.state** is not otherwise set. Here are important guidelines for preparing your spreadsheet:
 
-* **Determine which columns you have data for** (see [Fields Available](https://wildbook.docs.wildme.org/data/bulk-import-beta/#fields-available)).
+* **Determine which columns you have data for** (see [Fields Available](#fields-available)).
     It is OK to add, remove, and reorder columns as needed from the provided list. You can create your own version of our spreadsheet as long as you do not change the header names. Fields without data should be removed from your spreadsheet prior to importing it.
-* **Fill out each line for a single** [Encounter](https://wildbook.docs.wildme.org/introduction/encounter/).
-    If an encounter is associated with a [Sighting](https://wildbook.docs.wildme.org/introduction/sighting/), include the needed information for the Sighting on at least one line of an associated Encounter.
+* **Fill out each line for a single** [Encounter](../introduction/encounter.md).
+    If an encounter is associated with a [Sighting](../introduction/sighting.md), include the needed information for the Sighting on at least one line of an associated Encounter.
 * If using any of the Occurrence fields for Sightings, ensure that each Encounter is linked with a common value in the Occurrence.occurrenceID column.
 * Verify the following fields match exactly with what exists in the system:
     * **Encounter.locationID** \- Must match the location as shown in the Location ID menu of the Report an Encounter page\.
@@ -73,12 +73,12 @@ If everything looks as expected, select **Commit these results** and confirm tha
 
 ## Bulk Import Matching Process
 
-After uploading a bulk import, you can send imported Encounters through the [Image Analysis Pipeline](https://wildbook.docs.wildme.org/introduction/image-analysis-pipeline/) if the pipeline is configured for the imported species.
+After uploading a bulk import, you can send imported Encounters through the [Image Analysis Pipeline](../introduction/image-analysis-pipeline.md) if the pipeline is configured for the imported species.
 Once the import completes, you can take these actions:
 
 ### Send to Detection (No Identification)
 
-The MediaAssets you upload are sent to Detection, where Annotations are added for each animal found by the [Image Analysis Pipeline](https://wildbook.docs.wildme.org/introduction/image-analysis-pipeline/). Identification can be run later individually through each Encounter page. See [Matching Process](https://wildbook.docs.wildme.org/data/matching-process/) for more information.
+The MediaAssets you upload are sent to Detection, where Annotations are added for each animal found by the [Image Analysis Pipeline](../introduction/image-analysis-pipeline.md). Identification can be run later individually through each Encounter page. See [Matching Process](matching-process.md) for more information.
 
 ### Send to Identification
 

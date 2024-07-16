@@ -9,9 +9,9 @@ Wildbook supports reporting an Encounter with **one** or **more** photos (i.e. o
 As an example, here is a link to an [example Wildbook submission form](https://www.whaleshark.org/submit.jsp) in the Wildbook for whale sharks (*Rhincodon typus*).
 
 And here is a link to a [stored Encounter submission.](https://www.whaleshark.org/encounters/encounter.jsp?number=3b54a8cb-f899-4bb5-aa7c-13c2b6aa9fb1)
-After a successful submission, if the submitter reported a species for which Wildbook's ML detection and/or identification is configured, automated ML will proceed, searching **MediaAssets** for individual animals and attempting to match the found Annotations. See [Image Analysis Pipeline](https://wildbook.docs.wildme.org/introduction/image-analysis-pipeline/) for more information.
+After a successful submission, if the submitter reported a species for which Wildbook's ML detection and/or identification is configured, automated ML will proceed, searching **MediaAssets** for individual animals and attempting to match the found Annotations. See [Image Analysis Pipeline](image-analysis-pipeline.md) for more information.
 
-See more comprehensive information about [Reporting an Encounter here.](https://wildbook.docs.wildme.org/data/report-an-encounter/)
+See more comprehensive information about [Reporting an Encounter here.](../data/report-encounter.md)
 
 ## Submitting a Single Picture of Multiple Animals
 
@@ -33,7 +33,7 @@ If you choose to provide additional information during the initial upload of a s
 
 Presently, Wildbook accepts submissions of multiple pictures with multiple animals present; however, the system cannot understand or preserve data integrity or accuracy well enough for this to be recommended (e.g., *How could Wildbook know that animal 3 in photo 2 from the left side is also animal 5 in photo 9 as viewed from the right side?*) when uploading pictures using the standard, form-based Encounter upload method presented previously.
 
-If you choose to upload multiple pictures with multiple animals at once, it is recommended that you use Wildbook's [Bulk Import functionality](https://wildbook.docs.wildme.org/data/bulk-import-beta/), which is available after login under the **Submit menu**. Bulk Import is based on an Excel file template (with one Encounter per row) and can be used to upload:
+If you choose to upload multiple pictures with multiple animals at once, it is recommended that you use Wildbook's [Bulk Import functionality](../data/bulk-import-beta.md), which is available after login under the **Submit menu**. Bulk Import is based on an Excel file template (with one Encounter per row) and can be used to upload:
 
 * **A legacy catalog** (e.g., thousands of Encounters from past years of research)
 * **Multiple Encounter submissions** (e.g., all of last month's Encounters)

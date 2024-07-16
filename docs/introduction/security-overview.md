@@ -19,7 +19,7 @@ Wildbooks generally follow **two security models**.
 * Other users can potentially match individual animals from your catalog but must have a Collaboration with you to set the match ID and affect your catalog.
 * Other Users attempting to view your data will be blocked from reviewing your Encounters and Marked Individuals and be prompted to extend you an invitation for a Collaboration. Invitations and acceptances can sent inside Wildbook.
 
-[For more information about Silo Security, click here.](https://wildbook.docs.wildme.org/security/silo-security/)
+[For more information about Silo Security, click here.](../security/silo-security/index.md)
 
 Examples of Silo Security-based Wildbooks include:
 

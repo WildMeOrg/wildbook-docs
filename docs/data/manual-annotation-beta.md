@@ -27,7 +27,7 @@ Creating a Manual Annotation
 Each step needs to be completed for the next step to proceed to the next step.
 
 1. In **Select Viewpoint**, choose the primary viewpoint that the photographer is observing the animal from, such as the animal's **left**, the animal's **right**, looking **down** at the animal, looking **up** at its belly, etc.
-2. **Select annotation iaClass** allows you to define the type of animal or feature that represents the annotation. This is a fixed list per species that corresponds to detection classes returned by the[ Image Analysis pipeline](https://wildbook.docs.wildme.org/introduction/image-analysis-pipeline/).
+2. **Select annotation iaClass** allows you to define the type of animal or feature that represents the annotation. This is a fixed list per species that corresponds to detection classes returned by the[ Image Analysis pipeline](../introduction/image-analysis-pipeline.md).
     * **Animal (ex: turtle\_green, whale\_orca)**: Select all visible parts of the body in one annotation.
     * **Animal+body part (ex: turtle\_green+head, whale\_orca+fin\_dorsal)**: Select only the body part used for identification, such as the head, dorsal fin, fluke, etc.
     * If there are multiple animals in your photo or multiple *iaClasses* you want to annotate, add them later. Only one annotation at a time can be created.
@@ -44,13 +44,13 @@ Each step needs to be completed for the next step to proceed to the next step.
 When annotating multiple animals in a photo, Wildbook may clone this Encounter and create a new one if another annotation is already on this MediaAsset. Two annotations in one image generally means that two animals are present and at least two Encounters (one animal at a location and date) must exist.
 ```
 
-1. Navigate back to the Encounter page and add new annotations if needed, or click [start match](https://wildbook.docs.wildme.org/data/matching-process/#manually-starting-a-match) to begin the identification pipeline for this new annotation.
+1. Navigate back to the Encounter page and add new annotations if needed, or click [start match](matching-process.md) to begin the identification pipeline for this new annotation.
 
 ## Troubleshooting
 
 ### How do I fix an annotation?
 
-If an incorrect annotation is created, whether through the detection process or manually, you can first [delete the annotation](https://wildbook.docs.wildme.org/data/matching-process/#removing-an-annotation) and then re-draw the annotation if desired using the procedures above.
+If an incorrect annotation is created, whether through the detection process or manually, you can first [delete the annotation](matching-process.md) and then re-draw the annotation if desired using the procedures above.
 
 ### How do I annotate a part of an individual (Ex. head, tail, etc.)?
 

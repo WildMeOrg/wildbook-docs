@@ -2,9 +2,9 @@
 
 Wildbook supports searching and display of your data in multiple formats. The search types in Wildbook are:
 
-* **Encounter Search**, which allows you to search through [Encounter data](https://wildbook.docs.wildme.org/introduction/encounter/) in Wildbook
-* **Individual Search**, which allows you to search through [Marked Individual data](https://wildbook.docs.wildme.org/introduction/marked-individual/) in Wildbook
-* **Sighting Search**, which allows you to search through the [Sighting data](https://wildbook.docs.wildme.org/introduction/sighting/) (formerly "Occurrence") in Wildbook
+* **Encounter Search**, which allows you to search through [Encounter data](../introduction/encounter.md) in Wildbook
+* **Individual Search**, which allows you to search through [Marked Individual data](../introduction/marked-individual.md) in Wildbook
+* **Sighting Search**, which allows you to search through the [Sighting data](../introduction/sighting.md) (formerly "Occurrence") in Wildbook
 
 The data returned will match the data type. For example, the same date and location search filters may yield 2001 encounters, 882 sightings, and 356 marked individuals. You can access each search off the Wildbook menu by selecting **Search** and then the appropriate type of search.
 
@@ -43,7 +43,7 @@ The **Results table** provides a filterable, table based listing of search resul
 
 ### Project management
 
-The **Project management** tab allows you to add search results to a [project](https://wildbook.docs.wildme.org/data/projects/).
+The **Project management** tab allows you to add search results to a [project](projects.md).
 
 ### Matching Images/Videos
 
@@ -72,4 +72,4 @@ The **Analysis** tab summarizes and visualizes metadata from the search results.
 
 ### Export
 
-The **[Export](https://wildbook.docs.wildme.org/data/data-exports/)**[ tab](https://wildbook.docs.wildme.org/data/data-exports/) displays available formats to export data matching the search results. Available formats vary by search type.
+The [Export](data-exports.md) tab displays available formats to export data matching the search results. Available formats vary by search type.

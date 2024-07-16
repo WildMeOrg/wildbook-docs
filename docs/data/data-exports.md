@@ -1,16 +1,16 @@
 # Export
 
-When you've performed a [search ](https://wildbook.docs.wildme.org/data/search/)in Wildbook, you can navigate to the **Export** tab to export the data that matches your search results in various formats. Available formats vary by search type and may include the following.
+When you've performed a [search ](search.md)in Wildbook, you can navigate to the **Export** tab to export the data that matches your search results in various formats. Available formats vary by search type and may include the following.
 
 ## Encounter Search Exports
 
 ### Standard Format Export
 
-Exports an Excel file of results corresponding to the [Bulk Import format](https://wildbook.docs.wildme.org/data/bulk-import-beta/) of Wildbook.
+Exports an Excel file of results corresponding to the [Bulk Import format](bulk-import-beta.md) of Wildbook.
 
 ### Encounter Annotation Export
 
-Generates an Excel file that is used with the [WildEx Annotation Export app](https://wildbook.docs.wildme.org/data/wildex-image-export-app/) to export annotated images and their related metadata.
+Generates an Excel file that is used with the [WildEx Annotation Export app](wildex-image-export-app.md) to export annotated images and their related metadata.
 
 ### Exported Excel spreadsheet (.xls) file in OBIS format
 
@@ -18,7 +18,7 @@ Exports an Excel file in the Darwin Core format compatible with import into [OBI
 
 #### Include locale inclusion for unreported GPS
 
-Exports an Excel file in the Darwin Core format compatible with import into [OBIS.org](https://www.obis.org), [GBIF.org](https://www.gbif.org), or a similar biodiversity database using the [Darwin Core data format](https://dwc.tdwg.org/terms/). For matching Encounters without GPS coordinates but belonging to a [study site](https://wildbook.docs.wildme.org/specifications-and-system-requirements/system-configuration/#configuring-location-ids-study-sites) mapped to default GPS coordinates in locationIDGPS.properties, those default properties will be used in the export file.
+Exports an Excel file in the Darwin Core format compatible with import into [OBIS.org](https://www.obis.org), [GBIF.org](https://www.gbif.org), or a similar biodiversity database using the [Darwin Core data format](https://dwc.tdwg.org/terms/). For matching Encounters without GPS coordinates but belonging to a [study site](../specifications-and-system-requirements/system-configuration.md) mapped to default GPS coordinates in locationIDGPS.properties, those default properties will be used in the export file.
 
 ### Exported email data contributors file
 
