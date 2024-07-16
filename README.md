@@ -12,7 +12,7 @@ The documentation will eventually support:
 - install sphinx
 - install [sphinx-book-theme](https://sphinx-book-theme.readthedocs.io/en/stable/tutorials/get-started.html): `pip install sphinx-book-theme`
 - install [myst-parser](https://www.sphinx-doc.org/en/master/usage/markdown.html) (used by sphinx markdown extension): `pip install myst-parser`
-2. Clone the `wildme-docs` repo: `git clone https://github.com/WildMeOrg/wildme-docs.git`
+2. Clone the `wildme-docs` repo: `git clone https://github.com/WildMeOrg/wildbook-docs.git`
 
 ## Build locally
 To build:
@@ -23,7 +23,7 @@ To build:
     source .venv/bin/activate
     make html
     ```
-3. Files will be in `docs/_build/html/product-docs/en/`
+3. Files will be in `docs/_build/html/`
 
 If you aren't seeing your changes, try `make clean html` to force a complete rebuild.
 
