@@ -12,7 +12,7 @@ roadmap
 We currently only support development setup on Linux (Ubuntu), but will do our best to support Windows and Mac developers.
 ```
 
-Wild Me provides open source software intended to combat extinction. Historically,we have operated open repo software, where anyone was free to download and modify the tools, but as climate change accelerates, so must our methods. We are working to build a thriving open source community of users, researchers, and developers alike who rely on each other to advance the mission of protecting the planet. 
+Wildbook is open source software intended to combat extinction. While historically considered open repo software, where anyone was free to download and modify the tools, the team has adopted new methods as climate change accelerates. We are working to build a thriving open source community of users, researchers, and developers alike who rely on each other to advance the mission of protecting the planet. 
 
 If you want to help, there's any number of ways that contribute directly to the mission.
 

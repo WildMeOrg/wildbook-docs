@@ -5,7 +5,7 @@ All contributions should be made from a fork off of the Wildbook repo. While the
 ## Fork Wildbook
 To start, you will need to be signed in to your GitHub account, have admin access to your OS's terminal, and have Git installed.
 1. From your browser, in the top right corner of the [Wildbook repo](https://github.com/WildMeOrg/Wildbook), click the **Fork** button. Confirm to be redirected to your own fork (check the url for your USERNAME in the namespace).
-1. In your terminal, enter the command `git clone https://github.com/USERNAME/Wildbook`
+1. In your terminal, enter the command `git clone https://github.com/USERNAME/Wildbook.git`
 1. Once the Wildbook directory becomes available in your working directory, move to it with the command `cd Wildbook`
 1. Add a reference to the original repo, denoting it as the upstream repo.
 ```
@@ -13,7 +13,7 @@ git remote add upstream https://github.com/WildMeOrg/Wildbook
 git fetch upstream
 ```
 
-_Note: The same forking process is used for [Scout](https://github.com/WildMeOrg/scout) and [WildbookExport](https://github.com/WildMeOrg/WildbookExport)._
+_Note: The same forking process is used for [WildbookExport](https://github.com/WildMeOrg/WildbookExport)._
 
 ## Create Local Branch
 You will want to work in a branch when doing any feature development you want to provide to the original project.

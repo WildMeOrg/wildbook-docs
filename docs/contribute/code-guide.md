@@ -142,12 +142,3 @@ Try:
 ```
 
 This method also checks for the strings “none” and “unknown” which have given us trouble in displays in the past.
-
-## Scout
-
-### EXIF data handling
-EXIF data is notoriously inconsistent between different cameras. Unless we want to provide an entire suite of EXIF management tools (we do not), we must make assumptions about the data coming in, prepare for those assumptions to be wrong, and fail gracefully. Any development focused on EXIF data management should catch exceptions for the following cases:
-* data is missing
-* data is in the wrong format
-* data is data is of the wrong type
-* any additional cases defined in the ticket

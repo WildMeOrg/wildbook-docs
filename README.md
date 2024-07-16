@@ -1,5 +1,5 @@
-# Wild Me Docs
-This repo contains all the documentation for all Wild Me products, including Wildbook, Scout, and Codex. Documentation is published with every accepted PR.
+# Wildbook Docs
+This repo contains all the documentation for Wildbook. Documentation is published with every accepted PR.
 
 ## Planned changes
 The documentation will eventually support:
