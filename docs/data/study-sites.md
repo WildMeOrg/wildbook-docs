@@ -4,21 +4,21 @@ A study site in Wildbook (also called an **Encounter's "location ID"**) is a fix
 
 Study sites defined in Wildbook can be used to search and filter data, define location-specific permissions, and filter computer vision matching to only likely or realistic resighting locations.
 
-![encounter Location ID](../../assets/images/wb-encounter-locations.png)
+![encounter Location ID](../assets/images/wb-encounter-locations.png)
 
 ***
 
 ## Reporting an Encounter with a Location ID
 
-When you [report an Encounter](https://docs.wildme.org/product-docs/en/wildbook/data/report-an-encounter/), you can set its **location ID** directly. **Location IDs** are hierarchical and nested, allowing for regional organization.
+When you [report an Encounter](https://wildbook.docs.wildme.org/data/report-an-encounter/), you can set its **location ID** directly. **Location IDs** are hierarchical and nested, allowing for regional organization.
 
-![encounter Location ID](../../assets/images/wb-submit-locationid.png)
+![encounter Location ID](../assets/images/wb-submit-locationid.png)
 
 ***
 
-[You can start a manual match from the Encounter](https://docs.wildme.org/product-docs/en/wildbook/data/matching-process/#manually-starting-a-match), which allows you to multi-select location IDs to match an Annotation against, as shown below.
+[You can start a manual match from the Encounter](https://wildbook.docs.wildme.org/data/matching-process/#manually-starting-a-match), which allows you to multi-select location IDs to match an Annotation against, as shown below.
 
-![match Criteria](../../assets/images/wb-encounter-customalg.png)
+![match Criteria](../assets/images/wb-encounter-customalg.png)
 
 ***
 

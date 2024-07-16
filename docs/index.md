@@ -1,12 +1,16 @@
 # Wild Me Docs
 
+Wildbook is a web-based, multi-user software platform to help researchers collaboratively track individual animals in wildlife populations and estimate population sizes. Each Wildbook installation can be used by multiple researchers for multiple species.
+
 Are you a current or potential user of any of the Wild Me tools? Get started here:
 
 ```{toctree}
-
-wildbook/index
-scout/index
-codex/index
+:maxdepth: 2
+getting-started-with-wildbook
+introduction/index
+data/index
+security/index
+specifications-and-system-requirements/index
 faq/index
 ```
 

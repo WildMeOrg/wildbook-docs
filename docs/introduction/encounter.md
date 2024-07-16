@@ -6,7 +6,7 @@ In Wildbook, an Encounter is the foundation component of the software. All entri
 
 To see encounter information, you must be signed into the system. Once signed in, you can use **Encounter** \> **Encounter Search** to find encounters that meet certain criteria, or you can use **Encounter** \> **View My Submissions** to see all the encounters associated with your account.
 
-Encounters are the result of Wildbook's [data entry methods](https://docs.wildme.org/product-docs/en/wildbook/introduction/data-entry/), including [Report an Encounter](https://docs.wildme.org/product-docs/en/wildbook/data/report-an-encounter/) (web form submission) and [Bulk Import](https://docs.wildme.org/product-docs/en/wildbook/data/bulk-import-beta/) (Excel-based, multi-Encounter data import).
+Encounters are the result of Wildbook's [data entry methods](https://wildbook.docs.wildme.org/introduction/data-entry/), including [Report an Encounter](https://wildbook.docs.wildme.org/data/report-an-encounter/) (web form submission) and [Bulk Import](https://wildbook.docs.wildme.org/data/bulk-import-beta/) (Excel-based, multi-Encounter data import).
 
 Each Encounter entered into Wildbook is given a universally unique identifier (UUID) and can then be viewed from a URL.
 
@@ -65,9 +65,9 @@ Labelled keywords are provided to allow admins to preset values for users to app
 4. From the subsequent value dropdown, select the desired value.
 
 Once selected, the keyword appears on the image in the format 'label: value'.
-![select keyword](../../assets/images/wb-keyword-interface.png)
+![select keyword](../assets/images/wb-keyword-interface.png)
 
-Labeled keywords are set in the [commonConfiguration.properties file](https://docs.wildme.org/product-docs/en/wildbook/specifications-and-system-requirements/system-configuration/#encounter-configuration); reach out to your admin or to [Wildbook support](https://community.wildme.org) for configuration assistance. [See Configuration for more information.](https://docs.wildme.org/product-docs/en/wildbook/specifications-and-system-requirements/system-configuration/#configuration)
+Labeled keywords are set in the [commonConfiguration.properties file](https://wildbook.docs.wildme.org/specifications-and-system-requirements/system-configuration/#encounter-configuration); reach out to your admin or to [Wildbook support](https://community.wildme.org) for configuration assistance. [See Configuration for more information.](https://wildbook.docs.wildme.org/specifications-and-system-requirements/system-configuration/#configuration)
 
 ***
 
@@ -104,7 +104,7 @@ If the annotation has no viable matches, or if there have been extension additio
 
 ##### Add Annotation
 
-If detection failed to recognize an animal, you can click this option to manually create an Annotation for identification. [More information about manual annotation can be found here.](https://docs.wildme.org/product-docs/en/wildbook/data/manual-annotation-beta/)
+If detection failed to recognize an animal, you can click this option to manually create an Annotation for identification. [More information about manual annotation can be found here.](https://wildbook.docs.wildme.org/data/manual-annotation-beta/)
 
 ##### Add image to Encounter
 
@@ -179,13 +179,13 @@ If you don't see the option to Add to Occurrence after you've removed the previo
 
 Encounters can also have these important attributes.
 
-1. **Taxonomy**: Using the dropdown, select from the available names. When you've selected the correct taxonomy, click **Set** to confirm the value. Importantly, the Encounter Taxonomy affects how any Annotations for the Encounter are processed through the [Image Analysis Pipeline](https://docs.wildme.org/product-docs/en/wildbook/introduction/image-analysis-pipeline/) upon data submission or during later matching.
+1. **Taxonomy**: Using the dropdown, select from the available names. When you've selected the correct taxonomy, click **Set** to confirm the value. Importantly, the Encounter Taxonomy affects how any Annotations for the Encounter are processed through the [Image Analysis Pipeline](https://wildbook.docs.wildme.org/introduction/image-analysis-pipeline/) upon data submission or during later matching.
 2. **Status**: Using the dropdown, select the status that reflects the animal's state in the encounter. Once you've selected alive or dead, click **Reset Status** to confirm the value.
 3. **Sex**: Using the dropdown, select the value that reflects the animal's sex. When you've selected the correct sex or unknown, click **Reset Sex** to confirm the value.
 4. **Noticeable Scarring**: Using the text field, enter text that describes any scarring that could be useful in making a visual comparison between animals. When you've entered an appropriate description of the scarring, click **Reset Scarring** to confirm the value.
 5. **Behavior**: Using the text field, provide a description of the behavior of the animal in the given encounter. When you've entered an appropriate description of the behavior, click **Submit Edit** to confirm the value.
 6. **Group Role**: Using the text field, provide a description of the role the observed animal has within their group during this Encounter. When you've entered an appropriate description of the role, click **Submit Edit** to confirm the value. (Note: If the information in this field matches the pre-defined behavior list, you will be able to filter on the behavior on Encounter search page.)
-7. **Life stage**: A list of life stages can be made available on your platform. If the list exists, use the dropdown to select an appropriate life stage for the animal in the encounter. When you've selected the correct life stage, click **Set** to confirm the value. Life stage is configured in the commonConfiguration.properties file. [See Configuration for more information.](https://docs.wildme.org/product-docs/en/wildbook/specifications-and-system-requirements/system-configuration/) To request the life stage field be added or to request additional values, contact Wildbook support for assistance.
+7. **Life stage**: A list of life stages can be made available on your platform. If the list exists, use the dropdown to select an appropriate life stage for the animal in the encounter. When you've selected the correct life stage, click **Set** to confirm the value. Life stage is configured in the commonConfiguration.properties file. [See Configuration for more information.](https://wildbook.docs.wildme.org/specifications-and-system-requirements/system-configuration/) To request the life stage field be added or to request additional values, contact Wildbook support for assistance.
 8. **Additional comments**: Any information that you want to associate with the encounter, you can add in this field. When you have the language as you want it, click **Submit Edit** to confirm the entry.
 
 ***
@@ -237,7 +237,7 @@ $$
 
 ### Measurements
 
-Measurements are used to track numeric information associated with an encounter. These are set in the commonConfiguration.properties file. [See Configuration for more information.](https://docs.wildme.org/product-docs/en/wildbook/specifications-and-system-requirements/system-configuration/) To request measurements be added, [contact Wildbook support for assistance](https://community.wildme.org).
+Measurements are used to track numeric information associated with an encounter. These are set in the commonConfiguration.properties file. [See Configuration for more information.](https://wildbook.docs.wildme.org/specifications-and-system-requirements/system-configuration/) To request measurements be added, [contact Wildbook support for assistance](https://community.wildme.org).
 *(Note: You can edit multiple measurements before clicking **Set**.)*
 
 ***

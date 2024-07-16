@@ -2,13 +2,13 @@
 
 Wildbook supports searching and display of your data in multiple formats. The search types in Wildbook are:
 
-* **Encounter Search**, which allows you to search through [Encounter data](https://docs.wildme.org/product-docs/en/wildbook/introduction/encounter/) in Wildbook
-* **Individual Search**, which allows you to search through [Marked Individual data](https://docs.wildme.org/product-docs/en/wildbook/introduction/marked-individual/) in Wildbook
-* **Sighting Search**, which allows you to search through the [Sighting data](https://docs.wildme.org/product-docs/en/wildbook/introduction/sighting/) (formerly "Occurrence") in Wildbook
+* **Encounter Search**, which allows you to search through [Encounter data](https://wildbook.docs.wildme.org/introduction/encounter/) in Wildbook
+* **Individual Search**, which allows you to search through [Marked Individual data](https://wildbook.docs.wildme.org/introduction/marked-individual/) in Wildbook
+* **Sighting Search**, which allows you to search through the [Sighting data](https://wildbook.docs.wildme.org/introduction/sighting/) (formerly "Occurrence") in Wildbook
 
 The data returned will match the data type. For example, the same date and location search filters may yield 2001 encounters, 882 sightings, and 356 marked individuals. You can access each search off the Wildbook menu by selecting **Search** and then the appropriate type of search.
 
-![search Menu](../../assets/images/wb-header-search.png)
+![search Menu](../assets/images/wb-header-search.png)
 
 ***
 
@@ -35,7 +35,7 @@ The following fields allow you to filter your data search. *Not every field is a
 Search results can be displayed and exported in a variety of formats. The URL for a search result can be bookmarked or otherwise copied and saved outside Wildbook to return to the result later. Search results are dynamic and reflect the latest state of Wildbook, changing as new data matches search criteria.
 Each search display format is represented by a tab. *Not every tab is available in every search type.*
 
-![search Results](../../assets/images/wb-encountersearch-resultstable.png)
+![search Results](../assets/images/wb-encountersearch-resultstable.png)
 
 ***
 
@@ -49,13 +49,13 @@ The **Results table** provides a filterable, table based listing of search resul
 
 ### Project management
 
-The **Project management** tab allows you to add search results to a [project](https://docs.wildme.org/product-docs/en/wildbook/data/projects/).
+The **Project management** tab allows you to add search results to a [project](https://wildbook.docs.wildme.org/data/projects/).
 
 ### Matching Images/Videos
 
 The **Matching Images/Videos** tab displays the Annotations (and related MediaAssets) that correspond to any Encounters related to the search results. Click any Annotation to expand a view of the MediaAsset and to get links to the related Encounter and its metadata.
 
-![search Results Expanded Media Asset](../../assets/images/wb-encountersearch-gallery.png)
+![search Results Expanded Media Asset](../assets/images/wb-encountersearch-gallery.png)
 
 ***
 
@@ -68,7 +68,7 @@ The **Mapped Results** tab displays the positions of Encounters related to this 
 * **Haplotype** \- displays GPS coordinates with randomized colors corresponding to haplotypes recorded with Tissue Samples on matching\, related Encounters\. This view allows for the display of genetic flow\.
 * **Species** \- displays GPS coordinates with randomized colors corresponding to species recorded on related Encounters\.
     
-    ![search Results Mapped](../../assets/images/wb-encountersearch-mappedresults.png)
+    ![search Results Mapped](../assets/images/wb-encountersearch-mappedresults.png)
 
 ***
 
@@ -82,4 +82,4 @@ The **Analysis** tab summarizes and visualizes metadata from the search results.
 
 ### Export
 
-The **[Export](https://docs.wildme.org/product-docs/en/wildbook/data/data-exports/)**[ tab](https://docs.wildme.org/product-docs/en/wildbook/data/data-exports/) displays available formats to export data matching the search results. Available formats vary by search type.
+The **[Export](https://wildbook.docs.wildme.org/data/data-exports/)**[ tab](https://wildbook.docs.wildme.org/data/data-exports/) displays available formats to export data matching the search results. Available formats vary by search type.

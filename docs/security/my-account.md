@@ -37,7 +37,7 @@ $$
 
 $$INFO
 title: Info
-*We will deprecate Research project as [Wildbook Projects](https://docs.wildme.org/product-docs/en/wildbook/data/projects/) replaces this functionality.*
+*We will deprecate Research project as [Wildbook Projects](https://wildbook.docs.wildme.org/data/projects/) replaces this functionality.*
 $$
 
 ***
@@ -52,7 +52,7 @@ This field displays the security Organizations your User account is assigned in 
 
 ## Projects
 
-Projects are optional data constructs in Wildbook that contain and order data. [You can learn more about Projects here.](https://docs.wildme.org/product-docs/en/wildbook/data/projects/)
+Projects are optional data constructs in Wildbook that contain and order data. [You can learn more about Projects here.](https://wildbook.docs.wildme.org/data/projects/)
 
 * \#\#\#\# Your Projects
 
@@ -75,7 +75,7 @@ This functionality is no longer supported and may no longer appear in Wildbook.
 
 ## Collaborations
 
-Collaborations allow you to extend invitations to other Users in Wildbook to either see or edit data own by you. Collaborations are only available if your Wildbook has Silo Security enabled. See [Silo Security](https://docs.wildme.org/product-docs/en/wildbook/security/silo-security/#silo-security) or [Security Overview](https://docs.wildme.org/product-docs/en/wildbook/security/) for more information.
+Collaborations allow you to extend invitations to other Users in Wildbook to either see or edit data own by you. Collaborations are only available if your Wildbook has Silo Security enabled. See [Silo Security](https://wildbook.docs.wildme.org/security/silo-security/#silo-security) or [Security Overview](https://wildbook.docs.wildme.org/security/) for more information.
 
 ### Reviewing existing collaborations
 

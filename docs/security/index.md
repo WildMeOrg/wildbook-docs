@@ -15,7 +15,7 @@ Wildbooks generally follow **two security models**.
 
 ### Silo Security
 
-[Silo Security](https://docs.wildme.org/product-docs/en/wildbook/security/silo-security/) provides a secure sandbox for individual Users to enter and curate their data. Here is a quick summary:
+[Silo Security](https://wildbook.docs.wildme.org/security/silo-security/) provides a secure sandbox for individual Users to enter and curate their data. Here is a quick summary:
 
 * Your User data is visible only to you.
 * You can share data visibility and data curation with other, specific Users in Wildbook via pairwise Collaborations, which must be reciprocally approved at the "view-only" and "edit" levels, respectively.

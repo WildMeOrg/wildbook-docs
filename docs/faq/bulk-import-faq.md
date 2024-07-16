@@ -1,10 +1,10 @@
 # Bulk Import FAQ
 
-Additional help with [Bulk Imports](https://docs.wildme.org/product-docs/en/wildbook/data/bulk-import-beta/) in Wildbook is available in our docs.
+Additional help with [Bulk Imports](https://wildbook.docs.wildme.org/data/bulk-import-beta/) in Wildbook is available in our docs.
 
 ## What should I put in media asset columns in a bulk import?
 
-Media asset columns should be named `"Encounter.MediaAsset.X"`, where **X** is an actual number, starting with **0** `(Encounter.MediaAsset.0)`. The content of each cell should be the asset filename, including the path to the asset. For example, the `"Encounter.MediaAsset.1"` column could contain cells `"majestic_whale1.jpg"` and `"majestic_whale2.jpg"`. Check the [Photography guidelines](https://docs.wildme.org/product-docs/en/wildbook/data/photography-guidelines/#image-formats-and-sizes) for supported image formats.
+Media asset columns should be named `"Encounter.MediaAsset.X"`, where **X** is an actual number, starting with **0** `(Encounter.MediaAsset.0)`. The content of each cell should be the asset filename, including the path to the asset. For example, the `"Encounter.MediaAsset.1"` column could contain cells `"majestic_whale1.jpg"` and `"majestic_whale2.jpg"`. Check the [Photography guidelines](https://wildbook.docs.wildme.org/data/photography-guidelines/#image-formats-and-sizes) for supported image formats.
 
 ## Why is my bulk import taking so long?
 
@@ -12,7 +12,7 @@ Although bulk imports can support up to 1000 encounters in a single spreadsheet,
 
 ## What do the statuses in the Match Results By Class column mean?
 
-* waiting to queue - Images haven't sent to [WBIA](https://docs.wildme.org/product-docs/en/wildbook/introduction/) yet
+* waiting to queue - Images haven't sent to [WBIA](https://wildbook.docs.wildme.org/introduction/) yet
 * queuing - Trying to send images to WBIA
 * queued - Images in WBIA, waiting for them to come back
 * working - Identification actively in progress.
@@ -23,7 +23,7 @@ Although bulk imports can support up to 1000 encounters in a single spreadsheet,
 
 ## Why can't I edit my imported encounters?
 
-If you don't include your username in the `Encounter.submitterID` field of your spreadsheet, your imported encounters will be unassigned. To fix this, [delete your bulk import](https://docs.wildme.org/product-docs/en/wildbook/data/bulk-import-beta/#deleting-a-bulk-import), update your spreadsheet, and import your data again.
+If you don't include your username in the `Encounter.submitterID` field of your spreadsheet, your imported encounters will be unassigned. To fix this, [delete your bulk import](https://wildbook.docs.wildme.org/data/bulk-import-beta/#deleting-a-bulk-import), update your spreadsheet, and import your data again.
 
 ## File format questions
 
@@ -45,7 +45,7 @@ There are a number of additional fields that cannot be set using the Bulk Import
 
 ### I made a mistake and want to reload my encounters.
 
-You can [delete your bulk import](https://docs.wildme.org/product-docs/en/wildbook/data/bulk-import-beta/#deleting-a-bulk-import) and reimport your data.
+You can [delete your bulk import](https://wildbook.docs.wildme.org/data/bulk-import-beta/#deleting-a-bulk-import) and reimport your data.
 
 ### I uploaded the wrong image, but when I clicked back to try again, the image was still listed in the Photo Review page.
 
@@ -71,4 +71,4 @@ To work around this, you can provide an email that is used system-wide for all s
 
 ### The docs say I can't do XYZ in my spreadsheet, but I've done it before without a problem.
 
-Wildbooks are always being improved as a result of testing and user feedback. Sometimes this means that we have to make changes to old processes to make way for new ones. We do our best to keep our docs updated to reflect the most up-to-date information on using Wildbooks. When in doubt, check the [docs](https://docs.wildme.org/product-docs/en/) or visit the [Community Forums](https://community.wildme.org/) for guidance.
+Wildbooks are always being improved as a result of testing and user feedback. Sometimes this means that we have to make changes to old processes to make way for new ones. We do our best to keep our docs updated to reflect the most up-to-date information on using Wildbooks. When in doubt, check the [docs](https://wildbook.docs.wildme.org/) or visit the [Community Forums](https://community.wildme.org/) for guidance.

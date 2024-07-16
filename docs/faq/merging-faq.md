@@ -1,6 +1,6 @@
 # Merging FAQ
 
-Additional help with [Marked Individuals](https://docs.wildme.org/product-docs/en/wildbook/introduction/marked-individual) in Wildbook is available in our docs.
+Additional help with [Marked Individuals](https://wildbook.docs.wildme.org/introduction/marked-individual) in Wildbook is available in our docs.
 
 ## I’ve discovered that two individuals in the system are the same animal, but they don’t show up in each other’s match results. How do I merge them?
 
@@ -14,7 +14,7 @@ Move all encounters from one individual to the other. When the individual you do
 6. Click the Add button to save your changes and close the edit window.
 7. Repeat steps 3-6 for the encounters you opened.
 
-## **How to merge via URL**
+## How to merge via URL
 
 You can also merge two individuals without having to go through the match results first.
 

@@ -1,6 +1,6 @@
 # Report an encounter
 
-Under the **Submit** menu in Wildbook, there are two options: **[Report an encounter](https://docs.wildme.org/product-docs/en/wildbook/data/report-an-encounter/)** and **[Bulk Import](https://docs.wildme.org/product-docs/en/wildbook/data/bulk-import-beta/)**. Here we present the single Encounter reporting method (**Report an Encounter**), which allows for data entry in a simple, web-based form. This form supports two use cases:
+Under the **Submit** menu in Wildbook, there are two options: **[Report an encounter](https://wildbook.docs.wildme.org/data/report-an-encounter/)** and **[Bulk Import](https://wildbook.docs.wildme.org/data/bulk-import-beta/)**. Here we present the single Encounter reporting method (**Report an Encounter**), which allows for data entry in a simple, web-based form. This form supports two use cases:
 
 ## Reporting an Encounter
 
@@ -12,7 +12,7 @@ Complete the following steps to successfully submit anEencounter. These fields a
 4. Under **Date** and **Location**, enter a date in the Encounter date field. Use an ISO format: ***(YYYY-MM-DD HH:mm)***.
 5. Under **Encounter location**, provide one or more of the following:
     a. **Where were you?**: Provide a freeform description of where you saw this animal.
-    b. **Was this one of our location IDs?**: Is this a formal study site (a.k.a. "location ID") defined in this Wildbook? If you don't know, leave it blank. If a location ID is selected and [Wildbook Image Analysis](https://docs.wildme.org/product-docs/en/wildbook/introduction/image-analysis-pipeline/) is configured for this species, the Identification matching phase will only try to match this Encounter's Annotations against other Annotations from this same area.
+    b. **Was this one of our location IDs?**: Is this a formal study site (a.k.a. "location ID") defined in this Wildbook? If you don't know, leave it blank. If a location ID is selected and [Wildbook Image Analysis](https://wildbook.docs.wildme.org/introduction/image-analysis-pipeline/) is configured for this species, the Identification matching phase will only try to match this Encounter's Annotations against other Annotations from this same area.
     c. **GPS Latitude/Longtitude**: By either manual entry or map selection, indicate precisely where this Encounter occurred.
 6. Under **About You**, enter your name in the **Name** field and email in the **Email** field.
 7. Click **Send Encounter Report**.

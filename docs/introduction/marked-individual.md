@@ -18,7 +18,7 @@ The overview contains the following information; to change the information, sele
 
 * **Individual name:** Each individual is named at creation. This name is assigned as the *Default*. You can enter a new name and select **Update**. If you remove the given name, the individual will display the UUID in the database. Additional names can be assigned to the individual, such as nicknames or project identifiers. To do so, select **Add New Name**, then provide a *label* and a *name value* to go with the label before you select **Update**. Name changes that impact display require a page refresh before they display. *(Note: the label "newname" is not supported and will cause visual errors until redefined.)*
 
-![individual name form](../../assets/images/wb-individual-add-name.png)
+![individual name form](../assets/images/wb-individual-add-name.png)
 
 * **Sex**: If the sex is known, it can be set or adjusted using the Sex dropdown.
 * **Taxonomy**: Taxonomy is derived from the species associated with the linked encounters.
@@ -144,4 +144,4 @@ All comments that researchers have provided for a given individual are available
 
 ### Troubleshooting
 
-You can find answers to frequently asked questions about merging Marked Individuals [here](https://docs.wildme.org/product-docs/en/faq/merging-faq/).
+You can find answers to frequently asked questions about merging Marked Individuals [here](https://wildbook.docs.wildme.org/faq/merging-faq/).

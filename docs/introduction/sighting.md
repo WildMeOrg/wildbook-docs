@@ -2,7 +2,7 @@
 
 When the system runs the image through Detection, it generates an Annotation for each animal found in the picture. This picture would be returned with two Annotations, like below.
 
-![annotated animal photo](../../assets/images/wilddog-annotation.png)
+![annotated animal photo](../assets/images/wilddog-annotation.png)
 
 In Wildbook, an Encounter is the foundation component of the software. All entries that a user uploads are encounters. Encounters provide a reference to a *time* and *location* where an animal was spotted.
 
@@ -21,7 +21,7 @@ $$
 
 To see Sighting information, you must be signed into the system. Once signed in, you can use *Search* \> *Sighting Search* to find Sightings that meet certain criteria. Additionally, there may be a Sighting menu that will allow you to see all Sightings you have access to by clicking View All.
 
-Additionally, you can access a Sighting associated with a specific Encounter; from the [Encounter page](https://docs.wildme.org/product-docs/en/wildbook/introduction/encounter/), navigating to the Identity section and clicking on the Occurrence ID.
+Additionally, you can access a Sighting associated with a specific Encounter; from the [Encounter page](https://wildbook.docs.wildme.org/introduction/encounter/), navigating to the Identity section and clicking on the Occurrence ID.
 
 ## Sighting Page Format
 

@@ -2,9 +2,9 @@
 
 ## How do I delete an encounter?
 
-Click the Edit button on the [Metadata](https://docs.wildme.org/product-docs/en/wildbook/introduction/encounter/#metadata) window of an Encounter. Then click **Delete Encounter?**
+Click the Edit button on the [Metadata](https://wildbook.docs.wildme.org/introduction/encounter/#metadata) window of an Encounter. Then click **Delete Encounter?**
 
-Additional help with managing [Metadata](https://docs.wildme.org/product-docs/en/wildbook/introduction/encounter/#metadata) in Wildbook is available in our docs.
+Additional help with managing [Metadata](https://wildbook.docs.wildme.org/introduction/encounter/#metadata) in Wildbook is available in our docs.
 
 ## Someone is leaving the platform. Should I delete their account?
 
@@ -12,7 +12,7 @@ Once an account has data associated with it, you should never delete the account
 
 ## A colleague is leaving and we need to access to their data when they're gone.
 
-This is a great time to establish an edit [Collaboration](https://docs.wildme.org/product-docs/en/wildbook/security/silo-security/#collaborations) with the departing user so that you can manage their Encounters even when they leave your organization.
+This is a great time to establish an edit [Collaboration](https://wildbook.docs.wildme.org/security/silo-security/#collaborations) with the departing user so that you can manage their Encounters even when they leave your organization.
 
 If your colleague has already left or has chosen not to accept your Collaboration request, you may consider setting up a new Wildbook account with an email address that goes to a shared inbox. If you and select colleagues want to collectively manage this data, then using a shared inbox means any one of you can reset the password if someone leaves and still maintain access to the account.
 

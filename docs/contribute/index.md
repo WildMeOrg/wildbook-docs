@@ -8,9 +8,9 @@ code-guide
 roadmap
 ```
 
-> [!NOTE]
-> We currently only support development setup on Linux (Ubuntu), but will do our best to support Windows and Mac developers.
-
+```{note}
+We currently only support development setup on Linux (Ubuntu), but will do our best to support Windows and Mac developers.
+```
 
 Wild Me provides open source software intended to combat extinction. Historically,we have operated open repo software, where anyone was free to download and modify the tools, but as climate change accelerates, so must our methods. We are working to build a thriving open source community of users, researchers, and developers alike who rely on each other to advance the mission of protecting the planet. 
 
