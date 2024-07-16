@@ -1,10 +1,8 @@
 # Merging FAQ
 
-## Wildbook
-
 Additional help with [Marked Individuals](https://docs.wildme.org/product-docs/en/wildbook/introduction/marked-individual) in Wildbook is available in our docs.
 
-### I’ve discovered that two individuals in the system are the same animal, but they don’t show up in each other’s match results. How do I merge them?
+## I’ve discovered that two individuals in the system are the same animal, but they don’t show up in each other’s match results. How do I merge them?
 
 Move all encounters from one individual to the other. When the individual you don’t want to keep has no encounters associated with it anymore, it will automatically be removed from the system.
 
@@ -16,7 +14,7 @@ Move all encounters from one individual to the other. When the individual you do
 6. Click the Add button to save your changes and close the edit window.
 7. Repeat steps 3-6 for the encounters you opened.
 
-### **How to merge via URL**
+## **How to merge via URL**
 
 You can also merge two individuals without having to go through the match results first.
 
@@ -30,24 +28,10 @@ You can also merge two individuals without having to go through the match result
     `https://wildbook.org/merge.jsp?individualA=1234&individualB=4321`
 5. On the merge page, fields in red have conflicting values and need to be corrected before merging. If no conflicts exist, click "Merge Individuals".
 
-### How do I unmerge two animals?
+## How do I unmerge two animals?
 
 Click the Edit button in the Identity section of an encounter. Under Manage Identity, click "Remove from marked individual."
 
-### How do I cancel a merge request?
+## How do I cancel a merge request?
 
 If a user doesn't own any of the previous encounters of the individual they want to merge with, they need permission from someone who does. Those owners are sent a notification in Wildbook to approve or deny the request. If nobody responds to the merge request after two weeks, the merge is completed. In order to cancel a pending merge request, you need to contact the owner of the encounter and ask them to deny the merge.
-
-***
-
-## Codex
-
-Additional help with [Individuals](https://docs.wildme.org/product-docs/en/codex/data/individual-page/) in Codex is available in our docs.
-
-### How do I unmerge two animals?
-
-1. From the Individual page, click on the Sighting preview icon until you find the Sighting that needs to be removed from that Individual.
-2. Leave that Sighting open in another browser tab.
-3. On the Individual page, hover your mouse over the trash can icon and you’ll see the hover text display “detach this sighting from this individual”.
-4. Click the trash can icon to remove the Sighting from the Individual
-5. Go back to your tab with the Sighting open to view the match results or re-run identification to find the correct match.
