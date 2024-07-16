@@ -6,8 +6,6 @@ Regarding this concept, Wildbook uses a sophisticated machine learning (ML) serv
 
 Here is a link to a [poster presentation](https://cthulhu.dyn.wildme.io/public/posters/parham_wacv_2018.pdf) summarizing some stages of the WBIA’s detection pipeline.
 
-***
-
 ## Detection
 
 The detection pipeline is a cascade of deep convolutional neural networks `(DCNNs)`. The combined outcomes of each neural network results in an analyzed image. Based on this information, the image can then be routed to its appropriate ID algorithm. The detection stage involves:
@@ -32,8 +30,6 @@ There are also optional features that WIBA can provide for each image:
 
 *Resulting bounding boxes (Annotations) predicted by WBIA's detection pipeline after running a photo of three cheetahs.*
 
-***
-
 ## Identification
 
 Identification is the next step after detection. It assigns a **Name** (ID) to each **Annotation** (animal) from the detection stage. Different types of detection are used for different species and different body parts. Depending on the type of detection, the Wildbook pipeline directs the Annotation to one or more suitable ID algorithms. It compares the new Annotation to a database. By looking at specific features, it can identify if the Annotation is surrounding an individual we have never seen before, or if they have previously been recorded.
@@ -43,8 +39,6 @@ Identification is the next step after detection. It assigns a **Name** (ID) to e
 *Visual pipeline showing how different species and body parts are detected, then Wildbook directs them to one or more appropriate algorithms to identify the individual.*
 
 The following ID algorithms are supported by Wildbook:
-
-***
 
 ### Matching and Interpreting Embeddings for Wildlife ID (MIEW-ID or µID)
 
@@ -57,8 +51,6 @@ MIEW-ID learns embeddings for images from the database. Embeddings are the uniqu
 *MIEW-ID provides visualization of its matching process, helping researchers review potentially matched features and better confirm suggested ID matches.*
 
 MIEW-ID can be trained on a per-species or multi-species basis and has been successfully cross-applied from data rich to data-deficient species. Currently, Wild Me has generated separate MIEW-ID models for different species including bottlenose dolphins, beluga whales, lions, and more.
-
-***
 
 ### Pose Invariant Embeddings (PIE)
 
@@ -77,8 +69,6 @@ PIE paper link: https://arxiv.org/pdf/1902.10847.pdf
 
 *Note:* PIE v2 does not currently support analysis of 8-bit black and white images. Images uploaded in this format will not be processed.
 
-***
-
 ### Hotspotter
 
 **Hotspotter** analyzes the textures in an image to find distinct patterns, known as ‘hot spots’. It then matches these hot spots against other images in the database. A ranked list of potential matches is produced, and the most likely matches have the highest hot spot similarity.
@@ -88,8 +78,6 @@ PIE paper link: https://arxiv.org/pdf/1902.10847.pdf
 *The green regions are matching 'hot spots' between the images, matching the query image of a foal to an image of it as a juvenile.*
 
 Hotspotter paper link: http://cs.rpi.edu/hotspotter/crall-hotspotter-wacv-2013.pdf
-
-***
 
 ### Deepsense
 
@@ -101,8 +89,6 @@ Hotspotter paper link: http://cs.rpi.edu/hotspotter/crall-hotspotter-wacv-2013.p
 
 Depsense paper link: https://www.researchgate.net/publication/327910789\_Applying\_deep\_learning\_to\_right\_whale\_photo\_identification
 
-***
-
 ### OC/WDTW
 
 **OC/WDTW** (or DTW for short) stands for **‘Digital Time Warping’**. It identifies individual cetaceans from the unique trailing edge of their fins. DTW represents the nicks and notches of flukes and adds them to a database. The trailing edge of a fluke is extracted and compared against potential matches based on their similarities. DTW is robust to changes in viewpoints and poses, as well as being fast and accurate.
@@ -113,8 +99,6 @@ Depsense paper link: https://www.researchgate.net/publication/327910789\_Applyin
 
 OC/WDTW paper link: https://openaccess.thecvf.com/content\_ICCV\_2017\_workshops/papers/w41/Weideman\_Integral\_Curvature\_Representation\_ICCV\_2017\_paper.pdf
 
-***
-
 ### Kaggle7
 
 **Kaggle7** analyzes the unique fluke patterns of humpback whales to identify individuals. It is similar to Deepsense in the fact it must be retrained when new individuals are added to the catalog. Additionally, the catalog must be very well curated for performance to be optimum.
@@ -124,8 +108,6 @@ OC/WDTW paper link: https://openaccess.thecvf.com/content\_ICCV\_2017\_workshops
 *Fluke patterns of a Humpback Whale's tail.*
 
 Kaggle7 paper link: https://ducha-aiki.medium.com/thanks-radek-7th-place-solution-to-hwi-2019-competition-738624e4c885
-
-***
 
 ### Modified Groth and I3S (Spot Pattern Matching)
 
@@ -139,14 +121,11 @@ Modified Groth paper link: https://besjournals.onlinelibrary.wiley.com/doi/full/
 
 I3S paper link: https://www.researchgate.net/publication/228007763\_A\_computer-aided\_program\_for\_pattern-matching\_of\_natural\_marks\_on\_the\_spotted\_raggedtooth\_shark\_Carcharias\_taurus
 
-***
-
 ### Consolidated Display
 
 Following both the detection and identification processes, Wildbook displays a list of potential match results. They are organized both per Annotation/feature (e.g., whale fluke) and per algorithm (e.g., PIE). Each image is ranked 1 to 12, from the most to least likely match. Each image also displays what each algorithm found similar between the Annotations, and provides an algorithm-specific score. The higher the score, the higher the likelihood of a match. For example, an image of an Orca dorsal fin would display scores for the algorithms **Kaggle7**, **CurvRank v2**, and **finFindR.**
 
 Each individual also receives their own profile page on Wildbook. It shows where the animal has been, when it was seen, and any relationships they have with other animals.
-
 
 ## FAQ
 

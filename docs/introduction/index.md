@@ -30,8 +30,6 @@ Included Wildbook features:
         
         *The Wildbook ecosystem of people, servers, and AI.*
 
-***
-
 ## Wildbook Terminologies
 
 ### Wildbook
@@ -61,12 +59,9 @@ An **Individual** is a single animal that has been given an identifying name/Ann
 
 Every Individual has a profile page in Wildbook, summarizing where the individual was sighted over time, any **Relationships** (e.g. mother-calf) or **Social Units** (e.g. a pack or herd) it may be a part of, and which researchers have contributed to building this Individual's profile.
 
-$$INFO
-title: Info
+```{note}
 Throughout Wildbook, **Sightings** may also be called “Occurrences” and **Individuals** may also be called "Marked Individuals". We are currently working to shift terminology for greater user clarity. If you see an instance of outdated language, you can post a bug report [here](https://community.wildme.org).
-$$
-
-***
+```
 
 ## Navigating the Platform
 
@@ -116,10 +111,9 @@ Under the **Encounters** menu, you have the following options:
 * **View Unapproved Encounters** pulls up a list of all Encounters that have not had their state adjusted from “Unapproved”. All individually-uploaded encounters are initially uploaded as Unapproved Encounters. This allows researchers and trained individuals to support citizen scientist involvement while maintaining their data integrity.
 * **View Approved Encounters** pulls up a list of all Encounters that have been determined to be acceptable based on data review. The state has been adjusted to “Approved”.
 
-$$INFO
-title: Info
-*All Encounters entered using the Bulk Import function are set as Approved by default as only users with researcher-or-higher privileges can make use of the importer.*
-$$
+```{note}
+All Encounters entered using the Bulk Import function are set as Approved by default as only users with researcher-or-higher privileges can make use of the importer.
+```
 
 * **View Unidentifiable Encounters** pulls up a list of all encounters that provide evidence that cannot be conclusively judged, causing a user to set the state to “Unidentifiable” (eg. poor photo quality or missing critical metadata).
 * **View Images** pulls up a list of all uploaded images a user has access to, including their Annotation bounding boxes and keyword displays.
@@ -133,8 +127,6 @@ Under the **Search** menu, you have the following options:
 * **Encounter Search** pulls up several filters that can be leveraged to generate a filtered list of all the Encounters the signed-in user has access to. Once the list is generated, additional filtering and sorting can be performed on the **Encounter Search Results** page, as well as delving into additional data formats such as matching images and videos, mapped results, export formats, and/or an encounter calendar.
 * **Individual Search** pulls up several filters that can be leveraged to generate a filtered list of all Individuals the signed-in user has access to. Once the list is generated, additional filtering and sorting can be performed on the **Individual Search Results** page, as well as delving into additional data formats such as matching images and videos, mapped results, and exportable data formats.
 * **Sighting Search** pulls up several filters that can be leveraged to generate a tailored list of all sightings that the signed-in user has access to.
-
-***
 
 ## Account Management
 

@@ -18,8 +18,6 @@ Here are what you need to **AVOID** for a successful identification:
 
 Wildbook caters to multiple species. For best results, visit their Wildbook platform and navigate to **Learn > How to Photograph**.
 
-***
-
 ## **Image Formats and Sizes**
 
 * Wildbook accepts photographs in a variety of formats, including **.jpg, .jpeg, .png, and .bmp**. (Note: [Raw image formats](https://en.wikipedia.org/wiki/Raw_image_format) are not supported)

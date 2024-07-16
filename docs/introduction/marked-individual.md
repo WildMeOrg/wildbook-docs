@@ -6,8 +6,6 @@ Individuals have one or more encounters associated with them, which can be acces
 
 Individual pages can be accessed using the Individual search or by navigating from a linked encounter.
 
-***
-
 ## Navigating an Individual
 
 When you first navigate to an Individual page, you can view and edit the following information.
@@ -25,8 +23,6 @@ The overview contains the following information; to change the information, sele
 * **Date of Birth**: The date of birth of the individual. This gets entered in the format **YYYY-MM-DD**. The field contains an example of the format, but is blank until a date is entered by a researcher.
 * **Date of Death**: The date of death of the individual. This gets entered in the format **YYYY-MM-DD**. The field contains an example of the format, but is blank until a date is entered by a researcher.
 * **Alternate ID**: Another position to add an ID. Planned to be deprecated. *Encounter Gallery*: a carousel of each media asset associated with the linked encounters.
-
-***
 
 ### Social Group Memberships
 
@@ -55,16 +51,12 @@ To support tracking animals that operate in social groups, Wildbook can support 
 2. In the **Social Group Name** dropdown, select the group you intend to remove.
 3. Select **Remove**.
 
-***
-
 ### Supporting Data
 
 The tables show major data contributions that support the creation of the individual, including all linked encounters and all provided biological samples.
 
 * **Encounter Table:** All encounters that the user has access to display in a table. A total count of the number of encounters that make up the individual is also provided.
 * **Biological Samples:** All biological samples associated with the encounters that make up the individual are displayed.
-
-***
 
 ### Social Relationships
 
@@ -116,31 +108,21 @@ The co-occurrence diagram is a tool to allow for easy visualization of the co-si
 
 Navigate to the table to see all instances of sightings that include this individual and others.
 
-***
-
 ### Mapping
 
 The map found here displays the locations associated with the linked encounters.
-
-***
 
 ### Additional Data Files
 
 If there are data files that need to be associated with the Individual, you are able to upload them. To do so, **Browse** to the file on your local machine, select **Open**, the confirm to **Send file**.
 
-***
-
 ### Collaborating Researchers
 
 All researchers that are associated with linked encounters are displayed. It will include the researcher's name, image, affiliation and, if applicable, research project. These value are pulled from the user profile and cannot be edited from the Individual page.
 
-***
-
 ### Comments
 
 All comments that researchers have provided for a given individual are available to review. You can add additional comments by entering text and selecting Add comments.
-
-***
 
 ### Troubleshooting
 

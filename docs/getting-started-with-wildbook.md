@@ -1,4 +1,4 @@
-# Getting Started with Wildbook
+# Getting Started
 
 This Quickstart topic covers some basic tasks and concepts when first logging into Wildbook.
 

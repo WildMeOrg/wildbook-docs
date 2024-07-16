@@ -66,8 +66,6 @@ The owner of a project or a site administrator can edit a project.
 3. Click the **Edit Project** button in the upper left above the table.
 4. Click **Delete** button. The project will be deleted and you will return to the project list page.
 
-***
-
 ## Add encounters to a project
 
 Any user with access to a project can add encounters to the project.
@@ -76,10 +74,9 @@ Any user with access to a project can add encounters to the project.
 2. Use the Encounter Search filters to create a list of encounters that suit your criteria.
 3. Click **Search Encounters**
 
-$$INFO
-title: Info
-*filtering results at this stage will not change how many encounters are loaded for project management.*
-$$
+```{note}
+filtering results at this stage will not change how many encounters are loaded for project management.
+```
 
 5. Once the **Results Table** loads, click the **Project Management** tab.BETA note: The Project Management tab may take a long time to load if your query returns more than 10000 encounters. It may be more efficient to do several smaller searches.
 6. On the **Project Management** tab, you get the follow information and actions:
@@ -97,8 +94,6 @@ Only the project owner or an admin can remove encounters from a project.
 1. Navigate to **Administer > Manage Projects.**
 2. In the table of projects available to you, click the project you want to edit.
 3. In the **encounter table**, click the **Remove button** on the appropriate row.
-
-***
 
 ## Matching and projects
 
@@ -121,18 +116,15 @@ You can also filter a match that was performed generally.
 
 The results list will display project IDs and will be limited to encounters that are in the selected project.
 
-***
-
 ## Merging individuals with project IDs
 
 Because an individual can only have a single ID from a given project, merging two individuals requires you to resolve any project IDs that are in conflict.
 
 On the merge page, you will see a listing of all projects the two individuals are in; each will have a dropdown with the conflicting IDs. Use the dropdown to select the ID you want to stay with the merged individual.
 
-$$INFO
-title: Info
-*if you do not have access to all the projects that have IDs in conflict, you will not be able to merge the individuals.*
-$$
+```{note}
+If you do not have access to all the projects that have IDs in conflict, you will not be able to merge the individuals.
+```
 
 ## Setting preferred project view
 
@@ -141,8 +133,6 @@ If you are working from a project, you can set a preferred view. This will cause
 1. Navigate to **Administer > My Account**
 2. Under **Default Project**, select the project you want to use as your primary context.
 3. Select **Update.**
-
-***
 
 ## Bulk Import into existing project
 

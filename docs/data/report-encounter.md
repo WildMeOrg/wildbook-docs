@@ -9,7 +9,7 @@ Complete the following steps to successfully submit anEencounter. These fields a
 1. Access your Wildbook homepage.
 2. From the **Submit** menu, select **Report an Encounter**.
 3. Under **Footage**, drag a file or click to add images.
-4. Under **Date** and **Location**, enter a date in the Encounter date field. Use an ISO format: ***(YYYY-MM-DD HH:mm)***.
+4. Under **Date** and **Location**, enter a date in the Encounter date field. Use an ISO format: *(YYYY-MM-DD HH:mm)*.
 5. Under **Encounter location**, provide one or more of the following:
     a. **Where were you?**: Provide a freeform description of where you saw this animal.
     b. **Was this one of our location IDs?**: Is this a formal study site (a.k.a. "location ID") defined in this Wildbook? If you don't know, leave it blank. If a location ID is selected and [Wildbook Image Analysis](https://wildbook.docs.wildme.org/introduction/image-analysis-pipeline/) is configured for this species, the Identification matching phase will only try to match this Encounter's Annotations against other Annotations from this same area.

@@ -2,8 +2,6 @@
 
 Wildbook provides several ways to automatically and manually access the [Image Analysis Pipeline](https://wildbook.docs.wildme.org/introduction/image-analysis-pipeline/) to identify individual animals, as well as to perform by-eye individual ID. Wildbook assists you in photo ID but never makes a decision for you. You can find answers to frequently asked questions about matching [here](https://wildbook.docs.wildme.org/faq/matching-faq/).
 
-***
-
 ## Automated Detection and ID with Encounter submission
 
 When you [Report an Encounter](https://wildbook.docs.wildme.org/data/report-an-encounter/) of a single animal, if you set the species to one supported by the [Image Analysis Pipeline](https://wildbook.docs.wildme.org/introduction/image-analysis-pipeline/), Wildbook will automatically perform the following steps:
@@ -19,8 +17,6 @@ If you see green bounding boxes on images in your submitted Encounter, then Dete
 
 ![](../assets/images/wb-orca-encounter.png)
 
-***
-
 * whale\_orca+fin\_dorsal **(bounding box around the dorsal fin)**
 * whale\_orca **(bounding box around the whale body)**
 
@@ -28,11 +24,7 @@ If you see green bounding boxes on images in your submitted Encounter and **matc
 
 See [Reviewing Match Results](https://wildbook.docs.wildme.org/data/matching-process/#reviewing-match-results) for more information.
 
-***
-
 ![simpleGalleryBoundingBoxMatchResults](../assets/images/wb-orca-encounter-match-menu.png)
-
-***
 
 ## Automated Detection and ID with Bulk Import
 
@@ -43,8 +35,6 @@ After a successful [Bulk Import](https://wildbook.docs.wildme.org/data/bulk-impo
 While Wildbook uses advance machine learning to find and label animals in images, it always has a probability of missing an Annotation. Wildbook allows you to draw additional bounding boxes on an image, label their viewpoints (e.g., "left", "right", etc.), and their classes (e.g., "whale\_fluke", "panthera\_uncia", etc.). Once a manual Annotation has been created, its will appear as a normal Annotation on an image and will allow you to [manually start a match](https://wildbook.docs.wildme.org/data/matching-process/#manually-starting-a-match). See [Manual Annotation](https://wildbook.docs.wildme.org/data/manual-annotation-beta/) for more information.
 
 ![add Annotation](../assets/images/wb-encounter-addannotation.png)
-
-***
 
 ### Removing an Annotation
 
@@ -61,15 +51,11 @@ To remove an Annotation from *machine learning-based Detection* or **[Manual Ann
 
 ![delete Annotation](../assets/images/wb-encounter-removeannotation.png)
 
-***
-
 ## Manually Starting a Match
 
 For a matchable Annotation, you can start or re-run matching from the Encounter page Gallery by selecting **start match** or **start another match** from the menu for the Annotation.
 
 ![start Match](../assets/images/wb-encounter-startanothermatch.png)
-
-***
 
 **Choose criteria to match against** dialog box appears and allows you to:
 
@@ -77,23 +63,15 @@ For a matchable Annotation, you can start or re-run matching from the Encounter 
 * filter to only your data
 * select one or more algorithms to use for identification
 
-***
-
 ![match Criteria](../assets/images/wb-encounter-customalg.png)
 
 Click **Match** to start the matching process.
-
-***
 
 ## Reviewing Match Results
 
 To review the results of the automated matching process, select **match results** from the menu on the Annotation in the Encounter Gallery. If you recently submitted the Encounter, you may need to wait and then refresh your browser periodically for Wildbook to process the results from automated Detection before the **match results** menu option appears.
 
-***
-
 ![simple Gallery Bounding Box Match Results](../assets/images/wb-orca-matchresults.png)
-
-***
 
 Each match result page may show one or more sets of matches, potentially displaying:
 
@@ -104,8 +82,6 @@ Each match result page may show one or more sets of matches, potentially display
 The information displayed depends on where in Wildbook the [Image Analysis Pipeline](https://wildbook.docs.wildme.org/introduction/image-analysis-pipeline/) was called from and for which species.
 
 ![match Results](../assets/images/wb-orca-matchresults.png)
-
-***
 
 ### Match results page sections
 
@@ -133,15 +109,11 @@ Each block of ranked results represents the top-*N* matches (default top 12) to 
 
 ![match Results Section](../assets/images/wb-matchresults-table.png)
 
-***
-
 * **Rank:** The position in the listing (1,2,3,4, etc.).
 * **Match score:** The match score represents the numeric value returned from the algorithm. *These scores are not standardized between algorithms or platforms and are generally not bounded.* For more information about interpreting algorithm scores, see [Identification](https://wildbook.docs.wildme.org/introduction/image-analysis-pipeline/#identification).
 * **Encounter link:** Opens a new tab to the potential match encounter.
 * **Inspect:** Opens a new page focused on the features being matched. Areas that are highlighted display potentially matched features. Not every algorithm will provide additional detail. Only the first 12 matches may have additional detail.
 * **Checkbox**: Select the checkbox to indicate that an encounter is a match with the target annotation.
-
-***
 
 ### Setting the ID using the checkbox
 
@@ -152,8 +124,6 @@ In addition to setting the Individual ID from the [Encounter page](https://wildb
     * The button **Set individual on all encounters** that allows you to set the ID from the form field. The selected annotations and their respective encounters now belong to the same marked individual.
 * *If the annotation is on an encounter for which the ID has not yet been set and the candidate annotation has an ID set*, selecting the checkbox will display a new button in the upper right **Set to individual**. Click the button to assign the suggested individual ID to the annotation and its Encounter. The annotations and their respective encounters now belong to the same marked individual.
 * *If the annotation is on an encounter for which the ID has been set and the candidate annotation has a different ID set*, selecting the checkbox will display **Merge individuals**. Click **Merge individuals** to merge the two Marked Individuals into a single record, assigning all encounters from both previously individuals to a single individual. If more than one Marked Individual is selected from the list of matches, **You cannot merge more than 2 individuals here** will display.
-
-***
 
 ## Visual Matcher
 

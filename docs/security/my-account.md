@@ -13,8 +13,6 @@ To access the **My Account** page:
 
 At the top of the page, you will see your account name. On the right side, you will see your site roles and organization membership. If you need changes made to any of these fields, contact your org admin or site admin.
 
-***
-
 ### User account fields
 
 You can adjust the following fields of your account.
@@ -26,21 +24,17 @@ You can adjust the following fields of your account.
 * **Receive automated email**: Check to receive email notifications when there are changes to your data, including matching and naming.
 * **Affiliation**: Text field to allow you to display your affiliation, such as your organization.
 
-$$INFO
-title: Info
-*We will deprecate Affiliation as Wildbook Organizations replace this functionality. If you are using the affiliation field to tag data, we recommend migrating the information to another field.*
-$$
+```{note}
+We will deprecate Affiliation as Wildbook Organizations replace this functionality. If you are using the affiliation field to tag data, we recommend migrating the information to another field.
+```
 
 * **Project URL**: A text field to hold a link to your research project's home page.
 * **Research statement**: Brief text describing your research.
 * **Research project**: Text field to allow you to display the name of the research project you are working on.
 
-$$INFO
-title: Info
-*We will deprecate Research project as [Wildbook Projects](https://wildbook.docs.wildme.org/data/projects/) replaces this functionality.*
-$$
-
-***
+```{note}
+We will deprecate Research project as [Wildbook Projects](https://wildbook.docs.wildme.org/data/projects/) replaces this functionality.
+```
 
 ### Roles
 
@@ -54,24 +48,20 @@ This field displays the security Organizations your User account is assigned in 
 
 Projects are optional data constructs in Wildbook that contain and order data. [You can learn more about Projects here.](https://wildbook.docs.wildme.org/data/projects/)
 
-* \#\#\#\# Your Projects
+* Your Projects
 
 This is a list of the projects that your User account has been added to. Click any project to view its data.
 
-* \#\#\#\# Default Project
+* Default Project
 
 This will cause Wildbook to assume the context of this project by default, such as displaying an Individual's project ID instead of the display names of the individual.
 
 1. Under **Default Project**, select the project you want to use as your primary context.
 2. Select **Update**.
 
-***
-
 ## Social Media Authentication
 
 This functionality is no longer supported and may no longer appear in Wildbook.
-
-***
 
 ## Collaborations
 

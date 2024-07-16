@@ -2,8 +2,6 @@
 
 When you've performed a [search ](https://wildbook.docs.wildme.org/data/search/)in Wildbook, you can navigate to the **Export** tab to export the data that matches your search results in various formats. Available formats vary by search type and may include the following.
 
-***
-
 ## Encounter Search Exports
 
 ### Standard Format Export

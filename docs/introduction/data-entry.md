@@ -13,8 +13,6 @@ After a successful submission, if the submitter reported a species for which Wil
 
 See more comprehensive information about [Reporting an Encounter here.](https://wildbook.docs.wildme.org/data/report-an-encounter/)
 
-***
-
 ## Submitting a Single Picture of Multiple Animals
 
 Some animals are difficult to photograph singly, such as **social animals** (e.g., packs, pods, etc.). Multiple animals are often in every photo. A Wildbook user can upload a single picture of multiple animals to Wildbook using the Encounter form discussed above, along with the associated metadata (e.g., date, location, and species).
@@ -30,8 +28,6 @@ From here, each Annotation of each Encounter goes through the identification pro
 If you provide information with a picture of multiple animals, additional complications can occur. For example, if you indicate the **sex**, **life stage**, or **identity** of an animal, there is no guarantee that, when the Encounter is replicated and Annotations are each associated with the newly created Encounters, the sex, life stage, and/or ID will apply to the animal you intended those attributes for.
 
 If you choose to provide additional information during the initial upload of a single picture with multiple animals, it is best practice to review the Encounters associated with that Sighting and verify that all metadata associations are as expected and if not, edit as needed.
-
-***
 
 ## Bulk Upload - Submitting Multiple Pictures with Multiple Animals Present
 

@@ -2,24 +2,20 @@
 
 Under Silo Security, users are grouped under organizations, which typically align with real-world organizations. To ensure that organizational goals are met, Wild Me established the **Org-Admin Role**. These are platform members who will handle user management and address bulk import concerns for their organization.
 
-# How to apply for the Org-Admin Role
+## How to apply for the Org-Admin Role
 
 To get the Org-Admin Role, contact either a *site admin or Wild Me*. You can manage the following aspects of a platform by using the top navigation and selecting **Administer**.
 
-***
-
-# **Logs**
+## Logs
 
 * **User access logs** provide session information that indicates a user's IP address and sign-in time.
 * **Encounter submissions log** provides Encounter creation information that indicates the time when Encounters are created to provide a reference to the encounter.
 * **Deleted encounters log** provides a record of Encounters that were deleted and a reference to restore the Encounter using the Library Management functionality.
 * Email log provides a record of the automated emails sent from the platform including the type of email, who it was sent to, and what time it was sent.
 
-***
+## User Management
 
-# User Management
-
-## Add Users
+### Add Users
 
 As an Admin, you can create users. To create a new user:
 
@@ -32,7 +28,7 @@ As an Admin, you can create users. To create a new user:
     * **researcher**: grant the ability to process and manage encounters, individuals, and sightings.
 5. Click **Save** to create a new user.
 
-## Edit Users
+### Edit Users
 
 1. Go to **Administer**, then **User Management**.
 2. Enter a *username, first or last name, or other identifying information* in the space provided.
@@ -40,7 +36,7 @@ As an Admin, you can create users. To create a new user:
 4. Make adjustments to the user as needed.
 5. Click **Save** to update the user.
 
-## Disable Users
+### Disable Users
 
 Disable users that are leaving the platform or are having their access revoked. This maintain the data integrity between encounters.
 
@@ -53,7 +49,7 @@ Disable users that are leaving the platform or are having their access revoked. 
     * If your platform has the terms and conditions active, click to reset the field.
 4. Click **Save** to disable the user.
 
-## Delete Users
+### Delete Users
 
 Only delete test accounts or accounts that have no data.
 
@@ -62,26 +58,20 @@ Only delete test accounts or accounts that have no data.
 3. Select a user from the user grid.
 4. Click **Delete User** beneath the user’s information.
 
-# Data Integrity
+## Data Integrity
 
-## Check for Annotations with Multiple Individual IDs
+### Check for Annotations with Multiple Individual IDs
 
 Coming soon.
 
-<br>
 ## Check Annotation iaClasses and MediaAsset States by Species
 
 Coming soon.
 
-<br>
 ## Find Annotations Duplicated in Two or More Encounters
 
 Coming soon.
 
-<br>
 ## URL Access Security Checks
 
 Coming soon.
-
-<br>
-<br>

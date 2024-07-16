@@ -15,8 +15,6 @@ Wildbook looks in the override directory first before looking in the installatio
 
 You can edit these files with a text editor, and after making changes, restart Tomcat to see the new configurations take effect.
 
-***
-
 ### Translation files
 
 Properties files placed in language-specific folders, such as **"en" (English), "es" (Spanish),** etc. represent translated files of the Wildbook user interface (UI).
@@ -45,8 +43,6 @@ The HTML header for web pages in Wildbook is pulled from the file **header.jsp**
 
 Wildbook uses [Less](http://lesscss.org/%7C) to create the manta.css file at build time. You'll need to modify the .less files in **cust/mantamatcher/styles** to make your custom changes.
 
-***
-
 ### Encounter Configuration
 
 Most Wildbook project configuration occurs in the commonConfiguration.properties file. This file is located in the following location in your Wildbook installation:
@@ -70,8 +66,6 @@ You can alter important Wildbook Encounter parameters in this file, such as:
 
 When you modify configuration parameters in this file, you may have to restart the Tomcat web server for the changes to take effect.
 
-***
-
 #### Supporting multiple species
 
 By default, Wildbook assumes that information added to the database is for only one species of animal. You can configure Wildbook to support multiple species by setting the **genusSpecies** fields, and setting the **showTaxonomy** parameter to ''true'' in **commonConfiguration.properties**. The following example shows how to set these properties to differentiate between three species of large cats.
@@ -88,8 +82,6 @@ The available states are defined in the following section of commonConfiguration
 `#encounterState options, the precursors to future workflow` `encounterState0=unapproved` `encounterState1=approved` `encounterState2=unidentifiable`
 
 Additional states can be set by incrementing the properties, such as **encounterState3**, **encounterState4**, etc.
-
-***
 
 #### Configuring location IDs (study sites)
 
@@ -116,8 +108,6 @@ measurementUnits0=kilograms measurementUnits1=meters measurementUnits2=meters
 #Sampling Protocol for all Measurement types samplingProtocol0=estimate samplingProtocol1=measure
 ```
 
-***
-
 ##### Configuring and localizing measurement labels
 
 The names of measurements, their units, and sampling protocols can be localized into multiple languages in Wildbook in the language-specific copies of **commonConfigurationLabels.properties**. Notice the .label extension added to the base name of the measurement-related property from **commonConfiguration.properties** (see above).
@@ -129,8 +119,6 @@ samplingProtocol0.label=Estimated Value samplingProtocol1.label=Directly Measure
 
 After making changes, restart Tomcat to see them take effect.
 
-***
-
 #### Configuring life stages
 
 Observations of animals are often categorized by their life stage, such as **adult, sub-adult, juvenile, hatchling, etc.** You can configure the life stages for your project with the following settings in **commonConfiguration.properties.**
@@ -141,17 +129,15 @@ Observations of animals are often categorized by their life stage, such as **adu
 Additional stages can be set by incrementing the properties, such as lifeStage3, lifeStage4, etc.
 ```
 
-***
-
 #### Configuring physical tag metadata
 
 If you're using physical tags (SAT, PAT, marker, etc.) during your research, you can record metadata about those tags and associate it with an Encounter recorded at tag deployment. The following attributes (examples below) are available to configure:
 
 * **showMetalTags** \- whether physical marker tags are used in your study should be shown on the Encounter page in Wildbook\. Values are true/false\.
-* **metalTagLocation*X*** \- The list of placement locations for the tag on the body of the animal
+* **metalTagLocation*X** \- The list of placement locations for the tag on the body of the animal
 * **showAcousticTag** \- whether acoustic tags are used in your study should be shown on the Encounter page in Wildbook\. Values are true/false\.
 * **showSatelliteTag** \- whether satelite tags are used in your study should be shown on the Encounter page in Wildbook\. Values are true/false\.
-* **satelliteTageName*X*** \- The list of satellite tag manufacturers/providers to help identify the type of tag\.
+* **satelliteTageName*X** \- The list of satellite tag manufacturers/providers to help identify the type of tag\.
 
 ```
 #tag parameters showMetalTags=true metalTagLocation0=left metalTagLocation1=right
@@ -159,14 +145,12 @@ showAcousticTag=true
 showSatelliteTag=true satelliteTagName0=Wild Life Computers satelliteTagName1=SirTack
 ```
 
-***
-
 #### Configuring visual patterning codes
 
 Often times, the visual coloration of species can be divided into categories to allow for easier filtering for individual identification. For example, humpback whales can be individually identified by their flukes and have a graded fluke coloration system, ranging from 1-5.
 Wildbook allows each Encounter to be assigned a patterning code to match the observed visual features of the animal in the Encounter.
 
-You can configure pre-defined patterning codes for your project in **commonConfiguration.properties**. The property **showPatterningCode** must be set to **true**, and then a sequentially numbered set of **patterningCode*X*** names and values must be defined.
+You can configure pre-defined patterning codes for your project in **commonConfiguration.properties**. The property **showPatterningCode** must be set to **true**, and then a sequentially numbered set of **patterningCode*X** names and values must be defined.
 
 Here is a configuration example of giant manta patterning codes from the Wildbook [MantaMatcher.org](https://www.mantamatcher.org).
 
@@ -174,8 +158,6 @@ Here is a configuration example of giant manta patterning codes from the Wildboo
 #defined patterningCodes for distinct visual marking types for individuals identified with photo-identification showPatterningCode = true
 patterningCode0 = normal pigmentation patterningCode1 = black pigmentation - melanistic patterningCode2 = white pigmentation - leucistic
 ```
-
-***
 
 #### Configuring elevation and depth
 
@@ -190,16 +172,14 @@ maximumElevationInMeters = false maximumDepthInMeters = true
 
 Restart Tomcat after making changes.
 
-***
-
 #### Configuring tissue samples and analyses
 
 Wildbook allows you to add one ore more records for biological samples collected during an Encounter with an individual animal. Biological samples have the following attributes defined in **commonConfiguration.properties:**
 
-* **tissueType*X*** \- a sequential definition of the types of tissues that can be collected in your study \(e\.g\.\, fecal\, blood\, skin\, biopsy\, etc\.\)
-* **biologicalMeasurementType*X*** \- a sequential definition of the types of chemical measurements that can be analyzed and determined from tissue samples in your study \(e\.g\.\, fatty acid Carbon and Nitrogen measurements\)
-    * **biologicalMeasurementUnits*X*** \- a sequential definition of the units of measurement for chemical measurements on tissue samples
-    * **biologicalMeasurementSamplingProtocol*X*** \- a sequential definition of the protocols used to determine the measurements
+* **tissueType*X** \- a sequential definition of the types of tissues that can be collected in your study \(e\.g\.\, fecal\, blood\, skin\, biopsy\, etc\.\)
+* **biologicalMeasurementType*X** \- a sequential definition of the types of chemical measurements that can be analyzed and determined from tissue samples in your study \(e\.g\.\, fatty acid Carbon and Nitrogen measurements\)
+    * **biologicalMeasurementUnits*X** \- a sequential definition of the units of measurement for chemical measurements on tissue samples
+    * **biologicalMeasurementSamplingProtocol*X** \- a sequential definition of the protocols used to determine the measurements
 * **numLoci** \- the number of loci to provide allele values for if genotyping is performed as an analysis on the tissue sample
 * **numPloids** \- leave at 2 per loci
 * **alleleRelaxMaxValue** \- the value difference allowed between allele values to consider them a "match" when looking for other genotypes that might match or be similar\.
@@ -214,8 +194,6 @@ Wildbook allows you to add one ore more records for biological samples collected
 
 Restart Tomcat after making changes.
 
-***
-
 #### Custom content display
 
 You can import custom functionality into each Encounter's display in **encounter.jsp**. For example, spot pattern matching-related functions are imported from file **spotMatchingAlgorithm.jsp** (see example below).
@@ -224,8 +202,6 @@ Import definitions are found in file encounter.properties file in the localized 
 `#define the module JSP files to import #files must be placed in the encounters directory of the Wildbook webapp (i.e., in the same directory as encounter.jsp) jspImport0=spotMatchingAlgorithm.jsp #jspImport1=myFile.jsp`
 
 Restart Tomcat after changing values.
-
-***
 
 ### Marked Individuals
 
@@ -237,8 +213,8 @@ Marked Individuals in Wildbook can have Relationship associations between them. 
 
 To configure the types of social relationships in your Wildbook and the roles that Marked Individuals can play in them, change the following fields in **commonConfiguration.properties:**
 
-* **relationshipType*X*** \- a sequentially numbered set of relationship types to be recorded in your study\.
-* **relationshipRole*X*** \- the role that an individual can play in a Relationship\.
+* **relationshipType*X** \- a sequentially numbered set of relationship types to be recorded in your study\.
+* **relationshipRole*X** \- the role that an individual can play in a Relationship\.
 
 Here are some example configurations:
 
@@ -248,8 +224,6 @@ relationshipRole0 = member relationshipRole1 = mother relationshipRole2 = calf
 ```
 
 Restart Tomcat after making changes.
-
-***
 
 #### Email Notifications
 
@@ -266,8 +240,6 @@ The following email addresses are sent messages when important events occur in W
 #email addresses and parameters
 sendEmailNotifications=true autoEmailAddress=[webmaster@someplace.org](mailto:webmaster@someplace.org) newSubmissionEmail=[submissions@someplace.org](mailto:submissions@someplace.org) mailHost=localhost
 ```
-
-***
 
 ### Internationalization (I18N)
 
@@ -308,8 +280,6 @@ Here is an example of the contents of encounter.properties.
 
 encounter = Encounter
 unidentifiable\_title = Unidentifiable Encounter Number unapproved\_title = UNAPPROVED Encounter Number title = Encounter identified\_as = Identified as: workflowState = Workflow state: setWorkflowState = Set Workflow State matched\_by = Matched by status = Status ...
-
-***
 
 ### Legacy Spot Matching
 

@@ -10,8 +10,6 @@ The data returned will match the data type. For example, the same date and locat
 
 ![search Menu](../assets/images/wb-header-search.png)
 
-***
-
 ## Fields
 
 The following fields allow you to filter your data search. *Not every field is available in every search type.*
@@ -28,16 +26,12 @@ The following fields allow you to filter your data search. *Not every field is a
 * **Social filters**: allow you to filter Marked Individuals by their social roles and social units.
 * **Metadata filters**: allow you to search across related Encounter state, submitter username, project name, and more.
 
-***
-
 ## Results Display
 
 Search results can be displayed and exported in a variety of formats. The URL for a search result can be bookmarked or otherwise copied and saved outside Wildbook to return to the result later. Search results are dynamic and reflect the latest state of Wildbook, changing as new data matches search criteria.
 Each search display format is represented by a tab. *Not every tab is available in every search type.*
 
 ![search Results](../assets/images/wb-encountersearch-resultstable.png)
-
-***
 
 ### Results table
 
@@ -57,8 +51,6 @@ The **Matching Images/Videos** tab displays the Annotations (and related MediaAs
 
 ![search Results Expanded Media Asset](../assets/images/wb-encountersearch-gallery.png)
 
-***
-
 ### Mapped Results
 
 The **Mapped Results** tab displays the positions of Encounters related to this search result if they have GPS coordinates. For Marked Individuals, mapped search results may be connected by chevrons to link points of travel over time. You can further alter the display by selecting the following **Map aspects**:
@@ -69,8 +61,6 @@ The **Mapped Results** tab displays the positions of Encounters related to this 
 * **Species** \- displays GPS coordinates with randomized colors corresponding to species recorded on related Encounters\.
     
     ![search Results Mapped](../assets/images/wb-encountersearch-mappedresults.png)
-
-***
 
 ### Results Calendar
 

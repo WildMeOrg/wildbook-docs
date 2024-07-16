@@ -15,8 +15,6 @@ The **Silo Security model** lets users decide who they share their data with. Th
 
 Permissions are granted at Encounter-level, meaning a user can access any **Sighting**, **Individual**, or **Survey** as long as they have access to the **Encounter** those belong to.
 
-***
-
 ## User Roles
 
 * **Contributor** \- users that are limited to only submit Sightings
@@ -26,8 +24,6 @@ Permissions are granted at Encounter-level, meaning a user can access any **Sigh
 * **Administrator** \- users that can manage data and configure the Codex platform they belong to
 * **machinelearning** \- not functional
 * **rest** \- not functional
-
-***
 
 ## Collaborations
 
@@ -59,8 +55,6 @@ The person who initiates the collaboration has an assumed acceptance, so the rec
 * If User Barry does not grant edit permission or revokes edit permission after granting it:
     *Ana and Barry can view each other’s data, but they cannot edit it.*
 
-***
-
 ## Viewing Permissions
 
 You can view an encounter if:
@@ -77,8 +71,6 @@ You can edit an encounter if:
 * You’re a site admin.
 * You reported the Encounter.
 * You have a collaboration with the owner and the owner grants you edit rights. *Note that edit rights can be revoked at any time.*
-
-***
 
 ## Collaborating with Citizen Scientists
 

@@ -2,11 +2,9 @@
 
 Under Silo Security, users are grouped under organizations, which typically align with real-world organizations. To ensure that organizational goals are met, Wild Me established the **Org-Admin Role**. These are platform members who will handle user management and address bulk import concerns for their organization.
 
-## **How to apply for the Org-Admin Role**
+## How to apply for the Org-Admin Role
 
 To get the Org-Admin Role, contact either a *site admin* or an *org-admin* of the organization you want to help administer.
-
-***
 
 ## Managing Users
 
@@ -28,7 +26,7 @@ As an Org-Admin, you are able to create and add users to your organization. Here
 5. Under **Organization Membership**, select your organization to add a user to it.
 6. Click **Save**.
 
-### **Deleting Users**
+### Deleting Users
 
 *Note: Make sure to remove all roles associated with the user account you want to disable and change their password. We recommend disabling over deleting a user account if their data is trusted.*
 
@@ -37,7 +35,7 @@ As an Org-Admin, you are able to create and add users to your organization. Here
 3. Select a user from the user grid.
 4. Click **Delete User** beneath the user’s information.
 
-## **Adding Users to your Organization**
+## Adding Users to your Organization
 
 1. Go to **Administer**, then **User Management.**
 2. In the filter box, type a *username, first or last name, or other identifying information*.
@@ -46,11 +44,7 @@ As an Org-Admin, you are able to create and add users to your organization. Here
 5. Select your organization to add a user to it.
 6. Click **Save**.
 
-***
-
 ## Addressing Bulk Import Concerns
-
-# **Addressing Bulk Import Concerns**
 
 As an Org-Admin, you can manage **bulk imports** for any user in your organization.
 

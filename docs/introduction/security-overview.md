@@ -10,8 +10,6 @@ Check with the Administrator of your Wildbook(s) for more information about the 
 
 Wildbooks generally follow **two security models**.
 
-***
-
 ### Silo Security
 
 **Silo Security** provides a secure sandbox for individual Users to enter and curate their data. Here is a quick summary:

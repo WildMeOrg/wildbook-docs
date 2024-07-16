@@ -10,12 +10,9 @@ Because two animals appear at the same time in this picture, we want to ensure t
 
 Unlike Encounters, Sightings are *one-to-many*; each Sighting is one interaction with one or more animals. If you interact with five members of a pack, you have one sighting that is made up of five encounters, one for each animal.
 
-$$INFO
-title: Info
-*Throughout the Wildbook platform, Sightings may also be called Occurrences. We are working to shift terminology for greater user clarity. If you see an instance of outdated language, you can* [post a bug report](https://community.wildme.org/).
-$$
-
-***
+```{note}
+Throughout the Wildbook platform, Sightings may also be called Occurrences. We are working to shift terminology for greater user clarity. If you see an instance of outdated language, you can* [post a bug report](https://community.wildme.org/).
+```
 
 ## Navigating to a Sighting Page
 
@@ -39,7 +36,7 @@ The Sighting page is headed with the Occurrence ID. Supported character for the 
 * **Encounter Table:** Displays all Encounters associated with the Sighting.
 * **Image Gallery:** Displays the images from the Encounters associated with the Sighting.
 * **Observations:** Observations are intended to be short identifiers associated with a given Sighting. Observations are searchable, but are not verified or accessible between Sightings.
-    * ***To create*** an observation, enter a *label* and *value*, then click **Set**.
-    * ***To edit*** an observation's value, change the text of an existing value, then click **Set** when finished. *(Note: Observations can only be edited one at a time.)*
-    * ***To delete*** an observation, remove the text of an existing value, then click **Set**.
+    * *To create* an observation, enter a *label* and *value*, then click **Set**.
+    * *To edit* an observation's value, change the text of an existing value, then click **Set** when finished. *(Note: Observations can only be edited one at a time.)*
+    * *To delete* an observation, remove the text of an existing value, then click **Set**.
 * **Comments:** An audit trail of the changes that have been made to the Sighting.

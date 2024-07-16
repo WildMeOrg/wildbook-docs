@@ -2,10 +2,9 @@
 
 To allow for the integration and import of legacy data as well as batched volumes of data, Wildbook provides a system for uploading a large amount of data called **Bulk Import**. Bulk Import allows users with login privileges to provide photos and related metadata *en masse* (e.g., date, location, species, etc.).
 
-$$INFO
-title: Info
-*This functionality is in beta, but considered largely stable. Any substantial changes will be reported before they take place.*
-$$
+```{note}
+This functionality is in beta, but considered largely stable. Any substantial changes will be reported before they take place.
+```
 
 There are two pieces of input required for a bulk import:
 
@@ -24,8 +23,6 @@ On your computer, organize the photos you'd like to upload into a single folder.
 
 If you have file names that are the same, either *rename the duplicates or upload the duplicates in a separate batch*.
 Remember, the image names must correspond exactly to the `"Encounter.MediaAsset"` entries in your Wildbook Standard Format spreadsheet. Special characters are removed from file names. *(Recommendation: Remove special characters before uploading to check for potential collisions. Your file names should only include letters from the English alphabet, 0-9, period, and space.)*
-
-***
 
 ## Spreadsheet Set-up
 
@@ -56,8 +53,6 @@ Here are example Bulk Import Excel spreadsheet templates:
 2. [Individual catalog](https://github.com/WildMeOrg/wildme-docs/blob/main/static/resources/individual_catalog_import.xlsx)
 3. [Sighting import](https://github.com/WildMeOrg/wildme-docs/blob/main/static/resources/sighting_import.xlsx)
 
-***
-
 ## Uploading Photos for Bulk Imports
 
 When you have finished preparations, navigate to your Wildbook's Bulk Import page (import/instructions.jsp) and begin the guided walk-through.
@@ -70,14 +65,11 @@ When you have finished preparations, navigate to your Wildbook's Bulk Import pag
 6. Select **Begin Upload** to be taken to the import overview.
 7. Review the data preview for data integrity.
 
-$$INFO
-title: Info
-*The system will verify the data in the spreadsheet against ALL images you have in the system, not only the ones you are currently uploading. Review the online data integrity report carefully before initiating an upload.*
-$$
+```{note}
+The system will verify the data in the spreadsheet against ALL images you have in the system, not only the ones you are currently uploading. Review the online data integrity report carefully before initiating an upload.
+```
 
 If everything looks as expected, select **Commit these results** and confirm that you want to import all data.
-
-***
 
 ## Bulk Import Matching Process
 
@@ -94,13 +86,9 @@ This option will appear after your images have been sent to Detection. The Media
 
 Bulk Detection and Identification can very significantly impact the Wildbook Image Analysis queue machine learning jobs. Other users can expect slowdowns waiting for Bulk Detection and ID jobs to finish.
 
-***
-
 ## Deleting a Bulk Import
 
 Mistakes happen. If you find systematic problems in the data of a Bulk Import job, you can return to the Bulk Import log page and click **Delete ImportTask** at the bottom, which will remove all of the imported data. You can now fix your data and reimport to Wildbook.
-
-***
 
 ## Fields Available
 
@@ -198,7 +186,6 @@ The following fields can be included when uploading an Encounter. Review the des
 | MicrosatelliteMarkersAnalysis.alleleNames MicrosatelliteMarkersAnalysis.alleles0 MicrosatelliteMarkersAnalysis.alleles1 | V\_WString | alleleNames: "EV1,<br>EV5,EV94,GT23,<br>GT575,rw410,<br>464465,GATA417,<br>SW13,EV37,<br>EV14,FCB1,SW19" <br>alleles0: "120,154,<br>201,79,131,177,140,<br>182,158,231,125,<br>121,123" <br>alleles1: "120,158,<br>209,85,135,183,<br>140,186,160,237,<br>145,129,147" | Determination from a genetic analysis of the Individual's genotype. Results from analysis of a tissue sample taken during the same Encounter. **A corresponding** **TissueSample.sampleID** **entry is** **required** **for** **this field to import**. These three fields must all be present and have the exact same number of values as separated by commas. |
 | survey.id | String |  | Record number of the survey performed. |
 
-\*\*
 The following fields are for aquatic use.
 
 | Name | Type | Example Value | Description |
@@ -210,8 +197,6 @@ The following fields are for aquatic use.
 | Occurrence.seaSurfaceTemp | Double |  | Water temperature in degrees celsius. Aquatic-only. |
 | Occurrence.swellHeight | Double |  | Height of any waves in the area in meters. Aquatic-only. |
 | Occurrence.transectBearing | Double |  | Numeric value of the bearing from the observation vessel to the observed sighting. Stored in database only. Aquatic-only. |
-
-***
 
 ## Reviewing Bulk Imports
 

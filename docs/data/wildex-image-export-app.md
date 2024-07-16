@@ -13,10 +13,9 @@ WildEx Image Export is available for both Windows and Mac.
 3. Once the download completes, click to install.
 4. The app should automatically open once installed.
 
-$$INFO
-title: App security
+```{note}
 Despite the warning that generates when you click to install the app, the tool is secure. We are aware of the issue and will work to resolve it. For now, acknowledge the security warnings and select to install anyway.
-$$
+```
 
 ## Generate a WildEx export from Wildbook
 

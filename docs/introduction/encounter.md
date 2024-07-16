@@ -10,8 +10,6 @@ Encounters are the result of Wildbook's [data entry methods](https://wildbook.do
 
 Each Encounter entered into Wildbook is given a universally unique identifier (UUID) and can then be viewed from a URL.
 
-***
-
 ## Encounter Page Format
 
 At the top of the encounter page, there is an overview section about the encounter. The encounter will remain unassigned until it is associated with a Marked Individual.
@@ -69,8 +67,6 @@ Once selected, the keyword appears on the image in the format 'label: value'.
 
 Labeled keywords are set in the [commonConfiguration.properties file](https://wildbook.docs.wildme.org/specifications-and-system-requirements/system-configuration/#encounter-configuration); reach out to your admin or to [Wildbook support](https://community.wildme.org) for configuration assistance. [See Configuration for more information.](https://wildbook.docs.wildme.org/specifications-and-system-requirements/system-configuration/#configuration)
 
-***
-
 #### Keywords
 
 Keywords allow for easy assignment of any string to a MediaAsset.
@@ -109,8 +105,6 @@ If detection failed to recognize an animal, you can click this option to manuall
 ##### Add image to Encounter
 
 If there were images that did not get added with the initial upload, you can click this button to browse to the images and upload them to the system. Note that detection is not run on these images automatically. Reach out to Wildbook support for assistance.
-
-***
 
 ### Identity
 
@@ -173,8 +167,6 @@ If you have two separate occurrence IDs that should actually be part of the same
 
 If you don't see the option to Add to Occurrence after you've removed the previous ID, refresh the Encounter page and try again.
 
-***
-
 ### Attributes
 
 Encounters can also have these important attributes.
@@ -188,8 +180,6 @@ Encounters can also have these important attributes.
 7. **Life stage**: A list of life stages can be made available on your platform. If the list exists, use the dropdown to select an appropriate life stage for the animal in the encounter. When you've selected the correct life stage, click **Set** to confirm the value. Life stage is configured in the commonConfiguration.properties file. [See Configuration for more information.](https://wildbook.docs.wildme.org/specifications-and-system-requirements/system-configuration/) To request the life stage field be added or to request additional values, contact Wildbook support for assistance.
 8. **Additional comments**: Any information that you want to associate with the encounter, you can add in this field. When you have the language as you want it, click **Submit Edit** to confirm the entry.
 
-***
-
 ### Contact Information
 
 * All information added to the contact information presently references platform users only.
@@ -198,8 +188,6 @@ Encounters can also have these important attributes.
 * To remove reference to a user in one of these categories, click the **Remove** button next to their information.
 
 *(Note: These fields require the email address of a user with an account. The account does not require a name or organization be associated with the account. If you want to recognize users without accounts, use the **Additional Comments** field or use dummy emails in these fields.)*
-
-***
 
 ### Metadata
 
@@ -218,8 +206,6 @@ Metadata is used to handle the management of a single encounter.
 4. **Add Comment**: Field to allow comments to be entered by researchers and administrators about the encounter. Click **Add** comment to add a comment to the Audit trail.
 5. **Delete Encounter**: If you want to remove an encounter from the system, click **Delete Encounter?**. A confirmation window will display; click **OK** to confirm. This action is permanent.
 
-***
-
 ### Observations
 
 Observations are intended to be short identifiers associated with a given encounter. Observations are searchable, but are not verified or accessible between encounters.
@@ -228,19 +214,14 @@ Observations are intended to be short identifiers associated with a given encoun
 * **To edit** an observation's value, change the text of an existing value, then click **Set** when finished.
 * **To delete** an observation, remove the text of an existing value, then click **Set**.
 
-$$INFO
-title: Info
+```{note}
 Observations can only be edited one at a time.
-$$
-
-***
+```
 
 ### Measurements
 
 Measurements are used to track numeric information associated with an encounter. These are set in the commonConfiguration.properties file. [See Configuration for more information.](https://wildbook.docs.wildme.org/specifications-and-system-requirements/system-configuration/) To request measurements be added, [contact Wildbook support for assistance](https://community.wildme.org).
 *(Note: You can edit multiple measurements before clicking **Set**.)*
-
-***
 
 ### Tracking
 
@@ -248,8 +229,6 @@ Tracking is used to manage data about tags seen during an encounter.
 
 * **Physical Tag Data**: provides a space for a left or right-side tag to be denoted. Click **Set** after the tag information is entered.
 * **Satellite Tag Metadata**: provides information for information associated with tagging done using satellites, including name of satellite, serial number, and Argos PTT. Click **Set** after the tag information is entered.
-
-***
 
 ### Biological Samples
 

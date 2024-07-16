@@ -6,27 +6,18 @@ When looking at an Encounter page, you may see that a **MediaAsset** does not ha
 
 In an Encounter page's **Gallery**, open the menu over an image and select **add annotation** to open the manual annotation screen.
 
-$$INFO
-title: Info
+```{note}
 - Starting in 2020, MantaMatcher users select **create optional feature region** instead. More detailed instructions on manually annotating mantas are on our [YouTube channel](https://www.youtube.com/watch?v=v3T6UwPrCDg).
-
 - Select **spot mapping** if you're annotating whale sharks, grey nurse sharks, or broadnose sevengill sharks in Sharkbook. More detailed instructions on manually annotating whale sharks are on our [YouTube channel](https://www.youtube.com/watch?v=DaHu2K9j4AY).
-$$
-
-***
+```
 
 ![add anotation button](../assets/images/wb-manual-annotation-menu-option.png)
-
-***
 
 ## Understanding the Manual Annotation Page
 
 **The Manual Annotation page** has the following sections, which appear in order as you make selections.
 
-***
-
 ![manual annotation sections](../assets/images/wb-manual-annotation-interface.png)
-***
 
 ## Creating a Manual Annotation
 
@@ -49,14 +40,11 @@ Each step needs to be completed for the next step to proceed to the next step.
 4. Wait for the screen to refresh.
 5. Click **Save** to save your new annotation. A confirmation page will appear with a link back to the Encounter page.
 
-$$INFO
-title: Info
+```{note}
 When annotating multiple animals in a photo, Wildbook may clone this Encounter and create a new one if another annotation is already on this MediaAsset. Two annotations in one image generally means that two animals are present and at least two Encounters (one animal at a location and date) must exist.
-$$
+```
 
 1. Navigate back to the Encounter page and add new annotations if needed, or click [start match](https://wildbook.docs.wildme.org/data/matching-process/#manually-starting-a-match) to begin the identification pipeline for this new annotation.
-
-***
 
 ## Troubleshooting
 

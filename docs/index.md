@@ -5,7 +5,8 @@ Wildbook is a web-based, multi-user software platform to help researchers collab
 Are you a current or potential user of any of the Wild Me tools? Get started here:
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
+
 getting-started-with-wildbook
 introduction/index
 data/index
