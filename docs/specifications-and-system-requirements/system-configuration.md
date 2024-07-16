@@ -41,7 +41,7 @@ The HTML header for web pages in Wildbook is pulled from the file **header.jsp**
 
 #### CSS changes
 
-Wildbook uses [Less](http://lesscss.org/%7C) to create the manta.css file at build time. You'll need to modify the .less files in **cust/mantamatcher/styles** to make your custom changes.
+Wildbook uses [Less](http://lesscss.org/) to create the manta.css file at build time. You'll need to modify the .less files in **cust/mantamatcher/styles** to make your custom changes.
 
 ### Encounter Configuration
 
