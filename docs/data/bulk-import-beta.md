@@ -49,9 +49,9 @@ In the header of an Excel (.xlsx) file, create a column for each field you want 
 
 Here are example Bulk Import Excel spreadsheet templates:
 
-1. [Minimum import](https://github.com/WildMeOrg/wildme-docs/blob/main/static/resources/minimum_import.xlsx)
-2. [Individual catalog](https://github.com/WildMeOrg/wildme-docs/blob/main/static/resources/individual_catalog_import.xlsx)
-3. [Sighting import](https://github.com/WildMeOrg/wildme-docs/blob/main/static/resources/sighting_import.xlsx)
+1. [Minimum import](../assets/templates/minimum_import.xlsx)
+2. [Individual catalog](../assets/templates/individual_catalog_import.xlsx)
+3. [Sighting import](../assets/templates/sighting_import.xlsx)
 
 ## Uploading Photos for Bulk Imports
 
