@@ -23,7 +23,7 @@ Although bulk imports can support up to 1000 encounters in a single spreadsheet,
 
 ## Why can't I edit my imported encounters?
 
-If you don't include your username in the `Encounter.submitterID` field of your spreadsheet, your imported encounters will be unassigned. To fix this, [delete your bulk import](../data/bulk-import-beta.md), update your spreadsheet, and import your data again.
+If you don't include your username in the `Encounter.submitterID` field of your spreadsheet, your imported encounters will be unassigned. To fix this, [delete your bulk import](../data/bulk-import-beta.md#deleting-a-bulk-import), update your spreadsheet, and import your data again.
 
 ## File format questions
 
@@ -45,7 +45,7 @@ There are a number of additional fields that cannot be set using the Bulk Import
 
 ### I made a mistake and want to reload my encounters.
 
-You can [delete your bulk import](../data/bulk-import-beta.md) and reimport your data.
+You can [delete your bulk import](../data/bulk-import-beta.md#deleting-a-bulk-import) and reimport your data.
 
 ### I uploaded the wrong image, but when I clicked back to try again, the image was still listed in the Photo Review page.
 
