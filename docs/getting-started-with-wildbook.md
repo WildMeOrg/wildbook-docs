@@ -33,7 +33,7 @@ A great way to get familiar with the [Wildbook Image Analysis pipeline](introduc
     ![quickstart encounter start Match](assets/images/wb-orca-encounter-match-menu.png)
 10. The match results page will show you one set of results for each algorithm run on each Annotation from the submission. In this case, the PIE algorithm as run on the orca body, and the finFindR algorithm was run on the orca dorsal fin.
     ![quickstart match results](assets/images/wb-orca-matchresults.png)
-11. Scroll over each potential match (ranked 1-12 from most likely to least likely match) to inspect what each algorithm found similar between the Annotations. Each result includes a rank, an algorithm-specific score, and potentially additional ID and date metadata to help you evaluate the result. See **[Identification](introduction/image-analysis-pipeline.md)** for more information about each algorithm used in Wildbook.
+11. Scroll over each potential match (ranked 1-12 from most likely to least likely match) to inspect what each algorithm found similar between the Annotations. Each result includes a rank, an algorithm-specific score, and potentially additional ID and date metadata to help you evaluate the result. See **[Identification](introduction/image-analysis-pipeline.md#identification)** for more information about each algorithm used in Wildbook.
 12. If appropriate, set the ID:
     1. If you find a matched individual in the results, scroll over the matching results and select the Inspect checkbox. A **Set to Individual** button will appear on the right and allow you to set the individual ID for the Encounter you submitted. Congratulations! You made your first match!
         ![quickstart match ID](assets/images/wb-orca-matchresults-selected.png)
