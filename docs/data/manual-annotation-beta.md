@@ -50,7 +50,7 @@ When annotating multiple animals in a photo, Wildbook may clone this Encounter a
 
 ### How do I fix an annotation?
 
-If an incorrect annotation is created, whether through the detection process or manually, you can first [delete the annotation](matching-process.md) and then re-draw the annotation if desired using the procedures above.
+If an incorrect annotation is created, whether through the detection process or manually, you can first [delete the annotation](matching-process.md#removing-an-annotation) and then re-draw the annotation if desired using the procedures above.
 
 ### How do I annotate a part of an individual (Ex. head, tail, etc.)?
 
