@@ -43,4 +43,4 @@ You need to have an edit [Collaboration](../security/silo-security/index.md#coll
 
 Wildbook will only run identification for the exact location you put in your bulk import spreadsheet. If you want to expand the location range, you can [re-run the match manually](../data/matching-process.md#manually-starting-a-match) on the encounter page and check the boxes for the additional sub-regions to include in the Location ID section.
 
-Alternately, you can choose “ALL LOCATIONS” when you resend to identification from the bulk import page, but be aware that this option will take longer for identification to complete.
+Alternately, you can Ctrl + click on a PC or Cmd + click on a Mac to select multiple locations when you resend to identification from the bulk import page. 
