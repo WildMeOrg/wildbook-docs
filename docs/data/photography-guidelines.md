@@ -26,4 +26,5 @@ Wildbook caters to multiple species. For best results, visit their Wildbook plat
 * A compression ratio of 90% is enough.
 * Uploading photographs with more than a higher compression ratio will not influence the identification process.
 * Photographs with bigger sizes put a strain on the server and cause identification to take longer.
-* While Wildbook allows you to upload video files, they cannot currently be sent through the [Image Analysis Pipeline](../introduction/image-analysis-pipeline.md). We recommend that you take screenshots of your video and upload those images for identification.
+> [!WARNING]
+>While Wildbook allows you to upload video files, they cannot currently be sent through the [Image Analysis Pipeline](../introduction/image-analysis-pipeline.md). We recommend that you take screenshots of your video and upload those images for identification.
