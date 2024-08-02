@@ -78,6 +78,11 @@ genusSpecies1= Panthera tigris
 genusSpecies2 = Panthera pardus
 ```
 
+```{warning}
+If setting up a species with 3 parts to its taxonomy, use an underscore to connect the sub-species with the species. If you do not, detection and species will be misaligned and the system will not process data correctly.
+ex: Equus quagga_quagga
+```
+
 Additional species can be set by incrementing the properties, such as **genusSpecies3**, **genusSpecies4**, etc.
 
 #### Configuring encounter states for workflow
