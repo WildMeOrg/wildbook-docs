@@ -4,7 +4,7 @@ Additional help with [Bulk Imports](../data/bulk-import-beta.md) in Wildbook is 
 
 ## What should I put in media asset columns in a bulk import?
 
-Media asset columns should be named `"Encounter.MediaAsset.X"`, where **X** is an actual number, starting with **0** `(Encounter.MediaAsset.0)`. The content of each cell should be the asset filename, including the path to the asset. For example, the `"Encounter.MediaAsset.1"` column could contain cells `"majestic_whale1.jpg"` and `"majestic_whale2.jpg"`. Check the [Photography guidelines](../data/photography-guidelines.md) for supported image formats.
+Media asset columns should be named `"Encounter.MediaAssetX"`, where **X** is an actual number, starting with **0** `(Encounter.MediaAsset0)`. The content of each cell should be the asset filename, including the path to the asset. For example, the `"Encounter.MediaAsset1"` column could contain cells `"majestic_whale1.jpg"` and `"majestic_whale2.jpg"`. Check the [Photography guidelines](../data/photography-guidelines.md) for supported image formats.
 
 ## Why is my bulk import taking so long?
 
