@@ -1,4 +1,4 @@
-# Wildbook Docs -Test
+# Wildbook Docs
 
 Wildbook is a web-based, multi-user software platform to help researchers collaboratively track individual animals in wildlife populations and estimate population sizes. Each Wildbook installation can be used by multiple researchers for multiple species.
 
