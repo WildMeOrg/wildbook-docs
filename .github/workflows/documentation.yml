@@ -20,7 +20,7 @@ jobs:
           cp ./CNAME ./docs/_build/html/CNAME
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/custom-domain-map' }}
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
         with:
           publish_branch: gh_pages
           github_token: ${{ secrets.GITHUB_TOKEN }}
