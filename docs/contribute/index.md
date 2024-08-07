@@ -25,7 +25,7 @@ All Wild Me documentation, be it community, user, or developer docs, is hosted o
 
 _Guidelines coming soon_
 
-## Coming soon...
+## Coming soon
 * Test and issue reporting
 * API documentation
 * System and documentation translations
