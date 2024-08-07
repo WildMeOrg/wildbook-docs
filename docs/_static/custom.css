@@ -18,14 +18,14 @@ html[data-theme='dark'] a:hover {
     color:#007599;
 }
 
+html [data-theme='dark'] .search-button-field {
+    background-color: #18191B;
+}
+
 html[data-theme='light'] a {
     color:#0267FD;
 }
 
 html[data-theme='light'] a:hover {
     color:#007599;
-}
-
-.search-button-field {
-    background-color: #18191B;
 }
