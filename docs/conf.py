@@ -28,7 +28,13 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.venv']
 html_theme = 'sphinx_book_theme'
 html_theme_options = {
     "max_navbar_depth": 4,
+    "repository_url": "https://github.com/WildMeOrg/wildbook-docs",
+    "repository_branch": "main",
+    "use_repository_button": "true",
+    "use_fullscreen_button": "false",
+    "home_page_in_toc": "true",
 }
+html_logo = "_static/WildMe-Logo.png"
 html_static_path = ['_static']
 html_css_files = ['custom.css']
 html_js_files = ['tocjs.js']
