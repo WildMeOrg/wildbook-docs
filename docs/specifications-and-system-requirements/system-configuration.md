@@ -69,8 +69,19 @@ When you modify configuration parameters in this file, you may have to restart t
 #### Supporting multiple species
 
 By default, Wildbook assumes that information added to the database is for only one species of animal. You can configure Wildbook to support multiple species by setting the **genusSpecies** fields, and setting the **showTaxonomy** parameter to ''true'' in **commonConfiguration.properties**. The following example shows how to set these properties to differentiate between three species of large cats.
-`#show taxonomy` `showTaxonomy = true`
-`#for multi-species libraries, fill out the genus and species for each supported animal type, starting with genusSpecies0` `genusSpecies0 = Panthera leo` `genusSpecies1= Panthera tigris` `genusSpecies2 = Panthera pardus`
+```
+# show taxonomy
+showTaxonomy = true
+# for multi-species libraries, fill out the genus and species for each supported animal type, starting with genusSpecies0
+genusSpecies0 = Panthera leo
+genusSpecies1= Panthera tigris
+genusSpecies2 = Panthera pardus
+```
+
+```{warning}
+If setting up a species with 3 parts to its taxonomy, use an underscore to connect the sub-species with the species. If you do not, detection and species will be misaligned and the system will not process data correctly.
+ex: Equus quagga_quagga
+```
 
 Additional species can be set by incrementing the properties, such as **genusSpecies3**, **genusSpecies4**, etc.
 
@@ -79,7 +90,12 @@ Additional species can be set by incrementing the properties, such as **genusSpe
 Encounters can be assigned to particular states, often reflecting critical parts of a project workflow. For example, states can be used to define what data has been 'approved' for use in your study or is 'unidentifiable' due to poor quality. By default, new data in Wildbook is put into an 'unapproved' state that represents its status as unreviewed and of uncertain quality.
 
 The available states are defined in the following section of commonConfiguration.properties.
-`#encounterState options, the precursors to future workflow` `encounterState0=unapproved` `encounterState1=approved` `encounterState2=unidentifiable`
+```
+#encounterState options, the precursors to future workflow
+encounterState0=unapproved
+encounterState1=approved
+encounterState2=unidentifiable
+```
 
 Additional states can be set by incrementing the properties, such as **encounterState3**, **encounterState4**, etc.
 
@@ -103,9 +119,18 @@ For each measurement, you must define a **measurement name**, the corresponding 
 
 ```
  #show measurements showMeasurements = true
-#Measurements measurement0=weight measurement1=length measurement2=height
-measurementUnits0=kilograms measurementUnits1=meters measurementUnits2=meters
-#Sampling Protocol for all Measurement types samplingProtocol0=estimate samplingProtocol1=measure
+#Measurements
+measurement0=weight
+measurement1=length
+measurement2=height
+# Match units to the measurement above. Leave blank if no units apply
+measurementUnits0=kilograms
+measurementUnits1=meters
+measurementUnits2=meters
+
+#Sampling Protocol for all Measurement types
+samplingProtocol0=estimate
+samplingProtocol1=measure
 ```
 
 ##### Configuring and localizing measurement labels
@@ -113,11 +138,42 @@ measurementUnits0=kilograms measurementUnits1=meters measurementUnits2=meters
 The names of measurements, their units, and sampling protocols can be localized into multiple languages in Wildbook in the language-specific copies of **commonConfigurationLabels.properties**. Notice the .label extension added to the base name of the measurement-related property from **commonConfiguration.properties** (see above).
 
 ```
-#Labels for Measurements weight.label=Weight length.label=Length height.label=Height 13C.label=13C 15N.label=15N 34S.label=34S celsius.label = Celsius salinity.label = Salinity WaterTemperature.label = Water Temperature kilograms.label=Kilograms meters.label=Meters ppm.label=ppm
-samplingProtocol0.label=Estimated Value samplingProtocol1.label=Directly Measured
+#Labels for Measurements
+weight.label=Weight
+length.label=Length
+height.label=Height
+13C.label=13C
+15N.label=15N
+34S.label=34S
+celsius.label = Celsius
+salinity.label = Salinity
+WaterTemperature.label = Water Temperature
+kilograms.label=Kilograms
+meters.label=Meters
+ppm.label=ppm
+samplingProtocol0.label=Estimated Value
+samplingProtocol1.label=Directly Measured
 ```
 
 After making changes, restart Tomcat to see them take effect.
+
+#### Configuring labelled keywords
+If you need to create a field that is not available in the platform at large, you can create a labelled keyword dropdown. These are stored on the asset. You must configure labelled keywords to be able to use labelled keywords during bulk import.
+
+```
+# First set the keyword label
+kwlabel0=distinctiveness
+kwlabel1=researchType
+
+#for each keyword label, set the values
+distinctiveness0=1
+distinctiveness1=2
+distinctiveness3=3
+
+researchType0=public
+researchType1=research
+researchType2=archival
+```
 
 #### Configuring life stages
 
