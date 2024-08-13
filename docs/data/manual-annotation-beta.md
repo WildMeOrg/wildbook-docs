@@ -28,8 +28,8 @@ Each step needs to be completed for the next step to proceed to the next step.
 
 1. In **Select Viewpoint**, choose the primary viewpoint that the photographer is observing the animal from, such as the animal's **left**, the animal's **right**, looking **down** at the animal, looking **up** at its belly, etc.
 2. **Select annotation iaClass** allows you to define the type of animal or feature that represents the annotation. This is a fixed list per species that corresponds to detection classes returned by the[ Image Analysis pipeline](../introduction/image-analysis-pipeline.md).
-    * **Animal (ex: turtle\_green, whale\_orca)**: Select all visible parts of the body in one annotation.
-    * **Animal+body part (ex: turtle\_green+head, whale\_orca+fin\_dorsal)**: Select only the body part used for identification, such as the head, dorsal fin, fluke, etc.
+    * **Animal (ex: turtle_green, whale_orca)**: Select all visible parts of the body in one annotation.
+    * **Animal+body part (ex: turtle_green+head, whale_orca+fin_dorsal)**: Select only the body part used for identification, such as the head, dorsal fin, fluke, etc.
     * If there are multiple animals in your photo or multiple *iaClasses* you want to annotate, add them later. Only one annotation at a time can be created.
 3. In **Draw the new annotation bounding box below**.
     * Hover your mouse over the image, then use the guides to align the corner with the outer edges of the animal.
@@ -54,7 +54,7 @@ If an incorrect annotation is created, whether through the detection process or 
 
 ### How do I annotate a part of an individual (Ex. head, tail, etc.)?
 
-When selecting the annotation iaClass, look for the species, plus the part symbol '+'. For example, if you would like to annotate green turtle heads, search 'turtle\_green+head'.
+When selecting the annotation iaClass, look for the species, plus the part symbol '+'. For example, if you would like to annotate green turtle heads, search 'turtle_green+head'.
 
 ### How do I associate a part with the body in my encounter?
 
@@ -69,3 +69,10 @@ If the species of the body and the species of the part are the same, the annotat
 2. Return to your original encounter. Create a new annotation for the body with the correct species.
 3. Delete the previous body annotation.
 4. Create a new part annotation.
+
+### How do I move an annotation from one individual to another?
+
+1. Navigate to the Encounter with the misassigned annotation
+2. In the hamburger menu on the image, select "Add Annotation"
+3. Choose the viewpoint and iaClass, then draw the same annotation around the animal. When you click "Save", it will clone the encounter metadata and add your new annotation to it. The new encounter will not be part of the individual, but it will be part of the same sighting.
+4. Go back to your original encounter. In the hamburger menu on the annotation you just duplicated, select "Delete Annotation"
