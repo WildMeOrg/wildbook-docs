@@ -6,6 +6,12 @@ Click the Edit button on the [Metadata](../introduction/encounter.md#metadata) w
 
 Additional help with managing [Metadata](../introduction/encounter.md#metadata) in Wildbook is available in our docs.
 
+## My search results aren't loading
+
+Your browser may need a hard refresh. On Windows, hold Ctrl + F5 and on a Mac, hold Cmd + Shift + R. 
+
+If you're searching for a bulk import or encounters that you have just uploaded and they don't appear in your search results, wait a few minutes while Wildbook completes indexing the new data and then try your search again.
+
 ## Someone is leaving the platform. Should I delete their account?
 
 Once an account has data associated with it, you should never delete the account. To disable an account in Wildbook, remove the roles and permissions, turn off email notifications, and change the password. This will ensure that data integrity is maintained while removing the user's access, and will keep the account available should it need to be restored at any point.
