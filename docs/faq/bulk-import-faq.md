@@ -25,6 +25,10 @@ Although bulk imports can support up to 1000 encounters in a single spreadsheet,
 
 If you don't include your username in the `Encounter.submitterID` field of your spreadsheet, your imported encounters will be unassigned. To fix this, [delete your bulk import](../data/bulk-import-beta.md#deleting-a-bulk-import), update your spreadsheet, and import your data again.
 
+## Why don't I see my bulk import or its encounters in my search results?
+
+If you're searching for a bulk import or encounters that you have just uploaded, wait a few minutes while Wildbook completes indexing the new data and then try your search again.
+
 ## File format questions
 
 ### What Excel file formats are supported?
