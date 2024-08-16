@@ -32,6 +32,7 @@ Go to your browser's history management and clear your cookies. You will need to
 ```{toctree}
 :maxdepth: 2
 bulk-import-faq
+codex-wildbook-faq
 matching-faq
 merging-faq
 ```
