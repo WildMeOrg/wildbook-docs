@@ -20,7 +20,7 @@ Despite the warning that generates when you click to install the app, the tool i
 ## Generate a WildEx export from Wildbook
 
 1. Sign in to your Wildbook account.
-2. Select **Search** \> **Encounter Search**.
+2. Select **Search** > **Encounter Search**.
 3. Set the available filters to limit the data to your desired results and click **Search Encounters**.
 4. Once the search results have generated, select the **Export** tab.
 5. Next to Encounter Annotation Export, click **Click here**.
@@ -36,7 +36,7 @@ Despite the warning that generates when you click to install the app, the tool i
 6. Select where the folder should be created.
 7. Wait for your download to complete.
 
-Downloaded images will be available in folders labelled by the individual. If you selected to include unidentified individuals, they will all be included in a single folder labeled *Unidentified\_individuals*.
+Downloaded images will be available in folders labelled by the individual. If you selected to include unidentified individuals, they will all be included in a single folder labeled *Unidentified_individuals*.
 
 ## FAQ
 

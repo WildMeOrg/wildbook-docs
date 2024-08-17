@@ -56,15 +56,15 @@ Addition configuration options include:
 
 ## Individual Search
 
-* **Picture Book** \- Generates a printable web page for offline manual identification\. This page can be printed to PDF from your browser and should format with one animal per page\.
-* **Capture** \- Exports the match results in a format compatible with the CAPTURE program\.
-* **SOCPROG** \- Exports the match results in a format compatible with the [SOCPROG program](http://whitelab.biology.dal.ca/SOCPROG/social.htm).
-* **Kinalyzer CSV** \- Exports the match results in a format compatible with the Kinalyzer program\.
-* **Mark Recapture Export** \- Exports matching search data in a capture history format compatible with Program Mark\, RMark\, etc\. Copy this search
-    * **Number of capture sessions** \- The number of primary capture sessions in your format\.
-    * **Include marked individual ID as a comment at the end of each line (Program MARK only)** \- Check this box to include the individual ID of the Marked Individual as a comment in the export format\.
-    * **Include search query summary as a comment and URL at the start of the file (Program MARK only)** \- Check this box to include query details as a comment in the exported file\.
+* **Picture Book** - Generates a printable web page for offline manual identification. This page can be printed to PDF from your browser and should format with one animal per page.
+* **Capture** - Exports the match results in a format compatible with the CAPTURE program.
+* **SOCPROG** - Exports the match results in a format compatible with the [SOCPROG program](http://whitelab.biology.dal.ca/SOCPROG/social.htm).
+* **Kinalyzer CSV** - Exports the match results in a format compatible with the Kinalyzer program.
+* **Mark Recapture Export** - Exports matching search data in a capture history format compatible with Program Mark, RMark, etc. Copy this search
+    * **Number of capture sessions** - The number of primary capture sessions in your format.
+    * **Include marked individual ID as a comment at the end of each line (Program MARK only)** - Check this box to include the individual ID of the Marked Individual as a comment in the export format.
+    * **Include search query summary as a comment and URL at the start of the file (Program MARK only)** - Check this box to include query details as a comment in the exported file.
 
 ## Sighting Search
 
-* **Excel Metadata Summary** \- Excel\-based export of the search results\.
+* **Excel Metadata Summary** - Excel-based export of the search results.

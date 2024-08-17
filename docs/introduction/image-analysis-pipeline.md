@@ -87,7 +87,7 @@ Hotspotter paper link: http://cs.rpi.edu/hotspotter/crall-hotspotter-wacv-2013.p
 
 *Aerial view of a right whale with an annotation around its head callouses.*
 
-Depsense paper link: https://www.researchgate.net/publication/327910789\_Applying\_deep\_learning\_to\_right\_whale\_photo\_identification
+Depsense paper link: https://www.researchgate.net/publication/327910789_Applying_deep_learning_to_right_whale_photo_identification
 
 ### OC/WDTW
 
@@ -97,7 +97,7 @@ Depsense paper link: https://www.researchgate.net/publication/327910789\_Applyin
 
 *Series of Humpback Whale tail fluke edges being compared to find a match.*
 
-OC/WDTW paper link: https://openaccess.thecvf.com/content\_ICCV\_2017\_workshops/papers/w41/Weideman\_Integral\_Curvature\_Representation\_ICCV\_2017\_paper.pdf
+OC/WDTW paper link: https://openaccess.thecvf.com/content_ICCV_2017_workshops/papers/w41/Weideman_Integral_Curvature_Representation_ICCV_2017_paper.pdf
 
 ### Kaggle7
 
@@ -119,7 +119,7 @@ Kaggle7 paper link: https://ducha-aiki.medium.com/thanks-radek-7th-place-solutio
 
 Modified Groth paper link: https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2664.2005.01117.x
 
-I3S paper link: https://www.researchgate.net/publication/228007763\_A\_computer-aided\_program\_for\_pattern-matching\_of\_natural\_marks\_on\_the\_spotted\_raggedtooth\_shark\_Carcharias\_taurus
+I3S paper link: https://www.researchgate.net/publication/228007763_A_computer-aided_program_for_pattern-matching_of_natural_marks_on_the_spotted_raggedtooth_shark_Carcharias_taurus
 
 ### Consolidated Display
 

@@ -28,9 +28,9 @@ and can be nested.
 
 The fields are used as follows:
 
-* **name** \- the descriptive\, human\-readable name of the study site
-* **id** \- the value of the study site to store in the "ENCOUNTER" table of the Wildbook database in the `"LOCATIONID"` column. This value must be unique in `locationID.json`
-* **locationID** \- a `JSON` array of other location IDs that are nested and logical subsites of this location
+* **name** - the descriptive, human-readable name of the study site
+* **id** - the value of the study site to store in the "ENCOUNTER" table of the Wildbook database in the `"LOCATIONID"` column. This value must be unique in `locationID.json`
+* **locationID** - a `JSON` array of other location IDs that are nested and logical subsites of this location
 * **prefix**(optional) - an abbreviation to the study site that can optionally be used to name new individuals when an incremental naming system is desired (e.g., "Ice-0001", "Ice-0002", "Ice-0003", etc.)
 * **prefixDigitPadding** (optional) - the number of orders of magnitude that you expect with the (optional) incremental individual naming system. For instance, picking `"prefixDigitPadding": 5` (instead of 4 as in the example above) would result in individual names such as "Ice-00001", "Ice-00002", "Ice-00003", etc. (note the additional 0).
 * **defaultLatitude** (optional) - if there are no explicitly designated GPS coordinates for a particular encounter, the locationID can be used to designate a default latitude when exporting encounter search results using the "Exported Excel spreadsheet (.xls) file in OBIS format with locale inclusion for unreported GPS" option.

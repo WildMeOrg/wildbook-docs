@@ -17,13 +17,13 @@ Permissions are granted at Encounter-level, meaning a user can access any **Sigh
 
 ## User Roles
 
-* **Contributor** \- users that are limited to only submit Sightings
-* **Researcher** \- users that can manage their own data \(Sightings and Individuals\) and collaborations\,  match and merge individuals\, and search
-* **User Manager** \- users that can create and edit users\, and manage user collaborations
-* **Exporter** \- users that can export all the data they own and collaborate with
-* **Administrator** \- users that can manage data and configure the Codex platform they belong to
-* **machinelearning** \- not functional
-* **rest** \- not functional
+* **Contributor** - users that are limited to only submit Sightings
+* **Researcher** - users that can manage their own data (Sightings and Individuals) and collaborations,  match and merge individuals, and search
+* **User Manager** - users that can create and edit users, and manage user collaborations
+* **Exporter** - users that can export all the data they own and collaborate with
+* **Administrator** - users that can manage data and configure the Codex platform they belong to
+* **machinelearning** - not functional
+* **rest** - not functional
 
 ## Collaborations
 
@@ -31,7 +31,7 @@ Collaborations between users allow them to share data. Here’s what you need to
 
 * Whether a user you’re in collaboration with can edit or just view your data is based on the permission you set.
 * If you attempt access to an **Encounter** you don’t have access to, you will be prompted to start a collaboration with the user that **Encounter** belongs to.
-* You can also search for a user you want to collaborate with if you go to **Administer** \> **My Account**. *(Note: search by username and name)*
+* You can also search for a user you want to collaborate with if you go to **Administer** > **My Account**. *(Note: search by username and name)*
 * You cannot establish a collaboration with yourself.
 
 Here’s a list of *associated permission* levels and available actions that you might encounter:
