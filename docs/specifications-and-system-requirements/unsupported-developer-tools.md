@@ -10,6 +10,7 @@ The following pages may be accessible in a given Wildbook, but are considered de
 * batchUploadConfirmation.jsp
 * batchUploadProgress.jsp
 * checkIndividualGenusIndividualTaxonomyConsistency.jsp
+* codexMigrator.jsp
 * consolidateDuplicateUsers.jsp
 * convertEncounterImages.jsp
 * convertEncounterSpots.jsp
