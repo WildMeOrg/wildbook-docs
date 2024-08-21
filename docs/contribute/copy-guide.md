@@ -5,16 +5,17 @@ We have specific standards for copy in the interface. These standards are more s
 - Headers and field labels are title case. Descriptions and field placeholders are sentence case. ![](../assets/images/copy-example.png)
 - If a description is relevant to the component (ex: the dropdown is multi-select) rather than the specific field (ex: the search field looks through multiple database fields), incorporate the description into the component.
 - If a description is 1-2 sentences, do not finish with punctuation. If a description is longer than 2 sentences, finish with punctuation. Treat as a block in the UI.
+- Be mindful of character encoding.
 
 ## Terminology
 We have learned that some terms are more intuitive than others and are working to update throughout the interface. The following list provides explanations of the terms used and any potential synonyms that may need to be adjusted.
 
 - Encounter: one animal at a specific time and location. This is the base object of the platform.
-- Sighting: one or more animals at a specific time and location. The object is made of one or more encounters linked together by a common time and place. Potential synonyms: Occurrence
-- Individual: one animal that is known and named. The object is made of one or more encounters linked together by a common understanding of identity. Potential synonyms: Marked Individual
+- Sighting: one or more animals at a specific time and location. The object is made of one or more encounters linked together by a common time and place. _Potential synonyms: Occurrence_
+- Individual: one animal that is known and named. The object is made of one or more encounters linked together by a common understanding of identity. _Potential synonyms: Marked Individual_
 - Annotation: 
-- MediaAsset: general term for images or videos that have been uploaded to the system. Potential synonyms: photographs, fotography, video
-- Location ID: location pulled from a user-defined list, used to filter data for algorithmic matching and for search. Potential synonyms: locationID, region, study site
+- MediaAsset: general term for images or videos that have been uploaded to the system. _Potential synonyms: photographs, fotography, video_
+- Location ID: location pulled from a user-defined list, used to filter data for algorithmic matching and for search. _Potential synonyms: locationID, region, study site_
 
 ## Internationalization
 Currently, Wildbook supports 5 languages: English, French, German, Italian, and Spanish. Any new copy should be internationalized rather than added directly to the page.
