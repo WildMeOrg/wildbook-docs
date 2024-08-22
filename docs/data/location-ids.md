@@ -64,4 +64,4 @@ Restart Tomcat after making changes.
 
 ### Example locationID.json
 
-[Here is an example locationID.json file.](https://github.com/WildMeOrg/Wildbook/blob/master/src/main/resources/bundles/locationID.json)
+[Here is an example locationID.json file.](../assets/images/locationID_template.json)
