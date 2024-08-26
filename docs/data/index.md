@@ -12,7 +12,7 @@ search
 data-exports
 wildex-image-export-app
 projects
-study-sites
+location-ids
 r-package-alpha
 ```
 
