@@ -18,7 +18,7 @@ When you [report an Encounter](report-encounter.md), you can set its **location 
 
 ## Adding a Location ID
 
-To add a new Location ID, you'll need to contact your Wildbook's administrator or make the request at the [Wildbook Community](https://community.wildme.org).
+To add a new Location ID, you'll need to contact your Wildbook's administrator, [create a PR](../contribute/pr-workflow.md) from your Wildbook's branch, or make the request at the [Wildbook Community](https://community.wildme.org).
 
 **Location IDs** are added to a file in Wildbook named `locationID.json`. Each location ID is defined in the **JSON** format as follows:
 
