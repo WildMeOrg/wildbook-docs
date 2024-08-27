@@ -4,6 +4,8 @@
 		{
 			"name": "Klufterbach",
 			"id": "KB",
+			"prefix": "Kluf-",
+			"prefixDigitPadding": 4,
 			"geospatialInfo": {
 				"lat": 50.686688,
 				"long": 7.127002
@@ -13,6 +15,8 @@
 		{
 			"name": "Venner Bach",
 			"id": "VB",
+			"prefix": "VB-",
+			"prefixDigitPadding": 2,
 			"geospatialInfo": {
 				"lat": 50.670721,
 				"long": 7.129955
@@ -22,6 +26,7 @@
 		{
 			"name": "Katzenlochbach/Villiper Bach",
 			"id": "KOB",
+			"prefix": "KatzOB_",
 			"geospatialInfo": {
 				"lat": 50.667533,
 				"long": 7.083178
