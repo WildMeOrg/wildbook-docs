@@ -109,7 +109,7 @@ The most commonly-used fields are listed in the table below.
 | Encounter.genus | V_WString | Panthera | Enter an option from the Taxonomy drop-down menu. This should be the first of the two phrases. This entry must begin with a capital letter. **These values are case-sensitive.** If entered incorrectly, Taxonomy will display as "Not Available". |
 | Encounter.specificEpithet | V_WString | pardus | Enter an option from the Taxonomy drop-down menu. This should be the second of the two phrases. This entry must begin with a lowercase letter. **These values are case-sensitive.** If entered incorrectly, Taxonomy will display as "Not Available". |
 | Encounter.submitterID | V_WString | tmcnutt | Add submitter's username in Wildbook. **These values are case-sensitive.** |
-| Encounter.state | V_WString | approved<br>unapproved<br>unidentifiable | The curation state of this Encounter. Default value if left blank is "approved". <br>Uncurated data should be imported as "unapproved". <br>Encounters without photos should be imported as "unidentifiable". **These** **values** **are case-sensitive.** |
+| Encounter.state | V_WString | approved<br>unapproved<br>unidentifiable | The curation state of this Encounter. Default value if left blank is "approved". <br>Uncurated data should be imported as "unapproved". <br>Encounters without photos should be imported as "unidentifiable". |
 
 The following fields can be included when uploading an Encounter. Review the description of the field and validate that it is in use in your system (meaning if you are on a terrestrial Wildbook, you will likely not use Encounter.depth).
 
