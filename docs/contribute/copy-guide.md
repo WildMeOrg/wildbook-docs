@@ -13,7 +13,7 @@ We have learned that some terms are more intuitive than others and are working t
 - Encounter: one animal at a specific time and location. This is the base object of the platform.
 - Sighting: one or more animals at a specific time and location. The object is made of one or more encounters linked together by a common time and place. _Potential synonyms: Occurrence_
 - Individual: one animal that is known and named. The object is made of one or more encounters linked together by a common understanding of identity. _Potential synonyms: Marked Individual_
-- Annotation: 
+- Annotation: a box around the animal in the image. This is used during the matching process to avoid matching based off the background of the image.
 - MediaAsset: general term for images or videos that have been uploaded to the system. _Potential synonyms: photographs, fotography, video_
 - Location ID: location pulled from a user-defined list, used to filter data for algorithmic matching and for search. _Potential synonyms: locationID, region, study site_
 
