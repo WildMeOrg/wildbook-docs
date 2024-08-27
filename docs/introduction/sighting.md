@@ -16,13 +16,13 @@ Throughout the Wildbook platform, Sightings may also be called Occurrences. We a
 
 ## Navigating to a Sighting Page
 
-To see Sighting information, you must be signed into the system. Once signed in, you can use *Search* \> *Sighting Search* to find Sightings that meet certain criteria. Additionally, there may be a Sighting menu that will allow you to see all Sightings you have access to by clicking View All.
+To see Sighting information, you must be signed into the system. Once signed in, you can use *Search* > *Sighting Search* to find Sightings that meet certain criteria. Additionally, there may be a Sighting menu that will allow you to see all Sightings you have access to by clicking View All.
 
 Additionally, you can access a Sighting associated with a specific Encounter; from the [Encounter page](encounter.md), navigating to the Identity section and clicking on the Occurrence ID.
 
 ## Sighting Page Format
 
-The Sighting page is headed with the Occurrence ID. Supported character for the Occurrence ID are: latin alphanumeric characters (a-z, A-Z, 0-9), \_ and -. Some Wildbooks also include a link to associate a survey with the Sighting.
+The Sighting page is headed with the Occurrence ID. Supported character for the Occurrence ID are: latin alphanumeric characters (a-z, A-Z, 0-9), _ and -. Some Wildbooks also include a link to associate a survey with the Sighting.
 
 * **Species:** Displays the species of the animals associated with the Sighting. This is determined by the encounters associated with the sighting and cannot be manually edited.
 * **Group Behavior:** Allows for researcher description of the general behavior of the group. Enter the correct information, then click **Set**.

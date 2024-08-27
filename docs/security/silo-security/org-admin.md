@@ -16,13 +16,13 @@ As an Org-Admin, you are able to create and add users to your organization. Here
 2. Look for the **Create/Edit User** section.
 3. Enter a *username, email, and password*.
 4. Select the appropriate role based on the permission level you want the user to have. This is multi-select as the roles are not hierarchical.
-    * **orgAdmin** \- users with administrative access to manage the organization\.
-    * **Contributor** \- users that access are limited to only submit Sightings
-    * **Researcher** \- users that can manage their own data \(Sightings and Individuals\) and collaborations\,  match and merge individuals\, and search
-    * **User Manager** \- users that can create and edit users\, and manage user collaborations
-    * **Exporter** \- users that can export all the data they own and collaborating with
-    * **Administrator** \- users that can manage data and configure the Wildbook platform they belong to
-    * **Regions** \- users that can see all data related to the region listed
+    * **orgAdmin** - users with administrative access to manage the organization.
+    * **Contributor** - users that access are limited to only submit Sightings
+    * **Researcher** - users that can manage their own data (Sightings and Individuals) and collaborations,  match and merge individuals, and search
+    * **User Manager** - users that can create and edit users, and manage user collaborations
+    * **Exporter** - users that can export all the data they own and collaborating with
+    * **Administrator** - users that can manage data and configure the Wildbook platform they belong to
+    * **Regions** - users that can see all data related to the region listed
 5. Under **Organization Membership**, select your organization to add a user to it.
 6. Click **Save**.
 

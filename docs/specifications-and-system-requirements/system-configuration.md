@@ -33,9 +33,9 @@ Database configuration is defined in the file jdoconfig.properties.
 
 At its core, Wildbook uses Bootstrap for its mobile, responsive design. Most changes to display and design can be performed by changing:
 
-* **header.jsp** \- This file defines the standard JavaScript and CSS imports used by Wildbook and implements any header graphics and navigation at the top of the pages\.
-* **footer.jsp** \- This file defines any HTML to display at the bottom of the page\, such as copyright information\.
-* **commonConfiguration.properties** \- This file contains many configuration options for Wildbook\, and it includes options for search engine optimization \(SEO\)\, page titles\, and other basic HTML fields\.
+* **header.jsp** - This file defines the standard JavaScript and CSS imports used by Wildbook and implements any header graphics and navigation at the top of the pages.
+* **footer.jsp** - This file defines any HTML to display at the bottom of the page, such as copyright information.
+* **commonConfiguration.properties** - This file contains many configuration options for Wildbook, and it includes options for search engine optimization (SEO), page titles, and other basic HTML fields.
 
 The HTML header for web pages in Wildbook is pulled from the file **header.jsp**. This file retrieves additional values from **commonConfiguration.properties** and *lang*/header.properties.
 
@@ -103,9 +103,9 @@ Additional states can be set by incrementing the properties, such as **encounter
 
 Defining the boundaries of study areas is an important aspect of mark-recapture study design. Wildbook allows you to configure study areas as an attribute that can be assigned to each Encounter, categorizing data by where it occurred. **Encounter.locationID** is one of three ways of defining location in Wildbook. The three ways are:
 
-* **Encounter.locationID** \- assigns an Encounter to a human\-defined study area
-* **Encounter.decimalLatitude/decimalLongitude** \- assigns an Encounter to precisley measured GPS coodinates
-* **Encounter.verbatimLocality** \- a general description of location provided by the data submitter from which locationID may be determined\.
+* **Encounter.locationID** - assigns an Encounter to a human-defined study area
+* **Encounter.decimalLatitude/decimalLongitude** - assigns an Encounter to precisley measured GPS coodinates
+* **Encounter.verbatimLocality** - a general description of location provided by the data submitter from which locationID may be determined.
 
 **Encounter.locationID** may be the most valuable form of location identifier in Wildbook. GPS location may not be known, and verbatim descriptions of location may vary significantly by submitter. LocationID is powerful because it specifically defines whether a data point should be included or excluded from a study area during mark-recapture analysis and can be used to define which animals to match against in the [Wildbook Image Analysis pipeline](../introduction/image-analysis-pipeline.md).
 
@@ -189,11 +189,11 @@ Additional stages can be set by incrementing the properties, such as lifeStage3,
 
 If you're using physical tags (SAT, PAT, marker, etc.) during your research, you can record metadata about those tags and associate it with an Encounter recorded at tag deployment. The following attributes (examples below) are available to configure:
 
-* **showMetalTags** \- whether physical marker tags are used in your study should be shown on the Encounter page in Wildbook\. Values are true/false\.
-* **metalTagLocation*X** \- The list of placement locations for the tag on the body of the animal
-* **showAcousticTag** \- whether acoustic tags are used in your study should be shown on the Encounter page in Wildbook\. Values are true/false\.
-* **showSatelliteTag** \- whether satelite tags are used in your study should be shown on the Encounter page in Wildbook\. Values are true/false\.
-* **satelliteTageName*X** \- The list of satellite tag manufacturers/providers to help identify the type of tag\.
+* **showMetalTags** - whether physical marker tags are used in your study should be shown on the Encounter page in Wildbook. Values are true/false.
+* **metalTagLocation*X** - The list of placement locations for the tag on the body of the animal
+* **showAcousticTag** - whether acoustic tags are used in your study should be shown on the Encounter page in Wildbook. Values are true/false.
+* **showSatelliteTag** - whether satelite tags are used in your study should be shown on the Encounter page in Wildbook. Values are true/false.
+* **satelliteTageName*X** - The list of satellite tag manufacturers/providers to help identify the type of tag.
 
 ```
 #tag parameters showMetalTags=true metalTagLocation0=left metalTagLocation1=right
@@ -232,13 +232,13 @@ Restart Tomcat after making changes.
 
 Wildbook allows you to add one ore more records for biological samples collected during an Encounter with an individual animal. Biological samples have the following attributes defined in **commonConfiguration.properties:**
 
-* **tissueType*X** \- a sequential definition of the types of tissues that can be collected in your study \(e\.g\.\, fecal\, blood\, skin\, biopsy\, etc\.\)
-* **biologicalMeasurementType*X** \- a sequential definition of the types of chemical measurements that can be analyzed and determined from tissue samples in your study \(e\.g\.\, fatty acid Carbon and Nitrogen measurements\)
-    * **biologicalMeasurementUnits*X** \- a sequential definition of the units of measurement for chemical measurements on tissue samples
-    * **biologicalMeasurementSamplingProtocol*X** \- a sequential definition of the protocols used to determine the measurements
-* **numLoci** \- the number of loci to provide allele values for if genotyping is performed as an analysis on the tissue sample
-* **numPloids** \- leave at 2 per loci
-* **alleleRelaxMaxValue** \- the value difference allowed between allele values to consider them a "match" when looking for other genotypes that might match or be similar\.
+* **tissueType*X** - a sequential definition of the types of tissues that can be collected in your study (e.g., fecal, blood, skin, biopsy, etc.)
+* **biologicalMeasurementType*X** - a sequential definition of the types of chemical measurements that can be analyzed and determined from tissue samples in your study (e.g., fatty acid Carbon and Nitrogen measurements)
+    * **biologicalMeasurementUnits*X** - a sequential definition of the units of measurement for chemical measurements on tissue samples
+    * **biologicalMeasurementSamplingProtocol*X** - a sequential definition of the protocols used to determine the measurements
+* **numLoci** - the number of loci to provide allele values for if genotyping is performed as an analysis on the tissue sample
+* **numPloids** - leave at 2 per loci
+* **alleleRelaxMaxValue** - the value difference allowed between allele values to consider them a "match" when looking for other genotypes that might match or be similar.
 
 ```
 #tissue sample types tissueType0 = Tissue sample tissueType1 = Fecal sample tissueType2 = Mucus sample tissueType3 = Blood sample tissueType4 = Parasite sample
@@ -269,8 +269,8 @@ Marked Individuals in Wildbook can have Relationship associations between them. 
 
 To configure the types of social relationships in your Wildbook and the roles that Marked Individuals can play in them, change the following fields in **commonConfiguration.properties:**
 
-* **relationshipType*X** \- a sequentially numbered set of relationship types to be recorded in your study\.
-* **relationshipRole*X** \- the role that an individual can play in a Relationship\.
+* **relationshipType*X** - a sequentially numbered set of relationship types to be recorded in your study.
+* **relationshipRole*X** - the role that an individual can play in a Relationship.
 
 Here are some example configurations:
 
@@ -285,12 +285,12 @@ Restart Tomcat after making changes.
 
 The following email addresses are sent messages when important events occur in Wildbook. These email addresses are specific to your project.
 
-* **sendEmailNotifications** \- Defines whether Wildbook should send any emails at all\. Set to true\, this parameter instructs Wildbook to send email updates for several events\, such as:
+* **sendEmailNotifications** - Defines whether Wildbook should send any emails at all. Set to true, this parameter instructs Wildbook to send email updates for several events, such as:
     * new Encounter submission reports
     * new marked individual identifications to adopters ad submitters
         MarkedIndividual resights to adopted and submitters
-* **autoEmailAddress** \- The email address from which Wildbook messages will be sent\. If you have a secured mailhost\, it's important to configure the mailhost to allow emails to be sent from this address\.
-* **newSubmissionEmail** \- The email address to send notices of new Encounter reports submitted to Wildbook\.
+* **autoEmailAddress** - The email address from which Wildbook messages will be sent. If you have a secured mailhost, it's important to configure the mailhost to allow emails to be sent from this address.
+* **newSubmissionEmail** - The email address to send notices of new Encounter reports submitted to Wildbook.
 
 ```
 #email addresses and parameters
@@ -321,9 +321,9 @@ With languages configured and Tomcat restarted, Wildbook displays configured lan
 It looks for a correspinding flag icon in the images directory. Examples:
 
 ```
-* flag\_es.gif
-* flag\_en.gif
-* flag\_fr.gif
+* flag_es.gif
+* flag_en.gif
+* flag_fr.gif
 ```
 
 If your language flag is not present in Wildbook, you may need to add it.
@@ -335,7 +335,7 @@ Most pieces of text in Wildbook pages **(HTML and JSP files)** are contained in 
 Here is an example of the contents of encounter.properties.
 
 encounter = Encounter
-unidentifiable\_title = Unidentifiable Encounter Number unapproved\_title = UNAPPROVED Encounter Number title = Encounter identified\_as = Identified as: workflowState = Workflow state: setWorkflowState = Set Workflow State matched\_by = Matched by status = Status ...
+unidentifiable_title = Unidentifiable Encounter Number unapproved_title = UNAPPROVED Encounter Number title = Encounter identified_as = Identified as: workflowState = Workflow state: setWorkflowState = Set Workflow State matched_by = Matched by status = Status ...
 
 ### Legacy Spot Matching
 

@@ -5,6 +5,7 @@
 
 pr-workflow
 code-guide
+copy-guide
 roadmap
 ```
 

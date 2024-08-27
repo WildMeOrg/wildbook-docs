@@ -4,7 +4,7 @@ In Wildbook, an Encounter is the foundation component of the software. All entri
 
 ## Navigating to an Encounter Page
 
-To see encounter information, you must be signed into the system. Once signed in, you can use **Encounter** \> **Encounter Search** to find encounters that meet certain criteria, or you can use **Encounter** \> **View My Submissions** to see all the encounters associated with your account.
+To see encounter information, you must be signed into the system. Once signed in, you can use **Encounter** > **Encounter Search** to find encounters that meet certain criteria, or you can use **Encounter** > **View My Submissions** to see all the encounters associated with your account.
 
 Encounters are the result of Wildbook's [data entry methods](data-entry.md), including [Report an Encounter](../data/report-encounter.md) (web form submission) and [Bulk Import](../data/bulk-import-beta.md) (Excel-based, multi-Encounter data import).
 
@@ -29,7 +29,7 @@ Provide a description of the location where the encounter occurred. Once you hav
 
 Select from a list of countries where the encounter occurred. Once you've selected the appropriate country, click **Set** to confirm the new value.
 
-#### **Set Location ID**
+#### Set Location ID
 
 Select from a list of location IDs (a.k.a formally defined "study sites") where the encounter occurred. Once you've selected the appropriate location, click **Set Location ID** to confirm the new value. *(Note: This list is hierarchical and determined by the administration of the Wildbook. We recommend no more than 5 hierarchical layers of locations. Reach out to your administrators or to [Wildbook support](https://community.wildme.org/) for configuration assistance.)*
 
@@ -84,7 +84,7 @@ To add a new keyword:
 3. Under **add new keyword**, type in the text field with the helper text "or enter new". Hit enter to confirm the keyword.
 
 Once entered, the keyword appears on the image.
-Keywords are not automatically curated or checked against existing keywords, so you can create duplicate keywords easily. Admins can manage keywords from the **Administer** \> **Photo Keywords** menu option.
+Keywords are not automatically curated or checked against existing keywords, so you can create duplicate keywords easily. Admins can manage keywords from the **Administer** > **Photo Keywords** menu option.
 
 ##### Remove This Image
 
@@ -112,15 +112,15 @@ Identity is focused on providing information if an encounter has been associated
 
 #### Setting Individual ID
 
-##### **New Individual**
+##### New Individual
 
 If you have determined the encounter is of an individual that does not exist in the current Wildbook, you should enter a unique ID. This ID needs to be distinct from any Individual ID in your catalog that currently exists. When you've entered the ID, click **New** to confirm the value.
 
-##### **Existing Individual**
+##### Existing Individual
 
 If you have determined the encounter is of an existing individual, fill out the information under **Add to existing individual ID**. Begin typing the name associated with the individual you want to associate the encounter with. A dropdown will display a list of all matching individuals. Select from the list then click **Add**.
 
-##### **Matched by**
+##### Matched by
 
 Used to indicate the method used in establishing the identity associated with the encounter. Values are:
 
@@ -129,17 +129,17 @@ Used to indicate the method used in establishing the identity associated with th
 * **Unknown**: This encounter has not yet been matched.
 * **Unmatched first encounter**: No matches were found in the Wildbook, making this a new individual. This is not recommended when adding to an existing encounter.
 
-##### **Suppress e-mail/RSS**
+##### Suppress e-mail/RSS
 
 Select this option to prevent emails from being sent as updates to the Individual occur. When you've selected the Individual ID, click **Add** to confirm the value.
 
 #### Other fields
 
-##### **Set Alternate ID**
+##### Set Alternate ID
 
 If there is an alternative ID used to identify this animal, such as in a historical catalogue, enter the ID. Once you've entered the ID, click Set to confirm the value.
 
-##### **Matched by**
+##### Matched by
 
 Used to indicate the method used in establishing the identity associated with the encounter. Values are:
 
@@ -153,15 +153,15 @@ When you've selected the correct matching method, click **Set** to confirm the v
 
 Fill out the information under *Manage Occurrence Assignment* to associate the encounter with a Sighting/Occurrence.
 
-##### **Create Occurrence**
+##### Create Occurrence
 
 If you've determined the encounter is part of a sighting/occurrence that does not exist in the current Wildbook, you should enter a unique ID. This ID needs to be distinct from any Occurrence ID that currently exists. When you've entered the ID, click **Create** to confirm the value.
 
-##### **Add to Occurrence**
+##### Add to Occurrence
 
 Begin typing the name sighting/occurrence you want to associate the encounter with. A dropdown will display a list of all matching sightings/occurrences. Select from the list. Once you've selected the Occurrence ID, click **Add** to confirm the value.
 
-##### **Remove from Occurrence**
+##### Remove from Occurrence
 
 If you have two separate occurrence IDs that should actually be part of the same sighting/occurrence, click the **Remove** button next to **Remove from occurrence**, copy the correct ID from the related encounter, and enter the new ID in the **Add to Occurrence** field.
 
@@ -195,10 +195,10 @@ Metadata is used to handle the management of a single encounter.
 
 1. **Set Workflow State**: Workflow State is used to indicate the review state of an encounter:
 
-* **Unapproved** \- an encounter that has not been reviewed and accepted by a researcher or admin\. This is the default state for encounters submitted using the standard reporting\.
-* **Approved** \- an encounter that has been reviewed and accepted by a researcher or admin\. This is the default state for encounters submitted using bulk import\.
-* **Unidentifiable** \- an encounter that has been reviewed and determined to be unusable\, but should remain in the system\.
-* **Auto\_sourced** \- an encounter that was pulled from YouTube\. \(whaleshark\.org only\)
+* **Unapproved** - an encounter that has not been reviewed and accepted by a researcher or admin. This is the default state for encounters submitted using the standard reporting.
+* **Approved** - an encounter that has been reviewed and accepted by a researcher or admin. This is the default state for encounters submitted using bulk import.
+* **Unidentifiable** - an encounter that has been reviewed and determined to be unusable, but should remain in the system.
+* **Auto_sourced** - an encounter that was pulled from YouTube. (whaleshark.org only)
     Once you've selected the correct state, click **Set** to confirm the selection.
 
 2. **Assign to user**: Use to select from a list of researchers and administrators on the platform and assign that user as the managing researcher of the encounter. Once you've selected the correct user, click **Assign** to confirm the selection.

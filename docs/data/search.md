@@ -55,10 +55,10 @@ The **Matching Images/Videos** tab displays the Annotations (and related MediaAs
 
 The **Mapped Results** tab displays the positions of Encounters related to this search result if they have GPS coordinates. For Marked Individuals, mapped search results may be connected by chevrons to link points of travel over time. You can further alter the display by selecting the following **Map aspects**:
 
-* **Position only** \- displays all GPS coordinates in uniform gray
-* **Sex** \- displays GPS coordinates in blue if the related Encounter was recorded as male\, pink if the GPS coordinates for the Encounter were recorded as female\, and grey if unknown\.
-* **Haplotype** \- displays GPS coordinates with randomized colors corresponding to haplotypes recorded with Tissue Samples on matching\, related Encounters\. This view allows for the display of genetic flow\.
-* **Species** \- displays GPS coordinates with randomized colors corresponding to species recorded on related Encounters\.
+* **Position only** - displays all GPS coordinates in uniform gray
+* **Sex** - displays GPS coordinates in blue if the related Encounter was recorded as male, pink if the GPS coordinates for the Encounter were recorded as female, and grey if unknown.
+* **Haplotype** - displays GPS coordinates with randomized colors corresponding to haplotypes recorded with Tissue Samples on matching, related Encounters. This view allows for the display of genetic flow.
+* **Species** - displays GPS coordinates with randomized colors corresponding to species recorded on related Encounters.
     
     ![search Results Mapped](../assets/images/wb-encountersearch-mappedresults.png)
 

@@ -7,7 +7,7 @@ Wildbook provides several ways to automatically and manually access the [Image A
 When you [Report an Encounter](report-encounter.md) of a single animal, if you set the species to one supported by the [Image Analysis Pipeline](../introduction/image-analysis-pipeline.md), Wildbook will automatically perform the following steps:
 
 1. Send each submitted image to **Detection** to find one or more **Annotations** in each photo. In the event that **Detection** doesn’t find any animal in the photo, users can use **[Manual Annotation](manual-annotation-beta.md))**.
-2. Depending on the type of **Annotations** returned (its **"Image Analysis Class"**), such as **"whale\_orca"** or **"panthera\_uncia"**, route each Annotation to one or more ID algorithms.
+2. Depending on the type of **Annotations** returned (its **"Image Analysis Class"**), such as **"whale_orca"** or **"panthera_uncia"**, route each Annotation to one or more ID algorithms.
 3. If the location **ID** (or **"study site"**) was set during the submission, the pipeline will limit candidate matches to only that study site.
 4. Consolidate all Annotation match results into a single page for your review and ID assignment **(e.g., setting an existing individual ID or assigning a new ID).** See [Reviewing Match Results](matching-process.md#reviewing-match-results) to understand the results page. The Encounter page also allows you to set individual ID later, and you can return to these match results in the future as well.
 
@@ -17,8 +17,8 @@ If you see green bounding boxes on images in your submitted Encounter, then Dete
 
 ![](../assets/images/wb-orca-encounter.png)
 
-* whale\_orca+fin\_dorsal **(bounding box around the dorsal fin)**
-* whale\_orca **(bounding box around the whale body)**
+* whale_orca+fin_dorsal **(bounding box around the dorsal fin)**
+* whale_orca **(bounding box around the whale body)**
 
 If you see green bounding boxes on images in your submitted Encounter and **match results** appears in the menu of any image, then Identification has started or completed. After submission, you may need to periodically refresh the Encounter page for the bounding boxes to appear and match results to be ready. Click **match results** to review potential ID matches.
 
@@ -32,7 +32,7 @@ After a successful [Bulk Import](bulk-import-beta.md), Detection and Identificat
 
 ## Manual Annotation with Automated ID
 
-While Wildbook uses advance machine learning to find and label animals in images, it always has a probability of missing an Annotation. Wildbook allows you to draw additional bounding boxes on an image, label their viewpoints (e.g., "left", "right", etc.), and their classes (e.g., "whale\_fluke", "panthera\_uncia", etc.). Once a manual Annotation has been created, its will appear as a normal Annotation on an image and will allow you to [manually start a match](matching-process.md). See [Manual Annotation](manual-annotation-beta.md) for more information.
+While Wildbook uses advance machine learning to find and label animals in images, it always has a probability of missing an Annotation. Wildbook allows you to draw additional bounding boxes on an image, label their viewpoints (e.g., "left", "right", etc.), and their classes (e.g., "whale_fluke", "panthera_uncia", etc.). Once a manual Annotation has been created, its will appear as a normal Annotation on an image and will allow you to [manually start a match](matching-process.md). See [Manual Annotation](manual-annotation-beta.md) for more information.
 
 ![add Annotation](../assets/images/wb-encounter-addannotation.png)
 
@@ -40,7 +40,7 @@ While Wildbook uses advance machine learning to find and label animals in images
 
 To remove an Annotation from *machine learning-based Detection* or **[Manual Annotation](manual-annotation-beta.md)**, go to **Encounter Gallery** and select **Remove Annotation**.
 
-#### **Removing a single annotation:**
+#### Removing a single annotation:
 
 * Removing an **Annotation** from an image will not remove the image from the **Encounter** it’s referenced in *as long as there are no other Encounters that share the same image.*
 
