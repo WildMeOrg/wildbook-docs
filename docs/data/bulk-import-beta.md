@@ -41,7 +41,7 @@ In the header of an Excel (.xlsx) file, create a column for each field you want 
     If an encounter is associated with a [Sighting](../introduction/sighting.md), include the needed information for the Sighting on at least one line of an associated Encounter.
 * If using any of the Occurrence fields for Sightings, ensure that each Encounter is linked with a common value in the Occurrence.occurrenceID column.
 * Verify the following fields match exactly with what exists in the system:
-    * **Encounter.locationID** - Must match the location as shown in the Location ID menu of the Report an Encounter page.
+    * **Encounter.locationID** - Must match the location as shown in the Location ID menu of the Report an Encounter page (see [known issue](/docs/faq/bulk-import-faq.md#)).
     * **Encounter.submitterID** - Your Wildbook account's username to ensure the encounter is credited to you. This is case-sensitive and must match how it appears in your account page.
     * **Encounter.mediaAsset0** - This is the exact file name of each image of the Encounter. Start numbering at 0, and for each additional image, increment by 1 (0, 1, 2, 3, etc.).
 
@@ -99,7 +99,7 @@ The most commonly-used fields are listed in the table below.
 | MarkedIndividual.individualID | V_WString | Lion045 | PrimaryKey. While Wildbook assigns unique user IDs to MarkedIndividuals, this field becomes the default display name for the MarkedIndividual. <br>Duplicate of Encounter.individualID. <br>We recommend using this field instead of Encounter.individualID. |
 | Encounter.individualID | V_WString | Lion045 | Duplicate of MarkedIndividual.individualID. |
 | Encounter.verbatimLocality | V_WString | Saw this about five minutes into our tour near mile marker 5, somewhere in Tanzania. | Descriptive string to reference location. No constraints on what is entered, but is not used for analysis. |
-| Encounter.locationID | V_WString | Zone 5, Botswana | Hierarchical list of study sites. Allows for consistency and controlled granularity of location input. **Must match the location as shown in the Location ID menu of the Report an Encounter page.** |
+| Encounter.locationID | V_WString | Zone 5, Botswana | Hierarchical list of study sites. Allows for consistency and controlled granularity of location input. **Must match the location as shown in the Location ID menu of the Report an Encounter page** (see [known issue](/docs/faq/bulk-import-faq.md#)).|
 | Encounter.decimalLatitude | Double | -35.46 | Enter latitude coordinates using decimals instead of degrees, minutes, and seconds (DMS). The first encounter of any setting will also set the decimal latitude at the sighting level. |
 | Encounter.decimalLongitude | Double | 54.678 | Enter longitude coordinates using decimals instead of degrees, minutes, and seconds (DMS). The first encounter of any setting will also set the decimal latitude at the sighting level. |
 | Encounter.year | Int32 | 2020 | For encounter date information, add what you have to the most precise accuracy. Storing the segments separately allows general dates such as "June 2014"; we do not store seconds or milliseconds for an encounter's date information, so there are no fields to allow the input of those values. Enter a 4 digit number. |

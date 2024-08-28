@@ -22,8 +22,8 @@ To add a new Location ID, you'll need to contact your Wildbook's administrator, 
 
 **Location IDs** are added to a file in Wildbook named `locationID.json`.
 
-* **name** - the descriptive, human-readable name of the location ID as you want it to display in the interface and in bulk import.
-* **id** - the value of the location ID to store in the "ENCOUNTER" table of the Wildbook database in the `"LOCATIONID"` column. This value must be unique in `locationID.json`, but does not have to match the `name`.
+* **name** - the descriptive, human-readable name of the location ID as you want it to display in the interface.
+* **id** - the value of the location ID to store in the "ENCOUNTER" table of the Wildbook database in the `"LOCATIONID"` column. This value must be unique in `locationID.json`, cannot contain special characters, and should match `name` as closely as possible (i.e.,: `"name": "Perú"` becomes `"id": "Peru"`). This is the value to use when entering data in a bulk import.
 * **locationID** - a `JSON` array of other location IDs that are nested under the current location ID (i.e., seas in an ocean, countries in a continent, etc).
 * **prefix**(optional) - an abbreviation to the Location ID that can optionally be used to name new individuals when an incremental naming system is desired (e.g., Ice-0001, Ice-0002, etc.)
 * **prefixDigitPadding** (optional) - the number of orders of magnitude that you expect with the incremental individual naming system. By default, the padding is set to 3 (Ice-001, Ice-002, etc.). For instance, setting `"prefixDigitPadding": 5` results in individual names such as Ice-00001, Ice-00002, etc.
