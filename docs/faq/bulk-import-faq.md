@@ -31,7 +31,7 @@ If you're searching for a bulk import or encounters that you have just uploaded,
 
 ## Why isn't identification location ID list automatically selecting the locations in my data?
 
-Your location ID may have a different `name` and `id` value. You can manually select for your current bulk import. Check the locationID.json file for your branch or contact support to see what value you should be entering into your future bulk import spreadsheet.
+This a [known issue](https://github.com/WildMeOrg/Wildbook/issues/709). Your location ID may have a different `name` and `id` value. You can manually select for your current bulk import. Check the locationID.json file for your branch or contact support to see what value you should be entering into your future bulk import spreadsheet.
 
 ## File format questions
 
