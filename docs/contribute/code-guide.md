@@ -33,6 +33,17 @@ Because we are transitioning between tech stacks, there are some places where co
 * If changing a dropdown in a .jsp page, use the library `select 2`. It provides a single line component update that adds in the ability to filter the dropdown. For example: `$('#selectCode').select2({width: '100%'});`
 
 ### React
+#### Plugins used
+* `eslint-plugin-react`: For React best practices.
+* `eslint-plugin-react-hooks`: Ensures correct use of hooks.
+
+#### Relevant rules
+* Semicolons are required ("semi": 2).
+* JSX is allowed in both .js and .jsx files ("react/jsx-filename-extension": 0).
+* Console statements show warnings ("no-console": 1).
+* React Hooks rules are enforced ("react-hooks/rules-of-hooks": "error").
+
+#### Best practices
 * _Prefer Bootstrap Classes_: Always use Bootstrap's utility classes for styling when possible. This ensures consistency across the project and leverages Bootstrap's responsive features. Only use custom CSS or inline styles when the desired styling cannot be achieved with Bootstrap.
 * _Code Consistency_: We are using eslint and prettier to enforce a consistent coding style throughout the project. This includes consistent naming conventions, file and folder structure, and code formatting.
 * _Componentization_: Break down the UI into reusable components to maximize code reusability and clarity. Each component should have a well-defined purpose and should operate independently as much as possible.
@@ -44,8 +55,21 @@ Because we are transitioning between tech stacks, there are some places where co
 * If bootstrap components are stubbornly refusing to change color, try `accent-color`.
 
 ### Language files
+Language files differ in location based on whether you are contributing to a react or jsp page. For all language updates, make sure that the update is addressed across all locales. Current locales supported are English, Spanish, German, French, and Italian.
+
+#### React
+Language files are located in `frontend/src/locale/`. If you are adding a new string to the system, make sure the string is available across the different languages by adding the key and translated string to 
+* `de.json` - German
+* `en.json` - English
+* `es.json` - Spanish
+* `fr.json` - French
+* `it.json` - Italian
+Ensure that the key is all caps with underscores as separators and is human-legible. Ex: **THISKEY_IS_GOOD** vs this.key.NeedsToBe-fixed vs TKNTBF
+
+#### Jsp
 `.properties` files in the `resources/bundles` language folders are used to generate translations for different supported languages. If you add a new string to the system, add the string to the appropriate `.properties` file, and make sure the string is available across `en`, `de`, `es`, `fr`, and `it`. Either provide the English string in all files, or provide the translated string in each one.
 
+#### Customizing copy
 If you are updating a translation for general use, do your PR against the `master` branch. If you are updating a language file to have specific copy associated with a specific platform, do your PR against the specific platform's branch.
 
 ### Java/jsp style
