@@ -4,7 +4,7 @@ Additional help with [Matching](../data/matching-process.md) in Wildbook is avai
 
 ## How long do I need to wait for detection? Identification?
 
-Machine learning jobs in Wildbook run in a shared, serial queue. Detection jobs can take between 10 seconds and hours, depending on how much shared ML work is in the queue. Identification jobs generally run only a few minutes but also share resources in the queue and can take longer while waiting for work farther ahead in the queue to complete.
+Machine learning (ML) jobs in Wildbook run in a shared, serial queue. Detection jobs can take between 10 seconds and hours, depending on how much shared ML work is in the queue. Identification jobs generally run only a few minutes but also share resources in the queue and can take longer while waiting for work farther ahead in the queue to complete.
 
 ## How can I tell if a detection job has completed?
 
@@ -25,7 +25,6 @@ You may want to re-run your match if you corrected an annotation, got an error m
 * "**Attempting to fetch results**" or “**Gave up trying to match**” usually means that matching is still in progress. If you don't see match results within 24 hours, something may be wrong. Let us know in the [Community Forum](https://community.wildme.org/).
 * "**Image Analysis has returned and no match was found**", "**No match confirmed**", or "**No match results**" means that there are no potential matches for that animal based on the location ID you selected.
 * If you see "**Unknown error**", try [restarting the match](../data/matching-process.md#manually-starting-a-match). If that doesn’t produce matches, remove the annotation, [create a new one](../data/manual-annotation-beta.md), and start a new match. If you still get an error after following these steps, let us know in the [Community Forum](https://community.wildme.org/).
-* 
 
 ## Why do I see matches for a different side of the animal than what's in my image?
 
