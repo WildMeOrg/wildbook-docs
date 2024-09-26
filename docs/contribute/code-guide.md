@@ -70,7 +70,7 @@ Ensure that the key is all caps with underscores as separators and is human-legi
 `.properties` files in the `resources/bundles` language folders are used to generate translations for different supported languages. If you add a new string to the system, add the string to the appropriate `.properties` file, and make sure the string is available across `en`, `de`, `es`, `fr`, and `it`. Either provide the English string in all files, or provide the translated string in each one.
 
 #### Customizing copy
-If you are updating a translation for general use, do your PR against the `master` branch. If you are updating a language file to have specific copy associated with a specific platform, do your PR against the specific platform's branch.
+If you are updating a translation for general use, do your PR against the `main` branch. If you are updating a language file to have specific copy associated with a specific platform, do your PR against the specific platform's branch.
 
 ### Java/jsp style
 Initialize variables and type signatures at the abstract/interface level when possible.

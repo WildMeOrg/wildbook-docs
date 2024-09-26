@@ -3,6 +3,7 @@
 ```{toctree}
 :hidden:
 
+dev-setup
 pr-workflow
 code-guide
 copy-guide
