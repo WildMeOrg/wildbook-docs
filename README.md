@@ -33,4 +33,8 @@ To see files as they will appear online, including url paths:
 3. Open `http://localhost:8000` in your browser
 
 ## Contribute to docs
-#11 TBD
+Changes to the content of the docs are done in the `/docs` folder in the markdown files (file extension `.md`).
+* Software usage instructions should be clear and concise; aim for an 8th grade reading level.
+* Do not use in-line styling unless following an existing pattern.
+* If you add a page to the docs, be sure to reference it in the appropriate `index.md` table of contents.
+* We are using sphinx with a markdown extension, so the formatting may not follow standard markdown. If unsure, follow the formatting standards of [`myst-parser`](https://myst-parser.readthedocs.io/en/latest/syntax/typography.html).
