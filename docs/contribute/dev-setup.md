@@ -50,7 +50,7 @@ To create the war file:
 1. run `docker-compose up [-d]`
 1. To verify successful launch, open in browser `http://localhost:81/` when tomcat has started. Default login of username/password `tomcat`/`tomcat123` should work.
 
-Note: if you're running docker as root, you may way to explicitly set your deploy directory path to include your user, i.e., `WILDBOOK_BASE_DIR=~USER/wildbook-dev`
+Note: if you're running docker as root, you may want to explicitly set your deploy directory path to include your user, i.e., `WILDBOOK_BASE_DIR=~USER/wildbook-dev`
 
 ### Redeploy and rebuild
 For any local testing, you will need to rebuild and redeploy your changes.
