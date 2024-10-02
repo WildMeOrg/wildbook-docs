@@ -30,7 +30,9 @@ You can also merge two individuals without having to go through the match result
 
 ## How do I unmerge two animals?
 
-Click the Edit button in the Identity section of an encounter. Under Manage Identity, click "Remove from marked individual."
+Click the Edit button in the Identity section of an encounter. Under Manage Identity, click "Remove from marked individual." 
+
+Enter the correct ID in the "Set new individual ID" field if it’s a new individual or in the "Add to existing individual ID" field if the individual already exists in Wildbook.
 
 ## How do I cancel a merge request?
 
