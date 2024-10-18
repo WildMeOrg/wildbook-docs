@@ -17,13 +17,10 @@ Permissions are granted at Encounter-level, meaning a user can access any **Sigh
 
 ## User Roles
 
-* **Contributor** - users that are limited to only submit Sightings
-* **Researcher** - users that can manage their own data (Sightings and Individuals) and collaborations,  match and merge individuals, and search
-* **User Manager** - users that can create and edit users, and manage user collaborations
-* **Exporter** - users that can export all the data they own and collaborate with
-* **Administrator** - users that can manage data and configure the Codex platform they belong to
-* **machinelearning** - not functional
-* **rest** - not functional
+* **researcher** - Users that can manage their data and that of users they have an edit collaboration with, view data of users they have a view collaboration with, export thier and collaborator data, view their data integrity checks, and match and merge individuals.
+* **orgAdmin** - Users that can create and edit but not delete users within their org, manage user collaborations within their org, create other orgAdmins for their org, export data within their org, view data integrity checks within their org. Users cannot edit the data or roles of any user with the staff role, even within the same org.
+* **admin** - Users that can configure the Wildbook platform they belong to and can view ecological-related data integrity checks.
+* **staff** - Users that can create, delete, and edit users; create and delete orgs; manage all user data; configure the Wildbook platform they belong to; view user-related and ecological-related data integrity checks.
 
 ## Collaborations
 
@@ -68,7 +65,7 @@ You can view an encounter if:
 
 You can edit an encounter if:
 
-* You’re a site admin.
+* You have the staff role.
 * You reported the Encounter.
 * You have a collaboration with the owner and the owner grants you edit rights. *Note that edit rights can be revoked at any time.*
 
