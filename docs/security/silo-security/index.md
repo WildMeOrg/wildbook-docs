@@ -57,7 +57,8 @@ The person who initiates the collaboration has an assumed acceptance, so the rec
 You can view an encounter if:
 
 * You reported the Encounter.
-* You’re a Site Admin.
+* You have the staff role.
+* You're an orgAdmin and the Encounter belongs to a member of your org.
 * You have a Collaboration with another user that allows for view access.
 * The Encounter was publicly submitted and not assigned to another User.
 
@@ -66,6 +67,7 @@ You can view an encounter if:
 You can edit an encounter if:
 
 * You have the staff role.
+* You're an orgAdmin and the Encounter belongs to a member of your org.
 * You reported the Encounter.
 * You have a collaboration with the owner and the owner grants you edit rights. *Note that edit rights can be revoked at any time.*
 
