@@ -11,21 +11,21 @@ bulk-import-logs
 
 The **Silo Security model** lets users decide who they share their data with. The users who most commonly use it are those working on academic research or at-risk species.
 
-Permissions are granted at the Encounter-level, meaning a user can access any **Sighting**, **Individual**, or **Survey** as long as they have access to the **Encounter** those belong to.
+Permissions are granted at the Encounter level, meaning a user can access any **Sighting**, **Individual**, or **Survey** as long as they have access to the **Encounter** those belong to.
 
 ## User Roles
 
 **researcher** 
-* Users that can manage their data and that of users they have an edit collaboration with, view data of users they have a view collaboration with, export thier and collaborator data, view their data integrity checks, and match and merge individuals.
+* Users that can manage their data and that of users they have an edit collaboration with, view data of users they have a view collaboration with, export their data and that of users they have a collaboration with, view their data integrity checks, and match and merge individuals.
 
 **orgAdmin**
-*  Users that can create and edit but not delete users within their org, manage user collaborations within their org, create other orgAdmins for their org, export data within their org, view data integrity checks within their org. Users cannot edit the data or roles of any user with the staff role, even within the same org.
+* Users that can create and edit users within their org, manage user collaborations within their org, create other orgAdmins for their org, export data within their org, view data integrity checks within their org. OrgAdmins cannot edit the data or roles of any user with the **staff** or **admin** role, even within the same org.
 
 **admin**  
 * Users that can view ecological-related data integrity checks and configure the Wildbook platform they belong to (such as managing [photo keywords](photo-keywords.md)).
 
 **staff**
-* This role is intended for Wild Me organization members and is managed in the Wildbook's configuration setting (not within the platform). Staff can create, delete, and edit users; create and delete orgs; manage all user data; configure the Wildbook platform they belong to; and view user-related and ecological-related data integrity checks. 
+* This role is intended for Conservation X Labs organization members and is managed in the Wildbook's configuration setting (not within the platform). Staff can create, delete, and edit users; create and delete orgs; manage all user data; configure the Wildbook platform they belong to; and view user-related and ecological-related data integrity checks. 
 
 ## Managing Users
 
@@ -55,7 +55,7 @@ Only users with the **staff** role can delete another user.
 
 ### Addressing Bulk Import Concerns
 
-As an orgAdmin, you can manage **bulk imports** for any user in your organization.
+OrgAdmins can manage **bulk imports** for any user in their organization.
 
 1. Go to **Administer**, then **Bulk Import Logs**.
 2. Select the desired *Bulk Import task* from the list.
