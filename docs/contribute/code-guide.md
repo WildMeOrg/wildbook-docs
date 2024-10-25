@@ -5,7 +5,8 @@
 * If you are adding code that will be custom to a single platform, the feature needs to be approved by the Wild Me team. If approved, add all custom code in a block at the bottom of the page to prevent merge conflicts.
 
 ### Dependencies
-We use dependabot for dependency management; however, due to inconsistencies in semantic versioning and behavioral changes in packages supporting machine learning, we do system testing for all PRs suggested by dependabot. If you want to update or add a new dependency, contact the Wild Me team to discuss the changes before submitting a PR. 
+* All dependencies must be on a locked version. We do not accept PRs that use the `latest` version of anything.
+* We use dependabot for dependency management; however, due to inconsistencies in semantic versioning and behavioral changes in packages supporting machine learning, we do system testing for all PRs suggested by dependabot. If you want to update or add a new dependency, contact the Wild Me team to discuss the changes before submitting a PR. 
 
 ### In-line styling
 Generally speaking, we want to avoid in-line styling to allow for greater consistency and understandability. If you have concerns with what theme styling to use, check the theme figma.
@@ -13,7 +14,19 @@ Generally speaking, we want to avoid in-line styling to allow for greater consis
 ### Internationalization
 All Wild Me tools are intended for an international audience, so we want to provide translated versions. An active goal for 2024 is to get ensure that all product copy has been internationalized according to the following standard.
 
-At present, in Wildbook, all copy except for site name, notification messages, and species names are wrapped and localized to 4 languages: english, french, spanish, and italian.
+At present, in Wildbook, all copy except for site name, notification messages, and species names are wrapped and localized to 4 languages: German, English, French, Spanish, and Italian. Language files differ in location based on whether you are contributing to a react or jsp page. For all language updates, make sure that the update is addressed across all locales.
+
+#### React
+Language files are located in `frontend/src/locale/`. If you are adding a new string to the system, make sure the string is available across the different languages by adding the key and translated string to 
+* `de.json` - German
+* `en.json` - English
+* `es.json` - Spanish
+* `fr.json` - French
+* `it.json` - Italian
+Ensure that the key is all caps with underscores as separators and is human-legible. Ex: **THISKEY_IS_GOOD** vs this.key.NeedsToBe-fixed vs TKNTBF
+
+#### Jsp
+`.properties` files in the `resources/bundles` language folders are used to generate translations for different supported languages. If you add a new string to the system, add the string to the appropriate `.properties` file, and make sure the string is available across `en`, `de`, `es`, `fr`, and `it`. Either provide the English string in all files, or provide the translated string in each one.
 
 ## Wildbook
 Presently, Wildbook is a tomcat application leveraging jsp as the frontend. We are transitioning to a react frontend with a standardized REST API framework. We are iteratively removing jsp pages. For more details on the trajectory of page updates, see the roadmap.
@@ -54,26 +67,11 @@ Because we are transitioning between tech stacks, there are some places where co
 #### Tip and Tricks
 * If bootstrap components are stubbornly refusing to change color, try `accent-color`.
 
-### Language files
-Language files differ in location based on whether you are contributing to a react or jsp page. For all language updates, make sure that the update is addressed across all locales. Current locales supported are English, Spanish, German, French, and Italian.
-
-#### React
-Language files are located in `frontend/src/locale/`. If you are adding a new string to the system, make sure the string is available across the different languages by adding the key and translated string to 
-* `de.json` - German
-* `en.json` - English
-* `es.json` - Spanish
-* `fr.json` - French
-* `it.json` - Italian
-Ensure that the key is all caps with underscores as separators and is human-legible. Ex: **THISKEY_IS_GOOD** vs this.key.NeedsToBe-fixed vs TKNTBF
-
-#### Jsp
-`.properties` files in the `resources/bundles` language folders are used to generate translations for different supported languages. If you add a new string to the system, add the string to the appropriate `.properties` file, and make sure the string is available across `en`, `de`, `es`, `fr`, and `it`. Either provide the English string in all files, or provide the translated string in each one.
-
 #### Customizing copy
 If you are updating a translation for general use, do your PR against the `main` branch. If you are updating a language file to have specific copy associated with a specific platform, do your PR against the specific platform's branch.
 
 ### Java/jsp style
-Initialize variables and type signatures at the abstract/interface level when possible.
+* Initialize variables and type signatures at the abstract/interface level when possible.
 
 Instead of:
 
@@ -98,7 +96,7 @@ https://stackoverflow.com/questions/2279030/type-list-vs-type-arraylist-in-java
 
 Related: when writing utility methods, making the input type as abstract as possible makes the method versatile. See Util.asSortedList in Wildbook: since the input is an abstract Collection, it can accept a List, Set, PriorityQueue, or Vector as input, and return a sorted List.
 
-Runtime (not style): Use Sets (not Lists or arrays) if you’re only keeping track of collection membership / item uniqueness. 
+* Runtime (not style): Use Sets (not Lists or arrays) if you’re only keeping track of collection membership / item uniqueness. 
 
 Instead of:
 
@@ -126,8 +124,7 @@ The reason is a little deep in the data types. Sets are defined as unordered col
 
 Sets implement contains, add, and remove methods much faster than lists [contains is O(log(n)) vs O(n) runtime]. A list has to iterate through the entire list every time it runs contains (it checks each item once at a time) while a set (especially a HashSet) keeps track of an item index for quick lookup.
 
-
-Use for-each loops aka “enhanced for loops” to make loops more concise and readable.
+* Use for-each loops aka “enhanced for loops” to make loops more concise and readable.
 
 Instead of:
 
@@ -146,10 +143,10 @@ for (Encounter enc: encounters) {
 
 Note that in both cases you might want to check if `encounters == null` if relevant, but you rarely need to check if `encounters.length()>0` because the for-loops take care of that.
 
-Also note that if you want access to the `i` variable for logging or otherwise, the classic for-loop is best.
+Conversely, if you want access to the `i` variable for logging or otherwise, the classic for-loop is best.
 
 
-`Util.stringExists` is shorthand for a common string check:
+* `Util.stringExists` is shorthand for a common string check:
 
 Instead of:
 
@@ -166,3 +163,5 @@ Try:
 ```
 
 This method also checks for the strings “none” and “unknown” which have given us trouble in displays in the past.
+
+* When dealing with any functionality that handles data persistence, make sure to use try catch exceptions. Data loss is considered a critical failure and an emergency to address.
