@@ -31,8 +31,8 @@ The Sighting page is headed with the Occurrence ID. Supported character for the 
 * **Number of Marked Individuals Participating:** Displays the number of marked individuals reported as part of the Sighting. This is determined by the Encounters associated with the sighting and cannot be manually edited.
 * **Estimated Total Individuals Participating:** Allows for researcher input of the estimated number of Individuals in a Sighting. Enter the correct information, then click **Set**.
 * **Location ID:** Displays the Location ID associated with the Sighting. This is determined by the Encounters associated with the Sighting and cannot be manually set.
-* **Lat / Long:** The latitude and longitude information associated with the first Encounter data found in a standard import. This can only be set during *Standard Import*.
-* **Bearing / Distance:** The bearing and distance information associated with the Sighting. This can only be set during *Standard Import*.
+* **Lat / Long:** The latitude and longitude information associated with the first Encounter data found in a standard import.
+* **Bearing / Distance:** The bearing and distance information associated with the Sighting.
 * **Encounter Table:** Displays all Encounters associated with the Sighting.
 * **Image Gallery:** Displays the images from the Encounters associated with the Sighting.
 * **Observations:** Observations are intended to be short identifiers associated with a given Sighting. Observations are searchable, but are not verified or accessible between Sightings.
