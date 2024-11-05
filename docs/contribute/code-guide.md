@@ -1,5 +1,7 @@
 # Code Contribition Guideline
 
+Presently, Wildbook is a tomcat application leveraging jsp as the frontend. We are transitioning to a react frontend with a standardized REST API framework. We are iteratively removing jsp pages. For more details on the trajectory of page updates, see the roadmap.
+
 ## General
 * DRY Principle: Do Not Repeat Yourself. Avoid code duplication by reusing components, functions, and styles. This not only minimizes the codebase but also simplifies maintenance and updates.
 * If you are adding code that will be custom to a single platform, the feature needs to be approved by the Wild Me team. If approved, add all custom code in a block at the bottom of the page to prevent merge conflicts.
@@ -28,9 +30,6 @@ Ensure that the key is all caps with underscores as separators and is human-legi
 #### Jsp
 `.properties` files in the `resources/bundles` language folders are used to generate translations for different supported languages. If you add a new string to the system, add the string to the appropriate `.properties` file, and make sure the string is available across `en`, `de`, `es`, `fr`, and `it`. Either provide the English string in all files, or provide the translated string in each one.
 
-## Wildbook
-Presently, Wildbook is a tomcat application leveraging jsp as the frontend. We are transitioning to a react frontend with a standardized REST API framework. We are iteratively removing jsp pages. For more details on the trajectory of page updates, see the roadmap.
-
 ### Variable naming conventions
 * Camel case
 * Don’t use single-letter variable names (no matter how temporary you think the code is)
@@ -45,18 +44,18 @@ Because we are transitioning between tech stacks, there are some places where co
   * `servletResponseTemplate.htm`
 * If changing a dropdown in a .jsp page, use the library `select 2`. It provides a single line component update that adds in the ability to filter the dropdown. For example: `$('#selectCode').select2({width: '100%'});`
 
-### React
-#### Plugins used
+## React
+### Plugins used
 * `eslint-plugin-react`: For React best practices.
 * `eslint-plugin-react-hooks`: Ensures correct use of hooks.
 
-#### Relevant rules
+### Relevant rules
 * Semicolons are required ("semi": 2).
 * JSX is allowed in both .js and .jsx files ("react/jsx-filename-extension": 0).
 * Console statements show warnings ("no-console": 1).
 * React Hooks rules are enforced ("react-hooks/rules-of-hooks": "error").
 
-#### Best practices
+### Best practices
 * _Prefer Bootstrap Classes_: Always use Bootstrap's utility classes for styling when possible. This ensures consistency across the project and leverages Bootstrap's responsive features. Only use custom CSS or inline styles when the desired styling cannot be achieved with Bootstrap.
 * _Code Consistency_: We are using eslint and prettier to enforce a consistent coding style throughout the project. This includes consistent naming conventions, file and folder structure, and code formatting.
 * _Componentization_: Break down the UI into reusable components to maximize code reusability and clarity. Each component should have a well-defined purpose and should operate independently as much as possible.
@@ -64,13 +63,19 @@ Because we are transitioning between tech stacks, there are some places where co
 * _UseEffect Best Practices_: When using `useEffect`, always include all dependencies in the dependency array to avoid bugs related to stale state and props. Also, be sure to return a cleanup function to avoid memory leaks, especially when subscribing to external data sources.
 * _Props Validation_: Use `PropTypes` to validate props passed to a component, or consider using TypeScript for static type checking throughout the application. This can prevent many runtime errors and improve developer productivity.
 
-#### Tip and Tricks
+### Tip and Tricks
 * If bootstrap components are stubbornly refusing to change color, try `accent-color`.
 
-#### Customizing copy
+### Customizing copy
 If you are updating a translation for general use, do your PR against the `main` branch. If you are updating a language file to have specific copy associated with a specific platform, do your PR against the specific platform's branch.
 
-### Java/jsp style
+### Coming changes
+10.7: [867](https://github.com/WildMeOrg/Wildbook/issues/867) Linter will recognize node.js. Until then, you may need to use the following to cancel out unused reference errors from your linter
+* this line used before process.env // eslint-disable-next-line no-undef`
+* this line at the top of files with a lot of node.js calls /* eslint-disable no-undef */
+
+## Java/jsp style
+
 * Initialize variables and type signatures at the abstract/interface level when possible.
 
 Instead of:
