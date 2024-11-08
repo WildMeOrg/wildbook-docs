@@ -57,7 +57,7 @@ For any local testing, you will need to rebuild and redeploy your changes.
 
 #### War file
 
-If you make code changes and want to test them locally, you can create and deploy a new war file using the [Build war file](#build-war-file) and [Deploy](#deploy) instructions. Then use `docker-compose restart wildbook` to test your changes.
+If you make code changes and want to test them locally, you can create and deploy a new war file using the [Build war file](#build-war-file) and [Deploy](#deploy) instructions. Then use `docker-compose restart wildbook` to test your changes
 
 #### React-only changes
 
@@ -76,3 +76,8 @@ If you have your dev environment set up correctly, this will build the React app
 1. run `npm run build`
 1. copy everything under `frontend/build/` to the deployed `wildbook/react/` directory you created during setup
 1. refresh your browser page by visiting either http://localhost:81/react/ for local testing or https://public.url.example.com/react/ for the public-facing deployment
+
+### Set up WBIA
+_WBIA is not covered for dev support as we are actively working to remove WBIA from the platform and move to in-app ML._
+
+Should you want to set up a WBIA server, you can configure a single WBIA instance to run against multiple Wildbooks.
