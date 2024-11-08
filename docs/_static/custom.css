@@ -11,11 +11,13 @@ html[data-theme='light'] {
 }
 
 html[data-theme='dark'] a {
-    color:#0267FD;
+    color:#007599;
+    text-decoration: none;
 }
 
 html[data-theme='dark'] a:hover {
     color:#007599;
+    text-decoration: underline;
 }
 
 html [data-theme='dark'] .search-button-field {
@@ -23,9 +25,11 @@ html [data-theme='dark'] .search-button-field {
 }
 
 html[data-theme='light'] a {
-    color:#0267FD;
+    color:#007599;
+    text-decoration: none;
 }
 
 html[data-theme='light'] a:hover {
     color:#007599;
+    text-decoration: underline;
 }

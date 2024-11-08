@@ -19,4 +19,9 @@ Want to put your talents to use fighting the 6th mass extinction? We're excited 
 
 ```{toctree}
 contribute/index
+contribute/dev-setup
+contribute/pr-workflow
+contribute/code-guide
+contribute/copy-guide
+contribute/roadmap
 ```
