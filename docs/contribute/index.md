@@ -6,6 +6,7 @@
 dev-setup
 pr-workflow
 code-guide
+tests
 ia-dev
 copy-guide
 roadmap
