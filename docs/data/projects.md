@@ -155,4 +155,4 @@ If you choose to not set this, the Project name will match the Project ID. This 
 
 **Encounter.project0.ownerUsername**: The username of the person who will manage the project. **These values are case sensitive**.
 
-To ensure prevent issues, the project owner should be associated with all encounters in the spreadsheet that are going into the new project.
+To prevent issues, the project owner should be associated with all encounters in the spreadsheet that are going into the new project.
