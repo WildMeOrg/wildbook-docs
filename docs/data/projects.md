@@ -3,7 +3,6 @@
 A project is a processing tool for groups of disparate encounters. Encounters are compared to other encounters in the project, and as they are recognized as individuals, they are assigned project IDs.
 
 Common use cases for a project are a census (population count of identified subset of platform data) or reconciliation of multiple catalogs (de-duplication between catalogs).
-_This feature had financial backing from `IndoCet`._
 
 ## Understanding projects
 
@@ -12,7 +11,7 @@ The data in the encounter table is intended to help you recognize what encounter
 * **Encounter:** The reference to the encounter. Also acts as a link to the encounter page.
 * **Individual:** Reference to the display name of the individual. Also acts as a link to the individual page.
 * **Date/Time:** The time associated with the encounter.
-* **Location:** The location associated with the encounter.BETA note: Only the LocationID field will display. If other location information is used, it will not display.
+* **Location:** The location associated with the encounter. **BETA note**: Only the LocationID field will display. If other location information is used, it will not display.
 * **Data Owner:** The owner of the given encounter.
 * **Project ID:** The ID of an individual from the current project. This column should be blank until a project ID has been assigned. All encounters that belong to the same individual will have the same project ID.
 
@@ -138,21 +137,22 @@ If you are working from a project, you can set a preferred view. This will cause
 
 You can use a bulk import to put data into an existing project. To do so, you will need the following columns for each encounter in the import to go into a project:
 
-**Encounter.project0.projectIdPrefix**: The prefix used when assigning project IDs to encounters note that these values are case-sensitive. Values from 0 to infinity are iterated until a sequence value is not found, allowing you to put encounters into multiple projects.
+**Encounter.project0.projectIdPrefix**: The prefix used when assigning project IDs to encounters. **These values are case-sensitive**. Values from 0 to infinity are iterated until a sequence value is not found, allowing you to put encounters into multiple projects. Required for imports into existing and new projects. **Does not save unless Encounter.project0.researchProjectName is also reported**.
 
-**Encounter.project0.researchProjectName**: The project's name.
+**Encounter.project0.researchProjectName**: The project’s name. **These values are case-sensitive**. Values from 0 to infinity are iterated until a sequence value is not found, allowing you to put encounters into multiple projects. Required for imports into both existing and new projects. **Does not save unless Encounter.project0.projectIdPrefix is also reported**.
 
-If you choose to not set this, the Project Name will match the Project ID. This can be changed in the UI at any time.
+If you choose to not set this, the Project name will match the Project ID. This can be changed by editing the Project.
 
 ## Bulk Import into new project
 
 You can use a bulk import to create a project and put data into it. To do so, you will need the following columns:
 
-**Encounter.project0.projectIdPrefix**: The prefix used when assigning project IDs to encounters; note that these values are case-sensitive. Values from 0 to infinity are iterated until a sequence value is not found, allowing you to put encounters into multiple projects.
+**Encounter.project0.projectIdPrefix**: The prefix used when assigning project IDs to encounters. **These values are case-sensitive**. Values from 0 to infinity are iterated until a sequence value is not found, allowing you to put encounters into multiple projects. Required for imports into existing and new projects. **Does not save unless Encounter.project0.researchProjectName is also reported**.
 
-**Encounter.project0.researchProjectName:** The project's name.
-If you choose to not set this, the Project Name will match the Project ID. This can be changed in the UI at any time.
+**Encounter.project0.researchProjectName:** The project’s name. **These values are case-sensitive**. Values from 0 to infinity are iterated until a sequence value is not found, allowing you to put encounters into multiple projects. Required for imports into both existing and new projects. **Does not save unless Encounter.project0.projectIdPrefix is also reported**.
 
-**Encounter.project0.ownerUsername**: The username of the person who should manage the project; note that these values are case sensitive.
+If you choose to not set this, the Project name will match the Project ID. This can be changed by editing the Project.
 
-To ensure no caching or threading issues, the owner should be associated with all encounters in the spreadsheet that are going into the new project.
+**Encounter.project0.ownerUsername**: The username of the person who will manage the project. **These values are case sensitive**.
+
+To ensure prevent issues, the project owner should be associated with all encounters in the spreadsheet that are going into the new project.
