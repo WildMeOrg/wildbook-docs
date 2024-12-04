@@ -25,7 +25,7 @@ Wildbook caters to multiple species. For best results, visit their Wildbook plat
 * When running detection and identification, photographs smaller than **480px** are sized up, which may cause blurriness.
 * A compression ratio of 90% is enough.
 * Uploading photographs with more than a higher compression ratio will not influence the identification process.
-* Each photograph should be no more than 1-3MB in size. Photographs with bigger sizes put a strain on the server and cause identification to take longer.
+* Each photograph should be no more than 3MB in size. Photographs with bigger sizes put a strain on the server and cause identification to take longer.
 ````{warning}
 While Wildbook allows you to upload video files, they cannot currently be sent through the [Image Analysis Pipeline](../introduction/image-analysis-pipeline.md). We recommend that you take screenshots of your video and upload those images for identification.
 ````
