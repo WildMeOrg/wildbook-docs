@@ -1,24 +1,37 @@
 # Code Contribition Guideline
 
-Presently, Wildbook is a tomcat application leveraging jsp as the frontend. We are transitioning to a react frontend with a standardized REST API framework. We are iteratively removing jsp pages. For more details on the trajectory of page updates, see the roadmap.
+Presently, Wildbook is a tomcat application leveraging jsp as the frontend. We are transitioning to a react frontend with a standardized REST API framework. We are iteratively removing jsp pages. For more details on the trajectory of page updates, see the [roadmap](roadmap.md).
 
 ## General
 * DRY Principle: Do Not Repeat Yourself. Avoid code duplication by reusing components, functions, and styles. This not only minimizes the codebase but also simplifies maintenance and updates.
 * If you are adding code that will be custom to a single platform, the feature needs to be approved by the Wild Me team. If approved, add all custom code in a block at the bottom of the page to prevent merge conflicts.
+* Variable names should be in camel case
+* Don’t use single-letter variable names (no matter how temporary you think the code is)
+* Code should be clear enough to speak for itself without comments, but use your judgement on if a comment is necessary
+* Code for clarity rather than for efficiency (one-liners are cool, but not at the expense of future obfuscation)
 
 ### Dependencies
 * All dependencies must be on a locked version. We do not accept PRs that use the `latest` version of anything.
 * We use dependabot for dependency management; however, due to inconsistencies in semantic versioning and behavioral changes in packages supporting machine learning, we do system testing for all PRs suggested by dependabot. If you want to update or add a new dependency, contact the Wild Me team to discuss the changes before submitting a PR. 
 
-### In-line styling
-Generally speaking, we want to avoid in-line styling to allow for greater consistency and understandability. If you have concerns with what theme styling to use, check the theme figma.
-
 ### Internationalization
 All Wild Me tools are intended for an international audience, so we want to provide translated versions. An active goal for 2024 is to get ensure that all product copy has been internationalized according to the following standard.
 
-At present, in Wildbook, all copy except for site name, notification messages, and species names are wrapped and localized to 4 languages: German, English, French, Spanish, and Italian. Language files differ in location based on whether you are contributing to a react or jsp page. For all language updates, make sure that the update is addressed across all locales.
+At present, in Wildbook, all copy except for site name and species names should be wrapped and localized to 5 languages: German, English, French, Spanish, and Italian. If you see UI copy that is not localized, let us know or create a PR to address the issue. 
 
-#### React
+### Notes during modernization
+Because we are transitioning between tech stacks, there are some places where code is weird or where duplicate effort is necessary to maintain user experience.
+* If updating the header, you will need to update:
+  * `header.jsp`
+  * `header.jsx`
+  * `servletResponseTemplate.htm`
+
+## React
+### Plugins used
+* `eslint-plugin-react`: For React best practices.
+* `eslint-plugin-react-hooks`: Ensures correct use of hooks.
+
+### Internationalization
 Language files are located in `frontend/src/locale/`. If you are adding a new string to the system, make sure the string is available across the different languages by adding the key and translated string to 
 * `de.json` - German
 * `en.json` - English
@@ -27,33 +40,12 @@ Language files are located in `frontend/src/locale/`. If you are adding a new st
 * `it.json` - Italian
 Ensure that the key is all caps with underscores as separators and is human-legible. Ex: **THISKEY_IS_GOOD** vs this.key.NeedsToBe-fixed vs TKNTBF
 
-#### Jsp
-`.properties` files in the `resources/bundles` language folders are used to generate translations for different supported languages. If you add a new string to the system, add the string to the appropriate `.properties` file, and make sure the string is available across `en`, `de`, `es`, `fr`, and `it`. Either provide the English string in all files, or provide the translated string in each one.
-
-### Variable naming conventions
-* Camel case
-* Don’t use single-letter variable names (no matter how temporary you think the code is)
-* Code should be clear enough to speak for itself without comments, but use your judgement on if a comment is necessary
-* Code for clarity rather than for efficiency (one-liners are cool, but not at the expense of future obfuscation)
-
-### Notes during modernization
-Because we are transitioning between tech stacks, there are some places where code is weird or where duplicate effort is necessary to maintain user experience.
-* If updating the header, you will need to update:
-  * `header.jsp`
-  * `header.jsx`
-  * `servletResponseTemplate.htm`
-* If changing a dropdown in a .jsp page, use the library `select 2`. It provides a single line component update that adds in the ability to filter the dropdown. For example: `$('#selectCode').select2({width: '100%'});`
-
-## React
-### Plugins used
-* `eslint-plugin-react`: For React best practices.
-* `eslint-plugin-react-hooks`: Ensures correct use of hooks.
-
 ### Relevant rules
 * Semicolons are required ("semi": 2).
 * JSX is allowed in both .js and .jsx files ("react/jsx-filename-extension": 0).
 * Console statements show warnings ("no-console": 1).
 * React Hooks rules are enforced ("react-hooks/rules-of-hooks": "error").
+* `/* eslint-disable no-restricted-globals */` must be present at the top of the serviceworker to allow `self` to work
 
 ### Best practices
 * _Prefer Bootstrap Classes_: Always use Bootstrap's utility classes for styling when possible. This ensures consistency across the project and leverages Bootstrap's responsive features. Only use custom CSS or inline styles when the desired styling cannot be achieved with Bootstrap.
@@ -69,13 +61,13 @@ Because we are transitioning between tech stacks, there are some places where co
 ### Customizing copy
 If you are updating a translation for general use, do your PR against the `main` branch. If you are updating a language file to have specific copy associated with a specific platform, do your PR against the specific platform's branch.
 
-### Coming changes
-10.7: [867](https://github.com/WildMeOrg/Wildbook/issues/867) Linter will recognize node.js. Until then, you may need to use the following to cancel out unused reference errors from your linter
-* this line used before process.env // eslint-disable-next-line no-undef`
-* this line at the top of files with a lot of node.js calls /* eslint-disable no-undef */
-
 ## Java/jsp style
 
+### Jsp Internationalization
+`.properties` files in the `resources/bundles` language folders are used to generate translations for different supported languages. If you add a new string to the system, add the string to the appropriate `.properties` file, and make sure the string is available across `en`, `de`, `es`, `fr`, and `it`. Either provide the English string in all files, or provide the translated string in each one.
+
+### Best practices
+* If changing a dropdown in a .jsp page, use the library `select 2`. It provides a single line component update that adds in the ability to filter the dropdown. For example: `$('#selectCode').select2({width: '100%'});`
 * Initialize variables and type signatures at the abstract/interface level when possible.
 
 Instead of:
