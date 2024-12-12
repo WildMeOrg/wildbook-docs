@@ -32,7 +32,7 @@ To add a new Location ID, you'll need to contact your Wildbook's administrator, 
 
 Each location ID is defined in the **JSON** format as follows:
 
-```
+```{code-block} json
 { 
     "name":"Iceland", 
     "id":"Iceland", 

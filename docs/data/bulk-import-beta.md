@@ -92,9 +92,11 @@ Mistakes happen. If you find systematic problems in the data of a Bulk Import jo
 
 ## Fields Available
 
+### Common Fields
 The most commonly-used fields are listed in the table below.
-
-| Name | Type | Example Value | Description |
+```{table}
+:widths: auto
+| Name | Type | Example | Description |
 | ---- | ---- | ------------- | ----------- |
 | MarkedIndividual.individualID | V_WString | Lion045 | PrimaryKey. While Wildbook assigns unique user IDs to MarkedIndividuals, this field becomes the default display name for the MarkedIndividual. <br>Duplicate of Encounter.individualID. <br>We recommend using this field instead of Encounter.individualID. |
 | Encounter.individualID | V_WString | Lion045 | Duplicate of MarkedIndividual.individualID. |
@@ -110,10 +112,14 @@ The most commonly-used fields are listed in the table below.
 | Encounter.specificEpithet | V_WString | pardus | Enter an option from the Taxonomy drop-down menu. This should be the second of the two phrases. This entry must begin with a lowercase letter. **These values are case-sensitive.** If entered incorrectly, Taxonomy will display as "Not Available". |
 | Encounter.submitterID | V_WString | tmcnutt | Add submitter's username in Wildbook. **These values are case-sensitive.** |
 | Encounter.state | V_WString | approved<br>unapproved<br>unidentifiable | The curation state of this Encounter. Default value if left blank is "approved". <br>Uncurated data should be imported as "unapproved". <br>Encounters without photos should be imported as "unidentifiable". |
+```
 
+### Encounter Fields
 The following fields can be included when uploading an Encounter. Review the description of the field and validate that it is in use in your system (meaning if you are on a terrestrial Wildbook, you will likely not use Encounter.depth).
 
-| Name | Type | Example Value | Description |
+```{table}
+:widths: auto
+| Name | Type | Example | Description |
 | ---- | ---- | ------------- | ----------- |
 | Encounter.alternateID | V_WString | Bitey | Adds an Alternate ID to the Identity section of the Encounter. |
 | Encounter.behavior | V_WString | feeding | List of behaviors commonly observed in the species. |
@@ -130,28 +136,25 @@ The following fields can be included when uploading an Encounter. Review the des
 | Encounter.mediaAsset0.[label name] | String | [label name]: flukeType, value: dorsal | Name a column for a labeled keyword and provide an associated value for each encounter. Labeled keyword names can be found in the keyword drop-down menu on a MediaAsset. Labeled keywords can be defined in the commonConfiguration.properties file. |
 | Encounter.minutes | V_WString | 35 | Enter a number 1-60. |
 | Encounter.occurrenceID | V_WString | BPCT_20190825_1 | A unique code that links encounters across a single sighting. Helpful if you can cross-reference to your records. If you enter an ID that exists in the system, the encounter will be associated with the existing sighting. If you enter a new and unique ID or if you leave the field blank, a new sighting will be created and the encounter associated with the newly created sighting. Restricted to Latin alphanumeric characters (a-z, A-Z, 0-9), - and _. <br>Duplicate of Occurrence.occurrenceID. We recommend using this field instead of Occurrence.occurrenceID. |
-| Occurrence.occurrenceID | V_WString |  | Duplicate of Encounter.occurrenceID |
 | Encounter.researcherComments | V_WString | We also took a separate video observation. | Unconstrained field for general notes regarding the specific encounter (single annotation and related metadata). <br>Leaves comments on the Encounter page under Metadata > Audit Trail. |
 | Encounter.occurrenceRemarks | V_WString | We saw this pack while driving through the forest. | Leaves comments on the Encounter page under Attributes > Additional Comments. Use this field if you need the comments to persist on any cloned Encounters. |
-| Occurrence.comments | V_WString |  | Leaves comments on the Sighting/Occurrence ID page. |
 | Encounter.otherCatalogNumbers | V_WString | fieldObs12 | Links the Encounter to other numbers, such as a field encounter number for the day. Limited use in Wildbook. |
 | Encounter.patterningCode | V_WString | tan | A code that defines some standardized feature of body coloring, such as how humpback whale flukes are categorized 1-5 (light to dark) or wild dogs are categorized by general body color (e.g., tan). This field is stored on the back-end and displayed without UI editing capability. |
-| Encounter.informOther0.affiliation | String | BPCT | Unconstrained string to indicate an affiliation to inform. Values from 0 to infinity are iterated until a sequence value is not found. **Does not save unless Encounter.informOther0.emailAddress is also reported.** |
-| Encounter.informOther0.emailAddress | String | [joe@joe.com](mailto:joe@joe.com) | Add the email address of someone else to inform of Encounter updates. Values from 0 to infinity are iterated until a sequence value is not found. Links to the email address of a Wildbook account. |
-| Encounter.informOther0.fullName | String | Joe Smith | Provide the full name of someone else to inform of Encounter updates. Values from 0 to infinity are iterated until a sequence value is not found. **Does not save unless Encounter.informOther0.emailAddress is also reported.** |
-| Encounter.photographer0.affiliation | String | BPCT | Unconstrained string to list an organization the photographer is associated with. When the photographer is an existing Wildbook user, only include the *Encounter.photographer0.emailAddress* field. Whatever is in *Encounter.photographer0.affiliation* will be ignored in favor of what the system associates with the user's email address. Values from 0 to infinity are iterated until a sequence value is not found. **Does not save unless photographer0.emailAddress is also reported.** |
-| Encounter.photographer0.emailAddress | String | [joe@joe.com](mailto:joe@joe.com) | Add the email address of the photographer. Values from 0 to infinity are iterated until a sequence value is not found. Links to the email address of a Wildbook account. |
-| Encounter.photographer0.fullName | String | Joe Smith | Provide the full name of the photographer. When the photographer is an existing Wildbook user, only include the *Encounter.photographer0.emailAddress* field. Whatever is in *Encounter.photographer0.fullName* will be ignored in favor of what the system associates with the user's email address. Values from 0 to infinity are iterated until a sequence value is not found. **Does not save unless photographer0.emailAddress is also reported.** |
-| Encounter.submitter0.affiliation | String | Joe's Safaris | Unconstrained string to list the submitter's organization. Values  from 0 to infinity are iterated until a sequence value is not found. **Does** **not save** **unless** **submitter0.emailAddress** **is also reported.** |
-| Encounter.submitter0.emailAddress | String | joe@joe.com | Add the email address of the submitter. Values from 0 to infinity are iterated until a sequence value is not found. Links to the email address of a Wildbook account. |
-| Encounter.submitter0.fullName | String | Joe Smith | Provide the full name of the submitter. Values from 0 to infinity are iterated until a sequence value is not found. **Does not save unless submitter0.emailAddress is also reported.** |
-| Encounter.project0.projectIdPrefix | String | Cen20- | The prefix used when assigning project IDs to encounters. **These values are case-sensitive.** Values from 0 to infinity are iterated until a sequence value is not found, allowing you to put encounters into multiple projects. Required for imports into existing and new projects. |
-| Encounter.project0.researchProjectName | String | Census 2020 | The project's name. **These** **values** **are** **case-sensitive.** Values from 0 to infinity are iterated until a sequence value is not found, allowing you to put encounters into multiple projects. Required for imports into both existing and new projects. |
-| Encounter.project0.ownerUsername | String | censusadmin | The username of the person who should manage the project. **These values are case-sensitive.** Required for imports into new projects only. To prevent caching or threading issues, associate the new owner with all encounters in the spreadsheet that are going into the new project. |
 | Encounter.mediaAsset0.quality | String | An integer value 0 to 4. | Estimated quality of Encounter.mediaAsset0. Values from 0 to infinity are iterated until a sequence value is not found. |
 | Encounter.sex | V_WString | male | Focus on values: "male", "female", and "unknown". |
 | MarkedIndividual.nickname | V_WString | Barry the Slow Lion | Enter a name that can be more easily referenced; does not override ID. |
 | Membership.role | V_WString | alpha | Role as a member of a social unit (SocialUnit.socialUnitName). |
+| SatelliteTag.serialNumber | V_WString | 12345 | Serial number. Reference only |
+| SocialUnit.socialUnitName | V_WString | G Pack | PrimaryKey. Unique to each social unit. |
+```
+
+### Sightings Fields
+```{table}
+:widths: auto
+| Sightings Field | Type | Example | Description |
+| --------------- | ---- | ------------- | ----------- |
+| Occurrence.occurrenceID | V_WString |  | Duplicate of Encounter.occurrenceID |
+| Occurrence.comments | V_WString |  | Leaves comments on the Sighting/Occurrence ID page. |
 | Occurrence.bestGroupSizeEstimate | Double | 5 | Researcher-provided estimate of group size. |
 | Occurrence.effortCode | Double |  | Categorized set of values denoting the amount of effort that went into collecting data for a sighting. |
 | Occurrence.fieldStudySite | V_WString |  | String for location. Site names should be recognizable. |
@@ -176,19 +179,59 @@ The following fields can be included when uploading an Encounter. Review the des
 | Occurrence.observer | String |  | The name of the observing researcher. |
 | Occurrence.transectName | V_WString |  | Name of the transect that logged the sighting. Stored in the database only. |
 | Occurrence.visibilityIndex | Double |  | Indexed values of the visibility during the time of the sighting. Stored in the database only. |
-| SatelliteTag.serialNumber | V_WString | 12345 | Serial number. Reference only |
-| SocialUnit.socialUnitName | V_WString | G Pack | PrimaryKey. Unique to each social unit. |
-| SurveyTrack.vesselID | V_WString | Car 45 | User-provided identifier of ship used during survey. |
-| survey.vessel | V_WString | Car 45 | Duplicate of SurveyTrack.vesselID. |
+```
+
+### Project Fields
+```{table}
+:widths: auto
+| Project Field | Type | Example | Description |
+| ------------- | ---- | ------------- | ----------- |
+| Encounter.project0.projectIdPrefix | String | Cen20- | The prefix used when assigning project IDs to encounters. **These values are case-sensitive.** Values from 0 to infinity are iterated until a sequence value is not found, allowing you to put encounters into multiple projects. Required for imports into existing and new projects. |
+| Encounter.project0.researchProjectName | String | Census 2020 | The project's name. **These values are case-sensitive.** Values from 0 to infinity are iterated until a sequence value is not found, allowing you to put encounters into multiple projects. Required for imports into both existing and new projects. |
+| Encounter.project0.ownerUsername | String | censusadmin | The username of the person who should manage the project. **These values are case-sensitive.** Required for imports into new projects only. To prevent caching or threading issues, associate the new owner with all encounters in the spreadsheet that are going into the new project. |
+```
+
+### Submitter Fields
+```{table}
+:widths: auto
+| Submitter Field | Type | Example | Description |
+| --------------- | ---- | ------------- | ----------- |
+| Encounter.informOther0.affiliation | String | BPCT | Unconstrained string to indicate an affiliation to inform. Values from 0 to infinity are iterated until a sequence value is not found. **Does not save unless Encounter.informOther0.emailAddress is also reported.** |
+| Encounter.informOther0.emailAddress | String | joe@joe.com | Add the email address of someone else to inform of Encounter updates. Values from 0 to infinity are iterated until a sequence value is not found. Links to the email address of a Wildbook account. |
+| Encounter.informOther0.fullName | String | Joe Smith | Provide the full name of someone else to inform of Encounter updates. Values from 0 to infinity are iterated until a sequence value is not found. **Does not save unless Encounter.informOther0.emailAddress is also reported.** |
+| Encounter.photographer0.affiliation | String | BPCT | Unconstrained string to list an organization the photographer is associated with. When the photographer is an existing Wildbook user, only include the *Encounter.photographer0.emailAddress* field. Whatever is in *Encounter.photographer0.affiliation* will be ignored in favor of what the system associates with the user's email address. Values from 0 to infinity are iterated until a sequence value is not found. **Does not save unless photographer0.emailAddress is also reported.** |
+| Encounter.photographer0.emailAddress | String | joe@joe.com | Add the email address of the photographer. Values from 0 to infinity are iterated until a sequence value is not found. Links to the email address of a Wildbook account. |
+| Encounter.photographer0.fullName | String | Joe Smith | Provide the full name of the photographer. When the photographer is an existing Wildbook user, only include the *Encounter.photographer0.emailAddress* field. Whatever is in *Encounter.photographer0.fullName* will be ignored in favor of what the system associates with the user's email address. Values from 0 to infinity are iterated until a sequence value is not found. **Does not save unless photographer0.emailAddress is also reported.** |
+| Encounter.submitter0.affiliation | String | Joe's Safaris | Unconstrained string to list the submitter's organization. Values  from 0 to infinity are iterated until a sequence value is not found. **Does not save unless submitter0.emailAddress is also reported.** |
+| Encounter.submitter0.emailAddress | String | joe@joe.com | Add the email address of the submitter. Values from 0 to infinity are iterated until a sequence value is not found. Links to the email address of a Wildbook account. |
+| Encounter.submitter0.fullName | String | Joe Smith | Provide the full name of the submitter. Values from 0 to infinity are iterated until a sequence value is not found. **Does not save unless submitter0.emailAddress is also reported.** |
+```
+
+### Genetic Fields
+```{table}
+:widths: auto
+| Genetic Field | Type | Example | Description |
+| ------------- | ---- | ------------- | ----------- |
 | TissueSample.sampleID | V_WString | 12345 | ID of the tissue sample taken during this Encounter. Only one TissueSample can be imported per Encounter. |
 | SexAnalysis.sex | V_WString | female | Determination from a genetic analysis of the individual's sex. Results from the analysis of a tissue sample taken during the same encounter. **A corresponding TissueSample.sampleID entry is required for this field to import.** |
 | MitochondrialDNAAnalysis.haplotype | V_WString | "A+" | Determination from a genetic analysis of the individual's haplotype. Results from analysis of a tissue sample taken during the same encounter. **A corresponding TissueSample.sampleID entry is required for this field to import.** |
-| MicrosatelliteMarkersAnalysis.alleleNames <br>MicrosatelliteMarkersAnalysis.alleles0 <br>MicrosatelliteMarkersAnalysis.alleles1 | V_WString | alleleNames: "EV1,<br>EV5,EV94,GT23,<br>GT575,rw410,<br>464465,GATA417,<br>SW13,EV37,<br>EV14,FCB1,SW19" <br>alleles0: "120,154,<br>201,79,131,177,140,<br>182,158,231,125,<br>121,123" <br>alleles1: "120,158,<br>209,85,135,183,<br>140,186,160,237,<br>145,129,147" | Determination from a genetic analysis of the Individual's genotype. Results from analysis of a tissue sample taken during the same Encounter. **A corresponding** **TissueSample.sampleID** **entry is** **required** **for** **this field to import**. These three fields must all be present and have the exact same number of values as separated by commas. |
+| MicrosatelliteMarkersAnalysis.alleleNames <br>MicrosatelliteMarkersAnalysis.alleles0 <br>MicrosatelliteMarkersAnalysis.alleles1 | V_WString | alleleNames: "EV1,<br>EV5,EV94,GT23,<br>GT575,rw410,<br>464465,GATA417,<br>SW13,EV37,<br>EV14,FCB1,SW19" <br>alleles0: "120,154,<br>201,79,131,177,140,<br>182,158,231,125,<br>121,123" <br>alleles1: "120,158,<br>209,85,135,183,<br>140,186,160,237,<br>145,129,147" | Determination from a genetic analysis of the Individual's genotype. Results from analysis of a tissue sample taken during the same Encounter. **A corresponding TissueSample.sampleID entry is required for this field to import**. These three fields must all be present and have the exact same number of values as separated by commas. |
+```
+
+### Survey Fields
+```{table}
+:widths: auto
+| Survey Field | Type | Example | Description |
+| --------------- | ---- | ------------- | ----------- |
+| SurveyTrack.vesselID | V_WString | Car 45 | User-provided identifier of ship used during survey. |
+| survey.vessel | V_WString | Car 45 | Duplicate of SurveyTrack.vesselID. |
 | survey.id | String |  | Record number of the survey performed. |
+```
 
-The following fields are for aquatic use.
-
-| Name | Type | Example Value | Description |
+### Aquatic Fields
+```{table}
+:widths: auto
+| Aquatic Name | Type | Example | Description |
 | ---- | ---- | ------------- | ----------- |
 | Encounter.depth | Double | 35 | Depth of water where the Encounter occurred. Aquatic-only. |
 | Occurrence.bearing | Double | 45 | Value to work with decimalLatitude, decimalLongitude, and distance of Sighting. Typically aquatic-only. |
@@ -197,7 +240,7 @@ The following fields are for aquatic use.
 | Occurrence.seaSurfaceTemp | Double |  | Water temperature in degrees celsius. Aquatic-only. |
 | Occurrence.swellHeight | Double |  | Height of any waves in the area in meters. Aquatic-only. |
 | Occurrence.transectBearing | Double |  | Numeric value of the bearing from the observation vessel to the observed sighting. Stored in database only. Aquatic-only. |
-
+```
 ## Reviewing Bulk Imports
 
 You can review your Bulk Imports by selecting **Bulk Import Logs** from the **Administer** menu. If you have admin or orgAdmin roles on your User account, you may see additional logs for other users as well.

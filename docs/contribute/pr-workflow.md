@@ -10,7 +10,7 @@ To start, you will need to be signed in to your GitHub account, have admin acces
 1. In your terminal, enter the command `git clone https://github.com/USERNAME/Wildbook.git`
 1. Once the Wildbook directory becomes available in your working directory, move to it with the command `cd Wildbook`
 1. Add a reference to the original repo, denoting it as the upstream repo.
-```
+```{code-block}
 git remote add upstream https://github.com/WildMeOrg/Wildbook
 git fetch upstream
 ```

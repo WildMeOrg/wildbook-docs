@@ -29,3 +29,7 @@ html[data-theme='light'] a {
 html[data-theme='light'] a:hover {
     color:#007599;
 }
+
+table {
+    width:auto;
+}

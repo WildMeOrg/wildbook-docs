@@ -69,7 +69,7 @@ When you modify configuration parameters in this file, you may have to restart t
 #### Supporting multiple species
 
 By default, Wildbook assumes that information added to the database is for only one species of animal. You can configure Wildbook to support multiple species by setting the **genusSpecies** fields, and setting the **showTaxonomy** parameter to ''true'' in **commonConfiguration.properties**. The following example shows how to set these properties to differentiate between three species of large cats.
-```
+```{code-block}
 # show taxonomy
 showTaxonomy = true
 # for multi-species libraries, fill out the genus and species for each supported animal type, starting with genusSpecies0
@@ -90,7 +90,7 @@ Additional species can be set by incrementing the properties, such as **genusSpe
 Encounters can be assigned to particular states, often reflecting critical parts of a project workflow. For example, states can be used to define what data has been 'approved' for use in your study or is 'unidentifiable' due to poor quality. By default, new data in Wildbook is put into an 'unapproved' state that represents its status as unreviewed and of uncertain quality.
 
 The available states are defined in the following section of commonConfiguration.properties.
-```
+```{code-block}
 #encounterState options, the precursors to future workflow
 encounterState0=unapproved
 encounterState1=approved
@@ -117,7 +117,7 @@ You can configure reported encounters to have multiple recorded measurement obse
 
 For each measurement, you must define a **measurement name**, the corresponding units, and the general sampling protocols applied to measurements in your study. You can turn and off measurements altogether with the **showMeasurements** entry, which can be set to true or false.
 
-```
+```{code-block}
  #show measurements showMeasurements = true
 #Measurements
 measurement0=weight
@@ -137,7 +137,7 @@ samplingProtocol1=measure
 
 The names of measurements, their units, and sampling protocols can be localized into multiple languages in Wildbook in the language-specific copies of **commonConfigurationLabels.properties**. Notice the .label extension added to the base name of the measurement-related property from **commonConfiguration.properties** (see above).
 
-```
+```{code-block}
 #Labels for Measurements
 weight.label=Weight
 length.label=Length
@@ -160,7 +160,7 @@ After making changes, restart Tomcat to see them take effect.
 #### Configuring labelled keywords
 If you need to create a field that is not available in the platform at large, you can create a labelled keyword dropdown. These are stored on the asset. You must configure labelled keywords to be able to use labelled keywords during bulk import.
 
-```
+```{code-block}
 # First set the keyword label
 kwlabel0=distinctiveness
 kwlabel1=researchType
@@ -179,7 +179,7 @@ researchType2=archival
 
 Observations of animals are often categorized by their life stage, such as **adult, sub-adult, juvenile, hatchling, etc.** You can configure the life stages for your project with the following settings in **commonConfiguration.properties.**
 
-```
+```{code-block}
 #show lifeStage showLifestage = true
 #defined life stages lifeStage0=juvenile lifeStage1=sub-adult lifeStage2=adult
 Additional stages can be set by incrementing the properties, such as lifeStage3, lifeStage4, etc.
@@ -195,7 +195,7 @@ If you're using physical tags (SAT, PAT, marker, etc.) during your research, you
 * **showSatelliteTag** - whether satelite tags are used in your study should be shown on the Encounter page in Wildbook. Values are true/false.
 * **satelliteTageName*X** - The list of satellite tag manufacturers/providers to help identify the type of tag.
 
-```
+```{code-block}
 #tag parameters showMetalTags=true metalTagLocation0=left metalTagLocation1=right
 showAcousticTag=true
 showSatelliteTag=true satelliteTagName0=Wild Life Computers satelliteTagName1=SirTack
@@ -210,7 +210,7 @@ You can configure pre-defined patterning codes for your project in **commonConfi
 
 Here is a configuration example of giant manta patterning codes from the Wildbook [MantaMatcher.org](https://www.mantamatcher.org).
 
-```
+```{code-block}
 #defined patterningCodes for distinct visual marking types for individuals identified with photo-identification showPatterningCode = true
 patterningCode0 = normal pigmentation patterningCode1 = black pigmentation - melanistic patterningCode2 = white pigmentation - leucistic
 ```
@@ -221,7 +221,7 @@ You can configure whether elevation or depth are recorded in your study as Encou
 
 Set**maximumElevationInMeters** to true to make elevation a measurement of your study. Set **maximumDepthInMeters**to true to make depth an measurement of your study.
 
-```
+```{code-block}
 #show elevation/depth
 maximumElevationInMeters = false maximumDepthInMeters = true
 ```
@@ -240,7 +240,7 @@ Wildbook allows you to add one ore more records for biological samples collected
 * **numPloids** - leave at 2 per loci
 * **alleleRelaxMaxValue** - the value difference allowed between allele values to consider them a "match" when looking for other genotypes that might match or be similar.
 
-```
+```{code-block}
 #tissue sample types tissueType0 = Tissue sample tissueType1 = Fecal sample tissueType2 = Mucus sample tissueType3 = Blood sample tissueType4 = Parasite sample
 #biological measurement types biologicalMeasurementType0 = 13C biologicalMeasurementType1 = 15N biologicalMeasurementType2 = 34S
 #corresponding biological measurement units biologicalMeasurementUnits0 = ppm biologicalMeasurementUnits1 = ppm biologicalMeasurementUnits2 = ppm
@@ -274,7 +274,7 @@ To configure the types of social relationships in your Wildbook and the roles th
 
 Here are some example configurations:
 
-```
+```{code-block}
 #social relationships-related data relationshipType0 = social grouping relationshipType1 = familial
 relationshipRole0 = member relationshipRole1 = mother relationshipRole2 = calf
 ```
@@ -292,7 +292,7 @@ The following email addresses are sent messages when important events occur in W
 * **autoEmailAddress** - The email address from which Wildbook messages will be sent. If you have a secured mailhost, it's important to configure the mailhost to allow emails to be sent from this address.
 * **newSubmissionEmail** - The email address to send notices of new Encounter reports submitted to Wildbook.
 
-```
+```{code-block}
 #email addresses and parameters
 sendEmailNotifications=true autoEmailAddress=[webmaster@someplace.org](mailto:webmaster@someplace.org) newSubmissionEmail=[submissions@someplace.org](mailto:submissions@someplace.org) mailHost=localhost
 ```
@@ -309,7 +309,7 @@ You can set the default language for Wildbook in **commonConfiguration.propertie
 
 In the example below, English is set as the default language "en", and Wildbook is configured to provide the user with English and Spanish options for display.
 
-```
+```{code-block}
 defaultLanguage = en
 language0 = en language1 = es #language2 = fr #language3 = de
 The name displayed for each language can also be configured in commonConfiguration.properties.
@@ -320,7 +320,7 @@ With languages configured and Tomcat restarted, Wildbook displays configured lan
 
 It looks for a correspinding flag icon in the images directory. Examples:
 
-```
+```{code-block}
 * flag_es.gif
 * flag_en.gif
 * flag_fr.gif
