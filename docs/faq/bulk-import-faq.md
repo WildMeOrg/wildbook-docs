@@ -66,10 +66,12 @@ If the wrong image isn't cited in your spreadsheet or if you didn't upload your 
 ### How do I associate multiple images with a single encounter?
 
 You can add a virtually infinite number of images with a single encounter using the Encounter.mediaAsset**X** field. For each photo you want to associate with a given encounter, create an Encounter.mediaAsset**X** column, where **X** is a variable you replace with a number starting with X=0.
-
+```{table}
+:widths: auto
 | Encounter.mediaAsset0 | Encounter.mediaAsset1 | Encounter.mediaAsset2 |
 | --------------------- | --------------------- | --------------------- |
 | photo1.png | photo2.png | photo3.png |
+```
 
 ### I want to set photographerX.affiliation or photographerX.fullName without providing an email address.
 

@@ -28,7 +28,7 @@ You need the following installed on your system:
 ### Deploy directory setup
 1. Create your **deploy directory**, matching the value of `WILDBOOK_BASE_DIR` in the .env file. The default is `~/wildbook-dev/`)
 1. Create the necessary subdirectories
-```
+```{code-block}
 wildbook-dev
 |--logs
 |--webapps

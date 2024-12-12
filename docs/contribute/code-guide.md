@@ -72,7 +72,7 @@ If you are updating a translation for general use, do your PR against the `main`
 
 Instead of:
 
-```
+```{code-block} java
 ArrayList encounters = new ArrayList<Encounter>();
 ...
 public int getMax(ArrayList<int> numbers) {
@@ -80,7 +80,7 @@ public int getMax(ArrayList<int> numbers) {
 
 Try:
 
-```
+```{code-block} java
 List encounters = new ArrayList<Encounter>();
 ...
 public int getMax(Collection<int> numbers) {
@@ -97,24 +97,28 @@ Related: when writing utility methods, making the input type as abstract as poss
 
 Instead of:
 
-```
-    	List<MarkedIndividual> uniqueIndividuals = new ArrayList<MarkedIndividual>();
-    	for(Encounter currentEncounter: encounters){
-		MarkedIndividual currentInd = enc.getIndividual();
-		if !(uniqueIndividuals.contains(currentInd) {
-			uniqueIndividuals.add(currentInd);
-			doStuff();
+```{code-block} java
+List<MarkedIndividual> uniqueIndividuals = new ArrayList<MarkedIndividual>();
+for(Encounter currentEncounter: encounters){
+	MarkedIndividual currentInd = enc.getIndividual();
+	if !(uniqueIndividuals.contains(currentInd)) {
+		uniqueIndividuals.add(currentInd);
+		doStuff();
+	}
+}
 ```
       			
 Try:
 
-```
+```{code-block} java
 Set<MarkedIndividual> uniqueIndividuals = new HashSet<MarkedIndividual>();	
-    	for(Encounter currentEncounter: encounters){
-		MarkedIndividual currentInd = enc.getIndividual();
-		if !(uniqueIndividuals.contains(currentInd) {
-			uniqueIndividuals.add(currentInd);
-			doStuff();
+for(Encounter currentEncounter: encounters){
+	MarkedIndividual currentInd = enc.getIndividual();
+	if !(uniqueIndividuals.contains(currentInd)) {
+		uniqueIndividuals.add(currentInd);
+		doStuff();
+	}
+}
 ```
 
 The reason is a little deep in the data types. Sets are defined as unordered collections of unique elements; and Lists/arrays are ordered collections with no bearing on element-uniqueness. If the order of a collection doesn’t matter and you’re just checking membership, you’ll have faster runtime using a Set.
@@ -125,17 +129,19 @@ Sets implement contains, add, and remove methods much faster than lists [contain
 
 Instead of:
 
-```
+```{code-block} java
 for (int i=0; i<encounters.length(); i++) {
 	Encounter enc = encounters.get(i)
 	doStuff();
+}
 ```
 
 try:
 
-```
+```{code-block} java
 for (Encounter enc: encounters) {
 	doStuff();
+}
 ```
 
 Note that in both cases you might want to check if `encounters == null` if relevant, but you rarely need to check if `encounters.length()>0` because the for-loops take care of that.
@@ -147,16 +153,18 @@ Conversely, if you want access to the `i` variable for logging or otherwise, the
 
 Instead of:
 
-```
-	if (str!=Null && !str.equals("")) {
-		doStuff();
+```{code-block} java
+if (str!=Null && !str.equals("")) {
+	doStuff();
+}
 ```
  
 Try:
 
-```
-	if (Util.stringExists(str)) {
-		doStuff();
+```{code-block} java
+if (Util.stringExists(str)) {
+	doStuff();
+}
 ```
 
 This method also checks for the strings “none” and “unknown” which have given us trouble in displays in the past.
