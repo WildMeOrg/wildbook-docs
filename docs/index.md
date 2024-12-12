@@ -18,5 +18,12 @@ faq/index
 Want to put your talents to use fighting the 6th mass extinction? We're excited to have you! Get started here:
 
 ```{toctree}
+:maxdepth: 1
+
 contribute/index
+contribute/dev-setup
+contribute/pr-workflow
+contribute/code-guide
+contribute/copy-guide
+contribute/roadmap
 ```

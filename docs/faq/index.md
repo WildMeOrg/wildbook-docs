@@ -28,6 +28,9 @@ Wild Me staff will not mediate any issues that arise between users over account 
 
 Go to your browser's history management and clear your cookies. You will need to re-sign to the platform.
 
+## What version of Wildbook am I using?
+The version number is visible in the footer by the CXL copyright.
+
 ## Still have questions?
 ```{toctree}
 :maxdepth: 2

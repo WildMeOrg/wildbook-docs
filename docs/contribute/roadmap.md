@@ -4,15 +4,6 @@ The roadmaps below are rough outlines of our objectives. We operate by milestone
 ## Wildbook
 We are working on a improve-and-refresh objective. We want to improve on the user experience of Wildbook platform users with each release while also making the technology more accessible to the development community and indepedent installers. As such, we trade off a major feature release with a timeboxed tech debt release. We plan to continue this cadence through the end of 2024.
 
-### 10.5.0
-Feature focused release.
-* New submission page
-* New components, including image uploader and location ID selector
-* Docker deployment
-
-### Final Sunset of Codex
-* No planned development work, but time is set aside if needed in support of final migration.
-
 ### 10.6.0
 Feature focused release.
 * All objects indexing in open search
