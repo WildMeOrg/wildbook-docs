@@ -1,0 +1,576 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Manual Annotation (Beta) &#8212; Wildbook  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=dddd19d0" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'data/manual-annotation-beta';</script>
+    <script src="../_static/tocjs.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Searching" href="search.html" />
+    <link rel="prev" title="Matching Process" href="matching-process.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/WildMe-Logo.png" class="logo__image only-light" alt="Wildbook  documentation - Home"/>
+    <img src="../_static/WildMe-Logo.png" class="logo__image only-dark pst-js-only" alt="Wildbook  documentation - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../getting-started-with-wildbook.html">Getting Started</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../introduction/index.html">Introduction to Wildbook</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/image-analysis-pipeline.html">Image Analysis Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/data-entry.html">Data Entry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/encounter.html">Encounter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/marked-individual.html">Marked Individual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/sighting.html">Sighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/security-overview.html">Security Overview</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Data Overview</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="photography-guidelines.html">Photography Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="report-encounter.html">Report an encounter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bulk-import-beta.html">Bulk Import (beta)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matching-process.html">Matching Process</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Manual Annotation (Beta)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="search.html">Searching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-exports.html">Export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wildex-image-export-app.html">WildEx Image Export App</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html">Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="location-ids.html">Location IDs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="r-package-alpha.html">R Package (alpha)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../security/index.html">Security Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../security/my-account.html">My Account</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../security/silo-security/index.html">Silo Security</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/org-admin.html">Org admin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/site-admin.html">Site admin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/photo-keywords.html">Photo Keywords</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/data-integrity.html">Data Integrity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/library-management.html">Library Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/bulk-import-logs.html">Bulk Import Logs</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../specifications-and-system-requirements/index.html">System requirements</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../specifications-and-system-requirements/system-configuration.html">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../specifications-and-system-requirements/unsupported-developer-tools.html">Unsupported developer tools</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../faq/index.html">FAQ</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../faq/bulk-import-faq.html">Bulk Import FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/codex-wildbook-faq.html">Codex to Wildbook FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/matching-faq.html">Matching FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/merging-faq.html">Merging FAQ</a></li>
+</ul>
+</details></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../contribute/index.html">Ways to Contribute</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/dev-setup.html">Dev Environment Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/pr-workflow.html">Pull Request Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/code-guide.html">Code Contribition Guideline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/tests.html">Testing in Wildbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/ia-dev.html">Image Analysis Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/copy-guide.html">Copy Contribution Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/roadmap.html">Roadmap</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/dev-setup.html">Dev Environment Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/pr-workflow.html">Pull Request Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/code-guide.html">Code Contribition Guideline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/copy-guide.html">Copy Contribution Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/roadmap.html">Roadmap</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/WildMeOrg/wildbook-docs" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/data/manual-annotation-beta.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Manual Annotation (Beta)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navigating-to-the-manual-annotation-page">Navigating to the Manual Annotation Page</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-the-manual-annotation-page">Understanding the Manual Annotation Page</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-manual-annotation">Creating a Manual Annotation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting">Troubleshooting</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-i-fix-an-annotation">How do I fix an annotation?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-i-annotate-a-part-of-an-individual-ex-head-tail-etc">How do I annotate a part of an individual (Ex. head, tail, etc.)?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-i-associate-a-part-with-the-body-in-my-encounter">How do I associate a part with the body in my encounter?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-i-move-an-annotation-from-one-individual-to-another">How do I move an annotation from one individual to another?</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="manual-annotation-beta">
+<h1>Manual Annotation (Beta)<a class="headerlink" href="#manual-annotation-beta" title="Link to this heading">#</a></h1>
+<p>When looking at an Encounter page, you may see that a <strong>MediaAsset</strong> does not have a dashed rectangle <strong>(e.g. Annotation bounding box)</strong> around an animal in the picture. In this case, the detection stage did not recognize the animal.</p>
+<section id="navigating-to-the-manual-annotation-page">
+<h2>Navigating to the Manual Annotation Page<a class="headerlink" href="#navigating-to-the-manual-annotation-page" title="Link to this heading">#</a></h2>
+<p>In an Encounter page’s <strong>Gallery</strong>, open the menu over an image and select <strong>add annotation</strong> to open the manual annotation screen.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Starting in 2020, MantaMatcher users select <strong>create optional feature region</strong> instead. More detailed instructions on manually annotating mantas are on our <a class="reference external" href="https://www.youtube.com/watch?v=v3T6UwPrCDg">YouTube channel</a>.</p></li>
+<li><p>Select <strong>spot mapping</strong> if you’re annotating whale sharks, grey nurse sharks, or broadnose sevengill sharks in Sharkbook. More detailed instructions on manually annotating whale sharks are on our <a class="reference external" href="https://www.youtube.com/watch?v=DaHu2K9j4AY">YouTube channel</a>.</p></li>
+</ul>
+</div>
+<p><img alt="add anotation button" src="../_images/wb-manual-annotation-menu-option.png" /></p>
+</section>
+<section id="understanding-the-manual-annotation-page">
+<h2>Understanding the Manual Annotation Page<a class="headerlink" href="#understanding-the-manual-annotation-page" title="Link to this heading">#</a></h2>
+<p><strong>The Manual Annotation page</strong> has the following sections, which appear in order as you make selections.</p>
+<p><img alt="manual annotation sections" src="../_images/wb-manual-annotation-interface.png" /></p>
+</section>
+<section id="creating-a-manual-annotation">
+<h2>Creating a Manual Annotation<a class="headerlink" href="#creating-a-manual-annotation" title="Link to this heading">#</a></h2>
+<p>Each step needs to be completed for the next step to appear on the screen.</p>
+<p>Creating a Manual Annotation
+Each step needs to be completed for the next step to proceed to the next step.</p>
+<ol class="arabic simple">
+<li><p>In <strong>Select Viewpoint</strong>, choose the primary viewpoint that the photographer is observing the animal from, such as the animal’s <strong>left</strong>, the animal’s <strong>right</strong>, looking <strong>down</strong> at the animal, looking <strong>up</strong> at its belly, etc.</p></li>
+<li><p><strong>Select annotation iaClass</strong> allows you to define the type of animal or feature that represents the annotation. This is a fixed list per species that corresponds to detection classes returned by the<a class="reference internal" href="../introduction/image-analysis-pipeline.html"><span class="std std-doc"> Image Analysis pipeline</span></a>.</p>
+<ul class="simple">
+<li><p><strong>Animal (ex: turtle_green, whale_orca)</strong>: Select all visible parts of the body in one annotation.</p></li>
+<li><p><strong>Animal+body part (ex: turtle_green+head, whale_orca+fin_dorsal)</strong>: Select only the body part used for identification, such as the head, dorsal fin, fluke, etc.</p></li>
+<li><p>If there are multiple animals in your photo or multiple <em>iaClasses</em> you want to annotate, add them later. Only one annotation at a time can be created.</p></li>
+</ul>
+</li>
+<li><p>In <strong>Draw the new annotation bounding box below</strong>.</p>
+<ul class="simple">
+<li><p>Hover your mouse over the image, then use the guides to align the corner with the outer edges of the animal.</p></li>
+<li><p>Left-click once to mark the first corner of the bounding box.</p></li>
+<li><p>Release the mouse button and move your mouse pointer to the opposing corner position of a rectangle (i.e. if you start at the top-left of the animal, move your mouse pointer toward the bottom-right). <em>Note: The dotted-lined box should follow your mouse movements.</em></p></li>
+<li><p>Use the guides to align the corner with the outer edges of the animal.</p></li>
+<li><p>Left-click to mark the opposing corner position to complete the annotation.</p></li>
+</ul>
+</li>
+<li><p>Wait for the screen to refresh.</p></li>
+<li><p>Click <strong>Save</strong> to save your new annotation. A confirmation page will appear with a link back to the Encounter page.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When annotating multiple animals in a photo, Wildbook may clone this Encounter and create a new one if another annotation is already on this MediaAsset. Two annotations in one image generally means that two animals are present and at least two Encounters (one animal at a location and date) must exist.</p>
+</div>
+<ol class="arabic simple">
+<li><p>Navigate back to the Encounter page and add new annotations if needed, or click <a class="reference internal" href="matching-process.html"><span class="std std-doc">start match</span></a> to begin the identification pipeline for this new annotation.</p></li>
+</ol>
+</section>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">#</a></h2>
+<section id="how-do-i-fix-an-annotation">
+<h3>How do I fix an annotation?<a class="headerlink" href="#how-do-i-fix-an-annotation" title="Link to this heading">#</a></h3>
+<p>If an incorrect annotation is created, whether through the detection process or manually, you can first <a class="reference internal" href="matching-process.html#removing-a-single-annotation"><span class="std std-ref">delete the annotation</span></a> and then re-draw the annotation if desired using the procedures above.</p>
+</section>
+<section id="how-do-i-annotate-a-part-of-an-individual-ex-head-tail-etc">
+<h3>How do I annotate a part of an individual (Ex. head, tail, etc.)?<a class="headerlink" href="#how-do-i-annotate-a-part-of-an-individual-ex-head-tail-etc" title="Link to this heading">#</a></h3>
+<p>When selecting the annotation iaClass, look for the species, plus the part symbol ‘+’. For example, if you would like to annotate green turtle heads, search ‘turtle_green+head’.</p>
+</section>
+<section id="how-do-i-associate-a-part-with-the-body-in-my-encounter">
+<h3>How do I associate a part with the body in my encounter?<a class="headerlink" href="#how-do-i-associate-a-part-with-the-body-in-my-encounter" title="Link to this heading">#</a></h3>
+<p>For a new annotation:</p>
+<ol class="arabic simple">
+<li><p>From the encounter you want to add a part to, select <strong>Add annotation</strong> from the hamburger menu on the correct image.</p></li>
+<li><p>Complete the steps above for adding a new annotation, making sure to select the iaClass that includes the body part.</p></li>
+</ol>
+<p>If the species of the body and the species of the part are the same, the annotations will both be associated with the encounter. If they are not:</p>
+<ol class="arabic simple">
+<li><p>Delete your newly created part annotation by deleting the new encounter created.</p></li>
+<li><p>Return to your original encounter. Create a new annotation for the body with the correct species.</p></li>
+<li><p>Delete the previous body annotation.</p></li>
+<li><p>Create a new part annotation.</p></li>
+</ol>
+</section>
+<section id="how-do-i-move-an-annotation-from-one-individual-to-another">
+<h3>How do I move an annotation from one individual to another?<a class="headerlink" href="#how-do-i-move-an-annotation-from-one-individual-to-another" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Navigate to the Encounter with the misassigned annotation</p></li>
+<li><p>In the hamburger menu on the image, select “Add Annotation”</p></li>
+<li><p>Choose the viewpoint and iaClass, then draw the same annotation around the animal. When you click “Save”, it will clone the encounter metadata and add your new annotation to it. The new encounter will not be part of the individual, but it will be part of the same sighting.</p></li>
+<li><p>Go back to your original encounter. In the hamburger menu on the annotation you just duplicated, select “Delete Annotation”</p></li>
+</ol>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="matching-process.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Matching Process</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="search.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Searching</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navigating-to-the-manual-annotation-page">Navigating to the Manual Annotation Page</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-the-manual-annotation-page">Understanding the Manual Annotation Page</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-manual-annotation">Creating a Manual Annotation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting">Troubleshooting</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-i-fix-an-annotation">How do I fix an annotation?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-i-annotate-a-part-of-an-individual-ex-head-tail-etc">How do I annotate a part of an individual (Ex. head, tail, etc.)?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-i-associate-a-part-with-the-body-in-my-encounter">How do I associate a part with the body in my encounter?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-i-move-an-annotation-from-one-individual-to-another">How do I move an annotation from one individual to another?</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Wild Me
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024 Conservation X Labs.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
