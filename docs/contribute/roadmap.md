@@ -24,6 +24,7 @@ Feature focused release.
 ### And Beyond
 This work is planned for development, but is not set for an immediate release. Note that this list does not include minor changes and updates, some of which may be done iteratively. Are you interested in working on something here? [Reach out!](https://discord.gg/zw4tr3RE4R)
 
+* One branch: All production instances run off the `main` branch and customizations are handled in-app
 * Animal profiles: best representative image, best image by viewpoint, highlight on the front page
 * Improved localization: integrate with Weblate to provide users ability to update translations
 * Bulk Import improvement: move to 3rd party tool for on-page data validation and editing prior to submission
