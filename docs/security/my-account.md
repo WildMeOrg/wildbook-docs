@@ -67,6 +67,10 @@ This functionality is no longer supported and may no longer appear in Wildbook.
 
 Collaborations allow you to extend invitations to other Users in Wildbook to either see or edit data own by you. Collaborations are only available if your Wildbook has Silo Security enabled. See [Silo Security](silo-security/index.md) or [Security Overview](index.md) for more information.
 
+```{note}
+There may be a 10 minute delay after a collaboration is accepted before you can see collaborator data in search results.
+```
+
 ### Reviewing existing collaborations
 
 You will see a list of all collaboration requests and the associated permission levels and available actions. You may need to refresh the page after selecting a button for the permission level to update.
