@@ -9,6 +9,7 @@ Presently, Wildbook is a tomcat application leveraging jsp as the frontend. We a
 * Don’t use single-letter variable names (no matter how temporary you think the code is)
 * Code should be clear enough to speak for itself without comments, but use your judgement on if a comment is necessary
 * Code for clarity rather than for efficiency (one-liners are cool, but not at the expense of future obfuscation)
+* URLs with multiple words should be in kebab case, i.e., `encounter-search`
 
 ### Dependencies
 * All dependencies must be on a locked version. We do not accept PRs that use the `latest` version of anything.
