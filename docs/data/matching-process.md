@@ -163,4 +163,4 @@ From the Encounter page, scroll down to the *Spot Matching Algorithms* section a
 
 ### Delete a Scan Task
 
-On the Grid Aministration page, click the **Delete** button in the *Actions* column of the scanTask table.
+On the Grid Administration page, click the **Delete** button in the *Actions* column of the scanTask table.
