@@ -137,7 +137,7 @@ For certain species in Sharkbook, the match process begins with spot mapping ins
 
 ![](../assets/images/wb-encounter-spotmapping.png)
 
-Detection for whale sharks, grey nurse sharks, and broadnose sevengill sharks all start with spot mapping. Spot mapping allows only one left side pattern and one right side pattern per Encounter.
+Spot mapping is available for whale sharks, grey nurse sharks, and broadnose sevengill sharks. Spot mapping allows only one left side pattern and one right side pattern per Encounter.
 
 From the Encounter image gallery, click on the menu icon of the image and select **spot mapping**. From here, you'll set your spot mapping region.
 
@@ -159,8 +159,8 @@ If you want to create an association between two locations that don't already ap
 
 ### Delete a Spot Map
 
-Work in progress.
+From the Encounter page, scroll down to the *Spot Matching Algorithms* section and click on the *Remove spots* link beneath the side you want the spots removed.
 
 ### Delete a Scan Task
 
-Work in progress.
+On the Grid Administration page, click the **Delete** button in the *Actions* column of the scanTask table.
