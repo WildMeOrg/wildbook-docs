@@ -170,4 +170,13 @@ if (Util.stringExists(str)) {
 
 This method also checks for the strings “none” and “unknown” which have given us trouble in displays in the past.
 
+### Exception handling
+
 * When dealing with any functionality that handles data persistence, make sure to use try catch exceptions. Data loss is considered a critical failure and an emergency to address.
+
+* Try to catch exceptions as close to the problem as possible. For example, catching an exception of a single failing item _inside_ a loop is better than catching the exception outside the loop, causing the loop to exit early.
+
+* Use a `finally` block, especially for clean-up functionality like closing database handles, etc.
+
+* Recurring/predictable exceptions are often better handled by preventing them. For example, OpenSearch indexing will often throw exceptions for invalid data (for example, lat/lon out of range). However, _even though these are caught_, the caught exception still prevents the whole object from being indexed. Better to prevent the _single field_ from being indexed through code (validation) than let the exception happen.
+
