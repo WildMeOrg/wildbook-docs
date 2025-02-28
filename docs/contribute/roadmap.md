@@ -2,18 +2,18 @@
 The roadmaps below are rough outlines of our objectives. We operate by milestones, and sometimes things change dramatically because of technical limitations or pressing issues reported by users.
 
 ## Wildbook
-We are working on a improve-and-refresh objective. We want to improve on the user experience of Wildbook platform users with each release while also making the technology more accessible to the development community and indepedent installers. As such, we trade off a major feature release with a timeboxed tech debt release. We plan to continue this cadence through the end of 2024.
+We are working on a improve-and-refresh objective. We want to improve on the user experience of Wildbook users with each release while also making the technology more accessible to the development community and independent installers. As such, we trade off a major feature release with a timeboxed tech debt release.
 
 ### 10.7.0
-Tech debt release.
+Tech debt release:
 * Focusing on increasing test coverage 
-* Decouple WBIA
+* Decoupling WBIA
 
 ### 10.8.0
-Re-architecting bulk import
+Re-architecting and redesigning bulk import
 
 ### 10.9.0
-Tech debt release
+A tech debt release & laying the groundwork for the new vector database
 
 ### And Beyond
 This work is planned for development, but is not set for an immediate release. Note that this list does not include minor changes and updates, some of which may be done iteratively. Are you interested in working on something here? [Reach out!](https://discord.gg/zw4tr3RE4R)
