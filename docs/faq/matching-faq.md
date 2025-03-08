@@ -28,7 +28,7 @@ You may want to re-run your match if you corrected an annotation, got an error m
 
 ## Why do I see matches for a different side of the animal than what's in my image?
 
-This happens if the annotation viewpoint is incorrect (such as labeling the animal's left side as its right side). You can delete your annotation and [manually create a new one](../data/manual-annotation-beta.md#creating-a-manual-annotation) if you think there's been a mistake. You won't be able to edit the viewpoint of someone else's image unless you have an edit [Collaboration](../security/silo-security/index.md#collaborations) with that user.
+This happens if the annotation viewpoint is incorrect (such as labeling the animal's left side as its right side). Note that similar viewpoints will still be displayed (such as the left side compared with left front or back front). You can delete your annotation and [manually create a new one](../data/manual-annotation-beta.md#creating-a-manual-annotation) if you think there's been a mistake. You won't be able to edit the viewpoint of someone else's image unless you have an edit [Collaboration](../security/silo-security/index.md#collaborations) with that user.
 
 ## I uploaded the same image twice; why doesn't the identical image appear in the match results?
 
