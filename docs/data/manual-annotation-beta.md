@@ -26,7 +26,7 @@ Each step needs to be completed for the next step to appear on the screen.
 Creating a Manual Annotation
 Each step needs to be completed for the next step to proceed to the next step.
 
-1. In **Select Viewpoint**, choose the primary viewpoint that the photographer is observing the animal from, such as the animal's **left**, the animal's **right**, looking **down** at the animal, looking **up** at its belly, etc.
+1. In **Select Viewpoint**, choose the primary viewpoint that the photographer is observing the animal from, such as the animal's **left**, the animal's **right**, looking **down** at the animal, looking **up** at its belly, etc. *Note that for salamanders in Amphibian and Reptile Wildbook only, **up** is used when looking down at the salamander from above.*
 2. **Select annotation iaClass** allows you to define the type of animal or feature that represents the annotation. This is a fixed list per species that corresponds to detection classes returned by the[ Image Analysis pipeline](../introduction/image-analysis-pipeline.md).
     * **Animal (ex: turtle_green, whale_orca)**: Select all visible parts of the body in one annotation.
     * **Animal+body part (ex: turtle_green+head, whale_orca+fin_dorsal)**: Select only the body part used for identification, such as the head, dorsal fin, fluke, etc.
