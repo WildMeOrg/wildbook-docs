@@ -3,8 +3,6 @@
 ```{toctree}
 :hidden:
 
-org-admin
-site-admin
 photo-keywords
 data-integrity
 library-management
@@ -13,17 +11,58 @@ bulk-import-logs
 
 The **Silo Security model** lets users decide who they share their data with. The users who most commonly use it are those working on academic research or at-risk species.
 
-Permissions are granted at Encounter-level, meaning a user can access any **Sighting**, **Individual**, or **Survey** as long as they have access to the **Encounter** those belong to.
+Permissions are granted at the Encounter level, meaning a user can access any **Sighting**, **Individual**, or **Survey** as long as they have access to the **Encounter** those belong to.
 
 ## User Roles
 
-* **Contributor** - users that are limited to only submit Sightings
-* **Researcher** - users that can manage their own data (Sightings and Individuals) and collaborations,  match and merge individuals, and search
-* **User Manager** - users that can create and edit users, and manage user collaborations
-* **Exporter** - users that can export all the data they own and collaborate with
-* **Administrator** - users that can manage data and configure the Codex platform they belong to
-* **machinelearning** - not functional
-* **rest** - not functional
+**researcher** 
+* Users that can manage their data and that of users they have an edit collaboration with, view data of users they have a view collaboration with, export their data and that of users they have a collaboration with, view their data integrity checks, and match and merge individuals.
+
+**orgAdmin**
+* Users that can create and edit users within their org, manage user collaborations within their org, create other orgAdmins for their org, export data within their org, view data integrity checks within their org. OrgAdmins cannot edit the data or roles of any user with the **staff** or **admin** role, even within the same org.
+
+**admin**  
+* Users that can view ecological-related data integrity checks and configure the Wildbook platform they belong to (such as managing [photo keywords](photo-keywords.md)).
+
+**staff**
+* This role is intended for Conservation X Labs organization members and is managed in the Wildbook's configuration setting (not within the platform). Staff can create, delete, and edit users; create and delete orgs; manage all user data; configure the Wildbook platform they belong to; and view user-related and ecological-related data integrity checks. 
+
+## Managing Users
+
+### Adding Users
+
+OrgAdmins can create and add users to their organization. To get the orgAdmin role, contact a user with the *staff* or *orgAdmin* role of the organization you want to help administer. To create a new user:
+
+1. Go to **Administer**, then **User Management**.
+2. Look for the **Create/Edit User** section.
+3. Enter a *username, email, and password*.
+4. Select the appropriate role based on the permission level you want the user to have. This is multi-select as the roles are not hierarchical. OrgAdmins cannot assign or remove the **admin** or **staff** role from other users.
+5. Under **Organization Membership**, select your organization to add a user to it.
+6. Click **Save**.
+
+### Deleting Users
+
+Only users with the **staff** role can delete another user.
+
+### Adding Users to your Organization
+
+1. Go to **Administer**, then **User Management.**
+2. In the filter box, type a *username, first or last name, or other identifying information*.
+3. Select a user from the user grid.
+4. Find the **Organization Membership** field in the user’s information.
+5. Select your organization to add a user to it.
+6. Click **Save**.
+
+### Addressing Bulk Import Concerns
+
+OrgAdmins can manage **bulk imports** for any user in their organization.
+
+1. Go to **Administer**, then **Bulk Import Logs**.
+2. Select the desired *Bulk Import task* from the list.
+3. Scroll to the bottom. You can take any of the following actions:
+    * **Send to detection**: Send all imported Encounters to Detection. This can only be done if all Encounters have not been sent to Detection.
+    * **Send to identification**: Send all imported Encounters to Detection and Identification. This can only be done if all Encounters have not been sent to Detection.
+    * **Delete ImportTask**: Delete the Bulk Import and the related data. This can be done at any time.
 
 ## Collaborations
 
@@ -60,7 +99,8 @@ The person who initiates the collaboration has an assumed acceptance, so the rec
 You can view an encounter if:
 
 * You reported the Encounter.
-* You’re a Site Admin.
+* You have the staff role.
+* You're an orgAdmin and the Encounter belongs to a member of your org.
 * You have a Collaboration with another user that allows for view access.
 * The Encounter was publicly submitted and not assigned to another User.
 
@@ -68,7 +108,8 @@ You can view an encounter if:
 
 You can edit an encounter if:
 
-* You’re a site admin.
+* You have the staff role.
+* You're an orgAdmin and the Encounter belongs to a member of your org.
 * You reported the Encounter.
 * You have a collaboration with the owner and the owner grants you edit rights. *Note that edit rights can be revoked at any time.*
 
