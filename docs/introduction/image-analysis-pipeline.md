@@ -79,35 +79,6 @@ PIE paper link: https://arxiv.org/pdf/1902.10847.pdf
 
 Hotspotter paper link: http://cs.rpi.edu/hotspotter/crall-hotspotter-wacv-2013.pdf
 
-### Deepsense
-
-**Deepsense** is used specifically for identifying right whales. It uses aerial photos that show the varying patterns of callouses on their heads. Deepsense is very fast and accurate, but it needs to be retrained when new, individual whales are added to the catalog. The quality of data is incredibly important as performance reduces with poorly curated catalogs.
-
-![Aerial image of a right whale with its callouses highlighted](../assets/images/rightwhale-deepsense.jpg)
-
-*Aerial view of a right whale with an annotation around its head callouses.*
-
-Depsense paper link: https://www.researchgate.net/publication/327910789_Applying_deep_learning_to_right_whale_photo_identification
-
-### OC/WDTW
-
-**OC/WDTW** (or DTW for short) stands for **‘Digital Time Warping’**. It identifies individual cetaceans from the unique trailing edge of their fins. DTW represents the nicks and notches of flukes and adds them to a database. The trailing edge of a fluke is extracted and compared against potential matches based on their similarities. DTW is robust to changes in viewpoints and poses, as well as being fast and accurate.
-
-![Mapping curvatures of tail flukes](../assets/images/humpback-fluke.png)
-
-*Series of Humpback Whale tail fluke edges being compared to find a match.*
-
-OC/WDTW paper link: https://openaccess.thecvf.com/content_ICCV_2017_workshops/papers/w41/Weideman_Integral_Curvature_Representation_ICCV_2017_paper.pdf
-
-### Kaggle7
-
-**Kaggle7** analyzes the unique fluke patterns of humpback whales to identify individuals. It is similar to Deepsense in the fact it must be retrained when new individuals are added to the catalog. Additionally, the catalog must be very well curated for performance to be optimum.
-
-![Mapped edges of a humpback tail fluke](../assets/images/humpbackwhale-kaggle.jpg)
-
-*Fluke patterns of a Humpback Whale's tail.*
-
-Kaggle7 paper link: https://ducha-aiki.medium.com/thanks-radek-7th-place-solution-to-hwi-2019-competition-738624e4c885
 
 ### Modified Groth and I3S (Spot Pattern Matching)
 

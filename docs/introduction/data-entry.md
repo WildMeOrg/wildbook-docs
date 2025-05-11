@@ -1,6 +1,6 @@
 # Data Entry
 
-Wildbook has different ways of submitting data, affecting where and how data is entered and how Wildbook applies ML to process the data.
+Wildbook has different ways of submitting data, affecting where and how data is entered and how Wildbook applies AI to process the data.
 
 ## Submitting One or More Pictures of One Animal
 
