@@ -1,42 +1,35 @@
-# Bulk Import (beta)
+# Bulk Import
 
-To allow for the integration and import of legacy data as well as batched volumes of data, Wildbook provides a system for uploading a large amount of data called **Bulk Import**. Bulk Import allows users with login privileges to provide photos and related metadata *en masse* (e.g., date, location, species, etc.).
+**Bulk Import** allows users to upload photos (also referred to as media assets) and metadata (e.g., date, location, species, etc.) for multiple encounters at once.
+
+To prepare your data for bulk import you need:
+
+* A folder that contains only your photos (no videos)
+* An Excel spreadsheet with the appropriate fields and metadata entered
 
 ```{note}
-This functionality is in beta, but considered largely stable. Any substantial changes will be reported before they take place.
+Your spreadsheet should have 200 Encounters or less. Spreadsheets larger than this will slow down the site for all users and will result in longer wait times for detection and identification.
 ```
 
-There are two pieces of input required for a bulk import:
+## Photo Folder
 
-* Photo archive in a local file system
-* Excel spreadsheet linking photos to metadata
+Organize the photos you're importing into a single folder. Ensure that all file names are unique from one another.
 
-In setting up your bulk imports, ensure that each import has 200 Encounters or less.
+Image file names must match the `Encounter.MediaAsset` fields in your Wildbook Standard Format spreadsheet (linked below). Special characters are removed from file names. Your file names should only include letters from the English alphabet, 0-9, period, and space.
 
-## Photo Archive Set-up
-
-On your computer, organize the photos you'd like to upload into a single folder.
-
-1. Create a folder.
-2. Move all images you intend to upload to the folder.
-3. Ensure that all file names are unique from one another.
-
-If you have file names that are the same, either *rename the duplicates or upload the duplicates in a separate batch*.
-Remember, the image names must correspond exactly to the `"Encounter.MediaAsset"` entries in your Wildbook Standard Format spreadsheet. Special characters are removed from file names. *(Recommendation: Remove special characters before uploading to check for potential collisions. Your file names should only include letters from the English alphabet, 0-9, period, and space.)*
-
-## Spreadsheet Set-up
+## Spreadsheet
 
 In the header of an Excel (.xlsx) file, create a column for each field you want to upload to Wildbook. [See Fields Available for a list of supported fields.](#fields-available) This must include at least:
 
-1. **Location Reference**: Encounter.verbatimLocality, Encounter.locationID, and/or Encounter.decimalLatitude and Encounter.decimalLongitude
-2. **Date and Time Reference:** Encounter.year, Encounter.month, Encounter.day, etc. *(Note: At a minimum, include the year)*
-3. **Photograph reference**: Encounter.MediaAsset*0*
-4. **Taxonomy**: Encounter.genus and Encounter.specificEpithet
+1. **Location Reference**: `Encounter.verbatimLocality`, `Encounter.locationID`, and/or `Encounter.decimalLatitude` and `Encounter.decimalLongitude`
+2. **Date and Time Reference:** `Encounter.year`, `Encounter.month`, `Encounter.day`, etc. If the date is unknown, a year is required.
+3. **Photo reference**: `Encounter.MediaAsset0`
+4. **Taxonomy**: `Encounter.genus` and `Encounter.specificEpithet`
 
-*(Note: All other fields are optional.)* Because this flow is only accessible to authorized users, the Encounters are uploaded as approved Encounters if **Encounter.state** is not otherwise set. Here are important guidelines for preparing your spreadsheet:
+**All other fields are optional.** Encounters are uploaded as approved Encounters if **Encounter.state** is not otherwise set. Here are important guidelines for preparing your spreadsheet:
 
 * **Determine which columns you have data for** (see [Fields Available](#fields-available)).
-    It is OK to add, remove, and reorder columns as needed from the provided list. You can create your own version of our spreadsheet as long as you do not change the header names. Fields without data should be removed from your spreadsheet prior to importing it.
+    You can add, remove, and reorder columns as needed from the Fields Available list. You can create your own version of our spreadsheet as long as you do not change the field names. *Fields without data should be removed from your spreadsheet prior to import to prevent errors.*
 * **Fill out each line for a single** [Encounter](../introduction/encounter.md).
     If an encounter is associated with a [Sighting](../introduction/sighting.md), include the needed information for the Sighting on at least one line of an associated Encounter.
 * If using any of the Occurrence fields for Sightings, ensure that each Encounter is linked with a common value in the Occurrence.occurrenceID column.
