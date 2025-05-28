@@ -19,14 +19,14 @@ Image file names must match the `Encounter.MediaAsset` fields in your Wildbook S
 
 ## Spreadsheet
 
-In the header of an Excel (.xlsx) file, create a column for each field you want to upload to Wildbook. [See Fields Available for a list of supported fields.](#fields-available) This must include at least:
+In the header of an Excel (.xlsx) file, create a column for each field you want to upload to Wildbook. [See Fields Available for a list of supported fields and their descriptions.](#fields-available) This must include at least:
 
 1. **Location Reference**: `Encounter.verbatimLocality`, `Encounter.locationID`, and/or `Encounter.decimalLatitude` and `Encounter.decimalLongitude`
 2. **Date and Time Reference:** `Encounter.year`, `Encounter.month`, `Encounter.day`, etc. If the date is unknown, a year is required.
 3. **Photo reference**: `Encounter.MediaAsset0`
 4. **Taxonomy**: `Encounter.genus` and `Encounter.specificEpithet`
 
-**All other fields are optional.** Encounters are uploaded as approved Encounters if **Encounter.state** is not otherwise set. Here are important guidelines for preparing your spreadsheet:
+**All other fields are optional.** Encounters are uploaded as approved Encounters if **Encounter.state** is not set. Here are important guidelines for preparing your spreadsheet:
 
 * **Determine which columns you have data for** (see [Fields Available](#fields-available)).
     You can add, remove, and reorder columns as needed from the Fields Available list. You can create your own version of our spreadsheet as long as you do not change the field names. *Fields without data should be removed from your spreadsheet prior to import to prevent errors.*
@@ -50,19 +50,13 @@ Here are example Bulk Import Excel spreadsheet templates:
 
 When you have finished preparations, navigate to your Wildbook's Bulk Import page (import/instructions.jsp) and begin the guided walk-through.
 
-1. Select **Upload Photos**.
-2. Browse to your photo directory and select **Upload**.
-3. Select **Begin Upload** to be taken to the photo review page. At this point, these images are uploaded to the platform and available.
-4. Review that all photos you have uploaded are available in the import. If they are, select **Accept** and move on.
-5. Browse to your spreadsheet and select **Open**.
-6. Select **Begin Upload** to be taken to the import overview.
-7. Review the data preview for data integrity.
-
-```{note}
-The system will verify the data in the spreadsheet against ALL images you have in the system, not only the ones you are currently uploading. Review the online data integrity report carefully before initiating an upload.
-```
-
-If everything looks as expected, select **Commit these results** and confirm that you want to import all data.
+1. Select **Browse** to select your images or drag and drop them into the box.
+2. Once each photo upload progress is at 100%, click **Next**.
+3. Select **Browse** to select your spreadsheet or drag and drop it into the box.
+4. Once spreadsheet upload progress is at 100%, click **Next**.
+5. Review your spreadsheet for errors. Errors, missing data, or empty fields will be highlighted for you to correct.
+6. When you're done reviewing your spreadsheet, click **Set Location**.
+7. Select the location IDs you want to search for match candidates and click **Start Bulk Import**.
 
 ## Bulk Import Matching Process
 
@@ -71,17 +65,17 @@ Once the import completes, you can take these actions:
 
 ### Send to Detection (No Identification)
 
-The MediaAssets you upload are sent to Detection, where Annotations are added for each animal found by the [Image Analysis Pipeline](../introduction/image-analysis-pipeline.md). Identification can be run later individually through each Encounter page. See [Matching Process](matching-process.md) for more information.
+The photos you upload are sent to detection, where annotations are added for each animal found by the [Image Analysis Pipeline](../introduction/image-analysis-pipeline.md). Identification can be run later from the bulk import task page or individually through each Encounter page. See [Matching Process](matching-process.md) for more information.
 
 ### Send to Identification
 
-This option will appear after your images have been sent to Detection. The MediaAssets you have uploaded are sent through Detection, and any found Annotations are sent on to the Identification process. Select which locations to process Identification for and **Send to Identification**.
+This option will appear after your images have been sent to detection. Any found annotations during detection are sent to the identification process. Select which location IDs to process Identification for and click **Send to Identification**.
 
-Bulk Detection and Identification can very significantly impact the Wildbook Image Analysis queue machine learning jobs. Other users can expect slowdowns waiting for Bulk Detection and ID jobs to finish.
+Bulk detection and identification impact the Wildbook Image Analysis queue machine learning jobs. Other users can expect slowdowns while waiting for Bulk detection and identification jobs to finish.
 
 ## Deleting a Bulk Import
 
-Mistakes happen. If you find systematic problems in the data of a Bulk Import job, you can return to the Bulk Import log page and click **Delete ImportTask** at the bottom, which will remove all of the imported data. You can now fix your data and reimport to Wildbook.
+You can return to the Bulk Import log page and click **Delete ImportTask**, which will remove all of the imported data. You can now fix your data and reimport to Wildbook.
 
 ## Fields Available
 
@@ -94,7 +88,7 @@ The most commonly-used fields are listed in the table below.
 | MarkedIndividual.individualID | V_WString | Lion045 | PrimaryKey. While Wildbook assigns unique user IDs to MarkedIndividuals, this field becomes the default display name for the MarkedIndividual. <br>Duplicate of Encounter.individualID. <br>We recommend using this field instead of Encounter.individualID. |
 | Encounter.individualID | V_WString | Lion045 | Duplicate of MarkedIndividual.individualID. |
 | Encounter.verbatimLocality | V_WString | Saw this about five minutes into our tour near mile marker 5, somewhere in Tanzania. | Descriptive string to reference location. No constraints on what is entered, but is not used for analysis. |
-| Encounter.locationID | V_WString | Zone 5, Botswana | Hierarchical list of study sites. Allows for consistency and controlled granularity of location input. **Must match the location as shown in the Location ID menu of the Report an Encounter page** (see [known issue](/docs/faq/bulk-import-faq.md#)).|
+| Encounter.locationID | V_WString | Zone 5, Botswana | Hierarchical list of study sites. Allows for consistency and controlled granularity of location input. **Must match the location as shown in the Location ID menu of the Report an Encounter page except in GrouperSpotter, where you only need to enter the REEF code** (see [known issue](/docs/faq/bulk-import-faq.md#)).|
 | Encounter.decimalLatitude | Double | -35.46 | Enter latitude coordinates using decimals instead of degrees, minutes, and seconds (DMS). The first encounter of any setting will also set the decimal latitude at the sighting level. |
 | Encounter.decimalLongitude | Double | 54.678 | Enter longitude coordinates using decimals instead of degrees, minutes, and seconds (DMS). The first encounter of any setting will also set the decimal latitude at the sighting level. |
 | Encounter.year | Int32 | 2020 | For encounter date information, add what you have to the most precise accuracy. Storing the segments separately allows general dates such as "June 2014"; we do not store seconds or milliseconds for an encounter's date information, so there are no fields to allow the input of those values. Enter a 4 digit number. |
