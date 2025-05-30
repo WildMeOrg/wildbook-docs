@@ -57,10 +57,16 @@ When you have finished preparations, navigate to your Wildbook's Bulk Import pag
 5. Review your spreadsheet for errors. Errors, missing data, or empty fields will be highlighted for you to correct.
 6. When you're done reviewing your spreadsheet, click **Set Location**.
 7. Select the location IDs you want to search for match candidates and click **Start Bulk Import**.
+8. The next page will show your import's image validation status and detection and identification progress.
+
+```{note}
+If any of the steps above are interrupted due to loss of internet connection or closing your browser tab, your progress will be saved as a draft locally to your device. You'll see a prompt to continue where you left off or start over when you revisit the submit bulk import page.
+```
 
 ## Bulk Import Matching Process
 
-After uploading a bulk import, you can send imported Encounters through the [Image Analysis Pipeline](../introduction/image-analysis-pipeline.md) if the pipeline is configured for the imported species.
+After uploading a bulk import, you can send your Encounters through the [Image Analysis Pipeline](../introduction/image-analysis-pipeline.md) if detection or identification is configured for the imported species.
+
 Once the import completes, you can take these actions:
 
 ### Send to Detection (No Identification)
