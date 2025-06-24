@@ -32,7 +32,7 @@ In the header of an Excel (.xlsx) file, create a column for each field you want 
     You can add, remove, and reorder columns as needed from the Fields Available list. You can create your own version of our spreadsheet as long as you do not change the field names. *Fields without data should be removed from your spreadsheet prior to import to prevent errors.*
 * **Fill out each line for a single** [Encounter](../introduction/encounter.md).
     If an encounter is associated with a [Sighting](../introduction/sighting.md), include the needed information for the Sighting on at least one line of an associated Encounter.
-* If using any of the Occurrence fields for Sightings, ensure that each Encounter is linked with a common value in the Occurrence.occurrenceID column.
+* If using any of the Occurrence/Sighting fields for Sightings, ensure that each Encounter is linked with a common value in the Sighting.SightingID column.
 * Verify the following fields match exactly with what exists in the system:
     * **Encounter.locationID** - Must match the location as shown in the Location ID menu of the Report an Encounter page (see [known issue](/docs/faq/bulk-import-faq.md#)).
     * **Encounter.submitterID** - Your Wildbook account's username to ensure the encounter is credited to you. This is case-sensitive and must match how it appears in your account page.
@@ -128,9 +128,9 @@ The following fields can be included when uploading an Encounter. Review the des
 | Encounter.measurement0 | String | 5 | Supported column headings are numeric. Values from 0 to infinity are iterated until a sequence value is not found. |
 | Encounter.mediaAsset0.[label name] | String | [label name]: flukeType, value: dorsal | Name a column for a labeled keyword and provide an associated value for each encounter. Labeled keyword names can be found in the keyword drop-down menu on a MediaAsset. Labeled keywords can be defined in the commonConfiguration.properties file. |
 | Encounter.minutes | V_WString | 35 | Enter a number 1-60. |
-| Encounter.occurrenceID | V_WString | BPCT_20190825_1 | A unique code that links encounters across a single sighting. Helpful if you can cross-reference to your records. If you enter an ID that exists in the system, the encounter will be associated with the existing sighting. If you enter a new and unique ID or if you leave the field blank, a new sighting will be created and the encounter associated with the newly created sighting. Restricted to Latin alphanumeric characters (a-z, A-Z, 0-9), - and _. <br>Duplicate of Occurrence.occurrenceID. We recommend using this field instead of Occurrence.occurrenceID. |
+| Encounter.sightingID | V_WString | BPCT_20190825_1 | A unique code that links encounters across a single sighting. Helpful if you can cross-reference to your records. If you enter an ID that exists in the system, the encounter will be associated with the existing sighting. If you enter a new and unique ID or if you leave the field blank, a new sighting will be created and the encounter associated with the newly created sighting. Restricted to Latin alphanumeric characters (a-z, A-Z, 0-9), - and _. <br>Duplicate of Sighting.sightingID. We recommend using this field instead of Sighting.sightingID. |
 | Encounter.researcherComments | V_WString | We also took a separate video observation. | Unconstrained field for general notes regarding the specific encounter (single annotation and related metadata). <br>Leaves comments on the Encounter page under Metadata > Audit Trail. |
-| Encounter.occurrenceRemarks | V_WString | We saw this pack while driving through the forest. | Leaves comments on the Encounter page under Attributes > Additional Comments. Use this field if you need the comments to persist on any cloned Encounters. |
+| Encounter.sightingRemarks | V_WString | We saw this pack while driving through the forest. | Leaves comments on the Encounter page under Attributes > Additional Comments. Use this field if you need the comments to persist on any cloned Encounters. |
 | Encounter.otherCatalogNumbers | V_WString | fieldObs12 | Links the Encounter to other numbers, such as a field encounter number for the day. Limited use in Wildbook. |
 | Encounter.patterningCode | V_WString | tan | A code that defines some standardized feature of body coloring, such as how humpback whale flukes are categorized 1-5 (light to dark) or wild dogs are categorized by general body color (e.g., tan). This field is stored on the back-end and displayed without UI editing capability. |
 | Encounter.mediaAsset0.quality | String | An integer value 0 to 4. | Estimated quality of Encounter.mediaAsset0. Values from 0 to infinity are iterated until a sequence value is not found. |
@@ -146,32 +146,32 @@ The following fields can be included when uploading an Encounter. Review the des
 :widths: auto
 | Sightings Field | Type | Example | Description |
 | --------------- | ---- | ------------- | ----------- |
-| Occurrence.occurrenceID | V_WString |  | Duplicate of Encounter.occurrenceID |
-| Occurrence.comments | V_WString |  | Leaves comments on the Sighting/Occurrence ID page. |
-| Occurrence.bestGroupSizeEstimate | Double | 5 | Researcher-provided estimate of group size. |
-| Occurrence.effortCode | Double |  | Categorized set of values denoting the amount of effort that went into collecting data for a sighting. |
-| Occurrence.fieldStudySite | V_WString |  | String for location. Site names should be recognizable. |
-| Occurrence.fieldSurveyCode | V_WString |  | String to be associated with a given survey. |
-| Occurrence.groupBehavior | V_WString |  | String for description of observed behavior. |
-| Occurrence.groupComposition | V_WString |  | String for description of what animals are observed and their potential relationships. |
-| Occurrence.groupSize | V_WString |  | String for description of group size. |
-| Occurrence.humanActivityNearby | V_WString |  | Description of any activity known to occur in the area. |
-| Occurrence.individualCount | Int32 |  | Number of Individuals counted manually in the sighting. |
-| Occurrence.initialCue | V_WString |  | Text value denoting what signaled attention to the Sighting. Stored in the database only. No UI. |
-| Occurrence.maxGroupSizeEstimate | Int32 |  | Researcher-provided estimate of upper limit group size. |
-| Occurrence.millis | Int64 |  | Time of the Sighting in milliseconds since Epoch; typically originates from hardware used to capture image. |
-| Occurrence.minGroupSizeEstimate | Int32 |  | Researcher-provided estimate of lower limit group size. |
-| Occurrence.numAdults | Int32 |  | Researcher-provided determination of number of adults |
-| Occurrence.numAdultFemales | Int32 |  | Researcher-provided determination of number of adult females. |
-| Occurrence.numAdultMales | Int32 |  | Researcher-provided determination of number of adult males. |
-| Occurrence.numCalves | Int32 |  | Researcher-provided determination of number of calves. Can be used for any infant stage of a species. |
-| Occurrence.numJuveniles | Int32 |  | Researcher-provided determination of number of juveniles. |
-| Occurrence.numSubAdults | Int32 |  | Researcher-provided determination of number of subadults. |
-| Occurrence.numSubFemales | Int32 |  | Researcher-provided determination of number of subadult females. |
-| Occurrence.numSubMales | Int32 |  | Researcher-provided determination of number of subadult males. |
-| Occurrence.observer | String |  | The name of the observing researcher. |
-| Occurrence.transectName | V_WString |  | Name of the transect that logged the sighting. Stored in the database only. |
-| Occurrence.visibilityIndex | Double |  | Indexed values of the visibility during the time of the sighting. Stored in the database only. |
+| Sighting.sightingID | V_WString |  | Duplicate of Encounter.sightingID |
+| Sighting.comments | V_WString |  | Leaves comments on the Sighting/Occurrence ID page. |
+| Sighting.bestGroupSizeEstimate | Double | 5 | Researcher-provided estimate of group size. |
+| Sighting.effortCode | Double |  | Categorized set of values denoting the amount of effort that went into collecting data for a sighting. |
+| Sighting.fieldStudySite | V_WString |  | String for location. Site names should be recognizable. |
+| Sighting.fieldSurveyCode | V_WString |  | String to be associated with a given survey. |
+| Sighting.groupBehavior | V_WString |  | String for description of observed behavior. |
+| Sighting.groupComposition | V_WString |  | String for description of what animals are observed and their potential relationships. |
+| Sighting.groupSize | V_WString |  | String for description of group size. |
+| Sighting.humanActivityNearby | V_WString |  | Description of any activity known to occur in the area. |
+| Sighting.individualCount | Int32 |  | Number of Individuals counted manually in the sighting. |
+| Sighting.initialCue | V_WString |  | Text value denoting what signaled attention to the Sighting. Stored in the database only. No UI. |
+| Sighting.maxGroupSizeEstimate | Int32 |  | Researcher-provided estimate of upper limit group size. |
+| Sighting.millis | Int64 |  | Time of the Sighting in milliseconds since Epoch; typically originates from hardware used to capture image. |
+| Sighting.minGroupSizeEstimate | Int32 |  | Researcher-provided estimate of lower limit group size. |
+| Sighting.numAdults | Int32 |  | Researcher-provided determination of number of adults |
+| Sighting.numAdultFemales | Int32 |  | Researcher-provided determination of number of adult females. |
+| Sighting.numAdultMales | Int32 |  | Researcher-provided determination of number of adult males. |
+| Sighting.numCalves | Int32 |  | Researcher-provided determination of number of calves. Can be used for any infant stage of a species. |
+| Sighting.numJuveniles | Int32 |  | Researcher-provided determination of number of juveniles. |
+| Sighting.numSubAdults | Int32 |  | Researcher-provided determination of number of subadults. |
+| Sighting.numSubFemales | Int32 |  | Researcher-provided determination of number of subadult females. |
+| Sighting.numSubMales | Int32 |  | Researcher-provided determination of number of subadult males. |
+| Sighting.observer | String |  | The name of the observing researcher. |
+| Sighting.transectName | V_WString |  | Name of the transect that logged the sighting. Stored in the database only. |
+| Sighting.visibilityIndex | Double |  | Indexed values of the visibility during the time of the sighting. Stored in the database only. |
 ```
 
 ### Project Fields
@@ -227,12 +227,12 @@ The following fields can be included when uploading an Encounter. Review the des
 | Aquatic Name | Type | Example | Description |
 | ---- | ---- | ------------- | ----------- |
 | Encounter.depth | Double | 35 | Depth of water where the Encounter occurred. Aquatic-only. |
-| Occurrence.bearing | Double | 45 | Value to work with decimalLatitude, decimalLongitude, and distance of Sighting. Typically aquatic-only. |
-| Occurrence.distance | Double |  | Value to work with decimalLatitude, decimalLongitude, and bearing of Sighting. |
-| Occurrence.seaState | V_WString |  | Description of water conditions during the Sighting. Aquatic-only. |
-| Occurrence.seaSurfaceTemp | Double |  | Water temperature in degrees celsius. Aquatic-only. |
-| Occurrence.swellHeight | Double |  | Height of any waves in the area in meters. Aquatic-only. |
-| Occurrence.transectBearing | Double |  | Numeric value of the bearing from the observation vessel to the observed sighting. Stored in database only. Aquatic-only. |
+| Sighting.bearing | Double | 45 | Value to work with decimalLatitude, decimalLongitude, and distance of Sighting. Typically aquatic-only. |
+| Sighting.distance | Double |  | Value to work with decimalLatitude, decimalLongitude, and bearing of Sighting. |
+| Sighting.seaState | V_WString |  | Description of water conditions during the Sighting. Aquatic-only. |
+| Sighting.seaSurfaceTemp | Double |  | Water temperature in degrees celsius. Aquatic-only. |
+| Sighting.swellHeight | Double |  | Height of any waves in the area in meters. Aquatic-only. |
+| Sighting.transectBearing | Double |  | Numeric value of the bearing from the observation vessel to the observed sighting. Stored in database only. Aquatic-only. |
 ```
 ## Reviewing Bulk Imports
 
