@@ -1,6 +1,6 @@
 # Photo Keywords
 
-Keywords are labels displayed on all annotations associated with a media asset.
+Keywords are labels displayed on all annotations associated with a media asset. They can be managed by users with the **admin** role.
 
 ## Add a new keyword
 
