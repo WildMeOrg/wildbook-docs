@@ -19,7 +19,7 @@ Image file names must match the `Encounter.MediaAsset` fields in your Wildbook S
 
 ## Spreadsheet
 
-In the header of an Excel (.xlsx) file, create a column for each field you want to upload to Wildbook. [See Fields Available for a list of supported fields and their descriptions.](#fields-available) This must include at least:
+In an Excel (.xlsx) file, create a column for each field you want to upload to Wildbook. [See Fields Available for a list of supported fields and their descriptions.](#fields-available) This must include at least:
 
 1. **Location Reference**: `Encounter.verbatimLocality`, `Encounter.locationID`, and/or `Encounter.decimalLatitude` and `Encounter.decimalLongitude`
 2. **Date and Time Reference:** `Encounter.year`, `Encounter.month`, `Encounter.day`, etc. If the date is unknown, a year is required.
@@ -31,12 +31,11 @@ In the header of an Excel (.xlsx) file, create a column for each field you want 
 * **Determine which columns you have data for** (see [Fields Available](#fields-available)).
     You can add, remove, and reorder columns as needed from the Fields Available list. You can create your own version of our spreadsheet as long as you do not change the field names. *Fields without data should be removed from your spreadsheet prior to import to prevent errors.*
 * **Fill out each line for a single** [Encounter](../introduction/encounter.md).
-    If an encounter is associated with a [Sighting](../introduction/sighting.md), include the needed information for the Sighting on at least one line of an associated Encounter.
-* If using any of the Occurrence/Sighting fields for Sightings, ensure that each Encounter is linked with a common value in the Sighting.SightingID column.
+    If an encounter is associated with a [Sighting](../introduction/sighting.md), ensure that each Encounter is linked with a common value in the Sighting.SightingID column.
 * Verify the following fields match exactly with what exists in the system:
-    * **Encounter.locationID** - Must match the location as shown in the Location ID menu of the Report an Encounter page (see [known issue](/docs/faq/bulk-import-faq.md#)).
-    * **Encounter.submitterID** - Your Wildbook account's username to ensure the encounter is credited to you. This is case-sensitive and must match how it appears in your account page.
-    * **Encounter.mediaAsset0** - This is the exact file name of each image of the Encounter. Start numbering at 0, and for each additional image, increment by 1 (0, 1, 2, 3, etc.).
+    * **Encounter.locationID** - Must match the location as shown in the Location ID drop-down menu of the Report an Encounter page.
+    * **Encounter.submitterID** - Your Wildbook username to ensure the encounter is assigned to you. This is case-sensitive and must match how it appears in your account page.
+    * **Encounter.mediaAsset0** - This is the exact file name of each image of the Encounter, including the file extention. Start numbering at 0, and for each additional image, increment by 1 (0, 1, 2, 3, etc.).
 
 ### Spreadsheet Templates by Use Case
 
@@ -48,24 +47,25 @@ Here are example Bulk Import Excel spreadsheet templates:
 
 ## Uploading Photos for Bulk Imports
 
-When you have finished preparations, navigate to your Wildbook's Bulk Import page (import/instructions.jsp) and begin the guided walk-through.
+Go to the Bulk Import page (Submit > Bulk Import) and:
 
-1. Select **Browse** to select your images or drag and drop them into the box.
-2. Once each photo upload progress is at 100%, click **Next**.
-3. Select **Browse** to select your spreadsheet or drag and drop it into the box.
-4. Once spreadsheet upload progress is at 100%, click **Next**.
+1. Click **Browse** to select your images or drag and drop them into the box.
+2. Once each photo upload reaches 100%, click **Next**.
+3. Click **Browse** to select your spreadsheet or drag and drop it into the box.
+4. Once spreadsheet upload reaches 100%, click **Next**.
 5. Review your spreadsheet for errors. Errors, missing data, or empty fields will be highlighted for you to correct.
 6. When you're done reviewing your spreadsheet, click **Set Location**.
-7. Select the location IDs you want to search for match candidates and click **Start Bulk Import**.
-8. The next page will show your import's image validation status and detection and identification progress.
+7. Select the location IDs you want to search for match candidates. Optionally, you can select the boxes to skip detection and identification. Click **Start Import**.
+8. You can then click **See Details** to track you bulk import's progress or go back to the home page to view it later from the My Data > My Bulk Imports menu.
+9. If you clicked **See Details**, this page will show your import's image validation status, detection, and identification progress.
 
 ```{note}
-If any of the steps above are interrupted due to loss of internet connection or closing your browser tab, your progress will be saved as a draft locally to your device. You'll see a prompt to continue where you left off or start over when you revisit the submit bulk import page.
+If any of the steps above are interrupted due to loss of internet connection or closing your browser tab, your progress will be saved as a draft locally to your device. You'll see a prompt to continue where you left off or start over when you revisit the **Submit Bulk Import** page.
 ```
 
 ## Bulk Import Matching Process
 
-After uploading a bulk import, you can send your Encounters through the [Image Analysis Pipeline](../introduction/image-analysis-pipeline.md) if detection or identification is configured for the imported species.
+Your bulk imported Encounters go through the [Image Analysis Pipeline](../introduction/image-analysis-pipeline.md) if detection or identification is configured for the imported species.
 
 Once the import completes, you can take these actions:
 
