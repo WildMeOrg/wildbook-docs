@@ -55,7 +55,8 @@ Go to the Bulk Import page (Submit > Bulk Import) and:
 4. Once spreadsheet upload reaches 100%, click **Next**.
 5. Review your spreadsheet for errors. Errors, missing data, or empty fields will be highlighted for you to correct.
 6. When you're done reviewing your spreadsheet, click **Set Location**.
-7. Select the location IDs you want to search for match candidates. Optionally, you can select the boxes to skip detection and identification. Click **Start Import**.
+7. Select the location IDs you want to search for match candidates. Click **Start Import**.
+- Optionally, you can select the boxes to skip detection and identification. If you change your mind later and decide you do want detection or identification, you will need to delete the import and upload it again leaving those boxes unchecked.
 8. You can then click **See Details** to track you bulk import's progress or go back to the home page to view it later from the My Data > My Bulk Imports menu.
 9. If you clicked **See Details**, this page will show your import's image validation status, detection, and identification progress.
 
@@ -67,21 +68,9 @@ If any of the steps above are interrupted due to loss of internet connection or 
 
 Your bulk imported Encounters go through the [Image Analysis Pipeline](../introduction/image-analysis-pipeline.md) if detection or identification is configured for the imported species.
 
-Once the import completes, you can take these actions:
-
-### Send to Detection (No Identification)
-
-The photos you upload are sent to detection, where annotations are added for each animal found by the [Image Analysis Pipeline](../introduction/image-analysis-pipeline.md). Identification can be run later from the bulk import task page or individually through each Encounter page. See [Matching Process](matching-process.md) for more information.
-
-### Send to Identification
-
-This option will appear after your images have been sent to detection. Any found annotations during detection are sent to the identification process. Select which location IDs to process Identification for and click **Send to Identification**.
-
-Bulk detection and identification impact the Wildbook Image Analysis queue machine learning jobs. Other users can expect slowdowns while waiting for Bulk detection and identification jobs to finish.
-
 ## Deleting a Bulk Import
 
-You can return to the Bulk Import log page and click **Delete ImportTask**, which will remove all of the imported data. You can now fix your data and reimport to Wildbook.
+You can return to the Bulk Import log page and click **Delete ImportTask**, which will remove all of the imported data. You can then fix your spreadsheet data and retry your bulk import.
 
 ## Fields Available
 
