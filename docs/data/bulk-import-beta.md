@@ -1,6 +1,6 @@
 # Bulk Import
 
-**Bulk Import** allows users to upload photos (also referred to as media assets) and metadata (e.g., date, location, species, etc.) for multiple encounters at once.
+**Bulk Import** allows you to upload photos (media assets) and metadata (e.g., date, location, species, etc.) for multiple encounters at once.
 
 To prepare your data for bulk import you need:
 
@@ -19,14 +19,14 @@ Image file names must match the `Encounter.MediaAsset` fields in your Wildbook S
 
 ## Spreadsheet
 
-In an Excel (.xlsx) file, create a column for each field you want to upload to Wildbook. [See Fields Available for a list of supported fields and their descriptions.](#fields-available) This must include at least:
+In an Excel (.xlsx) file, create a column for each field you want to upload to Wildbook. [See Fields Available for a list of supported fields and their descriptions.](#fields-available) This must include:
 
-1. **Location Reference**: `Encounter.verbatimLocality`, `Encounter.locationID`, and/or `Encounter.decimalLatitude` and `Encounter.decimalLongitude`
-2. **Date and Time Reference:** `Encounter.year`, `Encounter.month`, `Encounter.day`, etc. If the date is unknown, a year is required.
-3. **Photo reference**: `Encounter.MediaAsset0`
+1. **Location**: `Encounter.verbatimLocality`, `Encounter.locationID`, and/or `Encounter.decimalLatitude` and `Encounter.decimalLongitude`
+2. **Date or Time:** `Encounter.year`, `Encounter.month`, `Encounter.day`, etc. If the date is unknown, a year is required for the encounter.
+3. **Photo**: `Encounter.MediaAsset0`
 4. **Taxonomy**: `Encounter.genus` and `Encounter.specificEpithet`
 
-**All other fields are optional.** Encounters are uploaded as approved Encounters if **Encounter.state** is not set. Here are important guidelines for preparing your spreadsheet:
+**All other fields are optional.** Encounters are uploaded as *approved* Encounters if **Encounter.state** is not set. Here are important guidelines for preparing your spreadsheet:
 
 * **Determine which columns you have data for** (see [Fields Available](#fields-available)).
     You can add, remove, and reorder columns as needed from the Fields Available list. You can create your own version of our spreadsheet as long as you do not change the field names. *Fields without data should be removed from your spreadsheet prior to import to prevent errors.*
@@ -34,8 +34,8 @@ In an Excel (.xlsx) file, create a column for each field you want to upload to W
     If an encounter is associated with a [Sighting](../introduction/sighting.md), ensure that each Encounter is linked with a common value in the Sighting.SightingID column.
 * Verify the following fields match exactly with what exists in the system:
     * **Encounter.locationID** - Must match the location as shown in the Location ID drop-down menu of the Report an Encounter page.
-    * **Encounter.submitterID** - Your Wildbook username to ensure the encounter is assigned to you. This is case-sensitive and must match how it appears in your account page.
-    * **Encounter.mediaAsset0** - This is the exact file name of each image of the Encounter, including the file extention. Start numbering at 0, and for each additional image, increment by 1 (0, 1, 2, 3, etc.).
+    * **Encounter.submitterID** - Your Wildbook username to assign the encounter to you. This is case-sensitive and must match how it appears in your account page.
+    * **Encounter.mediaAsset0** - This is the exact file name of each image of the Encounter, including the file extention. Start numbering at 0 (such as *Encounter.mediaAsset0*), and for each additional image you add to the Encounter, increment by 1 (*Encounter.mediaAsset0*, *Encounter.mediaAsset1*, *Encounter.mediaAsset2* etc.).
 
 ### Spreadsheet Templates by Use Case
 
@@ -47,7 +47,7 @@ Here are example Bulk Import Excel spreadsheet templates:
 
 ## Uploading Photos for Bulk Imports
 
-Go to the Bulk Import page (Submit > Bulk Import) and:
+Go to the Bulk Import page (*Submit > Bulk Import*) and:
 
 1. Click **Browse** to select your images or drag and drop them into the box.
 2. Once each photo upload reaches 100%, click **Next**.
@@ -57,7 +57,7 @@ Go to the Bulk Import page (Submit > Bulk Import) and:
 6. When you're done reviewing your spreadsheet, click **Set Location**.
 7. Select the location IDs you want to search for match candidates. Click **Start Import**.
 - Optionally, you can select the boxes to skip detection and identification. If you change your mind later and decide you do want detection or identification, you will need to delete the import and upload it again leaving those boxes unchecked.
-8. You can then click **See Details** to track you bulk import's progress or go back to the home page to view it later from the My Data > My Bulk Imports menu.
+8. You can then click **See Details** to track you bulk import's progress or go back to the home page to view it later from the *My Data > My Bulk Imports* menu.
 9. If you clicked **See Details**, this page will show your import's image validation status, detection, and identification progress.
 
 ```{note}
