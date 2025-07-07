@@ -31,7 +31,7 @@ In an Excel (.xlsx) file, create a column for each field you want to upload to W
 * **Determine which columns you have data for** (see [Fields Available](#fields-available)).
     You can add, remove, and reorder columns as needed from the Fields Available list. You can create your own version of our spreadsheet as long as you do not change the field names. *Fields without data should be removed from your spreadsheet prior to import to prevent errors.*
 * **Fill out each line for a single** [Encounter](../introduction/encounter.md).
-    If an encounter is associated with a [Sighting](../introduction/sighting.md), ensure that each Encounter is linked with a common value in the Sighting.SightingID column.
+    If an encounter is associated with a [Sighting](../introduction/sighting.md), ensure that each Encounter is linked with a common value in the Sighting.sightingID column.
 * Verify the following fields match exactly with what exists in the system:
     * **Encounter.locationID** - Must match the location as shown in the Location ID drop-down menu of the Report an Encounter page.
     * **Encounter.submitterID** - Your Wildbook username to assign the encounter to you. This is case-sensitive and must match how it appears in your account page.
