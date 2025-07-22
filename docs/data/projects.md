@@ -27,7 +27,7 @@ Use the following actions to process the encounter data.
 
 Any researcher or administrator can create a project.
 
-1. Navigate to **Administer > Manage Projects.**
+1. Navigate to **My Data > My Projects** (or **Administer > Manage Projects** if you're an admin).
 2. Click **Add Project** button.
 3. Provide the following information:
     * (Required) **Project Name:** The name of the project as a whole. This can be a reference to your catalog, organization, or census, to name a few examples. If you do not provide a project name, the project name will be the same as the Project ID.BETA note: does not support spaces or special characters.
@@ -39,9 +39,9 @@ If you do not want to create a project, click **Cancel** button.
 
 ## Edit a project
 
-The owner of a project or a site administrator can edit a project.
+The owner of a project or an administrator can edit a project.
 
-1. Navigate to **Administer > Manage Projects.**
+1. Navigate to **My Data > My Projects** (or **Administer > Manage Projects** if you're an admin).
 2. In the table of projects available to you, click the project you want to edit. The table provides the following information:
     * **Project Name:** The name of the project.
     * **Percent Annotations Identified:** The percentage of annotations that are associated with a Project ID.
@@ -58,9 +58,9 @@ The owner of a project or a site administrator can edit a project.
 
 ## Delete a project
 
-The owner of a project or a site administrator can edit a project.
+The owner of a project or an administrator can edit a project.
 
-1. Navigate to **Administer > Manage Projects.**
+1. Navigate to **My Data > My Projects** (or **Administer > Manage Projects** if you're an admin).
 2. In the table of projects available to you, click the project you want to edit.
 3. Click the **Edit Project** button in the upper left above the table.
 4. Click **Delete** button. The project will be deleted and you will return to the project list page.
@@ -77,7 +77,10 @@ Any user with access to a project can add encounters to the project.
 filtering results at this stage will not change how many encounters are loaded for project management.
 ```
 
-5. Once the **Results Table** loads, click the **Project Management** tab.BETA note: The Project Management tab may take a long time to load if your query returns more than 10000 encounters. It may be more efficient to do several smaller searches.
+5. Once the **Results Table** loads, click the **Project Management** tab. 
+```{note}
+The Project Management tab may take a long time to load if your query returns more than 10,000 encounters. It may be more efficient to do several smaller searches.
+```
 6. On the **Project Management** tab, you get the follow information and actions:
     * **Encounters that will be added:** The number of encounters in your search that you have access to.
     * **Encounters that you cannot add to the project:** If you are on a platform with silo security, this will display the encounters from your search that belong to users you do not have collaborations with.
@@ -90,7 +93,7 @@ filtering results at this stage will not change how many encounters are loaded f
 
 Only the project owner or an admin can remove encounters from a project.
 
-1. Navigate to **Administer > Manage Projects.**
+1. Navigate to **My Data > My Projects** (or **Administer > Manage Projects** if you're an admin).
 2. In the table of projects available to you, click the project you want to edit.
 3. In the **encounter table**, click the **Remove button** on the appropriate row.
 
@@ -100,7 +103,7 @@ Only the project owner or an admin can remove encounters from a project.
 
 To start a match that only compares against encounters in a given project:
 
-1. Navigate to **Administer > Manage Projects.**
+1. Navigate to **My Data > My Projects** (or **Administer > Manage Projects** if you're an admin).
 2. In the table of projects available to you, click the project you want to edit.
 3. Click **Start Match** button.
 4. Click **Match Results** button.
@@ -109,9 +112,9 @@ To start a match that only compares against encounters in a given project:
 
 You can also filter a match that was performed generally.
 
-1. Navigate to the **encounter page.**
-2. Click **View Match Results** in the **Gallery menu.**
-3. Use the **Project Selection dropdown** to choose from your available projects.
+1. Navigate to the **encounter page**.
+2. Click **View Match Results** in the **Gallery menu**.
+3. Use the **Project Selection** drop-down menu to choose from your available projects.
 
 The results list will display project IDs and will be limited to encounters that are in the selected project.
 
@@ -119,7 +122,7 @@ The results list will display project IDs and will be limited to encounters that
 
 Because an individual can only have a single ID from a given project, merging two individuals requires you to resolve any project IDs that are in conflict.
 
-On the merge page, you will see a listing of all projects the two individuals are in; each will have a dropdown with the conflicting IDs. Use the dropdown to select the ID you want to stay with the merged individual.
+On the merge page, you will see a listing of all projects the two individuals are in; each will have a drop-down menu with the conflicting IDs. Use the menu to select the ID you want to keep with the merged individual.
 
 ```{note}
 If you do not have access to all the projects that have IDs in conflict, you will not be able to merge the individuals.
