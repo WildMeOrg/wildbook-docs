@@ -198,7 +198,6 @@ Metadata is used to handle the management of a single encounter.
 * **Unapproved** - an encounter that has not been reviewed and accepted by a researcher or admin. This is the default state for encounters submitted using the standard reporting.
 * **Approved** - an encounter that has been reviewed and accepted by a researcher or admin. This is the default state for encounters submitted using bulk import.
 * **Unidentifiable** - an encounter that has been reviewed and determined to be unusable, but should remain in the system.
-* **Auto_sourced** - an encounter that was pulled from YouTube. (whaleshark.org only)
     Once you've selected the correct state, click **Set** to confirm the selection.
 
 2. **Assign to user**: Use to select from a list of researchers and administrators on the platform and assign that user as the managing researcher of the encounter. Once you've selected the correct user, click **Assign** to confirm the selection.
