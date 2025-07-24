@@ -70,7 +70,9 @@ Your bulk imported Encounters go through the [Image Analysis Pipeline](../introd
 
 ## Deleting a Bulk Import
 
-You can return to the Bulk Import log page and click **Delete ImportTask**, which will remove all of the imported data. You can then fix your spreadsheet data and retry your bulk import.
+1. Go to *My Data > My Bulk Imports*.
+2. Click on the bulk import you want to delete from the list.
+3. Scroll down to the bottom of the bulk import table and click **Delete Import Task**.
 
 ## Fields Available
 
