@@ -181,9 +181,12 @@ Observations of animals are often categorized by their life stage, such as **adu
 
 ```{code-block}
 #show lifeStage showLifestage = true
-#defined life stages lifeStage0=juvenile lifeStage1=sub-adult lifeStage2=adult
-Additional stages can be set by incrementing the properties, such as lifeStage3, lifeStage4, etc.
+#defined life stages
+lifeStage0=juvenile
+lifeStage1=sub-adult
+lifeStage2=adult
 ```
+Additional stages can be set by incrementing the properties, such as lifeStage3, lifeStage4, etc.
 
 #### Configuring physical tag metadata
 
@@ -196,9 +199,14 @@ If you're using physical tags (SAT, PAT, marker, etc.) during your research, you
 * **satelliteTageName*X** - The list of satellite tag manufacturers/providers to help identify the type of tag.
 
 ```{code-block}
-#tag parameters showMetalTags=true metalTagLocation0=left metalTagLocation1=right
+#tag parameters
+showMetalTags=true
+metalTagLocation0=left
+metalTagLocation1=right
 showAcousticTag=true
-showSatelliteTag=true satelliteTagName0=Wild Life Computers satelliteTagName1=SirTack
+showSatelliteTag=true
+satelliteTagName0=Wild Life Computers
+satelliteTagName1=SirTack
 ```
 
 #### Configuring visual patterning codes
@@ -211,8 +219,11 @@ You can configure pre-defined patterning codes for your project in **commonConfi
 Here is a configuration example of giant manta patterning codes from the Wildbook [MantaMatcher.org](https://www.mantamatcher.org).
 
 ```{code-block}
-#defined patterningCodes for distinct visual marking types for individuals identified with photo-identification showPatterningCode = true
-patterningCode0 = normal pigmentation patterningCode1 = black pigmentation - melanistic patterningCode2 = white pigmentation - leucistic
+#defined patterningCodes for distinct visual marking types for individuals identified with photo-identification
+showPatterningCode = true
+patterningCode0 = normal pigmentation
+patterningCode1 = black pigmentation - melanistic
+patterningCode2 = white pigmentation - leucistic
 ```
 
 #### Configuring elevation and depth
@@ -223,7 +234,8 @@ Set**maximumElevationInMeters** to true to make elevation a measurement of your 
 
 ```{code-block}
 #show elevation/depth
-maximumElevationInMeters = false maximumDepthInMeters = true
+maximumElevationInMeters = false
+maximumDepthInMeters = true
 ```
 
 Restart Tomcat after making changes.
@@ -241,11 +253,32 @@ Wildbook allows you to add one ore more records for biological samples collected
 * **alleleRelaxMaxValue** - the value difference allowed between allele values to consider them a "match" when looking for other genotypes that might match or be similar.
 
 ```{code-block}
-#tissue sample types tissueType0 = Tissue sample tissueType1 = Fecal sample tissueType2 = Mucus sample tissueType3 = Blood sample tissueType4 = Parasite sample
-#biological measurement types biologicalMeasurementType0 = 13C biologicalMeasurementType1 = 15N biologicalMeasurementType2 = 34S
-#corresponding biological measurement units biologicalMeasurementUnits0 = ppm biologicalMeasurementUnits1 = ppm biologicalMeasurementUnits2 = ppm
-#corresponding biological measurement sampling protocols biologicalMeasurementSamplingProtocols0 = Lipids extracted biologicalMeasurementSamplingProtocols1 = No lipids extracted, corrected biologicalMeasurementSamplingProtocols2 = No lipids extracted, uncorrected
-#genetic parameters numLoci = 14 numPloids = 2 alleleRelaxMaxValue = 5
+#tissue sample types
+tissueType0 = Tissue sample
+tissueType1 = Fecal sample
+tissueType2 = Mucus sample
+tissueType3 = Blood sample
+tissueType4 = Parasite sample
+
+#biological measurement types
+biologicalMeasurementType0 = 13C
+biologicalMeasurementType1 = 15N
+biologicalMeasurementType2 = 34S
+
+#corresponding biological measurement units
+biologicalMeasurementUnits0 = ppm
+biologicalMeasurementUnits1 = ppm
+biologicalMeasurementUnits2 = ppm
+
+#corresponding biological measurement sampling protocols
+biologicalMeasurementSamplingProtocols0 = Lipids extracted
+biologicalMeasurementSamplingProtocols1 = No lipids extracted, corrected
+biologicalMeasurementSamplingProtocols2 = No lipids extracted, uncorrected
+
+#genetic parameters
+numLoci = 14
+numPloids = 2
+alleleRelaxMaxValue = 5
 ```
 
 Restart Tomcat after making changes.
@@ -275,8 +308,13 @@ To configure the types of social relationships in your Wildbook and the roles th
 Here are some example configurations:
 
 ```{code-block}
-#social relationships-related data relationshipType0 = social grouping relationshipType1 = familial
-relationshipRole0 = member relationshipRole1 = mother relationshipRole2 = calf
+#social relationships-related data
+relationshipType0 = social grouping
+relationshipType1 = familial
+
+relationshipRole0 = member
+relationshipRole1 = mother
+relationshipRole2 = calf
 ```
 
 Restart Tomcat after making changes.
@@ -285,16 +323,19 @@ Restart Tomcat after making changes.
 
 The following email addresses are sent messages when important events occur in Wildbook. These email addresses are specific to your project.
 
-* **sendEmailNotifications** - Defines whether Wildbook should send any emails at all. Set to true, this parameter instructs Wildbook to send email updates for several events, such as:
-    * new Encounter submission reports
-    * new marked individual identifications to adopters ad submitters
-        MarkedIndividual resights to adopted and submitters
-* **autoEmailAddress** - The email address from which Wildbook messages will be sent. If you have a secured mailhost, it's important to configure the mailhost to allow emails to be sent from this address.
+* **sendEmailNotifications** - Defines whether Wildbook should send any emails at all. If set to *true*, this parameter instructs Wildbook to send email updates for events such as:
+    * New Encounter submissions
+    * Previously submitted animal has been identified
+    * Previously submitted Marked Individual has been resighted
+* **autoEmailAddress** - The email address Wildbook messages are sent from. If you have a secured mailhost, it's important to configure the mailhost to allow emails to be sent from this address.
 * **newSubmissionEmail** - The email address to send notices of new Encounter reports submitted to Wildbook.
 
 ```{code-block}
 #email addresses and parameters
-sendEmailNotifications=true autoEmailAddress=[webmaster@someplace.org](mailto:webmaster@someplace.org) newSubmissionEmail=[submissions@someplace.org](mailto:submissions@someplace.org) mailHost=localhost
+sendEmailNotifications=true
+autoEmailAddress=[webmaster@someplace.org](mailto:webmaster@someplace.org)
+newSubmissionEmail=[submissions@someplace.org](mailto:submissions@someplace.org)
+mailHost=localhost
 ```
 
 ### Internationalization (I18N)
@@ -311,9 +352,13 @@ In the example below, English is set as the default language "en", and Wildbook 
 
 ```{code-block}
 defaultLanguage = en
-language0 = en language1 = es #language2 = fr #language3 = de
+language0 = en
+language1 = es
+#language2 = fr
+#language3 = de
+
 The name displayed for each language can also be configured in commonConfiguration.properties.
-en = English es = espa\u00f1ol fr = français
+en = English es = español fr = français
 ```
 
 With languages configured and Tomcat restarted, Wildbook displays configured languages as flag options.
@@ -339,7 +384,7 @@ unidentifiable_title = Unidentifiable Encounter Number unapproved_title = UNAPPR
 
 ### Legacy Spot Matching
 
-Wildbook was originally developed for use with whale sharks (*Rhincodon typus*) and other spotted species. The internal spot pattern recognition system is highly accurate and had scaled well to over 25000 patterns on whaleshark.org. While our newer pattern recognition efforts in Wildbook Image Analysis will eventually replace them, the legacy spot pattern recognition system is still highly accurate and usable in Wildbook.
+Wildbook was originally developed for use with whale sharks (*Rhincodon typus*) and other spotted species. The internal spot pattern recognition system is highly accurate and had scaled well to over 25000 patterns on sharkbook.ai. While our newer pattern recognition efforts in Wildbook Image Analysis will eventually replace them, the legacy spot pattern recognition system is still highly accurate and usable in Wildbook.
 
 By default, the spot pattern recognition system is turned off. It can be turned back on in commonConfiguration.properties by setting the useSpotPatternRecognition value to true.
 
