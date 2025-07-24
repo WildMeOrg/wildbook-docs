@@ -5,10 +5,10 @@
 To prepare your data for bulk import you need:
 
 * A folder that contains only your photos (no videos)
-* An Excel spreadsheet with the appropriate fields and metadata entered
+* An Excel or CSV spreadsheet with the appropriate fields and metadata entered
 
 ```{note}
-Your spreadsheet should have 200 Encounters or less. Spreadsheets larger than this will slow down the site for all users and will result in longer wait times for detection and identification.
+Your spreadsheet should have 200 Encounters or fewer. Spreadsheets larger than this will slow down the site for all users and will result in longer wait times for detection and identification.
 ```
 
 ## Photo Folder
@@ -45,20 +45,18 @@ Here are example Bulk Import Excel spreadsheet templates:
 2. [Individual catalog](../assets/templates/individual_catalog_import.xlsx)
 3. [Sighting import](../assets/templates/sighting_import.xlsx)
 
-## Uploading Photos for Bulk Imports
+## Uploading Data for Bulk Imports
 
 Go to the Bulk Import page (*Submit > Bulk Import*) and:
 
-1. Click **Browse** to select your images or drag and drop them into the box.
-2. Once each photo upload reaches 100%, click **Next**.
-3. Click **Browse** to select your spreadsheet or drag and drop it into the box.
-4. Once spreadsheet upload reaches 100%, click **Next**.
-5. Review your spreadsheet for errors. Errors, missing data, or empty fields will be highlighted for you to correct.
-6. When you're done reviewing your spreadsheet, click **Set Location**.
-7. Select the location IDs you want to search for match candidates. Click **Start Import**.
+1. Click **Browse** to select your images or drag and drop them into the box. If you don't have any photos to upload, click **Next**.
+2. Click **Browse** to select your spreadsheet or drag and drop it into the box.
+3. Review the data uploaded from your spreadsheet and correct any validation errors and missing data. Errors, missing data, or empty fields will be highlighted. Fields with a **+** beside them allow you change the value for all rows of that column (such as location ID and submitter ID).
+4. When you're done reviewing your spreadsheet, click **Set Location**.
+5. Select the location IDs you want to search for match candidates. Click **Start Import**.
 - Optionally, you can select the boxes to skip detection and identification. If you change your mind later and decide you do want detection or identification, you will need to delete the import and upload it again leaving those boxes unchecked.
-8. You can then click **See Details** to track you bulk import's progress or go back to the home page to view it later from the *My Data > My Bulk Imports* menu.
-9. If you clicked **See Details**, this page will show your import's image validation status, detection, and identification progress.
+6. You can then click **See Details** to track you bulk import's progress or go back to the home page to view it later from the *My Data > My Bulk Imports* menu.
+7. If you clicked **See Details**, this page will show your import's image validation status, detection, and identification progress.
 
 ```{note}
 If any of the steps above are interrupted due to loss of internet connection or closing your browser tab, your progress will be saved as a draft locally to your device. You'll see a prompt to continue where you left off or start over when you revisit the **Submit Bulk Import** page.
