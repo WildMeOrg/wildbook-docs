@@ -64,7 +64,20 @@ If any of the steps above are interrupted due to loss of internet connection or 
 
 ## Bulk Import Matching Process
 
-Your bulk imported Encounters go through the [Image Analysis Pipeline](../introduction/image-analysis-pipeline.md) if detection or identification is configured for the imported species.
+Your bulk imported Encounters go through the [Image Analysis Pipeline](../introduction/image-analysis-pipeline.md) if detection or identification is configured for the imported species. The detection and identification status icons on your bulk import will change when each stage is in process or complete.
+
+As identification progresses, the [IA Class](../data/manual-annotation-beta.md#creating-a-manual-annotation) will appear in the **Class** column of the table along with the match results status:
+
+* waiting to queue - Images haven't sent to [WBIA](../introduction/index.md) yet
+* queuing - Trying to send images to WBIA
+* queued - Images in WBIA, waiting for them to come back
+* working - Identification actively in progress.
+* error - Something went wrong. Let us know in the [Community Forums](https://community.wildme.org/).
+* exception - Something went wrong. Let us know in the [Community Forums](https://community.wildme.org/).
+* suppressed - Something went wrong. Let us know in the [Community Forums](https://community.wildme.org/).
+* completed - Done; images back from WBIA
+
+Click on the links in the **Class** column to view match results for each Encounter.
 
 ## Deleting a Bulk Import
 
