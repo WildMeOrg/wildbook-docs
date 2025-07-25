@@ -68,7 +68,7 @@ Your bulk imported Encounters go through the [Image Analysis Pipeline](../introd
 
 As identification progresses, the [IA Class](../data/manual-annotation-beta.md#creating-a-manual-annotation) will appear in the **Class** column of the table along with the match results status:
 
-* waiting to queue - Images haven't sent to [WBIA](../introduction/index.md) yet
+* waiting to queue - Images haven't been sent to [WBIA](../introduction/index.md) yet
 * queuing - Trying to send images to WBIA
 * queued - Images in WBIA, waiting for them to come back
 * working - Identification actively in progress.
