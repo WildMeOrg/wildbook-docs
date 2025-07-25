@@ -1,49 +1,41 @@
-# Bulk Import (beta)
+# Bulk Import
 
-To allow for the integration and import of legacy data as well as batched volumes of data, Wildbook provides a system for uploading a large amount of data called **Bulk Import**. Bulk Import allows users with login privileges to provide photos and related metadata *en masse* (e.g., date, location, species, etc.).
+**Bulk Import** allows you to upload photos (media assets) and metadata (e.g., date, location, species, etc.) for multiple encounters at once.
+
+To prepare your data for bulk import you need:
+
+* A folder that contains only your photos (no videos)
+* An Excel or CSV spreadsheet with the appropriate fields and metadata entered
 
 ```{note}
-This functionality is in beta, but considered largely stable. Any substantial changes will be reported before they take place.
+Your spreadsheet should have 200 Encounters or fewer. Spreadsheets larger than this will slow down the site for all users and will result in longer wait times for detection and identification.
 ```
 
-There are two pieces of input required for a bulk import:
+## Photo Folder
 
-* Photo archive in a local file system
-* Excel spreadsheet linking photos to metadata
+Organize the photos you're importing into a single folder. Ensure that all file names are unique from one another.
 
-In setting up your bulk imports, ensure that each import has 200 Encounters or less.
+Image file names must match the `Encounter.MediaAsset` fields in your Wildbook Standard Format spreadsheet (linked below). Special characters are removed from file names. Your file names should only include letters from the English alphabet, 0-9, period, and space.
 
-## Photo Archive Set-up
+## Spreadsheet
 
-On your computer, organize the photos you'd like to upload into a single folder.
+In an Excel (.xlsx) file, create a column for each field you want to upload to Wildbook. [See Fields Available for a list of supported fields and their descriptions.](#fields-available) This must include:
 
-1. Create a folder.
-2. Move all images you intend to upload to the folder.
-3. Ensure that all file names are unique from one another.
+1. **Location**: `Encounter.verbatimLocality`, `Encounter.locationID`, and/or `Encounter.decimalLatitude` and `Encounter.decimalLongitude`
+2. **Date or Time:** `Encounter.year`, `Encounter.month`, `Encounter.day`, etc. If the date is unknown, a year is required for the encounter.
+3. **Photo**: `Encounter.MediaAsset0`
+4. **Taxonomy**: `Encounter.genus` and `Encounter.specificEpithet`
 
-If you have file names that are the same, either *rename the duplicates or upload the duplicates in a separate batch*.
-Remember, the image names must correspond exactly to the `"Encounter.MediaAsset"` entries in your Wildbook Standard Format spreadsheet. Special characters are removed from file names. *(Recommendation: Remove special characters before uploading to check for potential collisions. Your file names should only include letters from the English alphabet, 0-9, period, and space.)*
-
-## Spreadsheet Set-up
-
-In the header of an Excel (.xlsx) file, create a column for each field you want to upload to Wildbook. [See Fields Available for a list of supported fields.](#fields-available) This must include at least:
-
-1. **Location Reference**: Encounter.verbatimLocality, Encounter.locationID, and/or Encounter.decimalLatitude and Encounter.decimalLongitude
-2. **Date and Time Reference:** Encounter.year, Encounter.month, Encounter.day, etc. *(Note: At a minimum, include the year)*
-3. **Photograph reference**: Encounter.MediaAsset*0*
-4. **Taxonomy**: Encounter.genus and Encounter.specificEpithet
-
-*(Note: All other fields are optional.)* Because this flow is only accessible to authorized users, the Encounters are uploaded as approved Encounters if **Encounter.state** is not otherwise set. Here are important guidelines for preparing your spreadsheet:
+**All other fields are optional.** Encounters are uploaded as *approved* Encounters if **Encounter.state** is not set. Here are important guidelines for preparing your spreadsheet:
 
 * **Determine which columns you have data for** (see [Fields Available](#fields-available)).
-    It is OK to add, remove, and reorder columns as needed from the provided list. You can create your own version of our spreadsheet as long as you do not change the header names. Fields without data should be removed from your spreadsheet prior to importing it.
+    You can add, remove, and reorder columns as needed from the Fields Available list. You can create your own version of our spreadsheet as long as you do not change the field names. *Fields without data should be removed from your spreadsheet prior to import to prevent errors.*
 * **Fill out each line for a single** [Encounter](../introduction/encounter.md).
-    If an encounter is associated with a [Sighting](../introduction/sighting.md), include the needed information for the Sighting on at least one line of an associated Encounter.
-* If using any of the Occurrence fields for Sightings, ensure that each Encounter is linked with a common value in the Occurrence.occurrenceID column.
+    If an encounter is associated with a [Sighting](../introduction/sighting.md), ensure that each Encounter is linked with a common value in the Sighting.sightingID column.
 * Verify the following fields match exactly with what exists in the system:
-    * **Encounter.locationID** - Must match the location as shown in the Location ID menu of the Report an Encounter page (see [known issue](/docs/faq/bulk-import-faq.md#)).
-    * **Encounter.submitterID** - Your Wildbook account's username to ensure the encounter is credited to you. This is case-sensitive and must match how it appears in your account page.
-    * **Encounter.mediaAsset0** - This is the exact file name of each image of the Encounter. Start numbering at 0, and for each additional image, increment by 1 (0, 1, 2, 3, etc.).
+    * **Encounter.locationID** - Must match the location as shown in the Location ID drop-down menu of the Report an Encounter page.
+    * **Encounter.submitterID** - Your Wildbook username to assign the encounter to you. This is case-sensitive and must match how it appears in your account page.
+    * **Encounter.mediaAsset0** - This is the exact file name of each image of the Encounter, including the file extention. Start numbering at 0 (such as *Encounter.mediaAsset0*), and for each additional image you add to the Encounter, increment by 1 (*Encounter.mediaAsset0*, *Encounter.mediaAsset1*, *Encounter.mediaAsset2* etc.).
 
 ### Spreadsheet Templates by Use Case
 
@@ -53,42 +45,45 @@ Here are example Bulk Import Excel spreadsheet templates:
 2. [Individual catalog](../assets/templates/individual_catalog_import.xlsx)
 3. [Sighting import](../assets/templates/sighting_import.xlsx)
 
-## Uploading Photos for Bulk Imports
+## Uploading Data for Bulk Imports
 
-When you have finished preparations, navigate to your Wildbook's Bulk Import page (import/instructions.jsp) and begin the guided walk-through.
+Go to the Bulk Import page (*Submit > Bulk Import*) and:
 
-1. Select **Upload Photos**.
-2. Browse to your photo directory and select **Upload**.
-3. Select **Begin Upload** to be taken to the photo review page. At this point, these images are uploaded to the platform and available.
-4. Review that all photos you have uploaded are available in the import. If they are, select **Accept** and move on.
-5. Browse to your spreadsheet and select **Open**.
-6. Select **Begin Upload** to be taken to the import overview.
-7. Review the data preview for data integrity.
+1. Click **Browse** to select your images or drag and drop them into the box. If you don't have any photos to upload, click **Next**.
+2. Click **Browse** to select your spreadsheet or drag and drop it into the box.
+3. Review the data uploaded from your spreadsheet and correct any validation errors and missing data. Errors, missing data, or empty fields will be highlighted. Fields with a **+** beside them allow you change the value for all rows of that column (such as location ID and submitter ID).
+4. When you're done reviewing your spreadsheet, click **Set Location**.
+5. Select the location IDs you want to search for match candidates. Click **Start Import**.
+- Optionally, you can select the boxes to skip detection and identification. If you change your mind later and decide you do want detection or identification, you will need to delete the import and upload it again leaving those boxes unchecked.
+6. You can then click **See Details** to track you bulk import's progress or go back to the home page to view it later from the *My Data > My Bulk Imports* menu.
+7. If you clicked **See Details**, this page will show your import's image validation status, detection, and identification progress.
 
 ```{note}
-The system will verify the data in the spreadsheet against ALL images you have in the system, not only the ones you are currently uploading. Review the online data integrity report carefully before initiating an upload.
+If any of the steps above are interrupted due to loss of internet connection or closing your browser tab, your progress will be saved as a draft locally to your device. You'll see a prompt to continue where you left off or start over when you revisit the **Submit Bulk Import** page.
 ```
-
-If everything looks as expected, select **Commit these results** and confirm that you want to import all data.
 
 ## Bulk Import Matching Process
 
-After uploading a bulk import, you can send imported Encounters through the [Image Analysis Pipeline](../introduction/image-analysis-pipeline.md) if the pipeline is configured for the imported species.
-Once the import completes, you can take these actions:
+Your bulk imported Encounters go through the [Image Analysis Pipeline](../introduction/image-analysis-pipeline.md) if detection or identification is configured for the imported species. The detection and identification status icons on your bulk import will change when each stage is in process or complete.
 
-### Send to Detection (No Identification)
+As identification progresses, the [IA Class](../data/manual-annotation-beta.md#creating-a-manual-annotation) will appear in the **Class** column of the table along with the match results status:
 
-The MediaAssets you upload are sent to Detection, where Annotations are added for each animal found by the [Image Analysis Pipeline](../introduction/image-analysis-pipeline.md). Identification can be run later individually through each Encounter page. See [Matching Process](matching-process.md) for more information.
+* waiting to queue - Images haven't been sent to [WBIA](../introduction/index.md) yet
+* queuing - Trying to send images to WBIA
+* queued - Images in WBIA, waiting for them to come back
+* working - Identification actively in progress
+* error - Something went wrong; let us know in the [Community Forums](https://community.wildme.org/)
+* exception - Something went wrong; let us know in the [Community Forums](https://community.wildme.org/)
+* suppressed - Something went wrong; let us know in the [Community Forums](https://community.wildme.org/)
+* completed - Done; images back from WBIA
 
-### Send to Identification
-
-This option will appear after your images have been sent to Detection. The MediaAssets you have uploaded are sent through Detection, and any found Annotations are sent on to the Identification process. Select which locations to process Identification for and **Send to Identification**.
-
-Bulk Detection and Identification can very significantly impact the Wildbook Image Analysis queue machine learning jobs. Other users can expect slowdowns waiting for Bulk Detection and ID jobs to finish.
+Click on the links in the **Class** column to view match results for each Encounter.
 
 ## Deleting a Bulk Import
 
-Mistakes happen. If you find systematic problems in the data of a Bulk Import job, you can return to the Bulk Import log page and click **Delete ImportTask** at the bottom, which will remove all of the imported data. You can now fix your data and reimport to Wildbook.
+1. Go to *My Data > My Bulk Imports*.
+2. Click on the bulk import you want to delete from the list.
+3. Scroll down to the bottom of the bulk import table and click **Delete Import Task**.
 
 ## Fields Available
 
@@ -101,7 +96,7 @@ The most commonly-used fields are listed in the table below.
 | MarkedIndividual.individualID | V_WString | Lion045 | PrimaryKey. While Wildbook assigns unique user IDs to MarkedIndividuals, this field becomes the default display name for the MarkedIndividual. <br>Duplicate of Encounter.individualID. <br>We recommend using this field instead of Encounter.individualID. |
 | Encounter.individualID | V_WString | Lion045 | Duplicate of MarkedIndividual.individualID. |
 | Encounter.verbatimLocality | V_WString | Saw this about five minutes into our tour near mile marker 5, somewhere in Tanzania. | Descriptive string to reference location. No constraints on what is entered, but is not used for analysis. |
-| Encounter.locationID | V_WString | Zone 5, Botswana | Hierarchical list of study sites. Allows for consistency and controlled granularity of location input. **Must match the location as shown in the Location ID menu of the Report an Encounter page** (see [known issue](/docs/faq/bulk-import-faq.md#)).|
+| Encounter.locationID | V_WString | Zone 5, Botswana | Hierarchical list of study sites. Allows for consistency and controlled granularity of location input. **Must match the location as shown in the Location ID menu of the Report an Encounter page except in GrouperSpotter, where you only need to enter the REEF code** (see [known issue](/docs/faq/bulk-import-faq.md#)).|
 | Encounter.decimalLatitude | Double | -35.46 | Enter latitude coordinates using decimals instead of degrees, minutes, and seconds (DMS). The first encounter of any setting will also set the decimal latitude at the sighting level. |
 | Encounter.decimalLongitude | Double | 54.678 | Enter longitude coordinates using decimals instead of degrees, minutes, and seconds (DMS). The first encounter of any setting will also set the decimal latitude at the sighting level. |
 | Encounter.year | Int32 | 2020 | For encounter date information, add what you have to the most precise accuracy. Storing the segments separately allows general dates such as "June 2014"; we do not store seconds or milliseconds for an encounter's date information, so there are no fields to allow the input of those values. Enter a 4 digit number. |
@@ -135,9 +130,9 @@ The following fields can be included when uploading an Encounter. Review the des
 | Encounter.measurement0 | String | 5 | Supported column headings are numeric. Values from 0 to infinity are iterated until a sequence value is not found. |
 | Encounter.mediaAsset0.[label name] | String | [label name]: flukeType, value: dorsal | Name a column for a labeled keyword and provide an associated value for each encounter. Labeled keyword names can be found in the keyword drop-down menu on a MediaAsset. Labeled keywords can be defined in the commonConfiguration.properties file. |
 | Encounter.minutes | V_WString | 35 | Enter a number 1-60. |
-| Encounter.occurrenceID | V_WString | BPCT_20190825_1 | A unique code that links encounters across a single sighting. Helpful if you can cross-reference to your records. If you enter an ID that exists in the system, the encounter will be associated with the existing sighting. If you enter a new and unique ID or if you leave the field blank, a new sighting will be created and the encounter associated with the newly created sighting. Restricted to Latin alphanumeric characters (a-z, A-Z, 0-9), - and _. <br>Duplicate of Occurrence.occurrenceID. We recommend using this field instead of Occurrence.occurrenceID. |
+| Encounter.sightingID | V_WString | BPCT_20190825_1 | A unique code that links encounters across a single sighting. Helpful if you can cross-reference to your records. If you enter an ID that exists in the system, the encounter will be associated with the existing sighting. If you enter a new and unique ID or if you leave the field blank, a new sighting will be created and the encounter associated with the newly created sighting. Restricted to Latin alphanumeric characters (a-z, A-Z, 0-9), - and _. <br>Duplicate of Sighting.sightingID. We recommend using this field instead of Sighting.sightingID. |
 | Encounter.researcherComments | V_WString | We also took a separate video observation. | Unconstrained field for general notes regarding the specific encounter (single annotation and related metadata). <br>Leaves comments on the Encounter page under Metadata > Audit Trail. |
-| Encounter.occurrenceRemarks | V_WString | We saw this pack while driving through the forest. | Leaves comments on the Encounter page under Attributes > Additional Comments. Use this field if you need the comments to persist on any cloned Encounters. |
+| Encounter.sightingRemarks | V_WString | We saw this pack while driving through the forest. | Leaves comments on the Encounter page under Attributes > Additional Comments. Use this field if you need the comments to persist on any cloned Encounters. |
 | Encounter.otherCatalogNumbers | V_WString | fieldObs12 | Links the Encounter to other numbers, such as a field encounter number for the day. Limited use in Wildbook. |
 | Encounter.patterningCode | V_WString | tan | A code that defines some standardized feature of body coloring, such as how humpback whale flukes are categorized 1-5 (light to dark) or wild dogs are categorized by general body color (e.g., tan). This field is stored on the back-end and displayed without UI editing capability. |
 | Encounter.mediaAsset0.quality | String | An integer value 0 to 4. | Estimated quality of Encounter.mediaAsset0. Values from 0 to infinity are iterated until a sequence value is not found. |
@@ -153,32 +148,32 @@ The following fields can be included when uploading an Encounter. Review the des
 :widths: auto
 | Sightings Field | Type | Example | Description |
 | --------------- | ---- | ------------- | ----------- |
-| Occurrence.occurrenceID | V_WString |  | Duplicate of Encounter.occurrenceID |
-| Occurrence.comments | V_WString |  | Leaves comments on the Sighting/Occurrence ID page. |
-| Occurrence.bestGroupSizeEstimate | Double | 5 | Researcher-provided estimate of group size. |
-| Occurrence.effortCode | Double |  | Categorized set of values denoting the amount of effort that went into collecting data for a sighting. |
-| Occurrence.fieldStudySite | V_WString |  | String for location. Site names should be recognizable. |
-| Occurrence.fieldSurveyCode | V_WString |  | String to be associated with a given survey. |
-| Occurrence.groupBehavior | V_WString |  | String for description of observed behavior. |
-| Occurrence.groupComposition | V_WString |  | String for description of what animals are observed and their potential relationships. |
-| Occurrence.groupSize | V_WString |  | String for description of group size. |
-| Occurrence.humanActivityNearby | V_WString |  | Description of any activity known to occur in the area. |
-| Occurrence.individualCount | Int32 |  | Number of Individuals counted manually in the sighting. |
-| Occurrence.initialCue | V_WString |  | Text value denoting what signaled attention to the Sighting. Stored in the database only. No UI. |
-| Occurrence.maxGroupSizeEstimate | Int32 |  | Researcher-provided estimate of upper limit group size. |
-| Occurrence.millis | Int64 |  | Time of the Sighting in milliseconds since Epoch; typically originates from hardware used to capture image. |
-| Occurrence.minGroupSizeEstimate | Int32 |  | Researcher-provided estimate of lower limit group size. |
-| Occurrence.numAdults | Int32 |  | Researcher-provided determination of number of adults |
-| Occurrence.numAdultFemales | Int32 |  | Researcher-provided determination of number of adult females. |
-| Occurrence.numAdultMales | Int32 |  | Researcher-provided determination of number of adult males. |
-| Occurrence.numCalves | Int32 |  | Researcher-provided determination of number of calves. Can be used for any infant stage of a species. |
-| Occurrence.numJuveniles | Int32 |  | Researcher-provided determination of number of juveniles. |
-| Occurrence.numSubAdults | Int32 |  | Researcher-provided determination of number of subadults. |
-| Occurrence.numSubFemales | Int32 |  | Researcher-provided determination of number of subadult females. |
-| Occurrence.numSubMales | Int32 |  | Researcher-provided determination of number of subadult males. |
-| Occurrence.observer | String |  | The name of the observing researcher. |
-| Occurrence.transectName | V_WString |  | Name of the transect that logged the sighting. Stored in the database only. |
-| Occurrence.visibilityIndex | Double |  | Indexed values of the visibility during the time of the sighting. Stored in the database only. |
+| Sighting.sightingID | V_WString |  | Duplicate of Encounter.sightingID |
+| Sighting.comments | V_WString |  | Leaves comments on the Sighting/Occurrence ID page. |
+| Sighting.bestGroupSizeEstimate | Double | 5 | Researcher-provided estimate of group size. |
+| Sighting.effortCode | Double |  | Categorized set of values denoting the amount of effort that went into collecting data for a sighting. |
+| Sighting.fieldStudySite | V_WString |  | String for location. Site names should be recognizable. |
+| Sighting.fieldSurveyCode | V_WString |  | String to be associated with a given survey. |
+| Sighting.groupBehavior | V_WString |  | String for description of observed behavior. |
+| Sighting.groupComposition | V_WString |  | String for description of what animals are observed and their potential relationships. |
+| Sighting.groupSize | V_WString |  | String for description of group size. |
+| Sighting.humanActivityNearby | V_WString |  | Description of any activity known to occur in the area. |
+| Sighting.individualCount | Int32 |  | Number of Individuals counted manually in the sighting. |
+| Sighting.initialCue | V_WString |  | Text value denoting what signaled attention to the Sighting. Stored in the database only. No UI. |
+| Sighting.maxGroupSizeEstimate | Int32 |  | Researcher-provided estimate of upper limit group size. |
+| Sighting.millis | Int64 |  | Time of the Sighting in milliseconds since Epoch; typically originates from hardware used to capture image. |
+| Sighting.minGroupSizeEstimate | Int32 |  | Researcher-provided estimate of lower limit group size. |
+| Sighting.numAdults | Int32 |  | Researcher-provided determination of number of adults |
+| Sighting.numAdultFemales | Int32 |  | Researcher-provided determination of number of adult females. |
+| Sighting.numAdultMales | Int32 |  | Researcher-provided determination of number of adult males. |
+| Sighting.numCalves | Int32 |  | Researcher-provided determination of number of calves. Can be used for any infant stage of a species. |
+| Sighting.numJuveniles | Int32 |  | Researcher-provided determination of number of juveniles. |
+| Sighting.numSubAdults | Int32 |  | Researcher-provided determination of number of subadults. |
+| Sighting.numSubFemales | Int32 |  | Researcher-provided determination of number of subadult females. |
+| Sighting.numSubMales | Int32 |  | Researcher-provided determination of number of subadult males. |
+| Sighting.observer | String |  | The name of the observing researcher. |
+| Sighting.transectName | V_WString |  | Name of the transect that logged the sighting. Stored in the database only. |
+| Sighting.visibilityIndex | Double |  | Indexed values of the visibility during the time of the sighting. Stored in the database only. |
 ```
 
 ### Project Fields
@@ -234,12 +229,12 @@ The following fields can be included when uploading an Encounter. Review the des
 | Aquatic Name | Type | Example | Description |
 | ---- | ---- | ------------- | ----------- |
 | Encounter.depth | Double | 35 | Depth of water where the Encounter occurred. Aquatic-only. |
-| Occurrence.bearing | Double | 45 | Value to work with decimalLatitude, decimalLongitude, and distance of Sighting. Typically aquatic-only. |
-| Occurrence.distance | Double |  | Value to work with decimalLatitude, decimalLongitude, and bearing of Sighting. |
-| Occurrence.seaState | V_WString |  | Description of water conditions during the Sighting. Aquatic-only. |
-| Occurrence.seaSurfaceTemp | Double |  | Water temperature in degrees celsius. Aquatic-only. |
-| Occurrence.swellHeight | Double |  | Height of any waves in the area in meters. Aquatic-only. |
-| Occurrence.transectBearing | Double |  | Numeric value of the bearing from the observation vessel to the observed sighting. Stored in database only. Aquatic-only. |
+| Sighting.bearing | Double | 45 | Value to work with decimalLatitude, decimalLongitude, and distance of Sighting. Typically aquatic-only. |
+| Sighting.distance | Double |  | Value to work with decimalLatitude, decimalLongitude, and bearing of Sighting. |
+| Sighting.seaState | V_WString |  | Description of water conditions during the Sighting. Aquatic-only. |
+| Sighting.seaSurfaceTemp | Double |  | Water temperature in degrees celsius. Aquatic-only. |
+| Sighting.swellHeight | Double |  | Height of any waves in the area in meters. Aquatic-only. |
+| Sighting.transectBearing | Double |  | Numeric value of the bearing from the observation vessel to the observed sighting. Stored in database only. Aquatic-only. |
 ```
 ## Reviewing Bulk Imports
 
