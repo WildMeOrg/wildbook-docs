@@ -71,10 +71,10 @@ As identification progresses, the [IA Class](../data/manual-annotation-beta.md#c
 * waiting to queue - Images haven't been sent to [WBIA](../introduction/index.md) yet
 * queuing - Trying to send images to WBIA
 * queued - Images in WBIA, waiting for them to come back
-* working - Identification actively in progress.
-* error - Something went wrong. Let us know in the [Community Forums](https://community.wildme.org/).
-* exception - Something went wrong. Let us know in the [Community Forums](https://community.wildme.org/).
-* suppressed - Something went wrong. Let us know in the [Community Forums](https://community.wildme.org/).
+* working - Identification actively in progress
+* error - Something went wrong; let us know in the [Community Forums](https://community.wildme.org/)
+* exception - Something went wrong; let us know in the [Community Forums](https://community.wildme.org/)
+* suppressed - Something went wrong; let us know in the [Community Forums](https://community.wildme.org/)
 * completed - Done; images back from WBIA
 
 Click on the links in the **Class** column to view match results for each Encounter.
