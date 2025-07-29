@@ -8,8 +8,8 @@ The WildEx Image Export app is a desktop tool that pairs with Wildbook and allow
 
 WildEx Image Export is available for both Windows and Mac.
 
-1. To download, visit [Wild Me Add-ons](https://www.wildme.org/addons.html).
-2. Double-click to download the appropriate version.
+1. To download, visit [Wild Me Export - Releases](https://github.com/WildMeOrg/WildbookExport/releases).
+2. Click to download the appropriate version.
 3. Once the download completes, click to install.
 4. The app should automatically open once installed.
 
