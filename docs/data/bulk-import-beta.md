@@ -123,7 +123,7 @@ The following fields can be included when uploading an Encounter. Review the des
 | Encounter.dateInMilliseconds | Int64 | 1589554848 | Skip other Encounter date fields if you have a precise date and time (milliseconds since epoch---the standard computer format for date and times). Format is a large integer like 1516685992499. |
 | Encounter.distinguishingScar | V_WString | left body | Description of any highly-identifiable markings/scarring that help with visual Identificaton. |
 | Encounter.groupRole | V_WString | escort male | Not commonly used. Largely used for point-in-time observations of role rather than longer-term observations. |
-| Encounter.hour | Int32 | 11 | Enter a number 1-24, 24 corresponding with midnight. |
+| Encounter.hour | Int32 | 11 | Enter a number 00-24, 00 corresponding with midnight. |
 | Encounter.keyword0 | String | left strange marking | Applies a keyword to a mediaAsset; the number of Encounter.keyword(X) should correspond to number of Encounter.mediaAsset(X). |
 | Encounter.mediaAsset0.keywords | String | left strange marking_scar on body_ProfilePhoto | Underscore-delimited list of keywords to be associated with the MediaAsset. Can be used for one or many keywords. Values from 0 to infinity are iterated until a sequence value is not found. |
 | Encounter.lifeStage | V_WString | juvenile | List of potential life stages. Standards are "adult", "juvenile", and "unknown". |
