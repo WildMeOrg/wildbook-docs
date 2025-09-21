@@ -9,7 +9,13 @@ The documentation will eventually support:
 
 ## Quick Start
 
-### Local Setup
+### Docker
+With docker and docker compose installed; run the development server with 
+```bash
+docker compose up
+```
+This will serve the documentation and automatically reload on changes at [http://localhost:8000](http://loaclhost:8000)
+## Local Setup
 
 1.  **Clone the repository:**
     ```bash
