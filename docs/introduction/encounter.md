@@ -4,13 +4,17 @@ In Wildbook, an Encounter is the foundation of the software. Encounters provide 
 
 ## Navigating to an Encounter Page
 
-To see Encounter information, you must be signed into the system. Once signed in, you can use **Search** > **Encounters** to filter encounters that meet certain criteria, or you can use **My Data** > **My Encounters** to see all of the encounters assigned to you.
+To see Encounter information, you must be signed into Wildbook. Once you've signed in, you can use **Search** > **Encounters** to filter encounters or you can use **My Data** > **My Encounters** to see all of the encounters assigned to you.
 
-There are two [data entry methods](data-entry.md) for uploading Encounters: uploading a single encounter from the [Report an Encounter](../data/report-encounter.md) page and uploading multiple encounters in a [Bulk Import](../data/bulk-import-beta.md).
+There are two [data entry methods](data-entry.md) for uploading Encounters: upload a single encounter from the [Report an Encounter](../data/report-encounter.md) page and upload multiple encounters in a [Bulk Import](../data/bulk-import-beta.md).
 
 ## Encounter Page Format
 
-The Encounter has two views: Overview and More Details. 
+The Encounter page has two views: Overview and More Details. The Encounter ID and Encounter workflow state will persist between views. Encounter workflow state is defined as:
+
+* **Unapproved** - an encounter that has not been reviewed and accepted by a user. This is the default state for encounters submitted using the  [Report an Encounter](../data/report-encounter.md) page.
+* **Approved** - an encounter that has been reviewed and accepted by a user. This is the default state for encounters submitted using Bulk Import.
+* **Unidentifiable** - an encounter that has been reviewed and determined to be unusable for identification, but should remain in the system. Selecting your state will save it.
 
 For each of the following sections, click the pencil icon to make changes.
 
@@ -26,68 +30,49 @@ The date and time the animal in the photo was seen.
 
 #### Verbatim Event Date
 
-A free-text field to accompany the Encounter Date.
+A free-text field to describe the Encounter Date.
 
 ### Identity
 
 Identity tells us if an encounter has been identified as a [Marked Individual](../introduction/marked-individual.md).
 
-#### Setting Individual ID
+#### Matched by
 
-##### New Individual
+Describes how the encounter was identified. The options are:
 
-If you have determined the encounter is of an individual that does not exist in the current Wildbook, you should enter a unique ID. This ID needs to be distinct from any Individual ID in your catalog that currently exists. When you've entered the ID, click **New** to confirm the value.
+* **Unmatched first encounter**: No matches were found in the Wildbook, making this a new individual. 
+* **Visual Inspection**: Someone compared the pictures between two encounters and determined they are the same individual.
+* **Pattern Match**: Wildbook suggested a match candidate and the animal was determined to be the same individual.
 
-##### Existing Individual
+#### Individual ID
 
-If you have determined the encounter is of an existing individual, fill out the information under **Add to existing individual ID**. Begin typing the name associated with the individual you want to associate the encounter with. A dropdown will display a list of all matching individuals. Select from the list then click **Add**.
+If the encounter is of an individual that does not exist in the current Wildbook, you should enter a unique ID. This ID needs to be distinct from any Individual ID in your catalog that currently exists. When you've entered the ID, click **Create** to confirm the value and then click **Save**.
 
-##### Matched by
+If you have determined the encounter is of an existing individual, type the individual ID you want to associate the encounter with. A drop-down menu will display a list of all matching individuals. Select from the list then click **Save**.
 
-Used to indicate the method used in establishing the identity associated with the encounter. Values are:
+To remove an encounter from an individual, click **Unassign Individual**.
 
-* **Pattern Match**: Wildbook provided a recommendation of a matching encounter and, based on the pattern, the animal was determined to be the same individual.
-* **Visual Inspection**: User compared the pictures between two encounters and determined them to be the same individual.
-* **Unknown**: This encounter has not yet been matched.
-* **Unmatched first encounter**: No matches were found in the Wildbook, making this a new individual. This is not recommended when adding to an existing encounter.
+#### Alternate ID
 
-##### Suppress e-mail/RSS
+If there is an alternative ID used to identify this animal, such as in a historical catalogue, enter it here. Once you've entered the ID, click **Save**.
 
-Select this option to prevent emails from being sent as updates to the Individual occur. When you've selected the Individual ID, click **Add** to confirm the value.
+#### Sighting ID (formerly "Occurrence ID")
 
-#### Other fields
+Sighting IDs are automatically generated unless they are specified in a Bulk Import. A Sighting is made up of multiple Encounters. You may want to edit the default Sighting ID to more easily sort the encounters that were recorded in a specific place and time. Click **Remove from Sighting** to remove your encounter from the current ID and enter a new one. Click **Create** to confirm the value and then click **Save**.
 
-##### Set Alternate ID
+If you want to add the Encounter to an existing Sighting ID, type the ID and a drop-down menu will display a list of all matching Sightings. Select from the list then click **Save**.
 
-If there is an alternative ID used to identify this animal, such as in a historical catalogue, enter the ID. Once you've entered the ID, click Set to confirm the value.
+### Metadata
 
-##### Matched by
+Displays the Encounter ID, the date the Encounter was created in Wildbook, last edited date, whether the encounter was part of a bulk import, and the assigned  user.
 
-Used to indicate the method used in establishing the identity associated with the encounter. Values are:
+#### Assigned user
 
-* **Pattern match**: Wildbook provided a recommendation of a matching encounter and, based on the pattern, the animal was determined to be the same individual.
-* **Visual inspection**: User compared the pictures between two encounters and determined them to be the same individual.
-* **Unmatched first encounter**: No matches were found in the Wildbook, making this a new individual.
+Use the menu to select from a list of Wildbook users and assign that user as owner of the encounter. Click **Save** to confirm the selection.
 
-When you've selected the correct matching method, click **Set** to confirm the value.
-
-#### Sighting (formerly "Occurrence")
-
-Fill out the information under *Manage Occurrence Assignment* to associate the encounter with a Sighting/Occurrence.
-
-##### Create Occurrence
-
-If you've determined the encounter is part of a sighting/occurrence that does not exist in the current Wildbook, you should enter a unique ID. This ID needs to be distinct from any Occurrence ID that currently exists. When you've entered the ID, click **Create** to confirm the value.
-
-##### Add to Occurrence
-
-Begin typing the name sighting/occurrence you want to associate the encounter with. A dropdown will display a list of all matching sightings/occurrences. Select from the list. Once you've selected the Occurrence ID, click **Add** to confirm the value.
-
-##### Remove from Occurrence
-
-If you have two separate occurrence IDs that should actually be part of the same sighting/occurrence, click the **Remove** button next to **Remove from occurrence**, copy the correct ID from the related encounter, and enter the new ID in the **Add to Occurrence** field.
-
-If you don't see the option to Add to Occurrence after you've removed the previous ID, refresh the Encounter page and try again.
+3. **View Audit Trail**: Use this viewer to see activity that has taken place involving this encounter.
+4. **Add Comment**: Field to allow comments to be entered by researchers and administrators about the encounter. Click **Add** comment to add a comment to the Audit trail.
+5. **Delete Encounter**: If you want to remove an encounter from the system, click **Delete Encounter?**. A confirmation window will display; click **OK** to confirm. This action is permanent.
 
 ### Location
 
@@ -195,22 +180,6 @@ Encounters can also have these important attributes.
 * To remove reference to a user in one of these categories, click the **Remove** button next to their information.
 
 *(Note: These fields require the email address of a user with an account. The account does not require a name or organization be associated with the account. If you want to recognize users without accounts, use the **Additional Comments** field or use dummy emails in these fields.)*
-
-### Metadata
-
-Metadata is used to handle the management of a single encounter.
-
-1. **Set Workflow State**: Workflow State is used to indicate the review state of an encounter:
-
-* **Unapproved** - an encounter that has not been reviewed and accepted by a researcher or admin. This is the default state for encounters submitted using the standard reporting.
-* **Approved** - an encounter that has been reviewed and accepted by a researcher or admin. This is the default state for encounters submitted using bulk import.
-* **Unidentifiable** - an encounter that has been reviewed and determined to be unusable, but should remain in the system.
-    Once you've selected the correct state, click **Set** to confirm the selection.
-
-2. **Assign to user**: Use to select from a list of researchers and administrators on the platform and assign that user as the managing researcher of the encounter. Once you've selected the correct user, click **Assign** to confirm the selection.
-3. **View Audit Trail**: Use this viewer to see activity that has taken place involving this encounter.
-4. **Add Comment**: Field to allow comments to be entered by researchers and administrators about the encounter. Click **Add** comment to add a comment to the Audit trail.
-5. **Delete Encounter**: If you want to remove an encounter from the system, click **Delete Encounter?**. A confirmation window will display; click **OK** to confirm. This action is permanent.
 
 ### Observations
 
