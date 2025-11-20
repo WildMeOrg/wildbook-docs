@@ -1,25 +1,97 @@
 # Encounter
 
-In Wildbook, an Encounter is the foundation component of the software. All entries that a user uploads are encounters. Encounters provide a reference to a time and location where a single animal was spotted.
+In Wildbook, an Encounter is the foundation of the software. Encounters provide a reference to a time and location where a single animal was seen.
 
 ## Navigating to an Encounter Page
 
-To see encounter information, you must be signed into the system. Once signed in, you can use **Encounter** > **Encounter Search** to find encounters that meet certain criteria, or you can use **Encounter** > **View My Submissions** to see all the encounters associated with your account.
+To see Encounter information, you must be signed into the system. Once signed in, you can use **Search** > **Encounters** to filter encounters that meet certain criteria, or you can use **My Data** > **My Encounters** to see all of the encounters assigned to you.
 
-Encounters are the result of Wildbook's [data entry methods](data-entry.md), including [Report an Encounter](../data/report-encounter.md) (web form submission) and [Bulk Import](../data/bulk-import-beta.md) (Excel-based, multi-Encounter data import).
-
-Each Encounter entered into Wildbook is given a universally unique identifier (UUID) and can then be viewed from a URL.
+There are two [data entry methods](data-entry.md) for uploading Encounters: uploading a single encounter from the [Report an Encounter](../data/report-encounter.md) page and uploading multiple encounters in a [Bulk Import](../data/bulk-import-beta.md).
 
 ## Encounter Page Format
 
-At the top of the encounter page, there is an overview section about the encounter. The encounter will remain unassigned until it is associated with a Marked Individual.
-For each of the following sections, click **Edit** to make changes to the associated metadata.
+The Encounter has two views: Overview and More Details. 
 
-If you see fields that are not covered on this page, they are fields that are custom to your Wildbook. Contact your administrator or [Wildbook support](https://community.wildme.org/) for assistance in understanding these custom fields.
+For each of the following sections, click the pencil icon to make changes.
+
+If you see fields that are not covered on this page, they are custom to your Wildbook. Contact your administrator or [Wildbook support](https://community.wildme.org/) for any questions about how to use them.
+
+### Date
+
+At minimum, the year must be provided for the encounter to be saved.
+
+#### Encounter Date
+
+The date and time the animal in the photo was seen.
+
+#### Verbatim Event Date
+
+A free-text field to accompany the Encounter Date.
+
+### Identity
+
+Identity tells us if an encounter has been identified as a [Marked Individual](../introduction/marked-individual.md).
+
+#### Setting Individual ID
+
+##### New Individual
+
+If you have determined the encounter is of an individual that does not exist in the current Wildbook, you should enter a unique ID. This ID needs to be distinct from any Individual ID in your catalog that currently exists. When you've entered the ID, click **New** to confirm the value.
+
+##### Existing Individual
+
+If you have determined the encounter is of an existing individual, fill out the information under **Add to existing individual ID**. Begin typing the name associated with the individual you want to associate the encounter with. A dropdown will display a list of all matching individuals. Select from the list then click **Add**.
+
+##### Matched by
+
+Used to indicate the method used in establishing the identity associated with the encounter. Values are:
+
+* **Pattern Match**: Wildbook provided a recommendation of a matching encounter and, based on the pattern, the animal was determined to be the same individual.
+* **Visual Inspection**: User compared the pictures between two encounters and determined them to be the same individual.
+* **Unknown**: This encounter has not yet been matched.
+* **Unmatched first encounter**: No matches were found in the Wildbook, making this a new individual. This is not recommended when adding to an existing encounter.
+
+##### Suppress e-mail/RSS
+
+Select this option to prevent emails from being sent as updates to the Individual occur. When you've selected the Individual ID, click **Add** to confirm the value.
+
+#### Other fields
+
+##### Set Alternate ID
+
+If there is an alternative ID used to identify this animal, such as in a historical catalogue, enter the ID. Once you've entered the ID, click Set to confirm the value.
+
+##### Matched by
+
+Used to indicate the method used in establishing the identity associated with the encounter. Values are:
+
+* **Pattern match**: Wildbook provided a recommendation of a matching encounter and, based on the pattern, the animal was determined to be the same individual.
+* **Visual inspection**: User compared the pictures between two encounters and determined them to be the same individual.
+* **Unmatched first encounter**: No matches were found in the Wildbook, making this a new individual.
+
+When you've selected the correct matching method, click **Set** to confirm the value.
+
+#### Sighting (formerly "Occurrence")
+
+Fill out the information under *Manage Occurrence Assignment* to associate the encounter with a Sighting/Occurrence.
+
+##### Create Occurrence
+
+If you've determined the encounter is part of a sighting/occurrence that does not exist in the current Wildbook, you should enter a unique ID. This ID needs to be distinct from any Occurrence ID that currently exists. When you've entered the ID, click **Create** to confirm the value.
+
+##### Add to Occurrence
+
+Begin typing the name sighting/occurrence you want to associate the encounter with. A dropdown will display a list of all matching sightings/occurrences. Select from the list. Once you've selected the Occurrence ID, click **Add** to confirm the value.
+
+##### Remove from Occurrence
+
+If you have two separate occurrence IDs that should actually be part of the same sighting/occurrence, click the **Remove** button next to **Remove from occurrence**, copy the correct ID from the related encounter, and enter the new ID in the **Add to Occurrence** field.
+
+If you don't see the option to Add to Occurrence after you've removed the previous ID, refresh the Encounter page and try again.
 
 ### Location
 
-At least one piece of location information must be set for a valid encounter. The information can be used to refine matching checks to improve processing, as well as to provide valuable information in identifying where an encounter took place.
+A location ID or coordinates must be set in order to save an Encounter. This information is used to determine match candidates, as well as identify where an encounter took place.
 
 #### Set Location
 
@@ -36,10 +108,6 @@ Select from a list of location IDs (a.k.a formally defined "study sites") where 
 #### Latitude and Longitude
 
 Use the map or text fields to enter the GPS coordinates where the encounter occurred. Once you've entered the coordinates, click **Update** GPS to confirm the new value. *(Note: These coordinates need to be input in the decimal degrees format. If you have GPS coordinates in DMS or another format, you can use this converter to change the format before entry.)*
-
-### Date
-
-At least one date event must be entered for the encounter to be valid.
 
 #### Set Date
 
@@ -105,67 +173,6 @@ If detection failed to recognize an animal, you can click this option to manuall
 ##### Add image to Encounter
 
 If there were images that did not get added with the initial upload, you can click this button to browse to the images and upload them to the system. Note that detection is not run on these images automatically. Reach out to Wildbook support for assistance.
-
-### Identity
-
-Identity is focused on providing information if an encounter has been associated with a given Marked Individual.
-
-#### Setting Individual ID
-
-##### New Individual
-
-If you have determined the encounter is of an individual that does not exist in the current Wildbook, you should enter a unique ID. This ID needs to be distinct from any Individual ID in your catalog that currently exists. When you've entered the ID, click **New** to confirm the value.
-
-##### Existing Individual
-
-If you have determined the encounter is of an existing individual, fill out the information under **Add to existing individual ID**. Begin typing the name associated with the individual you want to associate the encounter with. A dropdown will display a list of all matching individuals. Select from the list then click **Add**.
-
-##### Matched by
-
-Used to indicate the method used in establishing the identity associated with the encounter. Values are:
-
-* **Pattern Match**: Wildbook provided a recommendation of a matching encounter and, based on the pattern, the animal was determined to be the same individual.
-* **Visual Inspection**: User compared the pictures between two encounters and determined them to be the same individual.
-* **Unknown**: This encounter has not yet been matched.
-* **Unmatched first encounter**: No matches were found in the Wildbook, making this a new individual. This is not recommended when adding to an existing encounter.
-
-##### Suppress e-mail/RSS
-
-Select this option to prevent emails from being sent as updates to the Individual occur. When you've selected the Individual ID, click **Add** to confirm the value.
-
-#### Other fields
-
-##### Set Alternate ID
-
-If there is an alternative ID used to identify this animal, such as in a historical catalogue, enter the ID. Once you've entered the ID, click Set to confirm the value.
-
-##### Matched by
-
-Used to indicate the method used in establishing the identity associated with the encounter. Values are:
-
-* **Pattern match**: Wildbook provided a recommendation of a matching encounter and, based on the pattern, the animal was determined to be the same individual.
-* **Visual inspection**: User compared the pictures between two encounters and determined them to be the same individual.
-* **Unmatched first encounter**: No matches were found in the Wildbook, making this a new individual.
-
-When you've selected the correct matching method, click **Set** to confirm the value.
-
-#### Sighting (formerly "Occurrence")
-
-Fill out the information under *Manage Occurrence Assignment* to associate the encounter with a Sighting/Occurrence.
-
-##### Create Occurrence
-
-If you've determined the encounter is part of a sighting/occurrence that does not exist in the current Wildbook, you should enter a unique ID. This ID needs to be distinct from any Occurrence ID that currently exists. When you've entered the ID, click **Create** to confirm the value.
-
-##### Add to Occurrence
-
-Begin typing the name sighting/occurrence you want to associate the encounter with. A dropdown will display a list of all matching sightings/occurrences. Select from the list. Once you've selected the Occurrence ID, click **Add** to confirm the value.
-
-##### Remove from Occurrence
-
-If you have two separate occurrence IDs that should actually be part of the same sighting/occurrence, click the **Remove** button next to **Remove from occurrence**, copy the correct ID from the related encounter, and enter the new ID in the **Add to Occurrence** field.
-
-If you don't see the option to Add to Occurrence after you've removed the previous ID, refresh the Encounter page and try again.
 
 ### Attributes
 
