@@ -10,7 +10,9 @@ There are two [data entry methods](data-entry.md) for uploading Encounters: uplo
 
 ## Encounter Page Format
 
-The Encounter page has two views: Overview and More Details. The Encounter ID and Encounter workflow state will persist between views. Encounter workflow state is defined as:
+The Encounter page has two views: Overview and More Details. The Encounter ID, Encounter workflow state, Contact Information, and Encounter History will persist between views. 
+
+The Encounter workflow state is defined as:
 
 * **Unapproved** - an encounter that has not been reviewed and accepted by a user. This is the default state for encounters submitted using the  [Report an Encounter](../data/report-encounter.md) page.
 * **Approved** - an encounter that has been reviewed and accepted by a user. This is the default state for encounters submitted using Bulk Import.
@@ -26,11 +28,11 @@ At minimum, the year must be provided for the encounter to be saved.
 
 #### Encounter Date
 
-The date and time the animal in the photo was seen.
+The date and time the animal in the photo was seen. Must adhere to ISO format: **YYYY-MM-DD HH:mm**
 
 #### Verbatim Event Date
 
-A free-text field to describe the Encounter Date.
+A free-text field to describe the Encounter Date. This field is searchable, but is not used in finding matches.
 
 ### Identity
 
@@ -70,37 +72,43 @@ Displays the Encounter ID, the date the Encounter was created in Wildbook, last 
 
 Use the menu to select from a list of Wildbook users and assign that user as owner of the encounter. Click **Save** to confirm the selection.
 
-3. **View Audit Trail**: Use this viewer to see activity that has taken place involving this encounter.
-4. **Add Comment**: Field to allow comments to be entered by researchers and administrators about the encounter. Click **Add** comment to add a comment to the Audit trail.
-5. **Delete Encounter**: If you want to remove an encounter from the system, click **Delete Encounter?**. A confirmation window will display; click **OK** to confirm. This action is permanent.
-
 ### Location
 
-A location ID or coordinates must be set in order to save an Encounter. This information is used to determine match candidates, as well as identify where an encounter took place.
+A location ID or coordinates must be set in order to save an Encounter. This information is used to determine match candidates, as well as identify where an Encounter took place.
 
-#### Set Location
+#### Location
 
-Provide a description of the location where the encounter occurred. Once you have entered the information, click **Set Location** to confirm the new value. *(Note:This is searchable, but is not used in refining potential matches. This is valuable if there is a set of landmarks that have multiple names, or if a citizen scientist is submitting an encounter and they are unsure of exact location.)*
+Provide a description of the location where the encounter occurred. Click **Save**. 
+* *Note: This field is searchable, but is not used in finding matches. This is valuable if there is a set of landmarks that have multiple names, or if a citizen scientist submits an Encounter and are unsure of exact location.*
 
-#### Set Reported Country
+#### Location ID
 
-Select from a list of countries where the encounter occurred. Once you've selected the appropriate country, click **Set** to confirm the new value.
+Select from a list of location IDs ("study sites") where the Encounter occurred. Click **Save**. 
 
-#### Set Location ID
+* *Note: This list is hierarchical and determined by the administrator of the Wildbook. We recommend no more than 5 hierarchical layers of locations. Reach out to your administrators or to [Wildbook support](https://community.wildme.org/) for configuration assistance)*
 
-Select from a list of location IDs (a.k.a formally defined "study sites") where the encounter occurred. Once you've selected the appropriate location, click **Set Location ID** to confirm the new value. *(Note: This list is hierarchical and determined by the administration of the Wildbook. We recommend no more than 5 hierarchical layers of locations. Reach out to your administrators or to [Wildbook support](https://community.wildme.org/) for configuration assistance.)*
+#### Country
 
-#### Latitude and Longitude
+Select from a list of countries where the Encounter occurred. Click **Save**.
 
-Use the map or text fields to enter the GPS coordinates where the encounter occurred. Once you've entered the coordinates, click **Update** GPS to confirm the new value. *(Note: These coordinates need to be input in the decimal degrees format. If you have GPS coordinates in DMS or another format, you can use this converter to change the format before entry.)*
+#### GPS Coordinates
 
-#### Set Date
+Use the map or text fields to enter the GPS coordinates where the encounter occurred in decimal format. Click **Save**. 
 
-Enter a date and/or time to alter the date associated with the encounter. You can use the **Reset Encounter Date** calendar tool to adjust the date and time presented in **Set Date** to ensure correct formatting. When you've entered the correct date and/or time, click **Set Date** to confirm the value. *(Note: Entry must adhere to ISO format: **YYYY-MM-DD HH:mm**)*
+### Attributes
 
-#### Set Verbatim Event Date
+Encounters can also have these important attributes.
 
-Enter information to describe an event relative to the encounter. This is searchable, but is not used in refining matches. When you've entered your event description, click **Set** to confirm the value.
+1. **Taxonomy**: Use the drop-down menu to select from available species. Click **Save**. The Taxonomy affects how Annotations for the Encounter are processed through the [Image Analysis Pipeline](image-analysis-pipeline.md).
+2. **Living Status**: Use the drop-down menu to select the animal's living status at the time of the encounter. Click **Save**.
+3. **Sex**: Use the drop-down menu to select the animal's sex. Click **Save**.
+4. **Distinguishing Scar**: Describes any scarring that could be useful in making a visual comparison between animals. Click **Save**.
+5. **Behavior**: Provide a description of the animal's behavior. Click **Save**.
+6. **Group Role**: Provide a description of the role the animal has within their group during this Encounter. Click **Save**.
+* *Note: If this entry matches the pre-defined behavior list, you can use the search filter for the behavior on Encounter Search page.
+7. **Patterning Code**: [TBD]
+8. **Life Stage**: Use the drop-down menu to select the life stage for the animal. Click **Save**. Life stage is configured in the commonConfiguration.properties file. [See Configuration for more information.](../specifications-and-system-requirements/system-configuration.md) To update this field, contact Wildbook support for assistance.
+9. **Observation comments**: Any information that you want to associate with the encounter. Click **Save**.
 
 ### Gallery
 
@@ -158,19 +166,6 @@ If detection failed to recognize an animal, you can click this option to manuall
 ##### Add image to Encounter
 
 If there were images that did not get added with the initial upload, you can click this button to browse to the images and upload them to the system. Note that detection is not run on these images automatically. Reach out to Wildbook support for assistance.
-
-### Attributes
-
-Encounters can also have these important attributes.
-
-1. **Taxonomy**: Using the dropdown, select from the available names. When you've selected the correct taxonomy, click **Set** to confirm the value. Importantly, the Encounter Taxonomy affects how any Annotations for the Encounter are processed through the [Image Analysis Pipeline](image-analysis-pipeline.md) upon data submission or during later matching.
-2. **Status**: Using the dropdown, select the status that reflects the animal's state in the encounter. Once you've selected alive or dead, click **Reset Status** to confirm the value.
-3. **Sex**: Using the dropdown, select the value that reflects the animal's sex. When you've selected the correct sex or unknown, click **Reset Sex** to confirm the value.
-4. **Noticeable Scarring**: Using the text field, enter text that describes any scarring that could be useful in making a visual comparison between animals. When you've entered an appropriate description of the scarring, click **Reset Scarring** to confirm the value.
-5. **Behavior**: Using the text field, provide a description of the behavior of the animal in the given encounter. When you've entered an appropriate description of the behavior, click **Submit Edit** to confirm the value.
-6. **Group Role**: Using the text field, provide a description of the role the observed animal has within their group during this Encounter. When you've entered an appropriate description of the role, click **Submit Edit** to confirm the value. (Note: If the information in this field matches the pre-defined behavior list, you will be able to filter on the behavior on Encounter search page.)
-7. **Life stage**: A list of life stages can be made available on your platform. If the list exists, use the dropdown to select an appropriate life stage for the animal in the encounter. When you've selected the correct life stage, click **Set** to confirm the value. Life stage is configured in the commonConfiguration.properties file. [See Configuration for more information.](../specifications-and-system-requirements/system-configuration.md) To request the life stage field be added or to request additional values, contact Wildbook support for assistance.
-8. **Additional comments**: Any information that you want to associate with the encounter, you can add in this field. When you have the language as you want it, click **Submit Edit** to confirm the entry.
 
 ### Contact Information
 
