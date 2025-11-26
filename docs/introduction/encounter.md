@@ -4,19 +4,13 @@ In Wildbook, an Encounter is the foundation of the software. Encounters provide 
 
 ## Navigating to an Encounter Page
 
-To see Encounter information, you must be signed into Wildbook. Once you've signed in, you can use **Search** > **Encounters** to filter encounters or you can use **My Data** > **My Encounters** to see all of the encounters assigned to you.
+To see Encounter information, you must be signed into Wildbook. Once you've signed in, you can use **Search** > **Encounters** to filter Encounters or you can use **My Data** > **My Encounters** to see all of the Encounters assigned to you.
 
 There are two [data entry methods](data-entry.md) for uploading Encounters: upload a single encounter from the [Report an Encounter](../data/report-encounter.md) page and upload multiple encounters in a [Bulk Import](../data/bulk-import-beta.md).
 
 ## Encounter Page Format
 
 The Encounter page has two views: Overview and More Details. The Encounter ID, Encounter workflow state, Contact Information, and Encounter History will persist between views. 
-
-The Encounter workflow state is defined as:
-
-* **Unapproved** - an encounter that has not been reviewed and accepted by a user. This is the default state for encounters submitted using the  [Report an Encounter](../data/report-encounter.md) page.
-* **Approved** - an encounter that has been reviewed and accepted by a user. This is the default state for encounters submitted using Bulk Import.
-* **Unidentifiable** - an encounter that has been reviewed and determined to be unusable for identification, but should remain in the system. Selecting your state will save it.
 
 For each of the following sections, click the pencil icon to make changes.
 
@@ -79,7 +73,7 @@ A location ID or coordinates must be set in order to save an Encounter. This inf
 #### Location
 
 Provide a description of the location where the encounter occurred. Click **Save**. 
-* *Note: This field is searchable, but is not used in finding matches. This is valuable if there is a set of landmarks that have multiple names, or if a citizen scientist submits an Encounter and are unsure of exact location.*
+* *Note: This field is searchable, but is not used to find matches. This is valuable if there is a set of landmarks that have multiple names, or if a citizen scientist submits an Encounter and are unsure of exact location.*
 
 #### Location ID
 
@@ -106,13 +100,34 @@ Encounters can also have these important attributes.
 5. **Behavior**: Provide a description of the animal's behavior. Click **Save**.
 6. **Group Role**: Provide a description of the role the animal has within their group during this Encounter. Click **Save**.
 * *Note: If this entry matches the pre-defined behavior list, you can use the search filter for the behavior on Encounter Search page.
-7. **Patterning Code**: [TBD]
+7. **Patterning Code**: Use the drop-down menu to select the animal's patterning code. Click **Save**.
 8. **Life Stage**: Use the drop-down menu to select the life stage for the animal. Click **Save**. Life stage is configured in the commonConfiguration.properties file. [See Configuration for more information.](../specifications-and-system-requirements/system-configuration.md) To update this field, contact Wildbook support for assistance.
 9. **Observation comments**: Any information that you want to associate with the encounter. Click **Save**.
 
-### Gallery
+##### Encounter State
 
-The primary purpose of the Gallery is to display the annotations associated with an encounter. This can mean that a media asset is displayed multiple times with different annotations to indicate different detections found.
+The Encounter workflow state is defined as:
+
+* **Unapproved** - An encounter that has not been reviewed and accepted by a user. This is the default state for encounters submitted using the  [Report an Encounter](../data/report-encounter.md) page.
+* **Approved** - An encounter that has been reviewed and accepted by a user. This is the default state for encounters submitted using Bulk Import.
+* **Unidentifiable** - An encounter that has been reviewed and determined to be unusable for identification, but should remain in the system. Selecting your state will save it.
+
+#### Contact Information (People icon)
+
+* **Managing Researcher**: This is the Wildbook user that's the Encounter owner. Only users with the Admin or Org admin role can edit this field. 
+* **Submitter**: This is the researcher or citizen scientist that uploaded the Encounter. 
+* **Photographer**: This is the photographer of the images on the Encounter. 
+* **Add submitter by email address**, **Add photographer by email address**, and **Add others to notify by email address** all operate in the same manner.
+* To add someone to one of these sections, click the **Add People** button, enter their email address, select a role from the Role menu, and click **Save**.
+* To remove someone from one of these sections, click the **Trash** icon next to their information.
+
+#### Encounter History (Clock icon)
+
+This contains a log of all modifications made to the Encounter since its upload.
+
+#### Images
+
+The image gallery displays the annotations associated with an Encounter. This can mean that a media asset is displayed multiple times with different annotations to indicate different animals or animal parts detected.
 
 #### Labeled Keywords
 
@@ -166,15 +181,6 @@ If detection failed to recognize an animal, you can click this option to manuall
 ##### Add image to Encounter
 
 If there were images that did not get added with the initial upload, you can click this button to browse to the images and upload them to the system. Note that detection is not run on these images automatically. Reach out to Wildbook support for assistance.
-
-### Contact Information
-
-* All information added to the contact information presently references platform users only.
-* **Add submitter by email address**, **Add photographer by email address**, and **Add others to notify by email address** all operate in the same manner.
-* To add reference to a user in one of these categories, enter their email address and click **Add**.
-* To remove reference to a user in one of these categories, click the **Remove** button next to their information.
-
-*(Note: These fields require the email address of a user with an account. The account does not require a name or organization be associated with the account. If you want to recognize users without accounts, use the **Additional Comments** field or use dummy emails in these fields.)*
 
 ### Observations
 
