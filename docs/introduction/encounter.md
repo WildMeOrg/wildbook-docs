@@ -89,6 +89,10 @@ Select from a list of countries where the Encounter occurred. Click **Save**.
 
 Use the map or text fields to enter the GPS coordinates where the encounter occurred in decimal format. Click **Save**. 
 
+### Delete Encounter
+
+Click **Delete Encounter** to remove an Encounter from the database. A confirmation window will display; click OK to confirm. 
+
 ### Attributes
 
 Encounters can also have these important attributes.
@@ -104,7 +108,7 @@ Encounters can also have these important attributes.
 8. **Life Stage**: Use the drop-down menu to select the life stage for the animal. Click **Save**. Life stage is configured in the commonConfiguration.properties file. [See Configuration for more information.](../specifications-and-system-requirements/system-configuration.md) To update this field, contact Wildbook support for assistance.
 9. **Observation comments**: Any information that you want to associate with the encounter. Click **Save**.
 
-##### Encounter State
+### Encounter State
 
 The Encounter workflow state is defined as:
 
@@ -112,7 +116,7 @@ The Encounter workflow state is defined as:
 * **Approved** - An encounter that has been reviewed and accepted by a user. This is the default state for encounters submitted using Bulk Import.
 * **Unidentifiable** - An encounter that has been reviewed and determined to be unusable for identification, but should remain in the system. Selecting your state will save it.
 
-#### Contact Information (People icon)
+### Contact Information (People icon)
 
 * **Managing Researcher**: This is the Wildbook user that's the Encounter owner. Only users with the Admin or Org admin role can edit this field. 
 * **Submitter**: This is the researcher or citizen scientist that uploaded the Encounter. 
@@ -121,66 +125,55 @@ The Encounter workflow state is defined as:
 * To add someone to one of these sections, click the **Add People** button, enter their email address, select a role from the Role menu, and click **Save**.
 * To remove someone from one of these sections, click the **Trash** icon next to their information.
 
-#### Encounter History (Clock icon)
+### Encounter History (Clock icon)
 
 This contains a log of all modifications made to the Encounter since its upload.
 
-#### Images
+### Images
 
-The image gallery displays the annotations associated with an Encounter. This can mean that a media asset is displayed multiple times with different annotations to indicate different animals or animal parts detected.
+The image gallery displays the annotations associated with an Encounter. An image will appear multiple times with different annotations highlighted to indicate different animals or animal parts detected.
 
-#### Labeled Keywords
+Click on an annotation from your image to select it. Use the **Trash** icon to delete the annotation or the **Pencil** icon to edit or reposition the existing annotation.
 
-Labelled keywords are provided to allow admins to preset values for users to apply to a MediaAsset. To select a labeled keyword:
+#### Match Results
 
-1. Click on an image to expand it.
-2. Hover on the **add new keyword** button or hover over an existing keyword.
-3. Under **add new labeled keyword**, select one of these predefined labels.
-4. From the subsequent value dropdown, select the desired value.
+After an annotation has completed identification, click this button to see the match page and begin the [matching process](..data/matching-process.md).
 
-Once selected, the keyword appears on the image in the format 'label: value'.
-![select keyword](../assets/images/wb-keyword-interface.png)
+#### Visual Matcher
+
+Visual Matcher is a separate, limited user interface to support visual matching of Encounters without using computer vision. It was developed to support giant manta matching before computer vision was available. Some users may find it helpful for reviewing matches for other species.
+
+#### New Match
+
+This opens a workflow to refine the filters to find match candidates. You can refine the filters to inlcude multiple location IDs, search for candidates in the Wildbook database or only your own data, and select additional algorithms if they are available for your species.
+
+#### Add Annotation
+
+If detection missed annotating an animal, you can click this to add a [manual annotation](../data/manual-annotation-beta.md). 
+
+#### Add Image
+
+You can add additional images to your encounter here. Detection is not automatically run on these images. Select the image form the gallery and click the **Add Annotation** button to manually annotate it.
+
+##### Keywords
+
+Keywords can be added to an image by clicking on an image to expland it. To select a keyword:
+
+1. Click on an image.
+2. Click the **+ Add keyword** button.
+3. Select an existing keyword from the **Select Keyword** drop-down menu or add a new one in the **Add New Keyword** field. Click **Add** to save.
+4. Use the **Select Labeled Keyword** drop-down menu to select one of the predefined labels.
+5. From the subsequent value drop-down menu, select the desired value. Click **Add** to save.
+
+Once selected, the keyword appears on the image and the labeled keyword will display in the format "label: value".
 
 Labeled keywords are set in the [commonConfiguration.properties file](../specifications-and-system-requirements/system-configuration.md); reach out to your admin or to [Wildbook support](https://community.wildme.org) for configuration assistance. [See Configuration for more information.](../specifications-and-system-requirements/system-configuration.md)
 
-#### Keywords
+Keywords are not automatically curated or checked against existing keywords, so you can create duplicate keywords easily. Admins can manage keywords from the **Administer** > **Photo Keywords** menu.
 
-Keywords allow for easy assignment of any string to a MediaAsset.
-To select an existing keyword:
+##### Delete Image
 
-1. Click on an image to expand it.
-2. Hover on the **add new keyword button** or hover over an existing keyword.
-3. Under **add new keyword**, select the desired keyword.
-
-Once selected, the keyword appears on the image.
-To add a new keyword:
-
-1. Click on an image to expand it.
-2. Hover on the **add new keyword button** or hover over an existing keyword.
-3. Under **add new keyword**, type in the text field with the helper text "or enter new". Hit enter to confirm the keyword.
-
-Once entered, the keyword appears on the image.
-Keywords are not automatically curated or checked against existing keywords, so you can create duplicate keywords easily. Admins can manage keywords from the **Administer** > **Photo Keywords** menu option.
-
-##### Remove This Image
-
-If an image is low quality or not providing value, select this button to remove the image from the encounter. This does not remove the image from the database and can be reversed.
-
-##### Match Results
-
-After an annotation has run through ID, you can select this button to see the proposed matches for the annotation. This will take to you to the results page, where you will actually perform matching.
-
-##### Start Another Match
-
-If the annotation has no viable matches, or if there have been extension additions to the database, you may want to run the annotation back through the ID process. Select this button to start the process again.
-
-##### Add Annotation
-
-If detection failed to recognize an animal, you can click this option to manually create an Annotation for identification. [More information about manual annotation can be found here.](../data/manual-annotation-beta.md)
-
-##### Add image to Encounter
-
-If there were images that did not get added with the initial upload, you can click this button to browse to the images and upload them to the system. Note that detection is not run on these images automatically. Reach out to Wildbook support for assistance.
+Click this button to remove the selected image from the Encounter. 
 
 ### Observations
 
