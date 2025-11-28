@@ -1,6 +1,6 @@
 # Sighting
 
-When the system runs the image through Detection, it generates an Annotation for each animal found in the picture. This picture would be returned with two Annotations, like below.
+When the system runs the image through Detection, it generates an Annotation for each animal found in the picture. This picture would be returned with two Annotations, like below. 
 
 ![annotated animal photo](../assets/images/wilddog-annotation.png)
 
