@@ -1,16 +1,14 @@
-# Manual Annotation (Beta)
+# Manual Annotation
 
-When looking at an Encounter page, you may see that a **MediaAsset** does not have a dashed rectangle **(e.g. Annotation bounding box)** around an animal in the picture. In this case, the detection stage did not recognize the animal.
+On an Encounter page, you may see that a **MediaAsset** does not have a rectangle **(e.g. Annotation bounding box)** around an animal in the picture. This means the detection stage did not recognize the animal.
 
 ## Navigating to the Manual Annotation Page
 
-In an Encounter page's **Gallery**, open the hamburger menu on the image and select **add annotation** to open the manual annotation screen.
+Select the image from the Encounter page's **Images** section and click **Add Annotation** to open the manual annotation page.
 
 ```{note}
 - Select **spot mapping** if you're annotating grey nurse sharks or broadnose sevengill sharks in Sharkbook and for sea bass in Spotting Giant Sea Bass. More detailed instructions on spot mapping are on our [YouTube channel](https://www.youtube.com/watch?v=DaHu2K9j4AY).
 ```
-
-![add anotation button](../assets/images/wb-manual-annotation-menu-option.png)
 
 ## Understanding the Manual Annotation Page
 
@@ -43,7 +41,11 @@ When annotating multiple animals in a photo, Wildbook may clone this Encounter i
 
 ### How do I fix an annotation?
 
-If an incorrect annotation is created, whether through the detection process or manually, you can first [delete the annotation](../data/matching-process.md#removing-a-single-annotation) and then re-draw the annotation if desired using the steps above.
+Click on the annotation and then click on the **Pencil** icon. This opens the Edit Annotations page where you can resize or rotate the annotation using the handle and anchors on the annotation box.
+
+### How do I delete an annotation?
+
+See [Removing a single annotation](../data/matching-process.md#removing-an-annotation).
 
 ### How do I annotate a part of an individual (Ex. head, tail, etc.)?
 
