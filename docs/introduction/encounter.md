@@ -140,7 +140,7 @@ Click on an annotation from your image to select it. Use the **Trash** icon to d
 
 #### Match Results
 
-After an annotation has completed identification, click this button to see the match page and begin the [matching process](..data/matching-process.md).
+After an annotation has completed identification, first click on an annotation and then click this button to see the match page and begin the [matching process](..data/matching-process.md).
 
 #### Visual Matcher
 
