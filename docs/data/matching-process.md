@@ -38,24 +38,20 @@ While Wildbook uses advance machine learning to find and label animals in images
 
 ### Removing an Annotation
 
-To remove an Annotation from *machine learning-based Detection* or **[Manual Annotation](manual-annotation-beta.md)**, go to **Encounter Gallery** and select **Remove Annotation**.
+To remove an Annotation click on it and click the **Trash** icon. 
 
-#### Removing a single annotation:
-
-* Removing an **Annotation** from an image will not remove the image from the **Encounter** it’s referenced in *as long as there are no other Encounters that share the same image.*
+Removing an **Annotation** from an image will not remove the image from the Encounter it’s on *if there are no other Encounters that share the same image.*
 
 #### Removing multiple annotations:
 
-* Removing all the **Annotations** that are only present on a single **Encounter** will automatically remove the record of that image on that Encounter.
-* If other **Annotations** of the same image are referenced in other **Encounters**, those other **Annotations** and the image’s record will still be present in those **Encounters**.
+* Removing all Annotations on a single Encounter will automatically remove the image on that Encounter.
+* If other Annotations of the same image are referenced in other Encounters, those other Annotations and the image’s record will still exist in those Encounters.
 
 ![delete Annotation](../assets/images/wb-encounter-removeannotation.png)
 
 ## Manually Starting a Match
 
-For a matchable Annotation, you can start or re-run matching from the Encounter page Gallery by selecting **start match** or **start another match** from the menu for the Annotation.
-
-![start Match](../assets/images/wb-encounter-startanothermatch.png)
+For a matchable Annotation, you can start or re-run matching from the Encounter page by selecting the image and clicking the **New Match** button.
 
 **Choose criteria to match against** dialog box appears and allows you to:
 
