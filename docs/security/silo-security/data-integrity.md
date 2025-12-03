@@ -1,5 +1,7 @@
 # Data Integrity
 
+Data integrity tools can be found under *Administer > Data Integrity*.
+
 ## Check for Annotations with Multiple Individual IDs
 
 Check your data for annotations that have been assigned to two or more different individuals. When these are present, it can cause matching to fail or result in falsely merged individuals. Ideally, this table will be empty.
