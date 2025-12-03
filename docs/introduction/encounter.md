@@ -6,7 +6,7 @@ In Wildbook, an Encounter is the foundation of the software. Encounters provide 
 
 To see Encounter information, you must be signed into Wildbook. Once you've signed in, you can use **Search** > **Encounters** to filter Encounters or you can use **My Data** > **My Encounters** to see all of the Encounters assigned to you.
 
-There are two [data entry methods](data-entry.md) for uploading Encounters: upload a single encounter from the [Report an Encounter](../data/report-encounter.md) page and upload multiple encounters in a [Bulk Import](../data/bulk-import-beta.md).
+There are two [data entry methods](data-entry.md) for uploading Encounters: upload a single encounter from the [Report an Encounter](../data/report-encounter.md) page and upload multiple Encounters in a [Bulk Import](../data/bulk-import-beta.md).
 
 ## Encounter Page Format
 
@@ -18,7 +18,7 @@ If you see fields that are not covered on this page, they are custom to your Wil
 
 ### Date
 
-At minimum, the year must be provided for the encounter to be saved.
+At minimum, the year must be provided for the Encounter to be saved.
 
 #### Encounter Date
 
@@ -30,23 +30,23 @@ A free-text field to describe the Encounter Date. This field is searchable, but 
 
 ### Identity
 
-Identity tells us if an encounter has been identified as a [Marked Individual](../introduction/marked-individual.md).
+Identity tells us if an Encounter has been identified as a [Marked Individual](../introduction/marked-individual.md).
 
 #### Matched by
 
-Describes how the encounter was identified. The options are:
+Describes how the Encounter was identified. The options are:
 
 * **Unmatched first encounter**: No matches were found in the Wildbook, making this a new individual. 
-* **Visual Inspection**: Someone compared the pictures between two encounters and determined they are the same individual.
+* **Visual Inspection**: Someone compared the pictures between two Encounters and determined they are the same individual.
 * **Pattern Match**: Wildbook suggested a match candidate and the animal was determined to be the same individual.
 
 #### Individual ID
 
-If the encounter is of an individual that does not exist in the current Wildbook, you should enter a unique ID. This ID needs to be distinct from any Individual ID in your catalog that currently exists. When you've entered the ID, click **Create** to confirm the value and then click **Save**.
+If the Encounter is of an individual that does not exist in the current Wildbook, you should enter a unique ID. This ID needs to be distinct from any Individual ID in your catalog that currently exists. When you've entered the ID, click **Create** to confirm the value and then click **Save**.
 
-If you have determined the encounter is of an existing individual, type the individual ID you want to associate the encounter with. A drop-down menu will display a list of all matching individuals. Select from the list then click **Save**.
+If you have determined the Encounter is of an existing individual, type the individual ID you want to associate the Encounter with. A drop-down menu will display a list of all matching individuals. Select from the list then click **Save**.
 
-To remove an encounter from an individual, click **Unassign Individual**.
+To remove an Encounter from an individual, click **Unassign Individual**.
 
 #### Alternate ID
 
@@ -54,17 +54,17 @@ If there is an alternative ID used to identify this animal, such as in a histori
 
 #### Sighting ID (formerly "Occurrence ID")
 
-Sighting IDs are automatically generated unless they are specified in a Bulk Import. A Sighting is made up of multiple Encounters. You may want to edit the default Sighting ID to more easily sort the encounters that were recorded in a specific place and time. Click **Remove from Sighting** to remove your encounter from the current ID and enter a new one. Click **Create** to confirm the value and then click **Save**.
+Sighting IDs are automatically generated unless they are specified in a Bulk Import. A Sighting is made up of multiple Encounters. You may want to edit the default Sighting ID to more easily sort the Encounters that were recorded in a specific place and time. Click **Remove from Sighting** to remove your Encounter from the current ID and enter a new one. Click **Create** to confirm the value and then click **Save**.
 
 If you want to add the Encounter to an existing Sighting ID, type the ID and a drop-down menu will display a list of all matching Sightings. Select from the list then click **Save**.
 
 ### Metadata
 
-Displays the Encounter ID, the date the Encounter was created in Wildbook, last edited date, whether the encounter was part of a bulk import, and the assigned  user.
+Displays the Encounter ID, the date the Encounter was created in Wildbook, last edited date, whether the Encounter was part of a bulk import, and the assigned  user.
 
 #### Assigned user
 
-Use the menu to select from a list of Wildbook users and assign that user as owner of the encounter. Click **Save** to confirm the selection.
+Use the menu to select from a list of Wildbook users and assign that user as owner of the Encounter. Click **Save** to confirm the selection.
 
 ### Location
 
@@ -72,7 +72,7 @@ A location ID or coordinates must be set in order to save an Encounter. This inf
 
 #### Location
 
-Provide a description of the location where the encounter occurred. Click **Save**. 
+Provide a description of the location where the Encounter occurred. Click **Save**. 
 * *Note: This field is searchable, but is not used to find matches. This is valuable if there is a set of landmarks that have multiple names, or if a citizen scientist submits an Encounter and are unsure of exact location.*
 
 #### Location ID
@@ -87,7 +87,7 @@ Select from a list of countries where the Encounter occurred. Click **Save**.
 
 #### GPS Coordinates
 
-Use the map or text fields to enter the GPS coordinates where the encounter occurred in decimal format. Click **Save**. 
+Use the map or text fields to enter the GPS coordinates where the Encounter occurred in decimal format. Click **Save**. 
 
 ### Delete Encounter
 
@@ -97,24 +97,26 @@ Click **Delete Encounter** to remove an Encounter from the database. A confirmat
 
 Encounters can also have these important attributes.
 
-1. **Taxonomy**: Use the drop-down menu to select from available species. Click **Save**. The Taxonomy affects how Annotations for the Encounter are processed through the [Image Analysis Pipeline](image-analysis-pipeline.md).
-2. **Living Status**: Use the drop-down menu to select the animal's living status at the time of the encounter. Click **Save**.
-3. **Sex**: Use the drop-down menu to select the animal's sex. Click **Save**.
-4. **Distinguishing Scar**: Describes any scarring that could be useful in making a visual comparison between animals. Click **Save**.
-5. **Behavior**: Provide a description of the animal's behavior. Click **Save**.
-6. **Group Role**: Provide a description of the role the animal has within their group during this Encounter. Click **Save**.
+1. **Taxonomy**: Use the drop-down menu to select from available species. The Taxonomy affects how Annotations for the Encounter are processed through the [Image Analysis Pipeline](image-analysis-pipeline.md).
+2. **Living Status**: Use the drop-down menu to select the animal's living status at the time of the Encounter. 
+3. **Sex**: Use the drop-down menu to select the animal's sex. 
+4. **Distinguishing Scar**: Describes any scarring that could be useful in making a visual comparison between animals.
+5. **Behavior**: Provide a description of the animal's behavior. 
+6. **Group Role**: Provide a description of the role the animal has within their group during this Encounter. 
 * *Note: If this entry matches the pre-defined behavior list, you can use the search filter for the behavior on Encounter Search page.
-7. **Patterning Code**: Use the drop-down menu to select the animal's patterning code. Click **Save**.
-8. **Life Stage**: Use the drop-down menu to select the life stage for the animal. Click **Save**. Life stage is configured in the commonConfiguration.properties file. [See Configuration for more information.](../specifications-and-system-requirements/system-configuration.md) To update this field, contact Wildbook support for assistance.
-9. **Observation comments**: Any information that you want to associate with the encounter. Click **Save**.
+7. **Patterning Code**: Use the drop-down menu to select the animal's patterning code.
+8. **Life Stage**: Use the drop-down menu to select the life stage for the animal. Life stage is configured in the commonConfiguration.properties file. [See Configuration for more information.](../specifications-and-system-requirements/system-configuration.md) To update this field, contact Wildbook support for assistance.
+9. **Observation comments**: Any information that you want to associate with the Encounter. 
+
+Click **Save** to record your changes.
 
 ### Encounter State
 
 The Encounter workflow state is defined as:
 
-* **Unapproved** - An encounter that has not been reviewed and accepted by a user. This is the default state for encounters submitted using the  [Report an Encounter](../data/report-encounter.md) page.
-* **Approved** - An encounter that has been reviewed and accepted by a user. This is the default state for encounters submitted using Bulk Import.
-* **Unidentifiable** - An encounter that has been reviewed and determined to be unusable for identification, but should remain in the system. Selecting your state will save it.
+* **Unapproved** - An Encounter that has not been reviewed and accepted by a user. This is the default state for Encounters submitted using the  [Report an Encounter](../data/report-encounter.md) page.
+* **Approved** - An Encounter that has been reviewed and accepted by a user. This is the default state for Encounters submitted using Bulk Import.
+* **Unidentifiable** - An Encounter that has been reviewed and determined to be unusable for identification, but should remain in the system. Selecting your state will save it.
 
 ### Contact Information (People icon)
 
@@ -122,8 +124,9 @@ The Encounter workflow state is defined as:
 * **Submitter**: This is the researcher or citizen scientist that uploaded the Encounter. 
 * **Photographer**: This is the photographer of the images on the Encounter. 
 * **Add submitter by email address**, **Add photographer by email address**, and **Add others to notify by email address** all operate in the same manner.
-* To add someone to one of these sections, click the **Add People** button, enter their email address, select a role from the Role menu, and click **Save**.
-* To remove someone from one of these sections, click the **Trash** icon next to their information.
+
+To add someone to one of these sections, click the **Add People** button, enter their email address, select a role from the Role menu, and click **Save**.
+To remove someone from one of these sections, click the **Trash** icon next to their information.
 
 ### Encounter History (Clock icon)
 
@@ -153,7 +156,7 @@ If detection missed annotating an animal, you can click this to add a [manual an
 
 #### Add Image
 
-You can add additional images to your encounter here. Detection is not automatically run on these images. Select the image form the gallery and click the **Add Annotation** button to manually annotate it.
+You can add additional images to your Encounter here. Detection is not automatically run on these images. Select the image form the gallery and click the **Add Annotation** button to manually annotate it.
 
 ##### Keywords
 
@@ -175,29 +178,25 @@ Keywords are not automatically curated or checked against existing keywords, so 
 
 Click this button to remove the selected image from the Encounter. 
 
-### Observations
+## More Details
 
-Observations are intended to be short identifiers associated with a given encounter. Observations are searchable, but are not verified or accessible between encounters.
+### Tracking and Measurements
 
-* **To create** an observation, enter a label and value, then click **Set**.
-* **To edit** an observation's value, change the text of an existing value, then click **Set** when finished.
-* **To delete** an observation, remove the text of an existing value, then click **Set**.
+#### Tracking
 
-```{note}
-Observations can only be edited one at a time.
-```
+Tracking is used to document tags seen during an Encounter.
 
-### Measurements
+* **Metal Tags**: Provides a space for a left or right-side tag.
+* **Acoustic Tags**: Provides information for sound-emitting aquatic tags, including searial number and ID.
+* **Satellite Tags**: Provides information associated with tagging done using satellites, including the name of the satellite, serial number, and Argos PTT.
 
-Measurements are used to track numeric information associated with an encounter. These are set in the commonConfiguration.properties file. [See Configuration for more information.](../specifications-and-system-requirements/system-configuration.md) To request measurements be added, [contact Wildbook support for assistance](https://community.wildme.org).
-*(Note: You can edit multiple measurements before clicking **Set**.)*
+Click **Save** after the tag information is entered.
 
-### Tracking
+#### Measurements
 
-Tracking is used to manage data about tags seen during an encounter.
+Measurements are used to track numeric information associated with an Encounter. These are set in the commonConfiguration.properties file. [See Configuration for more information.](../specifications-and-system-requirements/system-configuration.md) To request measurements be added, [contact Wildbook support for assistance](https://community.wildme.org).
 
-* **Physical Tag Data**: provides a space for a left or right-side tag to be denoted. Click **Set** after the tag information is entered.
-* **Satellite Tag Metadata**: provides information for information associated with tagging done using satellites, including name of satellite, serial number, and Argos PTT. Click **Set** after the tag information is entered.
+Click **Save** after the measurements are entered.
 
 ### Biological Samples
 
@@ -207,7 +206,7 @@ Tracking is used to manage data about tags seen during an encounter.
 2. Enter the information you have associated with the sample. The only required information is the **Sample ID**.
 3. Click **Set** to finalize the sample and its associated metadata.
 
-* Use the link on the confirmation page to navigate back to the encounter if you want to enter analysis information, including:
+* Use the link on the confirmation page to navigate back to the Encounter if you want to enter analysis information, including:
 
 1. **Haplotype**
 2. **Microsatellite markers**
@@ -216,3 +215,7 @@ Tracking is used to manage data about tags seen during an encounter.
 
 * Open the appropriate analysis, then click **Set** to save the information you add.
 * Click the **X** button under **Remove** to remove an entire sample.
+
+### Projects
+
+To add an  to an existing [project](..data/projects.md), select the project name from the drop-down menu or begin typing the project name in the search field and select it when it appears. Click **Add Project**.
