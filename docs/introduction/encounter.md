@@ -187,7 +187,7 @@ Click this button to remove the selected image from the Encounter.
 Tracking is used to document tags seen during an Encounter.
 
 * **Metal Tags**: Provides a space for a left or right-side tag.
-* **Acoustic Tags**: Provides information for sound-emitting aquatic tags, including searial number and ID.
+* **Acoustic Tags**: Provides information for sound-emitting aquatic tags, including serial number and ID.
 * **Satellite Tags**: Provides information associated with tagging done using satellites, including the name of the satellite, serial number, and Argos PTT.
 
 Click **Save** after the tag information is entered.
