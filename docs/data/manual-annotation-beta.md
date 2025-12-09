@@ -16,9 +16,7 @@ Select the image from the Encounter page's **Images** section and click **Add An
 
 ![manual annotation sections](../assets/images/wb-manual-annotation-interface.png)
 
-## Creating a Manual 
-
-Creating a Manual Annotation
+## Creating a Manual Annotation
 
 1. **IA Class** defines the type of animal or feature that represents the Annotation. This is a fixed list per species that corresponds to detection classes returned by the [Image Analysis pipeline](../introduction/image-analysis-pipeline.md).
     * **Animal (ex: turtle_green, whale_orca)**: Select all visible parts of the body in one Annotation.
@@ -35,7 +33,7 @@ Creating a Manual Annotation
 When annotating multiple animals in a photo, Wildbook may clone this Encounter if another Annotation is already on this image. Two Annotations in one image generally means that two animals are present and at least two Encounters (one animal at a location and date) must exist.
 ```
 
-1. Navigate back to the Encounter page and add new Annotations if needed, or click [start match](matching-process.md) to begin the identification pipeline for this new Annotation.
+5. Navigate back to the Encounter page and add new Annotations if needed, or click [start match](matching-process.md) to begin the identification pipeline for this new Annotation.
 
 ## Troubleshooting
 
