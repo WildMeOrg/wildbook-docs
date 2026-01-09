@@ -8,11 +8,11 @@ Machine learning (ML) jobs in Wildbook run in a shared, serial queue. Detection 
 
 ## How can I tell if a detection job has completed?
 
-You can tell if a detection job has completed by visiting the encounter page. If the images in the gallery have an annotation (dashed green line) around the animal, detection has completed. You will need to refresh the page to see the annotation appear.
+You can tell if a detection job has completed by visiting the encounter page. If the images in the gallery have an annotation box around the animal, detection has completed. You will need to refresh the page to see the annotation appear.
 
 ## How can I tell if an identification job has completed?
 
-You can tell if an identification job has completed by clicking the hamburger menu on an image in the encounter gallery and checking for “View Match Results”. If, instead, the menu says “Waiting on results”, the job is still processing. You will need to refresh the page to see the menu option change. If the menu says “Cannot start match” let us know in the [Community Forum](https://community.wildme.org/).
+You can tell if an identification job has completed by clicking on an image in the encounter gallery and clicking on the Match Results button. 
 
 ## How do I manually start a match?
 
