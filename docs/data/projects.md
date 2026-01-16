@@ -70,7 +70,7 @@ The owner of a project or an administrator can edit a project.
 Any user with access to a project can add encounters to the project.
 
 ### From Encounter Search Results Page
-1. Navigate to **Search > Encounter** Search.
+1. Go to **Search > Encounter** Search.
 2. Use the Encounter Search filters to create a list of encounters that suit your criteria.
 3. Click **Search Encounters**
 
@@ -93,11 +93,11 @@ The Project Management tab may take a long time to load if your query returns mo
 ### From Encounter Details Page
 
 1. Switch to **More Details** Tab.
-2. Click on **Projects** from the navigation panel on the left.
+2. Click on **Projects** from the navigation panel.
 3. Click on **Search Projects** field and type the Project Name
 4. If you have access to the **Project**, you will see the **Project** in the dropdown list.
 5. Select the **Project** from the list.
-6. Click **Add to Project** Button.
+6. Click **Add to Project** button.
 7. Wait for the confirmation.
 
 ### Remove encounters from a project
@@ -106,16 +106,16 @@ Only the project owner or an admin can remove encounters from a project.
 
 ### From **My Projects** or **Manage Projects**
 
-1. Navigate to **My Data > My Projects** (or **Administer > Manage Projects** if you're an admin).
+1. Go to **My Data > My Projects** (or **Administer > Manage Projects** if you're an admin).
 2. In the table of projects available to you, click the project you want to edit.
-3. In the **encounter table**, click the **Remove button** on the appropriate row.
+3. In the **encounter table**, click the **Remove** button on the appropriate row.
 
 ### From Encounter Details Page
 
 1. Switch to **More Details** Tab.
-2. Click on **Projects** from the navigation panel on the left.
+2. Click on **Projects** from the navigation panel.
 3. From the list of the Projects, find the Project you want to remove the Encounter from.
-4. Click **Remove** Icon beside that Project.
+4. Click **Remove** icon beside that Project.
 5. Wait for the confirmation.
 
 ## Matching and projects
