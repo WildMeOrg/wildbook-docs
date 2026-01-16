@@ -1,0 +1,582 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Searching &#8212; Wildbook  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=dddd19d0" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'data/search';</script>
+    <script src="../_static/tocjs.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Export" href="data-exports.html" />
+    <link rel="prev" title="Manual Annotation" href="manual-annotation-beta.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/WildMe-Logo.png" class="logo__image only-light" alt="Wildbook  documentation - Home"/>
+    <script>document.write(`<img src="../_static/WildMe-Logo.png" class="logo__image only-dark" alt="Wildbook  documentation - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../getting-started-with-wildbook.html">Getting Started</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../introduction/index.html">Introduction to Wildbook</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/image-analysis-pipeline.html">Image Analysis Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/data-entry.html">Data Entry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/encounter.html">Encounter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/marked-individual.html">Marked Individual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/sighting.html">Sighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/security-overview.html">Security Overview</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Data Overview</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="photography-guidelines.html">Photography Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="report-encounter.html">Report an encounter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bulk-import-beta.html">Bulk Import</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matching-process.html">Matching Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual-annotation-beta.html">Manual Annotation</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Searching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-exports.html">Export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wildex-image-export-app.html">WildEx Image Export App</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html">Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="location-ids.html">Location IDs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="r-package-alpha.html">R Package (alpha)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../security/index.html">Security Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../security/my-account.html">My Account</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../security/silo-security/index.html">Silo Security</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/org-admin.html">Org admin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/site-admin.html">Site admin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/photo-keywords.html">Photo Keywords</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/data-integrity.html">Data Integrity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/library-management.html">Library Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/bulk-import-logs.html">Bulk Import Logs</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../specifications-and-system-requirements/index.html">System requirements</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../specifications-and-system-requirements/system-configuration.html">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../specifications-and-system-requirements/unsupported-developer-tools.html">Unsupported developer tools</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../faq/index.html">FAQ</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../faq/bulk-import-faq.html">Bulk Import FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/codex-wildbook-faq.html">Codex to Wildbook FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/matching-faq.html">Matching FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/merging-faq.html">Merging FAQ</a></li>
+</ul>
+</details></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../contribute/index.html">Ways to Contribute</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/dev-setup.html">Dev Environment Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/pr-workflow.html">Pull Request Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/code-guide.html">Code Contribition Guideline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/tests.html">Testing in Wildbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/ia-dev.html">Image Analysis Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/copy-guide.html">Copy Contribution Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/roadmap.html">Roadmap</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/dev-setup.html">Dev Environment Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/pr-workflow.html">Pull Request Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/code-guide.html">Code Contribition Guideline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/copy-guide.html">Copy Contribution Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/roadmap.html">Roadmap</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/WildMeOrg/wildbook-docs" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/data/search.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Searching</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fields">Fields</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#results-display">Results Display</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#results-table">Results table</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-management">Project management</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matching-images-videos">Matching Images/Videos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mapped-results">Mapped Results</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#results-calendar">Results Calendar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis">Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#export">Export</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="searching">
+<h1>Searching<a class="headerlink" href="#searching" title="Link to this heading">#</a></h1>
+<p>Wildbook supports searching and display of your data in multiple formats. The search types in Wildbook are:</p>
+<ul class="simple">
+<li><p><strong>Encounter Search</strong>, which allows you to search through <a class="reference internal" href="../introduction/encounter.html"><span class="std std-doc">Encounter data</span></a> in Wildbook</p></li>
+<li><p><strong>Individual Search</strong>, which allows you to search through <a class="reference internal" href="../introduction/marked-individual.html"><span class="std std-doc">Marked Individual data</span></a> in Wildbook</p></li>
+<li><p><strong>Sighting Search</strong>, which allows you to search through the <a class="reference internal" href="../introduction/sighting.html"><span class="std std-doc">Sighting data</span></a> (formerly “Occurrence”) in Wildbook</p></li>
+</ul>
+<p>The data returned will match the data type. For example, the same date and location search filters may yield 2001 encounters, 882 sightings, and 356 marked individuals. You can access each search off the Wildbook menu by selecting <strong>Search</strong> and then the appropriate type of search.</p>
+<p><img alt="search Menu" src="../_images/wb-header-search.png" /></p>
+<section id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Link to this heading">#</a></h2>
+<p>The following fields allow you to filter your data search. <em>Not every field is available in every search type.</em></p>
+<ul class="simple">
+<li><p><strong>Location filter (map)</strong>: allows you to define a GPS coordinate boundary box on a map or in form fields and initiate a search based on encounters in that location.</p></li>
+<li><p><strong>Location filters (text)</strong>: allow you to execute a search against study sites and verbatim location descriptions in your library.</p></li>
+<li><p><strong>Date filters</strong>: allow you to search by an Encounter date range, a date-of-submission range, and/or by pre-defined verbatim date(s) (e.g., “Summer sampling 2004”).</p></li>
+<li><p><strong>Observation attribute filters</strong>: allow you to search by species, sex, status, length, behavior descriptions or pre-defined keywords.</p></li>
+<li><p><strong>Image label filters</strong>: allow you to search across encounter by marked individual attributes, such as alternate ID or number of sightings.</p></li>
+<li><p><strong>Collected data fields</strong>: allow you to search across Sighting metadata fields, including group behavior, group composition, and more.</p></li>
+<li><p><strong>Identity filters</strong>: allow you to search across marked individual attributes, such as number of years between sightings.</p></li>
+<li><p><strong>Tags filters</strong>: allow you to search on Metal, Acoustic, and Satellite Tag metadata.</p></li>
+<li><p><strong>Biological samples and analyses filters</strong>: allow you to search on biological samples and their attached measurements and analyses (e.g., haplotype, microsatellite markers, genetic sex, etc.)</p></li>
+<li><p><strong>Social filters</strong>: allow you to filter Marked Individuals by their social roles and social units.</p></li>
+<li><p><strong>Metadata filters</strong>: allow you to search across related Encounter state, submitter username, project name, and more.</p></li>
+</ul>
+</section>
+<section id="results-display">
+<h2>Results Display<a class="headerlink" href="#results-display" title="Link to this heading">#</a></h2>
+<p>Search results can be displayed and exported in a variety of formats. The URL for a search result can be bookmarked or otherwise copied and saved outside Wildbook to return to the result later. Search results are dynamic and reflect the latest state of Wildbook, changing as new data matches search criteria.
+Each search display format is represented by a tab. <em>Not every tab is available in every search type.</em></p>
+<p><img alt="search Results" src="../_images/wb-encountersearch-resultstable.png" /></p>
+<section id="results-table">
+<h3>Results table<a class="headerlink" href="#results-table" title="Link to this heading">#</a></h3>
+<p>The <strong>Results table</strong> provides a filterable, table based listing of search results. You can do the following on the page:</p>
+<ul class="simple">
+<li><p>Use the <strong>filter by text</strong> field to enter text to filter the table by. Click <strong>filter</strong> to apply the filter. Click <strong>clear</strong> to remove the filter.</p></li>
+<li><p>Click any column heading once or twice to sort the table by that column in ascending order or descending order.</p></li>
+<li><p>Click any table row to go to that data field (Encounter, Marked Individual, or Sighting). Some individual fields may also be clickable.</p></li>
+</ul>
+</section>
+<section id="project-management">
+<h3>Project management<a class="headerlink" href="#project-management" title="Link to this heading">#</a></h3>
+<p>The <strong>Project management</strong> tab allows you to add search results to a <a class="reference internal" href="projects.html"><span class="std std-doc">project</span></a>.</p>
+</section>
+<section id="matching-images-videos">
+<h3>Matching Images/Videos<a class="headerlink" href="#matching-images-videos" title="Link to this heading">#</a></h3>
+<p>The <strong>Matching Images/Videos</strong> tab displays the Annotations (and related MediaAssets) that correspond to any Encounters related to the search results. Click any Annotation to expand a view of the MediaAsset and to get links to the related Encounter and its metadata.</p>
+<p><img alt="search Results Expanded Media Asset" src="../_images/wb-encountersearch-gallery.png" /></p>
+</section>
+<section id="mapped-results">
+<h3>Mapped Results<a class="headerlink" href="#mapped-results" title="Link to this heading">#</a></h3>
+<p>The <strong>Mapped Results</strong> tab displays the positions of Encounters related to this search result if they have GPS coordinates. For Marked Individuals, mapped search results may be connected by chevrons to link points of travel over time. You can further alter the display by selecting the following <strong>Map aspects</strong>:</p>
+<ul>
+<li><p><strong>Position only</strong> - displays all GPS coordinates in uniform gray</p></li>
+<li><p><strong>Sex</strong> - displays GPS coordinates in blue if the related Encounter was recorded as male, pink if the GPS coordinates for the Encounter were recorded as female, and grey if unknown.</p></li>
+<li><p><strong>Haplotype</strong> - displays GPS coordinates with randomized colors corresponding to haplotypes recorded with Tissue Samples on matching, related Encounters. This view allows for the display of genetic flow.</p></li>
+<li><p><strong>Species</strong> - displays GPS coordinates with randomized colors corresponding to species recorded on related Encounters.</p>
+<p><img alt="search Results Mapped" src="../_images/wb-encountersearch-mappedresults.png" /></p>
+</li>
+</ul>
+</section>
+<section id="results-calendar">
+<h3>Results Calendar<a class="headerlink" href="#results-calendar" title="Link to this heading">#</a></h3>
+<p>The <strong>Results Calendar</strong> tab displays related Encounters by their dates on a calendar.</p>
+</section>
+<section id="analysis">
+<h3>Analysis<a class="headerlink" href="#analysis" title="Link to this heading">#</a></h3>
+<p>The <strong>Analysis</strong> tab summarizes and visualizes metadata from the search results. Displayed results differ by search type.</p>
+</section>
+<section id="export">
+<h3>Export<a class="headerlink" href="#export" title="Link to this heading">#</a></h3>
+<p>The <a class="reference internal" href="data-exports.html"><span class="std std-doc">Export</span></a> tab displays available formats to export data matching the search results. Available formats vary by search type.</p>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="manual-annotation-beta.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Manual Annotation</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="data-exports.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Export</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fields">Fields</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#results-display">Results Display</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#results-table">Results table</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-management">Project management</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matching-images-videos">Matching Images/Videos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mapped-results">Mapped Results</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#results-calendar">Results Calendar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis">Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#export">Export</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Wild Me
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024 Conservation X Labs.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

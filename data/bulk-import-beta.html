@@ -1,0 +1,1206 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Bulk Import &#8212; Wildbook  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=dddd19d0" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'data/bulk-import-beta';</script>
+    <script src="../_static/tocjs.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Matching Process" href="matching-process.html" />
+    <link rel="prev" title="Report an encounter" href="report-encounter.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/WildMe-Logo.png" class="logo__image only-light" alt="Wildbook  documentation - Home"/>
+    <script>document.write(`<img src="../_static/WildMe-Logo.png" class="logo__image only-dark" alt="Wildbook  documentation - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../getting-started-with-wildbook.html">Getting Started</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../introduction/index.html">Introduction to Wildbook</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/image-analysis-pipeline.html">Image Analysis Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/data-entry.html">Data Entry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/encounter.html">Encounter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/marked-individual.html">Marked Individual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/sighting.html">Sighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/security-overview.html">Security Overview</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Data Overview</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="photography-guidelines.html">Photography Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="report-encounter.html">Report an encounter</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Bulk Import</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matching-process.html">Matching Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual-annotation-beta.html">Manual Annotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="search.html">Searching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-exports.html">Export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wildex-image-export-app.html">WildEx Image Export App</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html">Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="location-ids.html">Location IDs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="r-package-alpha.html">R Package (alpha)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../security/index.html">Security Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../security/my-account.html">My Account</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../security/silo-security/index.html">Silo Security</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/org-admin.html">Org admin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/site-admin.html">Site admin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/photo-keywords.html">Photo Keywords</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/data-integrity.html">Data Integrity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/library-management.html">Library Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/bulk-import-logs.html">Bulk Import Logs</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../specifications-and-system-requirements/index.html">System requirements</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../specifications-and-system-requirements/system-configuration.html">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../specifications-and-system-requirements/unsupported-developer-tools.html">Unsupported developer tools</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../faq/index.html">FAQ</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../faq/bulk-import-faq.html">Bulk Import FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/codex-wildbook-faq.html">Codex to Wildbook FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/matching-faq.html">Matching FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/merging-faq.html">Merging FAQ</a></li>
+</ul>
+</details></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../contribute/index.html">Ways to Contribute</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/dev-setup.html">Dev Environment Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/pr-workflow.html">Pull Request Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/code-guide.html">Code Contribition Guideline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/tests.html">Testing in Wildbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/ia-dev.html">Image Analysis Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/copy-guide.html">Copy Contribution Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/roadmap.html">Roadmap</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/dev-setup.html">Dev Environment Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/pr-workflow.html">Pull Request Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/code-guide.html">Code Contribition Guideline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/copy-guide.html">Copy Contribution Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/roadmap.html">Roadmap</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/WildMeOrg/wildbook-docs" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/data/bulk-import-beta.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Bulk Import</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photo-folder">Photo Folder</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spreadsheet">Spreadsheet</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spreadsheet-templates-by-use-case">Spreadsheet Templates by Use Case</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uploading-data-for-bulk-imports">Uploading Data for Bulk Imports</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bulk-import-matching-process">Bulk Import Matching Process</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deleting-a-bulk-import">Deleting a Bulk Import</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fields-available">Fields Available</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-fields">Common Fields</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#encounter-fields">Encounter Fields</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sightings-fields">Sightings Fields</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-fields">Project Fields</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#submitter-fields">Submitter Fields</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#genetic-fields">Genetic Fields</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#survey-fields">Survey Fields</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aquatic-fields">Aquatic Fields</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reviewing-bulk-imports">Reviewing Bulk Imports</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="bulk-import">
+<h1>Bulk Import<a class="headerlink" href="#bulk-import" title="Link to this heading">#</a></h1>
+<p><strong>Bulk Import</strong> allows you to upload photos (media assets) and metadata (e.g., date, location, species, etc.) for multiple encounters at once.</p>
+<p>To prepare your data for bulk import you need:</p>
+<ul class="simple">
+<li><p>A folder that contains only your photos (no videos)</p></li>
+<li><p>An Excel or CSV spreadsheet with the appropriate fields and metadata entered</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Your spreadsheet should have 200 Encounters or fewer. Spreadsheets larger than this will slow down the site for all users and will result in longer wait times for detection and identification.</p>
+</div>
+<section id="photo-folder">
+<h2>Photo Folder<a class="headerlink" href="#photo-folder" title="Link to this heading">#</a></h2>
+<p>Organize the photos you’re importing into a single folder. Ensure that all file names are unique from one another.</p>
+<p>Image file names must match the <code class="docutils literal notranslate"><span class="pre">Encounter.MediaAsset</span></code> fields in your Wildbook Standard Format spreadsheet (linked below). Special characters are removed from file names. Your file names should only include letters from the English alphabet, 0-9, period, and space.</p>
+</section>
+<section id="spreadsheet">
+<h2>Spreadsheet<a class="headerlink" href="#spreadsheet" title="Link to this heading">#</a></h2>
+<p>In an Excel (.xlsx) file, create a column for each field you want to upload to Wildbook. <a class="reference internal" href="#fields-available"><span class="xref myst">See Fields Available for a list of supported fields and their descriptions.</span></a> This must include:</p>
+<ol class="arabic simple">
+<li><p><strong>Location</strong>: <code class="docutils literal notranslate"><span class="pre">Encounter.verbatimLocality</span></code>, <code class="docutils literal notranslate"><span class="pre">Encounter.locationID</span></code>, and/or <code class="docutils literal notranslate"><span class="pre">Encounter.decimalLatitude</span></code> and <code class="docutils literal notranslate"><span class="pre">Encounter.decimalLongitude</span></code></p></li>
+<li><p><strong>Date or Time:</strong> <code class="docutils literal notranslate"><span class="pre">Encounter.year</span></code>, <code class="docutils literal notranslate"><span class="pre">Encounter.month</span></code>, <code class="docutils literal notranslate"><span class="pre">Encounter.day</span></code>, etc. If the date is unknown, a year is required for the encounter.</p></li>
+<li><p><strong>Photo</strong>: <code class="docutils literal notranslate"><span class="pre">Encounter.MediaAsset0</span></code></p></li>
+<li><p><strong>Taxonomy</strong>: <code class="docutils literal notranslate"><span class="pre">Encounter.genus</span></code> and <code class="docutils literal notranslate"><span class="pre">Encounter.specificEpithet</span></code></p></li>
+</ol>
+<p><strong>All other fields are optional.</strong> Encounters are uploaded as <em>approved</em> Encounters if <strong>Encounter.state</strong> is not set. Here are important guidelines for preparing your spreadsheet:</p>
+<ul class="simple">
+<li><p><strong>Determine which columns you have data for</strong> (see <a class="reference internal" href="#fields-available"><span class="xref myst">Fields Available</span></a>).
+You can add, remove, and reorder columns as needed from the Fields Available list. You can create your own version of our spreadsheet as long as you do not change the field names. <em>Fields without data should be removed from your spreadsheet prior to import to prevent errors.</em></p></li>
+<li><p><strong>Fill out each line for a single</strong> <a class="reference internal" href="../introduction/encounter.html"><span class="std std-doc">Encounter</span></a>.
+If an encounter is associated with a <a class="reference internal" href="../introduction/sighting.html"><span class="std std-doc">Sighting</span></a>, ensure that each Encounter is linked with a common value in the Sighting.sightingID column.</p></li>
+<li><p>Verify the following fields match exactly with what exists in the system:</p>
+<ul>
+<li><p><strong>Encounter.locationID</strong> - Must match the location as shown in the Location ID drop-down menu of the Report an Encounter page.</p></li>
+<li><p><strong>Encounter.submitterID</strong> - Your Wildbook username to assign the encounter to you. This is case-sensitive and must match how it appears in your account page.</p></li>
+<li><p><strong>Encounter.mediaAsset0</strong> - This is the exact file name of each image of the Encounter, including the file extention. Start numbering at 0 (such as <em>Encounter.mediaAsset0</em>), and for each additional image you add to the Encounter, increment by 1 (<em>Encounter.mediaAsset0</em>, <em>Encounter.mediaAsset1</em>, <em>Encounter.mediaAsset2</em> etc.).</p></li>
+</ul>
+</li>
+</ul>
+<section id="spreadsheet-templates-by-use-case">
+<h3>Spreadsheet Templates by Use Case<a class="headerlink" href="#spreadsheet-templates-by-use-case" title="Link to this heading">#</a></h3>
+<p>Here are example Bulk Import Excel spreadsheet templates:</p>
+<ol class="arabic simple">
+<li><p><a class="reference download internal" download="" href="../_downloads/796e9cdb4d0037b99ee6c0ef3e9c4a87/minimum_import.xlsx"><span class="xref download myst">Minimum import</span></a></p></li>
+<li><p><a class="reference download internal" download="" href="../_downloads/29f10a7f084783c91589c3cdac8be3f7/WildbookStandardFormat.xlsx"><span class="xref download myst">Standard import</span></a></p></li>
+<li><p><a class="reference download internal" download="" href="../_downloads/eb5a432d5c7ccd638860a14fed7a2c64/individual_catalog_import.xlsx"><span class="xref download myst">Individual catalog</span></a></p></li>
+<li><p><a class="reference download internal" download="" href="../_downloads/414403ab56a1627f21479df063371291/sighting_import.xlsx"><span class="xref download myst">Sighting import</span></a></p></li>
+</ol>
+</section>
+</section>
+<section id="uploading-data-for-bulk-imports">
+<h2>Uploading Data for Bulk Imports<a class="headerlink" href="#uploading-data-for-bulk-imports" title="Link to this heading">#</a></h2>
+<p>Go to the Bulk Import page (<em>Submit &gt; Bulk Import</em>) and:</p>
+<ol class="arabic simple">
+<li><p>Click <strong>Browse</strong> to select your images or drag and drop them into the box. If you don’t have any photos to upload, click <strong>Next</strong>.</p></li>
+<li><p>Click <strong>Browse</strong> to select your spreadsheet or drag and drop it into the box.</p></li>
+<li><p>Review the data uploaded from your spreadsheet and correct any validation errors and missing data. Errors, missing data, or empty fields will be highlighted. Fields with a <strong>+</strong> beside them allow you change the value for all rows of that column (such as location ID and submitter ID).</p></li>
+<li><p>When you’re done reviewing your spreadsheet, click <strong>Set Location</strong>.</p></li>
+<li><p>Select the location IDs you want to search for match candidates. Click <strong>Start Import</strong>.</p></li>
+</ol>
+<ul class="simple">
+<li><p>Optionally, you can select the boxes to skip detection and identification. If you change your mind later and decide you do want detection or identification, you will need to delete the import and upload it again leaving those boxes unchecked.</p></li>
+</ul>
+<ol class="arabic simple" start="6">
+<li><p>You can then click <strong>See Details</strong> to track you bulk import’s progress or go back to the home page to view it later from the <em>My Data &gt; My Bulk Imports</em> menu.</p></li>
+<li><p>If you clicked <strong>See Details</strong>, this page will show your import’s image validation status, detection, and identification progress.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If any of the steps above are interrupted due to loss of internet connection or closing your browser tab, your progress will be saved as a draft locally to your device. You’ll see a prompt to continue where you left off or start over when you revisit the <strong>Submit Bulk Import</strong> page.</p>
+</div>
+</section>
+<section id="bulk-import-matching-process">
+<h2>Bulk Import Matching Process<a class="headerlink" href="#bulk-import-matching-process" title="Link to this heading">#</a></h2>
+<p>Your bulk imported Encounters go through the <a class="reference internal" href="../introduction/image-analysis-pipeline.html"><span class="std std-doc">Image Analysis Pipeline</span></a> if detection or identification is configured for the imported species. The detection and identification status icons on your bulk import will change when each stage is in process or complete.</p>
+<p>As identification progresses, the <a class="reference internal" href="manual-annotation-beta.html#creating-a-manual-annotation"><span class="std std-ref">IA Class</span></a> will appear in the <strong>Class</strong> column of the table along with the match results status:</p>
+<ul class="simple">
+<li><p>waiting to queue - Images haven’t been sent to <a class="reference internal" href="../introduction/index.html"><span class="std std-doc">WBIA</span></a> yet</p></li>
+<li><p>queuing - Trying to send images to WBIA</p></li>
+<li><p>queued - Images in WBIA, waiting for them to come back</p></li>
+<li><p>working - Identification actively in progress</p></li>
+<li><p>error - Something went wrong; let us know in the <a class="reference external" href="https://community.wildme.org/">Community Forums</a></p></li>
+<li><p>exception - Something went wrong; let us know in the <a class="reference external" href="https://community.wildme.org/">Community Forums</a></p></li>
+<li><p>suppressed - Something went wrong; let us know in the <a class="reference external" href="https://community.wildme.org/">Community Forums</a></p></li>
+<li><p>completed - Done; images back from WBIA</p></li>
+</ul>
+<p>Click on the links in the <strong>Class</strong> column to view match results for each Encounter.</p>
+</section>
+<section id="deleting-a-bulk-import">
+<h2>Deleting a Bulk Import<a class="headerlink" href="#deleting-a-bulk-import" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Go to <em>My Data &gt; My Bulk Imports</em>.</p></li>
+<li><p>Click on the bulk import you want to delete from the list.</p></li>
+<li><p>Scroll down to the bottom of the bulk import table and click <strong>Delete Import Task</strong>.</p></li>
+</ol>
+</section>
+<section id="fields-available">
+<h2>Fields Available<a class="headerlink" href="#fields-available" title="Link to this heading">#</a></h2>
+<section id="common-fields">
+<h3>Common Fields<a class="headerlink" href="#common-fields" title="Link to this heading">#</a></h3>
+<p>The most commonly-used fields are listed in the table below.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Example</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>MarkedIndividual.individualID</p></td>
+<td><p>V_WString</p></td>
+<td><p>Lion045</p></td>
+<td><p>PrimaryKey. While Wildbook assigns unique user IDs to MarkedIndividuals, this field becomes the default display name for the MarkedIndividual. <br>Duplicate of Encounter.individualID. <br>We recommend using this field instead of Encounter.individualID.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Encounter.individualID</p></td>
+<td><p>V_WString</p></td>
+<td><p>Lion045</p></td>
+<td><p>Duplicate of MarkedIndividual.individualID.</p></td>
+</tr>
+<tr class="row-even"><td><p>Encounter.verbatimLocality</p></td>
+<td><p>V_WString</p></td>
+<td><p>Saw this about five minutes into our tour near mile marker 5, somewhere in Tanzania.</p></td>
+<td><p>Descriptive string to reference location. No constraints on what is entered, but is not used for analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Encounter.locationID</p></td>
+<td><p>V_WString</p></td>
+<td><p>Zone 5, Botswana</p></td>
+<td><p>Hierarchical list of study sites. Allows for consistency and controlled granularity of location input. <strong>Must match the location as shown in the Location ID menu of the Report an Encounter page except in GrouperSpotter, where you only need to enter the REEF code</strong> (see <a class="reference internal" href="#/docs/faq/bulk-import-faq.md#"><span class="xref myst">known issue</span></a>).</p></td>
+</tr>
+<tr class="row-even"><td><p>Encounter.decimalLatitude</p></td>
+<td><p>Double</p></td>
+<td><p>-35.46</p></td>
+<td><p>Enter latitude coordinates using decimals instead of degrees, minutes, and seconds (DMS). The first encounter of any setting will also set the decimal latitude at the sighting level.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Encounter.decimalLongitude</p></td>
+<td><p>Double</p></td>
+<td><p>54.678</p></td>
+<td><p>Enter longitude coordinates using decimals instead of degrees, minutes, and seconds (DMS). The first encounter of any setting will also set the decimal latitude at the sighting level.</p></td>
+</tr>
+<tr class="row-even"><td><p>Encounter.year</p></td>
+<td><p>Int32</p></td>
+<td><p>2020</p></td>
+<td><p>For encounter date information, add what you have to the most precise accuracy. Storing the segments separately allows general dates such as “June 2014”; we do not store seconds or milliseconds for an encounter’s date information, so there are no fields to allow the input of those values. Enter a 4 digit number.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Encounter.month</p></td>
+<td><p>Int32</p></td>
+<td><p>8</p></td>
+<td><p>Enter a number 1-12 corresponding with the the month of the encounter.</p></td>
+</tr>
+<tr class="row-even"><td><p>Encounter.day</p></td>
+<td><p>Int32</p></td>
+<td><p>24</p></td>
+<td><p>Enter a number 1-31 corresponding with the day of the month.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Encounter.mediaAsset0</p></td>
+<td><p>String</p></td>
+<td><p>20180905/12345.jpg</p></td>
+<td><p>Must be entered exactly: relative path to the photo from the position of the imported spreadsheet on the file system. Values from 0 to infinity are iterated until a sequence value is not found.</p></td>
+</tr>
+<tr class="row-even"><td><p>Encounter.genus</p></td>
+<td><p>V_WString</p></td>
+<td><p>Panthera</p></td>
+<td><p>Enter an option from the Taxonomy drop-down menu. This should be the first of the two phrases. This entry must begin with a capital letter. <strong>These values are case-sensitive.</strong> If entered incorrectly, Taxonomy will display as “Not Available”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Encounter.specificEpithet</p></td>
+<td><p>V_WString</p></td>
+<td><p>pardus</p></td>
+<td><p>Enter an option from the Taxonomy drop-down menu. This should be the second of the two phrases. This entry must begin with a lowercase letter. <strong>These values are case-sensitive.</strong> If entered incorrectly, Taxonomy will display as “Not Available”.</p></td>
+</tr>
+<tr class="row-even"><td><p>Encounter.submitterID</p></td>
+<td><p>V_WString</p></td>
+<td><p>tmcnutt</p></td>
+<td><p>Add submitter’s username in Wildbook. <strong>These values are case-sensitive.</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Encounter.state</p></td>
+<td><p>V_WString</p></td>
+<td><p>approved<br>unapproved<br>unidentifiable</p></td>
+<td><p>The curation state of this Encounter. Default value if left blank is “approved”. <br>Uncurated data should be imported as “unapproved”. <br>Encounters without photos should be imported as “unidentifiable”.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="encounter-fields">
+<h3>Encounter Fields<a class="headerlink" href="#encounter-fields" title="Link to this heading">#</a></h3>
+<p>The following fields can be included when uploading an Encounter. Review the description of the field and validate that it is in use in your system (meaning if you are on a terrestrial Wildbook, you will likely not use Encounter.depth).</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Example</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Encounter.alternateID</p></td>
+<td><p>V_WString</p></td>
+<td><p>Bitey</p></td>
+<td><p>Adds an Alternate ID to the Identity section of the Encounter.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Encounter.behavior</p></td>
+<td><p>V_WString</p></td>
+<td><p>feeding</p></td>
+<td><p>List of behaviors commonly observed in the species.</p></td>
+</tr>
+<tr class="row-even"><td><p>Encounter.country</p></td>
+<td><p>V_WString</p></td>
+<td><p>Botswana</p></td>
+<td><p>Country where the Encounter took place.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Encounter.dateInMilliseconds</p></td>
+<td><p>Int64</p></td>
+<td><p>1589554848</p></td>
+<td><p>Skip other Encounter date fields if you have a precise date and time (milliseconds since epoch—the standard computer format for date and times). Format is a large integer like 1516685992499.</p></td>
+</tr>
+<tr class="row-even"><td><p>Encounter.distinguishingScar</p></td>
+<td><p>V_WString</p></td>
+<td><p>left body</p></td>
+<td><p>Description of any highly-identifiable markings/scarring that help with visual Identificaton.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Encounter.groupRole</p></td>
+<td><p>V_WString</p></td>
+<td><p>escort male</p></td>
+<td><p>Not commonly used. Largely used for point-in-time observations of role rather than longer-term observations.</p></td>
+</tr>
+<tr class="row-even"><td><p>Encounter.hour</p></td>
+<td><p>Int32</p></td>
+<td><p>12</p></td>
+<td><p>Enter a number from 00 to 23, 00 corresponds with midnight. Can be entered as single-digit (“1”) or double-digit “01” values.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Encounter.keyword0</p></td>
+<td><p>String</p></td>
+<td><p>left strange marking</p></td>
+<td><p>Applies a keyword to a mediaAsset; the number of Encounter.keyword(X) should correspond to number of Encounter.mediaAsset(X).</p></td>
+</tr>
+<tr class="row-even"><td><p>Encounter.mediaAsset0.keywords</p></td>
+<td><p>String</p></td>
+<td><p>left strange marking_scar on body_ProfilePhoto</p></td>
+<td><p>Underscore-delimited list of keywords to be associated with the MediaAsset. Can be used for one or many keywords. Values from 0 to infinity are iterated until a sequence value is not found.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Encounter.lifeStage</p></td>
+<td><p>V_WString</p></td>
+<td><p>juvenile</p></td>
+<td><p>List of potential life stages. Standards are “adult”, “juvenile”, and “unknown”.</p></td>
+</tr>
+<tr class="row-even"><td><p>Encounter.livingStatus</p></td>
+<td><p>V_WString</p></td>
+<td><p></p></td>
+<td><p>Accepted values: “alive” or “dead”</p></td>
+</tr>
+<tr class="row-odd"><td><p>Encounter.measurement0</p></td>
+<td><p>String</p></td>
+<td><p>5</p></td>
+<td><p>Supported column headings are numeric. Values from 0 to infinity are iterated until a sequence value is not found.</p></td>
+</tr>
+<tr class="row-even"><td><p>Encounter.mediaAsset0.[label name]</p></td>
+<td><p>String</p></td>
+<td><p>[label name]: flukeType, value: dorsal</p></td>
+<td><p>Name a column for a labeled keyword and provide an associated value for each encounter. Labeled keyword names can be found in the keyword drop-down menu on a MediaAsset. Labeled keywords can be defined in the commonConfiguration.properties file.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Encounter.minutes</p></td>
+<td><p>V_WString</p></td>
+<td><p>35</p></td>
+<td><p>Enter a number 1-60.</p></td>
+</tr>
+<tr class="row-even"><td><p>Encounter.sightingID</p></td>
+<td><p>V_WString</p></td>
+<td><p>BPCT_20190825_1</p></td>
+<td><p>A unique code that links encounters across a single sighting. Helpful if you can cross-reference to your records. If you enter an ID that exists in the system, the encounter will be associated with the existing sighting. If you enter a new and unique ID or if you leave the field blank, a new sighting will be created and the encounter associated with the newly created sighting. Restricted to Latin alphanumeric characters (a-z, A-Z, 0-9), - and _. <br>Duplicate of Sighting.sightingID. We recommend using this field instead of Sighting.sightingID.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Encounter.researcherComments</p></td>
+<td><p>V_WString</p></td>
+<td><p>We also took a separate video observation.</p></td>
+<td><p>Unconstrained field for general notes regarding the specific encounter (single annotation and related metadata). <br>Leaves comments on the Encounter page under Metadata &gt; Audit Trail.</p></td>
+</tr>
+<tr class="row-even"><td><p>Encounter.sightingRemarks</p></td>
+<td><p>V_WString</p></td>
+<td><p>We saw this pack while driving through the forest.</p></td>
+<td><p>Leaves comments on the Encounter page under Attributes &gt; Additional Comments. Use this field if you need the comments to persist on any cloned Encounters.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Encounter.otherCatalogNumbers</p></td>
+<td><p>V_WString</p></td>
+<td><p>fieldObs12</p></td>
+<td><p>Links the Encounter to other numbers, such as a field encounter number for the day. Limited use in Wildbook.</p></td>
+</tr>
+<tr class="row-even"><td><p>Encounter.patterningCode</p></td>
+<td><p>V_WString</p></td>
+<td><p>tan</p></td>
+<td><p>A code that defines some standardized feature of body coloring, such as how humpback whale flukes are categorized 1-5 (light to dark) or wild dogs are categorized by general body color (e.g., tan). This field is stored on the back-end and displayed without UI editing capability.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Encounter.mediaAsset0.quality</p></td>
+<td><p>String</p></td>
+<td><p>An integer value 0 to 4.</p></td>
+<td><p>Estimated quality of Encounter.mediaAsset0. Values from 0 to infinity are iterated until a sequence value is not found.</p></td>
+</tr>
+<tr class="row-even"><td><p>Encounter.sex</p></td>
+<td><p>V_WString</p></td>
+<td><p>male</p></td>
+<td><p>Focus on values: “male”, “female”, and “unknown”.</p></td>
+</tr>
+<tr class="row-odd"><td><p>MarkedIndividual.nickname</p></td>
+<td><p>V_WString</p></td>
+<td><p>Barry the Slow Lion</p></td>
+<td><p>Enter a name that can be more easily referenced; does not override ID.</p></td>
+</tr>
+<tr class="row-even"><td><p>Membership.role</p></td>
+<td><p>V_WString</p></td>
+<td><p>alpha</p></td>
+<td><p>Role as a member of a social unit (SocialUnit.socialUnitName).</p></td>
+</tr>
+<tr class="row-odd"><td><p>SatelliteTag.serialNumber</p></td>
+<td><p>V_WString</p></td>
+<td><p>12345</p></td>
+<td><p>Serial number. Reference only</p></td>
+</tr>
+<tr class="row-even"><td><p>SocialUnit.socialUnitName</p></td>
+<td><p>V_WString</p></td>
+<td><p>G Pack</p></td>
+<td><p>PrimaryKey. Unique to each social unit.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="sightings-fields">
+<h3>Sightings Fields<a class="headerlink" href="#sightings-fields" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Sightings Field</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Example</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Sighting.sightingID</p></td>
+<td><p>V_WString</p></td>
+<td><p></p></td>
+<td><p>Duplicate of Encounter.sightingID</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sighting.comments</p></td>
+<td><p>V_WString</p></td>
+<td><p></p></td>
+<td><p>Leaves comments on the Sighting/Occurrence ID page.</p></td>
+</tr>
+<tr class="row-even"><td><p>Sighting.bestGroupSizeEstimate</p></td>
+<td><p>Double</p></td>
+<td><p>5</p></td>
+<td><p>Researcher-provided estimate of group size.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sighting.effortCode</p></td>
+<td><p>Double</p></td>
+<td><p></p></td>
+<td><p>Categorized set of values denoting the amount of effort that went into collecting data for a sighting.</p></td>
+</tr>
+<tr class="row-even"><td><p>Sighting.fieldStudySite</p></td>
+<td><p>V_WString</p></td>
+<td><p></p></td>
+<td><p>String for location. Site names should be recognizable.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sighting.fieldSurveyCode</p></td>
+<td><p>V_WString</p></td>
+<td><p></p></td>
+<td><p>String to be associated with a given survey.</p></td>
+</tr>
+<tr class="row-even"><td><p>Sighting.groupBehavior</p></td>
+<td><p>V_WString</p></td>
+<td><p></p></td>
+<td><p>String for description of observed behavior.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sighting.groupComposition</p></td>
+<td><p>V_WString</p></td>
+<td><p></p></td>
+<td><p>String for description of what animals are observed and their potential relationships.</p></td>
+</tr>
+<tr class="row-even"><td><p>Sighting.groupSize</p></td>
+<td><p>V_WString</p></td>
+<td><p></p></td>
+<td><p>String for description of group size.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sighting.humanActivityNearby</p></td>
+<td><p>V_WString</p></td>
+<td><p></p></td>
+<td><p>Description of any activity known to occur in the area.</p></td>
+</tr>
+<tr class="row-even"><td><p>Sighting.individualCount</p></td>
+<td><p>Int32</p></td>
+<td><p></p></td>
+<td><p>Number of Individuals counted manually in the sighting.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sighting.initialCue</p></td>
+<td><p>V_WString</p></td>
+<td><p></p></td>
+<td><p>Text value denoting what signaled attention to the Sighting. Stored in the database only. No UI.</p></td>
+</tr>
+<tr class="row-even"><td><p>Sighting.maxGroupSizeEstimate</p></td>
+<td><p>Int32</p></td>
+<td><p></p></td>
+<td><p>Researcher-provided estimate of upper limit group size.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sighting.millis</p></td>
+<td><p>Int64</p></td>
+<td><p></p></td>
+<td><p>Time of the Sighting in milliseconds since Epoch; typically originates from hardware used to capture image.</p></td>
+</tr>
+<tr class="row-even"><td><p>Sighting.minGroupSizeEstimate</p></td>
+<td><p>Int32</p></td>
+<td><p></p></td>
+<td><p>Researcher-provided estimate of lower limit group size.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sighting.numAdults</p></td>
+<td><p>Int32</p></td>
+<td><p></p></td>
+<td><p>Researcher-provided determination of number of adults</p></td>
+</tr>
+<tr class="row-even"><td><p>Sighting.numAdultFemales</p></td>
+<td><p>Int32</p></td>
+<td><p></p></td>
+<td><p>Researcher-provided determination of number of adult females.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sighting.numAdultMales</p></td>
+<td><p>Int32</p></td>
+<td><p></p></td>
+<td><p>Researcher-provided determination of number of adult males.</p></td>
+</tr>
+<tr class="row-even"><td><p>Sighting.numCalves</p></td>
+<td><p>Int32</p></td>
+<td><p></p></td>
+<td><p>Researcher-provided determination of number of calves. Can be used for any infant stage of a species.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sighting.numJuveniles</p></td>
+<td><p>Int32</p></td>
+<td><p></p></td>
+<td><p>Researcher-provided determination of number of juveniles.</p></td>
+</tr>
+<tr class="row-even"><td><p>Sighting.numSubAdults</p></td>
+<td><p>Int32</p></td>
+<td><p></p></td>
+<td><p>Researcher-provided determination of number of subadults.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sighting.numSubFemales</p></td>
+<td><p>Int32</p></td>
+<td><p></p></td>
+<td><p>Researcher-provided determination of number of subadult females.</p></td>
+</tr>
+<tr class="row-even"><td><p>Sighting.numSubMales</p></td>
+<td><p>Int32</p></td>
+<td><p></p></td>
+<td><p>Researcher-provided determination of number of subadult males.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sighting.observer</p></td>
+<td><p>String</p></td>
+<td><p></p></td>
+<td><p>The name of the observing researcher.</p></td>
+</tr>
+<tr class="row-even"><td><p>Sighting.transectName</p></td>
+<td><p>V_WString</p></td>
+<td><p></p></td>
+<td><p>Name of the transect that logged the sighting. Stored in the database only.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sighting.visibilityIndex</p></td>
+<td><p>Double</p></td>
+<td><p></p></td>
+<td><p>Indexed values of the visibility during the time of the sighting. Stored in the database only.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="project-fields">
+<h3>Project Fields<a class="headerlink" href="#project-fields" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Project Field</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Example</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Encounter.project0.projectIdPrefix</p></td>
+<td><p>String</p></td>
+<td><p>Cen20-</p></td>
+<td><p>The prefix used when assigning project IDs to encounters. <strong>These values are case-sensitive.</strong> Values from 0 to infinity are iterated until a sequence value is not found, allowing you to put encounters into multiple projects. Required for imports into existing and new projects.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Encounter.project0.researchProjectName</p></td>
+<td><p>String</p></td>
+<td><p>Census 2020</p></td>
+<td><p>The project’s name. <strong>These values are case-sensitive.</strong> Values from 0 to infinity are iterated until a sequence value is not found, allowing you to put encounters into multiple projects. Required for imports into both existing and new projects.</p></td>
+</tr>
+<tr class="row-even"><td><p>Encounter.project0.ownerUsername</p></td>
+<td><p>String</p></td>
+<td><p>censusadmin</p></td>
+<td><p>The username of the person who should manage the project. <strong>These values are case-sensitive.</strong> Required for imports into new projects only. To prevent caching or threading issues, associate the new owner with all encounters in the spreadsheet that are going into the new project.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="submitter-fields">
+<h3>Submitter Fields<a class="headerlink" href="#submitter-fields" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Submitter Field</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Example</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Encounter.informOther0.affiliation</p></td>
+<td><p>String</p></td>
+<td><p>BPCT</p></td>
+<td><p>Unconstrained string to indicate an affiliation to inform. Values from 0 to infinity are iterated until a sequence value is not found. <strong>Does not save unless Encounter.informOther0.emailAddress is also reported.</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Encounter.informOther0.emailAddress</p></td>
+<td><p>String</p></td>
+<td><p>joe&#64;joe.com</p></td>
+<td><p>Add the email address of someone else to inform of Encounter updates. Values from 0 to infinity are iterated until a sequence value is not found. Links to the email address of a Wildbook account.</p></td>
+</tr>
+<tr class="row-even"><td><p>Encounter.informOther0.fullName</p></td>
+<td><p>String</p></td>
+<td><p>Joe Smith</p></td>
+<td><p>Provide the full name of someone else to inform of Encounter updates. Values from 0 to infinity are iterated until a sequence value is not found. <strong>Does not save unless Encounter.informOther0.emailAddress is also reported.</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Encounter.photographer0.affiliation</p></td>
+<td><p>String</p></td>
+<td><p>BPCT</p></td>
+<td><p>Unconstrained string to list an organization the photographer is associated with. When the photographer is an existing Wildbook user, only include the <em>Encounter.photographer0.emailAddress</em> field. Whatever is in <em>Encounter.photographer0.affiliation</em> will be ignored in favor of what the system associates with the user’s email address. Values from 0 to infinity are iterated until a sequence value is not found. <strong>Does not save unless Encounter.photographer0.emailAddress is also reported.</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Encounter.photographer0.emailAddress</p></td>
+<td><p>String</p></td>
+<td><p>joe&#64;joe.com</p></td>
+<td><p>Add the email address of the photographer. Values from 0 to infinity are iterated until a sequence value is not found. Links to the email address of a Wildbook account.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Encounter.photographer0.fullName</p></td>
+<td><p>String</p></td>
+<td><p>Joe Smith</p></td>
+<td><p>Provide the full name of the photographer. When the photographer is an existing Wildbook user, only include the <em>Encounter.photographer0.emailAddress</em> field. Whatever is in <em>Encounter.photographer0.fullName</em> will be ignored in favor of what the system associates with the user’s email address. Values from 0 to infinity are iterated until a sequence value is not found. <strong>Does not save unless Encounter.photographer0.emailAddress is also reported.</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Encounter.submitter0.affiliation</p></td>
+<td><p>String</p></td>
+<td><p>Joe’s Safaris</p></td>
+<td><p>Unconstrained string to list the submitter’s organization. Values  from 0 to infinity are iterated until a sequence value is not found. <strong>Does not save unless submitter0.emailAddress is also reported.</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Encounter.submitter0.emailAddress</p></td>
+<td><p>String</p></td>
+<td><p>joe&#64;joe.com</p></td>
+<td><p>Add the email address of the submitter. Values from 0 to infinity are iterated until a sequence value is not found. Links to the email address of a Wildbook account.</p></td>
+</tr>
+<tr class="row-even"><td><p>Encounter.submitter0.fullName</p></td>
+<td><p>String</p></td>
+<td><p>Joe Smith</p></td>
+<td><p>Provide the full name of the submitter. Values from 0 to infinity are iterated until a sequence value is not found. <strong>Does not save unless submitter0.emailAddress is also reported.</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="genetic-fields">
+<h3>Genetic Fields<a class="headerlink" href="#genetic-fields" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Genetic Field</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Example</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>TissueSample.sampleID</p></td>
+<td><p>V_WString</p></td>
+<td><p>12345</p></td>
+<td><p>ID of the tissue sample taken during this Encounter. Only one TissueSample can be imported per Encounter.</p></td>
+</tr>
+<tr class="row-odd"><td><p>SexAnalysis.sex</p></td>
+<td><p>V_WString</p></td>
+<td><p>female</p></td>
+<td><p>Determination from a genetic analysis of the individual’s sex. Results from the analysis of a tissue sample taken during the same encounter. <strong>A corresponding TissueSample.sampleID entry is required for this field to import.</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>MitochondrialDNAAnalysis.haplotype</p></td>
+<td><p>V_WString</p></td>
+<td><p>“A+”</p></td>
+<td><p>Determination from a genetic analysis of the individual’s haplotype. Results from analysis of a tissue sample taken during the same encounter. <strong>A corresponding TissueSample.sampleID entry is required for this field to import.</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>MicrosatelliteMarkersAnalysis.alleleNames <br>MicrosatelliteMarkersAnalysis.alleles0 <br>MicrosatelliteMarkersAnalysis.alleles1</p></td>
+<td><p>V_WString</p></td>
+<td><p>alleleNames: “EV1,<br>EV5,EV94,GT23,<br>GT575,rw410,<br>464465,GATA417,<br>SW13,EV37,<br>EV14,FCB1,SW19” <br>alleles0: “120,154,<br>201,79,131,177,140,<br>182,158,231,125,<br>121,123” <br>alleles1: “120,158,<br>209,85,135,183,<br>140,186,160,237,<br>145,129,147”</p></td>
+<td><p>Determination from a genetic analysis of the Individual’s genotype. Results from analysis of a tissue sample taken during the same Encounter. <strong>A corresponding TissueSample.sampleID entry is required for this field to import</strong>. These three fields must all be present and have the exact same number of values as separated by commas.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="survey-fields">
+<h3>Survey Fields<a class="headerlink" href="#survey-fields" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Survey Field</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Example</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>SurveyTrack.vesselID</p></td>
+<td><p>V_WString</p></td>
+<td><p>Car 45</p></td>
+<td><p>User-provided identifier of ship used during survey.</p></td>
+</tr>
+<tr class="row-odd"><td><p>survey.vessel</p></td>
+<td><p>V_WString</p></td>
+<td><p>Car 45</p></td>
+<td><p>Duplicate of SurveyTrack.vesselID.</p></td>
+</tr>
+<tr class="row-even"><td><p>survey.id</p></td>
+<td><p>String</p></td>
+<td><p></p></td>
+<td><p>Record number of the survey performed.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="aquatic-fields">
+<h3>Aquatic Fields<a class="headerlink" href="#aquatic-fields" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Aquatic Name</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Example</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Encounter.depth</p></td>
+<td><p>Double</p></td>
+<td><p>35</p></td>
+<td><p>Depth of water where the Encounter occurred. Aquatic-only.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sighting.bearing</p></td>
+<td><p>Double</p></td>
+<td><p>45</p></td>
+<td><p>Value to work with decimalLatitude, decimalLongitude, and distance of Sighting. Typically aquatic-only.</p></td>
+</tr>
+<tr class="row-even"><td><p>Sighting.distance</p></td>
+<td><p>Double</p></td>
+<td><p></p></td>
+<td><p>Value to work with decimalLatitude, decimalLongitude, and bearing of Sighting.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sighting.seaState</p></td>
+<td><p>V_WString</p></td>
+<td><p></p></td>
+<td><p>Description of water conditions during the Sighting. Aquatic-only.</p></td>
+</tr>
+<tr class="row-even"><td><p>Sighting.seaSurfaceTemp</p></td>
+<td><p>Double</p></td>
+<td><p></p></td>
+<td><p>Water temperature in degrees celsius. Aquatic-only.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sighting.swellHeight</p></td>
+<td><p>Double</p></td>
+<td><p></p></td>
+<td><p>Height of any waves in the area in meters. Aquatic-only.</p></td>
+</tr>
+<tr class="row-even"><td><p>Sighting.transectBearing</p></td>
+<td><p>Double</p></td>
+<td><p></p></td>
+<td><p>Numeric value of the bearing from the observation vessel to the observed sighting. Stored in database only. Aquatic-only.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="reviewing-bulk-imports">
+<h2>Reviewing Bulk Imports<a class="headerlink" href="#reviewing-bulk-imports" title="Link to this heading">#</a></h2>
+<p>You can review your Bulk Imports by selecting <strong>Bulk Import Logs</strong> from the <strong>Administer</strong> menu. If you have admin or orgAdmin roles on your User account, you may see additional logs for other users as well.</p>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="report-encounter.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Report an encounter</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="matching-process.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Matching Process</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photo-folder">Photo Folder</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spreadsheet">Spreadsheet</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spreadsheet-templates-by-use-case">Spreadsheet Templates by Use Case</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uploading-data-for-bulk-imports">Uploading Data for Bulk Imports</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bulk-import-matching-process">Bulk Import Matching Process</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deleting-a-bulk-import">Deleting a Bulk Import</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fields-available">Fields Available</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-fields">Common Fields</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#encounter-fields">Encounter Fields</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sightings-fields">Sightings Fields</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-fields">Project Fields</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#submitter-fields">Submitter Fields</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#genetic-fields">Genetic Fields</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#survey-fields">Survey Fields</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aquatic-fields">Aquatic Fields</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reviewing-bulk-imports">Reviewing Bulk Imports</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Wild Me
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024 Conservation X Labs.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

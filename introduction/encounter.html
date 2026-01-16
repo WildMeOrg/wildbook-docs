@@ -1,0 +1,822 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Encounter &#8212; Wildbook  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=dddd19d0" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'introduction/encounter';</script>
+    <script src="../_static/tocjs.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Marked Individual" href="marked-individual.html" />
+    <link rel="prev" title="Data Entry" href="data-entry.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/WildMe-Logo.png" class="logo__image only-light" alt="Wildbook  documentation - Home"/>
+    <script>document.write(`<img src="../_static/WildMe-Logo.png" class="logo__image only-dark" alt="Wildbook  documentation - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../getting-started-with-wildbook.html">Getting Started</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Introduction to Wildbook</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="image-analysis-pipeline.html">Image Analysis Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-entry.html">Data Entry</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Encounter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="marked-individual.html">Marked Individual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sighting.html">Sighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="security-overview.html">Security Overview</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../data/index.html">Data Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../data/photography-guidelines.html">Photography Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/report-encounter.html">Report an encounter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/bulk-import-beta.html">Bulk Import</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/matching-process.html">Matching Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/manual-annotation-beta.html">Manual Annotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/search.html">Searching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/data-exports.html">Export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/wildex-image-export-app.html">WildEx Image Export App</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/projects.html">Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/location-ids.html">Location IDs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/r-package-alpha.html">R Package (alpha)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../security/index.html">Security Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../security/my-account.html">My Account</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../security/silo-security/index.html">Silo Security</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/org-admin.html">Org admin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/site-admin.html">Site admin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/photo-keywords.html">Photo Keywords</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/data-integrity.html">Data Integrity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/library-management.html">Library Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/bulk-import-logs.html">Bulk Import Logs</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../specifications-and-system-requirements/index.html">System requirements</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../specifications-and-system-requirements/system-configuration.html">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../specifications-and-system-requirements/unsupported-developer-tools.html">Unsupported developer tools</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../faq/index.html">FAQ</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../faq/bulk-import-faq.html">Bulk Import FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/codex-wildbook-faq.html">Codex to Wildbook FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/matching-faq.html">Matching FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/merging-faq.html">Merging FAQ</a></li>
+</ul>
+</details></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../contribute/index.html">Ways to Contribute</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/dev-setup.html">Dev Environment Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/pr-workflow.html">Pull Request Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/code-guide.html">Code Contribition Guideline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/tests.html">Testing in Wildbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/ia-dev.html">Image Analysis Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/copy-guide.html">Copy Contribution Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/roadmap.html">Roadmap</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/dev-setup.html">Dev Environment Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/pr-workflow.html">Pull Request Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/code-guide.html">Code Contribition Guideline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/copy-guide.html">Copy Contribution Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/roadmap.html">Roadmap</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/WildMeOrg/wildbook-docs" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/introduction/encounter.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Encounter</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navigating-to-an-encounter-page">Navigating to an Encounter Page</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encounter-page-format">Encounter Page Format</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#date">Date</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#encounter-date">Encounter Date</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#verbatim-event-date">Verbatim Event Date</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identity">Identity</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#matched-by">Matched by</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#individual-id">Individual ID</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#alternate-id">Alternate ID</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sighting-id-formerly-occurrence-id">Sighting ID (formerly “Occurrence ID”)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata">Metadata</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#assigned-user">Assigned user</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#location">Location</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Location</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#location-id">Location ID</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#country">Country</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#gps-coordinates">GPS Coordinates</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delete-encounter">Delete Encounter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#attributes">Attributes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#encounter-state">Encounter State</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contact-information-people-icon">Contact Information (People icon)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#encounter-history-clock-icon">Encounter History (Clock icon)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#images">Images</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#match-results">Match Results</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visual-matcher">Visual Matcher</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#new-match">New Match</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#add-annotation">Add Annotation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#add-image">Add Image</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#keywords">Keywords</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#delete-image">Delete Image</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-details">More Details</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tracking-and-measurements">Tracking and Measurements</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tracking">Tracking</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#measurements">Measurements</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#biological-samples">Biological Samples</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#projects">Projects</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="encounter">
+<h1>Encounter<a class="headerlink" href="#encounter" title="Link to this heading">#</a></h1>
+<p>In Wildbook, an Encounter is the foundation of the software. Encounters provide a reference to a time and location where a single animal was seen.</p>
+<section id="navigating-to-an-encounter-page">
+<h2>Navigating to an Encounter Page<a class="headerlink" href="#navigating-to-an-encounter-page" title="Link to this heading">#</a></h2>
+<p>To see Encounter information, you must be signed into Wildbook. Once you’ve signed in, you can use <strong>Search</strong> &gt; <strong>Encounters</strong> to filter Encounters or you can use <strong>My Data</strong> &gt; <strong>My Encounters</strong> to see all of the Encounters assigned to you.</p>
+<p>There are two <a class="reference internal" href="data-entry.html"><span class="std std-doc">data entry methods</span></a> for uploading Encounters: upload a single encounter from the <a class="reference internal" href="../data/report-encounter.html"><span class="std std-doc">Report an Encounter</span></a> page and upload multiple Encounters in a <a class="reference internal" href="../data/bulk-import-beta.html"><span class="std std-doc">Bulk Import</span></a>.</p>
+</section>
+<section id="encounter-page-format">
+<h2>Encounter Page Format<a class="headerlink" href="#encounter-page-format" title="Link to this heading">#</a></h2>
+<p>The Encounter page has two views: Overview and More Details. The Encounter ID, Encounter workflow state, Contact Information, and Encounter History will persist between views.</p>
+<p>For each of the following sections, click the pencil icon to make changes.</p>
+<p>If you see fields that are not covered on this page, they are custom to your Wildbook. Contact your administrator or <a class="reference external" href="https://community.wildme.org/">Wildbook support</a> for any questions about how to use them.</p>
+<section id="date">
+<h3>Date<a class="headerlink" href="#date" title="Link to this heading">#</a></h3>
+<p>At minimum, the year must be provided for the Encounter to be saved.</p>
+<section id="encounter-date">
+<h4>Encounter Date<a class="headerlink" href="#encounter-date" title="Link to this heading">#</a></h4>
+<p>The date and time the animal in the photo was seen. Must adhere to ISO format: <strong>YYYY-MM-DD HH:mm</strong></p>
+</section>
+<section id="verbatim-event-date">
+<h4>Verbatim Event Date<a class="headerlink" href="#verbatim-event-date" title="Link to this heading">#</a></h4>
+<p>A free-text field to describe the Encounter Date. This field is searchable, but is not used in finding matches.</p>
+</section>
+</section>
+<section id="identity">
+<h3>Identity<a class="headerlink" href="#identity" title="Link to this heading">#</a></h3>
+<p>Identity tells us if an Encounter has been identified as a <a class="reference internal" href="marked-individual.html"><span class="std std-doc">Marked Individual</span></a>.</p>
+<section id="matched-by">
+<h4>Matched by<a class="headerlink" href="#matched-by" title="Link to this heading">#</a></h4>
+<p>Describes how the Encounter was identified. The options are:</p>
+<ul class="simple">
+<li><p><strong>Unmatched first encounter</strong>: No matches were found in the Wildbook, making this a new individual.</p></li>
+<li><p><strong>Visual Inspection</strong>: Someone compared the pictures between two Encounters and determined they are the same individual.</p></li>
+<li><p><strong>Pattern Match</strong>: Wildbook suggested a match candidate and the animal was determined to be the same individual.</p></li>
+</ul>
+</section>
+<section id="individual-id">
+<h4>Individual ID<a class="headerlink" href="#individual-id" title="Link to this heading">#</a></h4>
+<p>If the Encounter is of an individual that does not exist in the current Wildbook, you should enter a unique ID. This ID needs to be distinct from any Individual ID in your catalog that currently exists. When you’ve entered the ID, click <strong>Create</strong> to confirm the value and then click <strong>Save</strong>.</p>
+<p>If you have determined the Encounter is of an existing individual, type the individual ID you want to associate the Encounter with. A drop-down menu will display a list of all matching individuals. Select from the list then click <strong>Save</strong>.</p>
+<p>To remove an Encounter from an individual, click <strong>Unassign Individual</strong>.</p>
+</section>
+<section id="alternate-id">
+<h4>Alternate ID<a class="headerlink" href="#alternate-id" title="Link to this heading">#</a></h4>
+<p>If there is an alternative ID used to identify this animal, such as in a historical catalogue, enter it here. Once you’ve entered the ID, click <strong>Save</strong>.</p>
+</section>
+<section id="sighting-id-formerly-occurrence-id">
+<h4>Sighting ID (formerly “Occurrence ID”)<a class="headerlink" href="#sighting-id-formerly-occurrence-id" title="Link to this heading">#</a></h4>
+<p>Sighting IDs are automatically generated unless they are specified in a Bulk Import. A Sighting is made up of multiple Encounters. You may want to edit the default Sighting ID to more easily sort the Encounters that were recorded in a specific place and time. Click <strong>Remove from Sighting</strong> to remove your Encounter from the current ID and enter a new one. Click <strong>Create</strong> to confirm the value and then click <strong>Save</strong>.</p>
+<p>If you want to add the Encounter to an existing Sighting ID, type the ID and a drop-down menu will display a list of all matching Sightings. Select from the list then click <strong>Save</strong>.</p>
+</section>
+</section>
+<section id="metadata">
+<h3>Metadata<a class="headerlink" href="#metadata" title="Link to this heading">#</a></h3>
+<p>Displays the Encounter ID, the date the Encounter was created in Wildbook, last edited date, whether the Encounter was part of a bulk import, and the assigned  user.</p>
+<section id="assigned-user">
+<h4>Assigned user<a class="headerlink" href="#assigned-user" title="Link to this heading">#</a></h4>
+<p>Use the menu to select from a list of Wildbook users and assign that user as owner of the Encounter. Click <strong>Save</strong> to confirm the selection.</p>
+</section>
+</section>
+<section id="location">
+<h3>Location<a class="headerlink" href="#location" title="Link to this heading">#</a></h3>
+<p>A location ID or coordinates must be set in order to save an Encounter. This information is used to determine match candidates, as well as identify where an Encounter took place.</p>
+<section id="id1">
+<h4>Location<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<p>Provide a description of the location where the Encounter occurred. Click <strong>Save</strong>.</p>
+<ul class="simple">
+<li><p><em>Note: This field is searchable, but is not used to find matches. This is valuable if there is a set of landmarks that have multiple names, or if a citizen scientist submits an Encounter and are unsure of exact location.</em></p></li>
+</ul>
+</section>
+<section id="location-id">
+<h4>Location ID<a class="headerlink" href="#location-id" title="Link to this heading">#</a></h4>
+<p>Select from a list of location IDs (“study sites”) where the Encounter occurred. Click <strong>Save</strong>.</p>
+<ul class="simple">
+<li><p><em>Note: This list is hierarchical and determined by the administrator of the Wildbook. We recommend no more than 5 hierarchical layers of locations. Reach out to your administrators or to <a class="reference external" href="https://community.wildme.org/">Wildbook support</a> for configuration assistance)</em></p></li>
+</ul>
+</section>
+<section id="country">
+<h4>Country<a class="headerlink" href="#country" title="Link to this heading">#</a></h4>
+<p>Select from a list of countries where the Encounter occurred. Click <strong>Save</strong>.</p>
+</section>
+<section id="gps-coordinates">
+<h4>GPS Coordinates<a class="headerlink" href="#gps-coordinates" title="Link to this heading">#</a></h4>
+<p>Use the map or text fields to enter the GPS coordinates where the Encounter occurred in decimal format. Click <strong>Save</strong>.</p>
+</section>
+</section>
+<section id="delete-encounter">
+<h3>Delete Encounter<a class="headerlink" href="#delete-encounter" title="Link to this heading">#</a></h3>
+<p>Click <strong>Delete Encounter</strong> to remove an Encounter from the database. A confirmation window will display; click OK to confirm.</p>
+</section>
+<section id="attributes">
+<h3>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">#</a></h3>
+<p>Encounters can also have these important attributes.</p>
+<ol class="arabic simple">
+<li><p><strong>Taxonomy</strong>: Use the drop-down menu to select from available species. The Taxonomy affects how Annotations for the Encounter are processed through the <a class="reference internal" href="image-analysis-pipeline.html"><span class="std std-doc">Image Analysis Pipeline</span></a>.</p></li>
+<li><p><strong>Living Status</strong>: Use the drop-down menu to select the animal’s living status at the time of the Encounter.</p></li>
+<li><p><strong>Sex</strong>: Use the drop-down menu to select the animal’s sex.</p></li>
+<li><p><strong>Distinguishing Scar</strong>: Describes any scarring that could be useful in making a visual comparison between animals.</p></li>
+<li><p><strong>Behavior</strong>: Provide a description of the animal’s behavior.</p></li>
+<li><p><strong>Group Role</strong>: Provide a description of the role the animal has within their group during this Encounter.</p></li>
+</ol>
+<ul class="simple">
+<li><p>*Note: If this entry matches the pre-defined behavior list, you can use the search filter for the behavior on Encounter Search page.</p></li>
+</ul>
+<ol class="arabic simple" start="7">
+<li><p><strong>Patterning Code</strong>: Use the drop-down menu to select the animal’s patterning code.</p></li>
+<li><p><strong>Life Stage</strong>: Use the drop-down menu to select the life stage for the animal. Life stage is configured in the commonConfiguration.properties file. <a class="reference internal" href="../specifications-and-system-requirements/system-configuration.html"><span class="std std-doc">See Configuration for more information.</span></a> To update this field, contact Wildbook support for assistance.</p></li>
+<li><p><strong>Observation comments</strong>: Any information that you want to associate with the Encounter.</p></li>
+</ol>
+<p>Click <strong>Save</strong> to record your changes.</p>
+</section>
+<section id="encounter-state">
+<h3>Encounter State<a class="headerlink" href="#encounter-state" title="Link to this heading">#</a></h3>
+<p>The Encounter workflow state is defined as:</p>
+<ul class="simple">
+<li><p><strong>Unapproved</strong> - An Encounter that has not been reviewed and accepted by a user. This is the default state for Encounters submitted using the  <a class="reference internal" href="../data/report-encounter.html"><span class="std std-doc">Report an Encounter</span></a> page.</p></li>
+<li><p><strong>Approved</strong> - An Encounter that has been reviewed and accepted by a user. This is the default state for Encounters submitted using Bulk Import.</p></li>
+<li><p><strong>Unidentifiable</strong> - An Encounter that has been reviewed and determined to be unusable for identification, but should remain in the system. Selecting your state will save it.</p></li>
+</ul>
+</section>
+<section id="contact-information-people-icon">
+<h3>Contact Information (People icon)<a class="headerlink" href="#contact-information-people-icon" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Managing Researcher</strong>: This is the Wildbook user that’s the Encounter owner. Only users with the Admin or Org admin role can edit this field.</p></li>
+<li><p><strong>Submitter</strong>: This is the researcher or citizen scientist that uploaded the Encounter.</p></li>
+<li><p><strong>Photographer</strong>: This is the photographer of the images on the Encounter.</p></li>
+<li><p><strong>Add submitter by email address</strong>, <strong>Add photographer by email address</strong>, and <strong>Add others to notify by email address</strong> all operate in the same manner.</p></li>
+</ul>
+<p>To add someone to one of these sections, click the <strong>Add People</strong> button, enter their email address, select a role from the Role menu, and click <strong>Save</strong>.
+To remove someone from one of these sections, click the <strong>Trash</strong> icon next to their information.</p>
+</section>
+<section id="encounter-history-clock-icon">
+<h3>Encounter History (Clock icon)<a class="headerlink" href="#encounter-history-clock-icon" title="Link to this heading">#</a></h3>
+<p>This contains a log of all modifications made to the Encounter since its upload.</p>
+</section>
+<section id="images">
+<h3>Images<a class="headerlink" href="#images" title="Link to this heading">#</a></h3>
+<p>The image gallery displays the annotations associated with an Encounter. An image will appear multiple times with different annotations highlighted to indicate different animals or animal parts detected.</p>
+<p>Click on an annotation from your image to select it. Use the <strong>Trash</strong> icon to delete the annotation or the <strong>Pencil</strong> icon to edit or reposition the existing annotation.</p>
+<section id="match-results">
+<h4>Match Results<a class="headerlink" href="#match-results" title="Link to this heading">#</a></h4>
+<p>After an annotation has completed identification, first click on an annotation and then click this button to see the match page and begin the <a class="reference internal" href="#..data/matching-process.md"><span class="xref myst">matching process</span></a>.</p>
+</section>
+<section id="visual-matcher">
+<h4>Visual Matcher<a class="headerlink" href="#visual-matcher" title="Link to this heading">#</a></h4>
+<p>Visual Matcher is a separate, limited user interface to support visual matching of Encounters without using computer vision. It was developed to support giant manta matching before computer vision was available. Some users may find it helpful for reviewing matches for other species.</p>
+</section>
+<section id="new-match">
+<h4>New Match<a class="headerlink" href="#new-match" title="Link to this heading">#</a></h4>
+<p>This opens a workflow to refine the filters to find match candidates. You can refine the filters to inlcude multiple location IDs, search for candidates in the Wildbook database or only your own data, and select additional algorithms if they are available for your species.</p>
+</section>
+<section id="add-annotation">
+<h4>Add Annotation<a class="headerlink" href="#add-annotation" title="Link to this heading">#</a></h4>
+<p>If detection missed annotating an animal, you can click this to add a <a class="reference internal" href="../data/manual-annotation-beta.html"><span class="std std-doc">manual annotation</span></a>.</p>
+</section>
+<section id="add-image">
+<h4>Add Image<a class="headerlink" href="#add-image" title="Link to this heading">#</a></h4>
+<p>You can add additional images to your Encounter here. Detection is not automatically run on these images. Select the image form the gallery and click the <strong>Add Annotation</strong> button to manually annotate it.</p>
+<section id="keywords">
+<h5>Keywords<a class="headerlink" href="#keywords" title="Link to this heading">#</a></h5>
+<p>Keywords can be added to an image by clicking on an image to expland it. To select a keyword:</p>
+<ol class="arabic simple">
+<li><p>Click on an image.</p></li>
+<li><p>Click the <strong>+ Add keyword</strong> button.</p></li>
+<li><p>Select an existing keyword from the <strong>Select Keyword</strong> drop-down menu or add a new one in the <strong>Add New Keyword</strong> field. Click <strong>Add</strong> to save.</p></li>
+<li><p>Use the <strong>Select Labeled Keyword</strong> drop-down menu to select one of the predefined labels.</p></li>
+<li><p>From the subsequent value drop-down menu, select the desired value. Click <strong>Add</strong> to save.</p></li>
+</ol>
+<p>Once selected, the keyword appears on the image and the labeled keyword will display in the format “label: value”.</p>
+<p>Labeled keywords are set in the <a class="reference internal" href="../specifications-and-system-requirements/system-configuration.html"><span class="std std-doc">commonConfiguration.properties file</span></a>; reach out to your admin or to <a class="reference external" href="https://community.wildme.org">Wildbook support</a> for configuration assistance. <a class="reference internal" href="../specifications-and-system-requirements/system-configuration.html"><span class="std std-doc">See Configuration for more information.</span></a></p>
+<p>Keywords are not automatically curated or checked against existing keywords, so you can create duplicate keywords easily. Admins can manage keywords from the <strong>Administer</strong> &gt; <strong>Photo Keywords</strong> menu.</p>
+</section>
+<section id="delete-image">
+<h5>Delete Image<a class="headerlink" href="#delete-image" title="Link to this heading">#</a></h5>
+<p>Click this button to remove the selected image from the Encounter.</p>
+</section>
+</section>
+</section>
+</section>
+<section id="more-details">
+<h2>More Details<a class="headerlink" href="#more-details" title="Link to this heading">#</a></h2>
+<section id="tracking-and-measurements">
+<h3>Tracking and Measurements<a class="headerlink" href="#tracking-and-measurements" title="Link to this heading">#</a></h3>
+<section id="tracking">
+<h4>Tracking<a class="headerlink" href="#tracking" title="Link to this heading">#</a></h4>
+<p>Tracking is used to document tags seen during an Encounter.</p>
+<ul class="simple">
+<li><p><strong>Metal Tags</strong>: Provides a space for a left or right-side tag.</p></li>
+<li><p><strong>Acoustic Tags</strong>: Provides information for sound-emitting aquatic tags, including serial number and ID.</p></li>
+<li><p><strong>Satellite Tags</strong>: Provides information associated with tagging done using satellites, including the name of the satellite, serial number, and Argos PTT.</p></li>
+</ul>
+<p>Click <strong>Save</strong> after the tag information is entered.</p>
+</section>
+<section id="measurements">
+<h4>Measurements<a class="headerlink" href="#measurements" title="Link to this heading">#</a></h4>
+<p>Measurements are used to track numeric information associated with an Encounter. These are set in the commonConfiguration.properties file. <a class="reference internal" href="../specifications-and-system-requirements/system-configuration.html"><span class="std std-doc">See Configuration for more information.</span></a> To request measurements be added, <a class="reference external" href="https://community.wildme.org">contact Wildbook support for assistance</a>.</p>
+<p>Click <strong>Save</strong> after the measurements are entered.</p>
+</section>
+</section>
+<section id="biological-samples">
+<h3>Biological Samples<a class="headerlink" href="#biological-samples" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>To enter a biological sample:</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Click <strong>Add biological sample</strong>.</p></li>
+<li><p>Enter the information you have associated with the sample. The only required information is the <strong>Sample ID</strong>.</p></li>
+<li><p>Click <strong>Set</strong> to finalize the sample and its associated metadata.</p></li>
+</ol>
+<ul class="simple">
+<li><p>Use the link on the confirmation page to navigate back to the Encounter if you want to enter analysis information, including:</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p><strong>Haplotype</strong></p></li>
+<li><p><strong>Microsatellite markers</strong></p></li>
+<li><p><strong>Genetic sex determination</strong></p></li>
+<li><p><strong>Biological/chemical measurement</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p>Open the appropriate analysis, then click <strong>Set</strong> to save the information you add.</p></li>
+<li><p>Click the <strong>X</strong> button under <strong>Remove</strong> to remove an entire sample.</p></li>
+</ul>
+</section>
+<section id="projects">
+<h3>Projects<a class="headerlink" href="#projects" title="Link to this heading">#</a></h3>
+<p>To add an  to an existing <a class="reference internal" href="#..data/projects.md"><span class="xref myst">project</span></a>, select the project name from the drop-down menu or begin typing the project name in the search field and select it when it appears. Click <strong>Add Project</strong>.</p>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="data-entry.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Data Entry</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="marked-individual.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Marked Individual</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navigating-to-an-encounter-page">Navigating to an Encounter Page</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encounter-page-format">Encounter Page Format</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#date">Date</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#encounter-date">Encounter Date</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#verbatim-event-date">Verbatim Event Date</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identity">Identity</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#matched-by">Matched by</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#individual-id">Individual ID</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#alternate-id">Alternate ID</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sighting-id-formerly-occurrence-id">Sighting ID (formerly “Occurrence ID”)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata">Metadata</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#assigned-user">Assigned user</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#location">Location</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Location</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#location-id">Location ID</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#country">Country</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#gps-coordinates">GPS Coordinates</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delete-encounter">Delete Encounter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#attributes">Attributes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#encounter-state">Encounter State</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contact-information-people-icon">Contact Information (People icon)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#encounter-history-clock-icon">Encounter History (Clock icon)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#images">Images</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#match-results">Match Results</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visual-matcher">Visual Matcher</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#new-match">New Match</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#add-annotation">Add Annotation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#add-image">Add Image</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#keywords">Keywords</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#delete-image">Delete Image</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#more-details">More Details</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tracking-and-measurements">Tracking and Measurements</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tracking">Tracking</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#measurements">Measurements</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#biological-samples">Biological Samples</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#projects">Projects</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Wild Me
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024 Conservation X Labs.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,720 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Code Contribition Guideline &#8212; Wildbook  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=dddd19d0" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'contribute/code-guide';</script>
+    <script src="../_static/tocjs.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Testing in Wildbook" href="tests.html" />
+    <link rel="prev" title="Pull Request Workflow" href="pr-workflow.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/WildMe-Logo.png" class="logo__image only-light" alt="Wildbook  documentation - Home"/>
+    <script>document.write(`<img src="../_static/WildMe-Logo.png" class="logo__image only-dark" alt="Wildbook  documentation - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../getting-started-with-wildbook.html">Getting Started</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../introduction/index.html">Introduction to Wildbook</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/image-analysis-pipeline.html">Image Analysis Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/data-entry.html">Data Entry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/encounter.html">Encounter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/marked-individual.html">Marked Individual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/sighting.html">Sighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/security-overview.html">Security Overview</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../data/index.html">Data Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../data/photography-guidelines.html">Photography Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/report-encounter.html">Report an encounter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/bulk-import-beta.html">Bulk Import</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/matching-process.html">Matching Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/manual-annotation-beta.html">Manual Annotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/search.html">Searching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/data-exports.html">Export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/wildex-image-export-app.html">WildEx Image Export App</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/projects.html">Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/location-ids.html">Location IDs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/r-package-alpha.html">R Package (alpha)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../security/index.html">Security Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../security/my-account.html">My Account</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../security/silo-security/index.html">Silo Security</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/org-admin.html">Org admin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/site-admin.html">Site admin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/photo-keywords.html">Photo Keywords</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/data-integrity.html">Data Integrity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/library-management.html">Library Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/bulk-import-logs.html">Bulk Import Logs</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../specifications-and-system-requirements/index.html">System requirements</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../specifications-and-system-requirements/system-configuration.html">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../specifications-and-system-requirements/unsupported-developer-tools.html">Unsupported developer tools</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../faq/index.html">FAQ</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../faq/bulk-import-faq.html">Bulk Import FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/codex-wildbook-faq.html">Codex to Wildbook FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/matching-faq.html">Matching FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/merging-faq.html">Merging FAQ</a></li>
+</ul>
+</details></li>
+</ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Ways to Contribute</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="dev-setup.html">Dev Environment Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pr-workflow.html">Pull Request Workflow</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Code Contribition Guideline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tests.html">Testing in Wildbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ia-dev.html">Image Analysis Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="copy-guide.html">Copy Contribution Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="roadmap.html">Roadmap</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="dev-setup.html">Dev Environment Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pr-workflow.html">Pull Request Workflow</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Code Contribition Guideline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="copy-guide.html">Copy Contribution Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="roadmap.html">Roadmap</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/WildMeOrg/wildbook-docs" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/contribute/code-guide.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Code Contribition Guideline</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general">General</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dependencies">Dependencies</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#internationalization">Internationalization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notes-during-modernization">Notes during modernization</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#react">React</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plugins-used">Plugins used</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Internationalization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relevant-rules">Relevant rules</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#best-practices">Best practices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tip-and-tricks">Tip and Tricks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#customizing-copy">Customizing copy</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#java-jsp-style">Java/jsp style</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jsp-internationalization">Jsp Internationalization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Best practices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exception-handling">Exception handling</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="code-contribition-guideline">
+<h1>Code Contribition Guideline<a class="headerlink" href="#code-contribition-guideline" title="Link to this heading">#</a></h1>
+<p>Presently, Wildbook is a tomcat application leveraging jsp as the frontend. We are transitioning to a react frontend with a standardized REST API framework. We are iteratively removing jsp pages. For more details on the trajectory of page updates, see the <a class="reference internal" href="roadmap.html"><span class="std std-doc">roadmap</span></a>.</p>
+<section id="general">
+<h2>General<a class="headerlink" href="#general" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>DRY Principle: Do Not Repeat Yourself. Avoid code duplication by reusing components, functions, and styles. This not only minimizes the codebase but also simplifies maintenance and updates.</p></li>
+<li><p>If you are adding code that will be custom to a single platform, the feature needs to be approved by the Wild Me team. If approved, add all custom code in a block at the bottom of the page to prevent merge conflicts.</p></li>
+<li><p>Variable names should be in camel case</p></li>
+<li><p>Don’t use single-letter variable names (no matter how temporary you think the code is)</p></li>
+<li><p>Code should be clear enough to speak for itself without comments, but use your judgement on if a comment is necessary</p></li>
+<li><p>Code for clarity rather than for efficiency (one-liners are cool, but not at the expense of future obfuscation)</p></li>
+<li><p>URLs with multiple words should be in kebab case, i.e., <code class="docutils literal notranslate"><span class="pre">encounter-search</span></code></p></li>
+</ul>
+<section id="dependencies">
+<h3>Dependencies<a class="headerlink" href="#dependencies" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>All dependencies must be on a locked version. We do not accept PRs that use the <code class="docutils literal notranslate"><span class="pre">latest</span></code> version of anything.</p></li>
+<li><p>We use dependabot for dependency management; however, due to inconsistencies in semantic versioning and behavioral changes in packages supporting machine learning, we do system testing for all PRs suggested by dependabot. If you want to update or add a new dependency, contact the Wild Me team to discuss the changes before submitting a PR.</p></li>
+</ul>
+</section>
+<section id="internationalization">
+<h3>Internationalization<a class="headerlink" href="#internationalization" title="Link to this heading">#</a></h3>
+<p>All Wild Me tools are intended for an international audience, so we want to provide translated versions. An active goal for 2024 is to get ensure that all product copy has been internationalized according to the following standard.</p>
+<p>At present, in Wildbook, all copy except for site name and species names should be wrapped and localized to 5 languages: German, English, French, Spanish, and Italian. If you see UI copy that is not localized, let us know or create a PR to address the issue.</p>
+</section>
+<section id="notes-during-modernization">
+<h3>Notes during modernization<a class="headerlink" href="#notes-during-modernization" title="Link to this heading">#</a></h3>
+<p>Because we are transitioning between tech stacks, there are some places where code is weird or where duplicate effort is necessary to maintain user experience.</p>
+<ul class="simple">
+<li><p>If updating the header, you will need to update:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">header.jsp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">header.jsx</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">servletResponseTemplate.htm</span></code></p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="react">
+<h2>React<a class="headerlink" href="#react" title="Link to this heading">#</a></h2>
+<section id="plugins-used">
+<h3>Plugins used<a class="headerlink" href="#plugins-used" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">eslint-plugin-react</span></code>: For React best practices.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">eslint-plugin-react-hooks</span></code>: Ensures correct use of hooks.</p></li>
+</ul>
+</section>
+<section id="id1">
+<h3>Internationalization<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Language files are located in <code class="docutils literal notranslate"><span class="pre">frontend/src/locale/</span></code>. If you are adding a new string to the system, make sure the string is available across the different languages by adding the key and translated string to</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">de.json</span></code> - German</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">en.json</span></code> - English</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">es.json</span></code> - Spanish</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">fr.json</span></code> - French</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">it.json</span></code> - Italian
+Ensure that the key is all caps with underscores as separators and is human-legible. Ex: <strong>THISKEY_IS_GOOD</strong> vs this.key.NeedsToBe-fixed vs TKNTBF</p></li>
+</ul>
+</section>
+<section id="relevant-rules">
+<h3>Relevant rules<a class="headerlink" href="#relevant-rules" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Semicolons are required (“semi”: 2).</p></li>
+<li><p>JSX is allowed in both .js and .jsx files (“react/jsx-filename-extension”: 0).</p></li>
+<li><p>Console statements show warnings (“no-console”: 1).</p></li>
+<li><p>React Hooks rules are enforced (“react-hooks/rules-of-hooks”: “error”).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/*</span> <span class="pre">eslint-disable</span> <span class="pre">no-restricted-globals</span> <span class="pre">*/</span></code> must be present at the top of the serviceworker to allow <code class="docutils literal notranslate"><span class="pre">self</span></code> to work</p></li>
+</ul>
+</section>
+<section id="best-practices">
+<h3>Best practices<a class="headerlink" href="#best-practices" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><em>Prefer Bootstrap Classes</em>: Always use Bootstrap’s utility classes for styling when possible. This ensures consistency across the project and leverages Bootstrap’s responsive features. Only use custom CSS or inline styles when the desired styling cannot be achieved with Bootstrap.</p></li>
+<li><p><em>Code Consistency</em>: We are using eslint and prettier to enforce a consistent coding style throughout the project. This includes consistent naming conventions, file and folder structure, and code formatting.</p></li>
+<li><p><em>Componentization</em>: Break down the UI into reusable components to maximize code reusability and clarity. Each component should have a well-defined purpose and should operate independently as much as possible.</p></li>
+<li><p><em>State Management</em>: Carefully manage state to avoid unnecessary re-renders. Use local state (with <code class="docutils literal notranslate"><span class="pre">useState</span></code>) for data that affects only one component, and consider using context or state management libraries (like Redux or MobX) for shared state across many components.</p></li>
+<li><p><em>UseEffect Best Practices</em>: When using <code class="docutils literal notranslate"><span class="pre">useEffect</span></code>, always include all dependencies in the dependency array to avoid bugs related to stale state and props. Also, be sure to return a cleanup function to avoid memory leaks, especially when subscribing to external data sources.</p></li>
+<li><p><em>Props Validation</em>: Use <code class="docutils literal notranslate"><span class="pre">PropTypes</span></code> to validate props passed to a component, or consider using TypeScript for static type checking throughout the application. This can prevent many runtime errors and improve developer productivity.</p></li>
+</ul>
+</section>
+<section id="tip-and-tricks">
+<h3>Tip and Tricks<a class="headerlink" href="#tip-and-tricks" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>If bootstrap components are stubbornly refusing to change color, try <code class="docutils literal notranslate"><span class="pre">accent-color</span></code>.</p></li>
+</ul>
+</section>
+<section id="customizing-copy">
+<h3>Customizing copy<a class="headerlink" href="#customizing-copy" title="Link to this heading">#</a></h3>
+<p>If you are updating a translation for general use, do your PR against the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch. If you are updating a language file to have specific copy associated with a specific platform, do your PR against the specific platform’s branch.</p>
+</section>
+</section>
+<section id="java-jsp-style">
+<h2>Java/jsp style<a class="headerlink" href="#java-jsp-style" title="Link to this heading">#</a></h2>
+<section id="jsp-internationalization">
+<h3>Jsp Internationalization<a class="headerlink" href="#jsp-internationalization" title="Link to this heading">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">.properties</span></code> files in the <code class="docutils literal notranslate"><span class="pre">resources/bundles</span></code> language folders are used to generate translations for different supported languages. If you add a new string to the system, add the string to the appropriate <code class="docutils literal notranslate"><span class="pre">.properties</span></code> file, and make sure the string is available across <code class="docutils literal notranslate"><span class="pre">en</span></code>, <code class="docutils literal notranslate"><span class="pre">de</span></code>, <code class="docutils literal notranslate"><span class="pre">es</span></code>, <code class="docutils literal notranslate"><span class="pre">fr</span></code>, and <code class="docutils literal notranslate"><span class="pre">it</span></code>. Either provide the English string in all files, or provide the translated string in each one.</p>
+</section>
+<section id="id2">
+<h3>Best practices<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>If changing a dropdown in a .jsp page, use the library <code class="docutils literal notranslate"><span class="pre">select</span> <span class="pre">2</span></code>. It provides a single line component update that adds in the ability to filter the dropdown. For example: <code class="docutils literal notranslate"><span class="pre">$('#selectCode').select2({width:</span> <span class="pre">'100%'});</span></code></p></li>
+<li><p>Initialize variables and type signatures at the abstract/interface level when possible.</p></li>
+</ul>
+<p>Instead of:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">ArrayList</span><span class="w"> </span><span class="n">encounters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Encounter</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="p">...</span>
+<span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">getMax</span><span class="p">(</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">numbers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</pre></div>
+</div>
+<p>Try:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">List</span><span class="w"> </span><span class="n">encounters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Encounter</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="p">...</span>
+<span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">getMax</span><span class="p">(</span><span class="n">Collection</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">numbers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</pre></div>
+</div>
+<p>It’s easier to read and more intuitive for a function to take a Map or List than a HashMap or ArrayList.</p>
+<p>The List interface defines how we want that variable to behave, and whether it’s an ArrayList or LinkedList is incidental. Keeping the variable and method signatures abstract means we can change the implementation later (eg swapping ArrayList-&gt;LinkedList) without changing the rest of our code.
+https://stackoverflow.com/questions/2279030/type-list-vs-type-arraylist-in-java</p>
+<p>Related: when writing utility methods, making the input type as abstract as possible makes the method versatile. See Util.asSortedList in Wildbook: since the input is an abstract Collection, it can accept a List, Set, PriorityQueue, or Vector as input, and return a sorted List.</p>
+<ul class="simple">
+<li><p>Runtime (not style): Use Sets (not Lists or arrays) if you’re only keeping track of collection membership / item uniqueness.</p></li>
+</ul>
+<p>Instead of:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">List</span><span class="o">&lt;</span><span class="n">MarkedIndividual</span><span class="o">&gt;</span><span class="w"> </span><span class="n">uniqueIndividuals</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">MarkedIndividual</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="k">for</span><span class="p">(</span><span class="n">Encounter</span><span class="w"> </span><span class="n">currentEncounter</span><span class="p">:</span><span class="w"> </span><span class="n">encounters</span><span class="p">){</span>
+<span class="w">	</span><span class="n">MarkedIndividual</span><span class="w"> </span><span class="n">currentInd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">enc</span><span class="p">.</span><span class="na">getIndividual</span><span class="p">();</span>
+<span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="o">!</span><span class="p">(</span><span class="n">uniqueIndividuals</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">currentInd</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="n">uniqueIndividuals</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">currentInd</span><span class="p">);</span>
+<span class="w">		</span><span class="n">doStuff</span><span class="p">();</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Try:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Set</span><span class="o">&lt;</span><span class="n">MarkedIndividual</span><span class="o">&gt;</span><span class="w"> </span><span class="n">uniqueIndividuals</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HashSet</span><span class="o">&lt;</span><span class="n">MarkedIndividual</span><span class="o">&gt;</span><span class="p">();</span><span class="w">	</span>
+<span class="k">for</span><span class="p">(</span><span class="n">Encounter</span><span class="w"> </span><span class="n">currentEncounter</span><span class="p">:</span><span class="w"> </span><span class="n">encounters</span><span class="p">){</span>
+<span class="w">	</span><span class="n">MarkedIndividual</span><span class="w"> </span><span class="n">currentInd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">enc</span><span class="p">.</span><span class="na">getIndividual</span><span class="p">();</span>
+<span class="w">	</span><span class="k">if</span><span class="w"> </span><span class="o">!</span><span class="p">(</span><span class="n">uniqueIndividuals</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">currentInd</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="n">uniqueIndividuals</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">currentInd</span><span class="p">);</span>
+<span class="w">		</span><span class="n">doStuff</span><span class="p">();</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The reason is a little deep in the data types. Sets are defined as unordered collections of unique elements; and Lists/arrays are ordered collections with no bearing on element-uniqueness. If the order of a collection doesn’t matter and you’re just checking membership, you’ll have faster runtime using a Set.</p>
+<p>Sets implement contains, add, and remove methods much faster than lists [contains is O(log(n)) vs O(n) runtime]. A list has to iterate through the entire list every time it runs contains (it checks each item once at a time) while a set (especially a HashSet) keeps track of an item index for quick lookup.</p>
+<ul class="simple">
+<li><p>Use for-each loops aka “enhanced for loops” to make loops more concise and readable.</p></li>
+</ul>
+<p>Instead of:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">&lt;</span><span class="n">encounters</span><span class="p">.</span><span class="na">length</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="n">Encounter</span><span class="w"> </span><span class="n">enc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">encounters</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="w">	</span><span class="n">doStuff</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>try:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">Encounter</span><span class="w"> </span><span class="n">enc</span><span class="p">:</span><span class="w"> </span><span class="n">encounters</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="n">doStuff</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Note that in both cases you might want to check if <code class="docutils literal notranslate"><span class="pre">encounters</span> <span class="pre">==</span> <span class="pre">null</span></code> if relevant, but you rarely need to check if <code class="docutils literal notranslate"><span class="pre">encounters.length()&gt;0</span></code> because the for-loops take care of that.</p>
+<p>Conversely, if you want access to the <code class="docutils literal notranslate"><span class="pre">i</span></code> variable for logging or otherwise, the classic for-loop is best.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Util.stringExists</span></code> is shorthand for a common string check:</p></li>
+</ul>
+<p>Instead of:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">str</span><span class="o">!=</span><span class="n">Null</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">!</span><span class="n">str</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="n">doStuff</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Try:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Util</span><span class="p">.</span><span class="na">stringExists</span><span class="p">(</span><span class="n">str</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="n">doStuff</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>This method also checks for the strings “none” and “unknown” which have given us trouble in displays in the past.</p>
+</section>
+<section id="exception-handling">
+<h3>Exception handling<a class="headerlink" href="#exception-handling" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>When dealing with any functionality that handles data persistence, make sure to use try catch exceptions. Data loss is considered a critical failure and an emergency to address.</p></li>
+<li><p>Try to catch exceptions as close to the problem as possible. For example, catching an exception of a single failing item <em>inside</em> a loop is better than catching the exception outside the loop, causing the loop to exit early.</p></li>
+<li><p>Use a <code class="docutils literal notranslate"><span class="pre">finally</span></code> block, especially for clean-up functionality like closing database handles, etc.</p></li>
+<li><p>Recurring/predictable exceptions are often better handled by preventing them. For example, OpenSearch indexing will often throw exceptions for invalid data (for example, lat/lon out of range). However, <em>even though these are caught</em>, the caught exception still prevents the whole object from being indexed. Better to prevent the <em>single field</em> from being indexed through code (validation) than let the exception happen.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="pr-workflow.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Pull Request Workflow</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="tests.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Testing in Wildbook</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general">General</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dependencies">Dependencies</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#internationalization">Internationalization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notes-during-modernization">Notes during modernization</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#react">React</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plugins-used">Plugins used</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Internationalization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relevant-rules">Relevant rules</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#best-practices">Best practices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tip-and-tricks">Tip and Tricks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#customizing-copy">Customizing copy</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#java-jsp-style">Java/jsp style</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jsp-internationalization">Jsp Internationalization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Best practices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exception-handling">Exception handling</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Wild Me
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024 Conservation X Labs.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
