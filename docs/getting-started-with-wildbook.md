@@ -30,14 +30,11 @@ A great way to get familiar with the [Wildbook Image Analysis pipeline](introduc
 9. Boxes for Annotations from [machine learning detection](introduction/image-analysis-pipeline.md) may have appeared. If you don't see Annotation boxes around the animal or its parts, the detection stage may not have been completed yet. It may take a minute or more (depending on how busy the [Wildbook Image Analysis pipeline ](introduction/image-analysis-pipeline.md)is) for the Annotation to appear. *You must refresh the page periodically for these boxes to appear after detection has completed.*
 10. After the bounding boxes have appeared, if they represent a matchable Annotation class in Wildbook, you can click **Match Results** to view the ongoing or completed matching process.
 11. The match results page will show you one set of results for each algorithm run on each Annotation from the submission. 
-    ![quickstart match results](assets/images/wb-orca-matchresults.png)
 12. Scroll over each potential match (ranked 1-12 from most likely to least likely match) to inspect what each algorithm found similar between the Annotations. Each result includes a rank, an algorithm-specific score, and potentially additional ID and date metadata to help you evaluate the result. See **[Identification](introduction/image-analysis-pipeline.md#identification)** for more information about each algorithm used in Wildbook.
 13. If appropriate, set the ID:
-    1. If you find a matched individual in the results, scroll over the matching results and select the Inspect checkbox. A **Set to Individual** button will appear on the right and allow you to set the individual ID for the Encounter you submitted. Congratulations! You made your first match!
-        ![quickstart match ID](assets/images/wb-orca-matchresults-selected.png)
-    2. In this example, this orca did not match any of the proposed match results. This is likely a new individual to the catalog. To set a new ID, return to the Encounter page and click **Edit** in the **Identity** section to **Set New Individual ID**, as shown below. The name you set will become the default name for the individual, but you can set nicknames and alternative IDs later on.
-        ![quickstart new ID](assets/images/wb-encounter-name-individual.png)
-14. Congratulations! You have matched or identified your first Marked Individual in Wildbook! Click on the ID in the Encounter page to view the Marked Individual's page and see your submitted Encounter listed.
+    1. If you find a matched individual in the results, scroll over the matching results and select the Inspect button. **Set to Individual** will appear and allow you to set the individual ID for the Encounter you submitted. Congratulations! You made your first match!
+    2. In this example, this orca did not match any of the proposed match results. This is likely a new individual to the catalog. To set a new ID, return to the Encounter page and click the pencil icon in the **Identity** section to set the Individual ID. The name you set will become the default name for the individual, but you can set nicknames and alternative IDs later on.
+14. Congratulations! You have matched or identified your first Marked Individual in Wildbook! Click on the ID in the Encounter page to view the Marked Individual's page and see your submitted Encounter.
 15. You can return to this Encounter from the table displayed when you select **My Encounters** from the **My Data** menu.
 
 ## Next Steps
@@ -55,11 +52,11 @@ Wildbook may require further configuration to better suit your research. Common 
 * Adding additional species to Wildbook.
 * Working with Wild Me to create new machine learning or cross-apply existing techniques for a species.
 
-If these categories apply, please request support on the [Wildbook Community site](https://community.wildme.org) or contact your Wildbook system administrator.
+If these categories apply, please post a Feature Requet on the [Wildbook Community forum](https://community.wildme.org) or contact your Wildbook system administrator.
 
 ### Bulk Import Legacy Data for Matching
 
-Many researchers have past data that needs importing into Wildbook, such as to:
+Many researchers have past data that needs importing into Wildbook to:
 
 * Create a base catalog of IDs to match new data against.
 * Apply machine learning to existing unprocessed data that needs curation and analysis.
