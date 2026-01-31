@@ -62,10 +62,3 @@ If the species of the body and the species of the part are the same, the Annotat
 2. Return to your original Encounter. Create a new Annotation for the body with the correct species.
 3. Delete the previous body Annotation.
 4. Create a new part Annotation.
-
-### How do I move an Annotation from one individual to another?
-
-1. Go to the Encounter with the misassigned Annotation.
-2. Select the image and click **Add Annotation**
-3. Choose the **IA Class** and **Viewpoint**, then draw the same Annotation around the animal. When you click **Save Annotation**, it will clone the Encounter and metadata and add your new Annotation to it. The new Encounter will not be part of the Individual, but it will be part of the same Sighting.
-4. Go back to your original Encounter. Click on the annotation you just duplicated and click on the Trash icon to delete it.
