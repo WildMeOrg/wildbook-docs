@@ -1,0 +1,563 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>WildEx Image Export App &#8212; Wildbook  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=dddd19d0" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'data/wildex-image-export-app';</script>
+    <script src="../_static/tocjs.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Projects" href="projects.html" />
+    <link rel="prev" title="Export" href="data-exports.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/WildMe-Logo.png" class="logo__image only-light" alt="Wildbook  documentation - Home"/>
+    <script>document.write(`<img src="../_static/WildMe-Logo.png" class="logo__image only-dark" alt="Wildbook  documentation - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../getting-started-with-wildbook.html">Getting Started</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../introduction/index.html">Introduction to Wildbook</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/image-analysis-pipeline.html">Image Analysis Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/data-entry.html">Data Entry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/encounter.html">Encounter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/marked-individual.html">Marked Individual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/sighting.html">Sighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/security-overview.html">Security Overview</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Data Overview</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="photography-guidelines.html">Photography Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="report-encounter.html">Report an encounter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bulk-import-beta.html">Bulk Import</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matching-process.html">Matching Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual-annotation-beta.html">Manual Annotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="search.html">Searching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-exports.html">Export</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">WildEx Image Export App</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html">Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="location-ids.html">Location IDs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="r-package-alpha.html">R Package (alpha)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../security/index.html">Security Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../security/my-account.html">My Account</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../security/silo-security/index.html">Silo Security</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/org-admin.html">Org admin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/site-admin.html">Site admin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/photo-keywords.html">Photo Keywords</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/data-integrity.html">Data Integrity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/library-management.html">Library Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/bulk-import-logs.html">Bulk Import Logs</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../specifications-and-system-requirements/index.html">System requirements</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../specifications-and-system-requirements/system-configuration.html">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../specifications-and-system-requirements/unsupported-developer-tools.html">Unsupported developer tools</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../faq/index.html">FAQ</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../faq/bulk-import-faq.html">Bulk Import FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/codex-wildbook-faq.html">Codex to Wildbook FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/matching-faq.html">Matching FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/merging-faq.html">Merging FAQ</a></li>
+</ul>
+</details></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../contribute/index.html">Ways to Contribute</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/dev-setup.html">Dev Environment Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/pr-workflow.html">Pull Request Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/code-guide.html">Code Contribition Guideline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/tests.html">Testing in Wildbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/ia-dev.html">Image Analysis Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/copy-guide.html">Copy Contribution Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/roadmap.html">Roadmap</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/dev-setup.html">Dev Environment Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/pr-workflow.html">Pull Request Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/code-guide.html">Code Contribition Guideline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/copy-guide.html">Copy Contribution Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/roadmap.html">Roadmap</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/WildMeOrg/wildbook-docs" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/data/wildex-image-export-app.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>WildEx Image Export App</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-the-desktop-app">Install the desktop app</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-a-wildex-export-from-wildbook">Generate a WildEx export from Wildbook</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-from-the-desktop-app">Export from the desktop app</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#faq">FAQ</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-if-my-internet-is-slow-can-i-still-download">What if my internet is slow? Can I still download?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#i-got-an-error-notification-what-do-i-do">I got an error notification. What do I do?</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="wildex-image-export-app">
+<h1>WildEx Image Export App<a class="headerlink" href="#wildex-image-export-app" title="Link to this heading">#</a></h1>
+<p>The WildEx Image Export app is a desktop tool that pairs with Wildbook and allows users to export the annotated images and the related metadata. The primary goal is to allow users to update their individual ID kits using the data from the curated catalog.</p>
+<blockquote>
+<div><p>This tool is possible thanks to our partnership with <a class="reference external" href="https://www.t4c.org/">Tech4Conservation</a>, who generously donated the original code to the Wild Me tool suite.</p>
+</div></blockquote>
+<section id="install-the-desktop-app">
+<h2>Install the desktop app<a class="headerlink" href="#install-the-desktop-app" title="Link to this heading">#</a></h2>
+<p>WildEx Image Export is available for both Windows and Mac.</p>
+<ol class="arabic simple">
+<li><p>To download, visit <a class="reference external" href="https://github.com/WildMeOrg/WildbookExport/releases">Wild Me Export - Releases</a>.</p></li>
+<li><p>Click the carat next to <strong>Assets</strong> to expand the menu.</p></li>
+<li><p>Click to download the appropriate version.</p></li>
+<li><p>Once the download completes, click to install.</p></li>
+<li><p>The app should automatically open once installed.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Despite the warning that generates when you click to install the app, the tool is secure. We are aware of the issue and will work to resolve it. For now, acknowledge the security warnings and select to install anyway.</p>
+</div>
+</section>
+<section id="generate-a-wildex-export-from-wildbook">
+<h2>Generate a WildEx export from Wildbook<a class="headerlink" href="#generate-a-wildex-export-from-wildbook" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Sign in to your Wildbook account.</p></li>
+<li><p>Select <strong>Search</strong> &gt; <strong>Encounter Search</strong>.</p></li>
+<li><p>Set the available filters to limit the data to your desired results and click <strong>Search Encounters</strong>.</p></li>
+<li><p>Once the search results have generated, select the <strong>Export</strong> tab.</p></li>
+<li><p>Next to Encounter Annotation Export, click <strong>Click here</strong>.</p></li>
+<li><p>Wait while the export is generated. It will appear as a download and be accessible from your desktop, typically in the Downloads folder.</p></li>
+</ol>
+</section>
+<section id="export-from-the-desktop-app">
+<h2>Export from the desktop app<a class="headerlink" href="#export-from-the-desktop-app" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Open the WildEx Image Export app on your desktop.</p></li>
+<li><p>Select the generated Annotation export file from the previous section.</p></li>
+<li><p>If you want to <strong>include unidentified encounters in the export</strong>, select <strong>Yes</strong>. Otherwise, keep the defaults.</p></li>
+<li><p>Set the <strong>number of annotations per individual ID</strong> you want to download. By default, this will be 4, which downloads one annotation per viewpoint.</p></li>
+<li><p>Click <strong>Download Annotations</strong>.</p></li>
+<li><p>Select where the folder should be created.</p></li>
+<li><p>Wait for your download to complete.</p></li>
+</ol>
+<p>Downloaded images will be available in folders labelled by the individual. If you selected to include unidentified individuals, they will all be included in a single folder labeled <em>Unidentified_individuals</em>.</p>
+</section>
+<section id="faq">
+<h2>FAQ<a class="headerlink" href="#faq" title="Link to this heading">#</a></h2>
+<section id="what-if-my-internet-is-slow-can-i-still-download">
+<h3>What if my internet is slow? Can I still download?<a class="headerlink" href="#what-if-my-internet-is-slow-can-i-still-download" title="Link to this heading">#</a></h3>
+<p>You can still use the tool, but it is recommended to create smaller export sheets, either by modifying your search or subsetting the resulting export.</p>
+</section>
+<section id="i-got-an-error-notification-what-do-i-do">
+<h3>I got an error notification. What do I do?<a class="headerlink" href="#i-got-an-error-notification-what-do-i-do" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Go to the folder where you’re downloading the images to</p></li>
+<li><p>Find an excel file with the same name as the original export file except with .resume added to the file name – open this file</p></li>
+<li><p>Go to the “Encounter.sourceUrl” column (column B) to access the encounter(s) that are causing the download to error</p></li>
+<li><p>Resolve the issue(s)</p></li>
+<li><p>Return to the WildEx desktop utility and select the .resume version of the original export file to restart and complete the download</p></li>
+</ol>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="data-exports.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Export</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="projects.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Projects</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-the-desktop-app">Install the desktop app</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-a-wildex-export-from-wildbook">Generate a WildEx export from Wildbook</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-from-the-desktop-app">Export from the desktop app</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#faq">FAQ</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-if-my-internet-is-slow-can-i-still-download">What if my internet is slow? Can I still download?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#i-got-an-error-notification-what-do-i-do">I got an error notification. What do I do?</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Wild Me
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024 Conservation X Labs.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

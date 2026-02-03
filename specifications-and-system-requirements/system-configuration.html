@@ -1,0 +1,921 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Configuration &#8212; Wildbook  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=dddd19d0" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'specifications-and-system-requirements/system-configuration';</script>
+    <script src="../_static/tocjs.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Unsupported developer tools" href="unsupported-developer-tools.html" />
+    <link rel="prev" title="System requirements" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/WildMe-Logo.png" class="logo__image only-light" alt="Wildbook  documentation - Home"/>
+    <script>document.write(`<img src="../_static/WildMe-Logo.png" class="logo__image only-dark" alt="Wildbook  documentation - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../getting-started-with-wildbook.html">Getting Started</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../introduction/index.html">Introduction to Wildbook</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/image-analysis-pipeline.html">Image Analysis Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/data-entry.html">Data Entry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/encounter.html">Encounter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/marked-individual.html">Marked Individual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/sighting.html">Sighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/security-overview.html">Security Overview</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../data/index.html">Data Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../data/photography-guidelines.html">Photography Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/report-encounter.html">Report an encounter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/bulk-import-beta.html">Bulk Import</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/matching-process.html">Matching Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/manual-annotation-beta.html">Manual Annotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/search.html">Searching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/data-exports.html">Export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/wildex-image-export-app.html">WildEx Image Export App</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/projects.html">Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/location-ids.html">Location IDs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/r-package-alpha.html">R Package (alpha)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../security/index.html">Security Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../security/my-account.html">My Account</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../security/silo-security/index.html">Silo Security</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/org-admin.html">Org admin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/site-admin.html">Site admin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/photo-keywords.html">Photo Keywords</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/data-integrity.html">Data Integrity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/library-management.html">Library Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/bulk-import-logs.html">Bulk Import Logs</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">System requirements</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unsupported-developer-tools.html">Unsupported developer tools</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../faq/index.html">FAQ</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../faq/bulk-import-faq.html">Bulk Import FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/codex-wildbook-faq.html">Codex to Wildbook FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/matching-faq.html">Matching FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/merging-faq.html">Merging FAQ</a></li>
+</ul>
+</details></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../contribute/index.html">Ways to Contribute</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/dev-setup.html">Dev Environment Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/pr-workflow.html">Pull Request Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/code-guide.html">Code Contribition Guideline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/tests.html">Testing in Wildbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/ia-dev.html">Image Analysis Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/copy-guide.html">Copy Contribution Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/roadmap.html">Roadmap</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/dev-setup.html">Dev Environment Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/pr-workflow.html">Pull Request Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/code-guide.html">Code Contribition Guideline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/copy-guide.html">Copy Contribution Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/roadmap.html">Roadmap</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/WildMeOrg/wildbook-docs" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/specifications-and-system-requirements/system-configuration.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Configuration</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wildbook-configuration-structure">Wildbook Configuration Structure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#translation-files">Translation files</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-the-database-and-persistence-behavior">Changing the database and persistence behavior</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-wildbook-s-appearance">Changing Wildbook’s Appearance</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#css-changes">CSS changes</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#encounter-configuration">Encounter Configuration</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#supporting-multiple-species">Supporting multiple species</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-encounter-states-for-workflow">Configuring encounter states for workflow</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-location-ids-study-sites">Configuring location IDs (study sites)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-encounter-measurements">Configuring encounter measurements</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-and-localizing-measurement-labels">Configuring and localizing measurement labels</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-labelled-keywords">Configuring labelled keywords</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-life-stages">Configuring life stages</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-physical-tag-metadata">Configuring physical tag metadata</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-visual-patterning-codes">Configuring visual patterning codes</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-elevation-and-depth">Configuring elevation and depth</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-tissue-samples-and-analyses">Configuring tissue samples and analyses</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#custom-content-display">Custom content display</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marked-individuals">Marked Individuals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#social-relationships">Social relationships</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#email-notifications">Email Notifications</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#internationalization-i18n">Internationalization (I18N)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-the-supported-languages">Setting the supported languages</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#translating-text">Translating text</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legacy-spot-matching">Legacy Spot Matching</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="configuration">
+<h1>Configuration<a class="headerlink" href="#configuration" title="Link to this heading">#</a></h1>
+<p>This guide discusses how to configure Wildbook to fit the study design of your project. Wildbook configuration is done at the file system level in <strong>.properties</strong> files and <strong>.json</strong> files. There is no UI to change these files, and we recommend a good Linux command line editor to change them. For changed values to be reflected in the UI, a Wildbook restart may be needed.</p>
+<p><em>Changing Wildbook configuration is a technical task and can make Wildbook inoperable if misconfigured. We highly recommend tracking changes you make to Wildbook in source control. Source control prevents your changes from being lost when you upgrade Wildbook in the future.</em></p>
+<section id="wildbook-configuration-structure">
+<h2>Wildbook Configuration Structure<a class="headerlink" href="#wildbook-configuration-structure" title="Link to this heading">#</a></h2>
+<p>By default Wildbook configuration options are stored as name-value pairs in <strong>.properties</strong> or <strong>.json</strong> files in:
+<code class="docutils literal notranslate"><span class="pre">&lt;tomcat_install_dir&gt;/webapps/wildbook/WEB-INF/classes/bundles</span></code>
+Wildbook has a look-here-first override directory for these files hardcoded to:
+<code class="docutils literal notranslate"><span class="pre">/data/wildbook_data_dir</span></code></p>
+<p>Wildbook looks in the override directory first before looking in the installation directory, allowing you to easily maintain secure configurations <strong>(e.g., the database password in jdoconfig.properties)</strong> in a separate directory while still upgrading Wildbook entirely in the installation directory.</p>
+<p>You can edit these files with a text editor, and after making changes, restart Tomcat to see the new configurations take effect.</p>
+<section id="translation-files">
+<h3>Translation files<a class="headerlink" href="#translation-files" title="Link to this heading">#</a></h3>
+<p>Properties files placed in language-specific folders, such as <strong>“en” (English), “es” (Spanish),</strong> etc. represent translated files of the Wildbook user interface (UI).</p>
+</section>
+<section id="changing-the-database-and-persistence-behavior">
+<h3>Changing the database and persistence behavior<a class="headerlink" href="#changing-the-database-and-persistence-behavior" title="Link to this heading">#</a></h3>
+<p>Wildbook uses the <a class="reference external" href="https://www.datanucleus.org">DataNucleus Access Platform</a>, which allows it to use a number of different databases and database types. Out of the box, Wildbook looks for <strong>PostgreSQL</strong> at <strong>localhost:5432/wildbook</strong>with <strong>username</strong> ‘wildbook’ and <strong>password</strong> ‘wildbook’. You must have <strong>PostgreSQL</strong> installed and running, the ‘wildbook’ database created, and user ‘wildbook’ defined.</p>
+<p>Wildbook can automatically create the necessary tables and columns when it is first started. You do not need to create these yourself.</p>
+<p>Database configuration is defined in the file jdoconfig.properties.</p>
+<p><em>You can control Wildbook’s database behavior by changing the values of these properties and by adding others, as defined in the DataNucleus documentation. This is recommended for software developers only. We do not recommend databases other than <strong>PostgreSQL</strong> and use <strong>PostGIS</strong> extensions in Wildbook.</em></p>
+</section>
+<section id="changing-wildbook-s-appearance">
+<h3>Changing Wildbook’s Appearance<a class="headerlink" href="#changing-wildbook-s-appearance" title="Link to this heading">#</a></h3>
+<p>At its core, Wildbook uses Bootstrap for its mobile, responsive design. Most changes to display and design can be performed by changing:</p>
+<ul class="simple">
+<li><p><strong>header.jsp</strong> - This file defines the standard JavaScript and CSS imports used by Wildbook and implements any header graphics and navigation at the top of the pages.</p></li>
+<li><p><strong>footer.jsp</strong> - This file defines any HTML to display at the bottom of the page, such as copyright information.</p></li>
+<li><p><strong>commonConfiguration.properties</strong> - This file contains many configuration options for Wildbook, and it includes options for search engine optimization (SEO), page titles, and other basic HTML fields.</p></li>
+</ul>
+<p>The HTML header for web pages in Wildbook is pulled from the file <strong>header.jsp</strong>. This file retrieves additional values from <strong>commonConfiguration.properties</strong> and <em>lang</em>/header.properties.</p>
+<section id="css-changes">
+<h4>CSS changes<a class="headerlink" href="#css-changes" title="Link to this heading">#</a></h4>
+<p>Wildbook uses <a class="reference external" href="http://lesscss.org/">Less</a> to create the manta.css file at build time. You’ll need to modify the .less files in <strong>cust/mantamatcher/styles</strong> to make your custom changes.</p>
+</section>
+</section>
+<section id="encounter-configuration">
+<h3>Encounter Configuration<a class="headerlink" href="#encounter-configuration" title="Link to this heading">#</a></h3>
+<p>Most Wildbook project configuration occurs in the commonConfiguration.properties file. This file is located in the following location in your Wildbook installation:
+<code class="docutils literal notranslate"><span class="pre">wildbook/WEB-INF/classes/bundles/commonConfiguration.properties</span></code>
+or in the override director (preferred) at:
+<code class="docutils literal notranslate"><span class="pre">/data/wildbook_data_dir/WEB-INF/classes/bundles/commonConfiguration.properties</span></code></p>
+<p>You can alter important Wildbook Encounter parameters in this file, such as:</p>
+<ul class="simple">
+<li><p>Number and type of measurements (e.g., weight, length, salinity, temperature, etc.)</p></li>
+<li><p>Number of life stages (e.g., juvenile, sub-adult, adult)</p></li>
+<li><p>Project species</p></li>
+<li><p>Physical patterning codes</p></li>
+<li><p>Physical tag parameters (SAT, PAT, tags, etc.)</p></li>
+<li><p>tissue sample parameters, such as:</p>
+<ul>
+<li><p>number of alleles</p></li>
+<li><p>tissue sample storage method</p></li>
+<li><p>haplotypes</p></li>
+<li><p>biochemical measurements (13C, 15N, etc.)</p></li>
+</ul>
+</li>
+<li><p>and more…</p></li>
+</ul>
+<p>When you modify configuration parameters in this file, you may have to restart the Tomcat web server for the changes to take effect.</p>
+<section id="supporting-multiple-species">
+<h4>Supporting multiple species<a class="headerlink" href="#supporting-multiple-species" title="Link to this heading">#</a></h4>
+<p>By default, Wildbook assumes that information added to the database is for only one species of animal. You can configure Wildbook to support multiple species by setting the <strong>genusSpecies</strong> fields, and setting the <strong>showTaxonomy</strong> parameter to ‘’true’’ in <strong>commonConfiguration.properties</strong>. The following example shows how to set these properties to differentiate between three species of large cats.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># show taxonomy</span>
+<span class="n">showTaxonomy</span> <span class="o">=</span> <span class="n">true</span>
+<span class="c1"># for multi-species libraries, fill out the genus and species for each supported animal type, starting with genusSpecies0</span>
+<span class="n">genusSpecies0</span> <span class="o">=</span> <span class="n">Panthera</span> <span class="n">leo</span>
+<span class="n">genusSpecies1</span><span class="o">=</span> <span class="n">Panthera</span> <span class="n">tigris</span>
+<span class="n">genusSpecies2</span> <span class="o">=</span> <span class="n">Panthera</span> <span class="n">pardus</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If setting up a species with 3 parts to its taxonomy, use an underscore to connect the sub-species with the species. If you do not, detection and species will be misaligned and the system will not process data correctly.
+ex: Equus quagga_quagga</p>
+</div>
+<p>Additional species can be set by incrementing the properties, such as <strong>genusSpecies3</strong>, <strong>genusSpecies4</strong>, etc.</p>
+</section>
+<section id="configuring-encounter-states-for-workflow">
+<h4>Configuring encounter states for workflow<a class="headerlink" href="#configuring-encounter-states-for-workflow" title="Link to this heading">#</a></h4>
+<p>Encounters can be assigned to particular states, often reflecting critical parts of a project workflow. For example, states can be used to define what data has been ‘approved’ for use in your study or is ‘unidentifiable’ due to poor quality. By default, new data in Wildbook is put into an ‘unapproved’ state that represents its status as unreviewed and of uncertain quality.</p>
+<p>The available states are defined in the following section of commonConfiguration.properties.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#encounterState options, the precursors to future workflow</span>
+<span class="n">encounterState0</span><span class="o">=</span><span class="n">unapproved</span>
+<span class="n">encounterState1</span><span class="o">=</span><span class="n">approved</span>
+<span class="n">encounterState2</span><span class="o">=</span><span class="n">unidentifiable</span>
+</pre></div>
+</div>
+<p>Additional states can be set by incrementing the properties, such as <strong>encounterState3</strong>, <strong>encounterState4</strong>, etc.</p>
+</section>
+<section id="configuring-location-ids-study-sites">
+<h4>Configuring location IDs (study sites)<a class="headerlink" href="#configuring-location-ids-study-sites" title="Link to this heading">#</a></h4>
+<p>Defining the boundaries of study areas is an important aspect of mark-recapture study design. Wildbook allows you to configure study areas as an attribute that can be assigned to each Encounter, categorizing data by where it occurred. <strong>Encounter.locationID</strong> is one of three ways of defining location in Wildbook. The three ways are:</p>
+<ul class="simple">
+<li><p><strong>Encounter.locationID</strong> - assigns an Encounter to a human-defined study area</p></li>
+<li><p><strong>Encounter.decimalLatitude/decimalLongitude</strong> - assigns an Encounter to precisley measured GPS coodinates</p></li>
+<li><p><strong>Encounter.verbatimLocality</strong> - a general description of location provided by the data submitter from which locationID may be determined.</p></li>
+</ul>
+<p><strong>Encounter.locationID</strong> may be the most valuable form of location identifier in Wildbook. GPS location may not be known, and verbatim descriptions of location may vary significantly by submitter. LocationID is powerful because it specifically defines whether a data point should be included or excluded from a study area during mark-recapture analysis and can be used to define which animals to match against in the <a class="reference internal" href="../introduction/image-analysis-pipeline.html"><span class="std std-doc">Wildbook Image Analysis pipeline</span></a>.</p>
+<p>To configure the list of study sites in your Wildbook, <a class="reference external" href="https://github.com/WildMeOrg/Wildbook/blob/flukebook/src/main/resources/bundles/locationID.json">configure the location ID</a> and change the values in locationID.json<a class="reference external" href="https://github.com/WildMeOrg/Wildbook/blob/flukebook/src/main/resources/bundles/locationID.json">.</a></p>
+</section>
+<section id="configuring-encounter-measurements">
+<h4>Configuring encounter measurements<a class="headerlink" href="#configuring-encounter-measurements" title="Link to this heading">#</a></h4>
+<p>You can configure reported encounters to have multiple recorded measurement observations <strong>(e.g., length, width, height)</strong>. The measurement types are defined in <strong>commonConfiguration.properties</strong> and in <strong>lang/commonConfigurationLabels.properties</strong>, starting with the number 0 and incrementing by one for each new measurement type.</p>
+<p>For each measurement, you must define a <strong>measurement name</strong>, the corresponding units, and the general sampling protocols applied to measurements in your study. You can turn and off measurements altogether with the <strong>showMeasurements</strong> entry, which can be set to true or false.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="c1">#show measurements showMeasurements = true</span>
+<span class="c1">#Measurements</span>
+<span class="n">measurement0</span><span class="o">=</span><span class="n">weight</span>
+<span class="n">measurement1</span><span class="o">=</span><span class="n">length</span>
+<span class="n">measurement2</span><span class="o">=</span><span class="n">height</span>
+<span class="c1"># Match units to the measurement above. Leave blank if no units apply</span>
+<span class="n">measurementUnits0</span><span class="o">=</span><span class="n">kilograms</span>
+<span class="n">measurementUnits1</span><span class="o">=</span><span class="n">meters</span>
+<span class="n">measurementUnits2</span><span class="o">=</span><span class="n">meters</span>
+
+<span class="c1">#Sampling Protocol for all Measurement types</span>
+<span class="n">samplingProtocol0</span><span class="o">=</span><span class="n">estimate</span>
+<span class="n">samplingProtocol1</span><span class="o">=</span><span class="n">measure</span>
+</pre></div>
+</div>
+<section id="configuring-and-localizing-measurement-labels">
+<h5>Configuring and localizing measurement labels<a class="headerlink" href="#configuring-and-localizing-measurement-labels" title="Link to this heading">#</a></h5>
+<p>The names of measurements, their units, and sampling protocols can be localized into multiple languages in Wildbook in the language-specific copies of <strong>commonConfigurationLabels.properties</strong>. Notice the .label extension added to the base name of the measurement-related property from <strong>commonConfiguration.properties</strong> (see above).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#Labels for Measurements</span>
+<span class="n">weight</span><span class="o">.</span><span class="n">label</span><span class="o">=</span><span class="n">Weight</span>
+<span class="n">length</span><span class="o">.</span><span class="n">label</span><span class="o">=</span><span class="n">Length</span>
+<span class="n">height</span><span class="o">.</span><span class="n">label</span><span class="o">=</span><span class="n">Height</span>
+<span class="mi">13</span><span class="n">C</span><span class="o">.</span><span class="n">label</span><span class="o">=</span><span class="mi">13</span><span class="n">C</span>
+<span class="mi">15</span><span class="n">N</span><span class="o">.</span><span class="n">label</span><span class="o">=</span><span class="mi">15</span><span class="n">N</span>
+<span class="mi">34</span><span class="n">S</span><span class="o">.</span><span class="n">label</span><span class="o">=</span><span class="mi">34</span><span class="n">S</span>
+<span class="n">celsius</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="n">Celsius</span>
+<span class="n">salinity</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="n">Salinity</span>
+<span class="n">WaterTemperature</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="n">Water</span> <span class="n">Temperature</span>
+<span class="n">kilograms</span><span class="o">.</span><span class="n">label</span><span class="o">=</span><span class="n">Kilograms</span>
+<span class="n">meters</span><span class="o">.</span><span class="n">label</span><span class="o">=</span><span class="n">Meters</span>
+<span class="n">ppm</span><span class="o">.</span><span class="n">label</span><span class="o">=</span><span class="n">ppm</span>
+<span class="n">samplingProtocol0</span><span class="o">.</span><span class="n">label</span><span class="o">=</span><span class="n">Estimated</span> <span class="n">Value</span>
+<span class="n">samplingProtocol1</span><span class="o">.</span><span class="n">label</span><span class="o">=</span><span class="n">Directly</span> <span class="n">Measured</span>
+</pre></div>
+</div>
+<p>After making changes, restart Tomcat to see them take effect.</p>
+</section>
+</section>
+<section id="configuring-labelled-keywords">
+<h4>Configuring labelled keywords<a class="headerlink" href="#configuring-labelled-keywords" title="Link to this heading">#</a></h4>
+<p>If you need to create a field that is not available in the platform at large, you can create a labelled keyword dropdown. These are stored on the asset. You must configure labelled keywords to be able to use labelled keywords during bulk import.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># First set the keyword label</span>
+<span class="n">kwlabel0</span><span class="o">=</span><span class="n">distinctiveness</span>
+<span class="n">kwlabel1</span><span class="o">=</span><span class="n">researchType</span>
+
+<span class="c1">#for each keyword label, set the values</span>
+<span class="n">distinctiveness0</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">distinctiveness1</span><span class="o">=</span><span class="mi">2</span>
+<span class="n">distinctiveness3</span><span class="o">=</span><span class="mi">3</span>
+
+<span class="n">researchType0</span><span class="o">=</span><span class="n">public</span>
+<span class="n">researchType1</span><span class="o">=</span><span class="n">research</span>
+<span class="n">researchType2</span><span class="o">=</span><span class="n">archival</span>
+</pre></div>
+</div>
+</section>
+<section id="configuring-life-stages">
+<h4>Configuring life stages<a class="headerlink" href="#configuring-life-stages" title="Link to this heading">#</a></h4>
+<p>Observations of animals are often categorized by their life stage, such as <strong>adult, sub-adult, juvenile, hatchling, etc.</strong> You can configure the life stages for your project with the following settings in <strong>commonConfiguration.properties.</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#show lifeStage showLifestage = true</span>
+<span class="c1">#defined life stages</span>
+<span class="n">lifeStage0</span><span class="o">=</span><span class="n">juvenile</span>
+<span class="n">lifeStage1</span><span class="o">=</span><span class="n">sub</span><span class="o">-</span><span class="n">adult</span>
+<span class="n">lifeStage2</span><span class="o">=</span><span class="n">adult</span>
+</pre></div>
+</div>
+<p>Additional stages can be set by incrementing the properties, such as lifeStage3, lifeStage4, etc.</p>
+</section>
+<section id="configuring-physical-tag-metadata">
+<h4>Configuring physical tag metadata<a class="headerlink" href="#configuring-physical-tag-metadata" title="Link to this heading">#</a></h4>
+<p>If you’re using physical tags (SAT, PAT, marker, etc.) during your research, you can record metadata about those tags and associate it with an Encounter recorded at tag deployment. The following attributes (examples below) are available to configure:</p>
+<ul class="simple">
+<li><p><strong>showMetalTags</strong> - whether physical marker tags are used in your study should be shown on the Encounter page in Wildbook. Values are true/false.</p></li>
+<li><p><strong>metalTagLocation*X</strong> - The list of placement locations for the tag on the body of the animal</p></li>
+<li><p><strong>showAcousticTag</strong> - whether acoustic tags are used in your study should be shown on the Encounter page in Wildbook. Values are true/false.</p></li>
+<li><p><strong>showSatelliteTag</strong> - whether satelite tags are used in your study should be shown on the Encounter page in Wildbook. Values are true/false.</p></li>
+<li><p><strong>satelliteTageName*X</strong> - The list of satellite tag manufacturers/providers to help identify the type of tag.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#tag parameters</span>
+<span class="n">showMetalTags</span><span class="o">=</span><span class="n">true</span>
+<span class="n">metalTagLocation0</span><span class="o">=</span><span class="n">left</span>
+<span class="n">metalTagLocation1</span><span class="o">=</span><span class="n">right</span>
+<span class="n">showAcousticTag</span><span class="o">=</span><span class="n">true</span>
+<span class="n">showSatelliteTag</span><span class="o">=</span><span class="n">true</span>
+<span class="n">satelliteTagName0</span><span class="o">=</span><span class="n">Wild</span> <span class="n">Life</span> <span class="n">Computers</span>
+<span class="n">satelliteTagName1</span><span class="o">=</span><span class="n">SirTack</span>
+</pre></div>
+</div>
+</section>
+<section id="configuring-visual-patterning-codes">
+<h4>Configuring visual patterning codes<a class="headerlink" href="#configuring-visual-patterning-codes" title="Link to this heading">#</a></h4>
+<p>Often times, the visual coloration of species can be divided into categories to allow for easier filtering for individual identification. For example, humpback whales can be individually identified by their flukes and have a graded fluke coloration system, ranging from 1-5.
+Wildbook allows each Encounter to be assigned a patterning code to match the observed visual features of the animal in the Encounter.</p>
+<p>You can configure pre-defined patterning codes for your project in <strong>commonConfiguration.properties</strong>. The property <strong>showPatterningCode</strong> must be set to <strong>true</strong>, and then a sequentially numbered set of <strong>patterningCode*X</strong> names and values must be defined.</p>
+<p>Here is a configuration example of giant manta patterning codes from the Wildbook <a class="reference external" href="https://www.mantamatcher.org">MantaMatcher.org</a>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#defined patterningCodes for distinct visual marking types for individuals identified with photo-identification</span>
+<span class="n">showPatterningCode</span> <span class="o">=</span> <span class="n">true</span>
+<span class="n">patterningCode0</span> <span class="o">=</span> <span class="n">normal</span> <span class="n">pigmentation</span>
+<span class="n">patterningCode1</span> <span class="o">=</span> <span class="n">black</span> <span class="n">pigmentation</span> <span class="o">-</span> <span class="n">melanistic</span>
+<span class="n">patterningCode2</span> <span class="o">=</span> <span class="n">white</span> <span class="n">pigmentation</span> <span class="o">-</span> <span class="n">leucistic</span>
+</pre></div>
+</div>
+</section>
+<section id="configuring-elevation-and-depth">
+<h4>Configuring elevation and depth<a class="headerlink" href="#configuring-elevation-and-depth" title="Link to this heading">#</a></h4>
+<p>You can configure whether elevation or depth are recorded in your study as Encounter properties in the <strong>commonConfiguration.properties file</strong>.</p>
+<p>Set<strong>maximumElevationInMeters</strong> to true to make elevation a measurement of your study. Set <strong>maximumDepthInMeters</strong>to true to make depth an measurement of your study.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#show elevation/depth</span>
+<span class="n">maximumElevationInMeters</span> <span class="o">=</span> <span class="n">false</span>
+<span class="n">maximumDepthInMeters</span> <span class="o">=</span> <span class="n">true</span>
+</pre></div>
+</div>
+<p>Restart Tomcat after making changes.</p>
+</section>
+<section id="configuring-tissue-samples-and-analyses">
+<h4>Configuring tissue samples and analyses<a class="headerlink" href="#configuring-tissue-samples-and-analyses" title="Link to this heading">#</a></h4>
+<p>Wildbook allows you to add one ore more records for biological samples collected during an Encounter with an individual animal. Biological samples have the following attributes defined in <strong>commonConfiguration.properties:</strong></p>
+<ul class="simple">
+<li><p><strong>tissueType*X</strong> - a sequential definition of the types of tissues that can be collected in your study (e.g., fecal, blood, skin, biopsy, etc.)</p></li>
+<li><p><strong>biologicalMeasurementType*X</strong> - a sequential definition of the types of chemical measurements that can be analyzed and determined from tissue samples in your study (e.g., fatty acid Carbon and Nitrogen measurements)</p>
+<ul>
+<li><p><strong>biologicalMeasurementUnits*X</strong> - a sequential definition of the units of measurement for chemical measurements on tissue samples</p></li>
+<li><p><strong>biologicalMeasurementSamplingProtocol*X</strong> - a sequential definition of the protocols used to determine the measurements</p></li>
+</ul>
+</li>
+<li><p><strong>numLoci</strong> - the number of loci to provide allele values for if genotyping is performed as an analysis on the tissue sample</p></li>
+<li><p><strong>numPloids</strong> - leave at 2 per loci</p></li>
+<li><p><strong>alleleRelaxMaxValue</strong> - the value difference allowed between allele values to consider them a “match” when looking for other genotypes that might match or be similar.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#tissue sample types</span>
+<span class="n">tissueType0</span> <span class="o">=</span> <span class="n">Tissue</span> <span class="n">sample</span>
+<span class="n">tissueType1</span> <span class="o">=</span> <span class="n">Fecal</span> <span class="n">sample</span>
+<span class="n">tissueType2</span> <span class="o">=</span> <span class="n">Mucus</span> <span class="n">sample</span>
+<span class="n">tissueType3</span> <span class="o">=</span> <span class="n">Blood</span> <span class="n">sample</span>
+<span class="n">tissueType4</span> <span class="o">=</span> <span class="n">Parasite</span> <span class="n">sample</span>
+
+<span class="c1">#biological measurement types</span>
+<span class="n">biologicalMeasurementType0</span> <span class="o">=</span> <span class="mi">13</span><span class="n">C</span>
+<span class="n">biologicalMeasurementType1</span> <span class="o">=</span> <span class="mi">15</span><span class="n">N</span>
+<span class="n">biologicalMeasurementType2</span> <span class="o">=</span> <span class="mi">34</span><span class="n">S</span>
+
+<span class="c1">#corresponding biological measurement units</span>
+<span class="n">biologicalMeasurementUnits0</span> <span class="o">=</span> <span class="n">ppm</span>
+<span class="n">biologicalMeasurementUnits1</span> <span class="o">=</span> <span class="n">ppm</span>
+<span class="n">biologicalMeasurementUnits2</span> <span class="o">=</span> <span class="n">ppm</span>
+
+<span class="c1">#corresponding biological measurement sampling protocols</span>
+<span class="n">biologicalMeasurementSamplingProtocols0</span> <span class="o">=</span> <span class="n">Lipids</span> <span class="n">extracted</span>
+<span class="n">biologicalMeasurementSamplingProtocols1</span> <span class="o">=</span> <span class="n">No</span> <span class="n">lipids</span> <span class="n">extracted</span><span class="p">,</span> <span class="n">corrected</span>
+<span class="n">biologicalMeasurementSamplingProtocols2</span> <span class="o">=</span> <span class="n">No</span> <span class="n">lipids</span> <span class="n">extracted</span><span class="p">,</span> <span class="n">uncorrected</span>
+
+<span class="c1">#genetic parameters</span>
+<span class="n">numLoci</span> <span class="o">=</span> <span class="mi">14</span>
+<span class="n">numPloids</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">alleleRelaxMaxValue</span> <span class="o">=</span> <span class="mi">5</span>
+</pre></div>
+</div>
+<p>Restart Tomcat after making changes.</p>
+</section>
+<section id="custom-content-display">
+<h4>Custom content display<a class="headerlink" href="#custom-content-display" title="Link to this heading">#</a></h4>
+<p>You can import custom functionality into each Encounter’s display in <strong>encounter.jsp</strong>. For example, spot pattern matching-related functions are imported from file <strong>spotMatchingAlgorithm.jsp</strong> (see example below).</p>
+<p>Import definitions are found in file encounter.properties file in the localized directory (e.g., WEB-INF/classes/bundles/en/encounter.properties).
+<code class="docutils literal notranslate"><span class="pre">#define</span> <span class="pre">the</span> <span class="pre">module</span> <span class="pre">JSP</span> <span class="pre">files</span> <span class="pre">to</span> <span class="pre">import</span> <span class="pre">#files</span> <span class="pre">must</span> <span class="pre">be</span> <span class="pre">placed</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">encounters</span> <span class="pre">directory</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">Wildbook</span> <span class="pre">webapp</span> <span class="pre">(i.e.,</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">same</span> <span class="pre">directory</span> <span class="pre">as</span> <span class="pre">encounter.jsp)</span> <span class="pre">jspImport0=spotMatchingAlgorithm.jsp</span> <span class="pre">#jspImport1=myFile.jsp</span></code></p>
+<p>Restart Tomcat after changing values.</p>
+</section>
+</section>
+<section id="marked-individuals">
+<h3>Marked Individuals<a class="headerlink" href="#marked-individuals" title="Link to this heading">#</a></h3>
+<p>The following aspects of Marked Individual data records can be configured in Wildbook.</p>
+</section>
+<section id="social-relationships">
+<h3>Social relationships<a class="headerlink" href="#social-relationships" title="Link to this heading">#</a></h3>
+<p>Marked Individuals in Wildbook can have Relationship associations between them. These are meant for more long-term types of relationships, such as “mother-calf” or social group “member”. Relationships and their roles can be set in the UI on the Marked Individual page <strong>individuals.jsp.</strong></p>
+<p>To configure the types of social relationships in your Wildbook and the roles that Marked Individuals can play in them, change the following fields in <strong>commonConfiguration.properties:</strong></p>
+<ul class="simple">
+<li><p><strong>relationshipType*X</strong> - a sequentially numbered set of relationship types to be recorded in your study.</p></li>
+<li><p><strong>relationshipRole*X</strong> - the role that an individual can play in a Relationship.</p></li>
+</ul>
+<p>Here are some example configurations:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#social relationships-related data</span>
+<span class="n">relationshipType0</span> <span class="o">=</span> <span class="n">social</span> <span class="n">grouping</span>
+<span class="n">relationshipType1</span> <span class="o">=</span> <span class="n">familial</span>
+
+<span class="n">relationshipRole0</span> <span class="o">=</span> <span class="n">member</span>
+<span class="n">relationshipRole1</span> <span class="o">=</span> <span class="n">mother</span>
+<span class="n">relationshipRole2</span> <span class="o">=</span> <span class="n">calf</span>
+</pre></div>
+</div>
+<p>Restart Tomcat after making changes.</p>
+<section id="email-notifications">
+<h4>Email Notifications<a class="headerlink" href="#email-notifications" title="Link to this heading">#</a></h4>
+<p>The following email addresses are sent messages when important events occur in Wildbook. These email addresses are specific to your project.</p>
+<ul class="simple">
+<li><p><strong>sendEmailNotifications</strong> - Defines whether Wildbook should send any emails at all. If set to <em>true</em>, this parameter instructs Wildbook to send email updates for events such as:</p>
+<ul>
+<li><p>New Encounter submissions</p></li>
+<li><p>Previously submitted animal has been identified</p></li>
+<li><p>Previously submitted Marked Individual has been resighted</p></li>
+</ul>
+</li>
+<li><p><strong>autoEmailAddress</strong> - The email address Wildbook messages are sent from. If you have a secured mailhost, it’s important to configure the mailhost to allow emails to be sent from this address.</p></li>
+<li><p><strong>newSubmissionEmail</strong> - The email address to send notices of new Encounter reports submitted to Wildbook.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#email addresses and parameters</span>
+<span class="n">sendEmailNotifications</span><span class="o">=</span><span class="n">true</span>
+<span class="n">autoEmailAddress</span><span class="o">=</span><span class="p">[</span><span class="n">webmaster</span><span class="nd">@someplace</span><span class="o">.</span><span class="n">org</span><span class="p">](</span><span class="n">mailto</span><span class="p">:</span><span class="n">webmaster</span><span class="nd">@someplace</span><span class="o">.</span><span class="n">org</span><span class="p">)</span>
+<span class="n">newSubmissionEmail</span><span class="o">=</span><span class="p">[</span><span class="n">submissions</span><span class="nd">@someplace</span><span class="o">.</span><span class="n">org</span><span class="p">](</span><span class="n">mailto</span><span class="p">:</span><span class="n">submissions</span><span class="nd">@someplace</span><span class="o">.</span><span class="n">org</span><span class="p">)</span>
+<span class="n">mailHost</span><span class="o">=</span><span class="n">localhost</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="internationalization-i18n">
+<h3>Internationalization (I18N)<a class="headerlink" href="#internationalization-i18n" title="Link to this heading">#</a></h3>
+<p>Wildbook is a web-based application with an internationalization (I18N) foundation in its code base. Wildbook is not yet fully translated. Most of the JSP files are localized but none of the servlets are yet. Work is underway to complete localization.</p>
+<p>Wildbook loads translated strings from the standard Java properties files, which reside in Wildbook’s WEB-INF/classes/bundles directory or can be overridden (on a file-by-file basis) in the equivalent path in the data directory.</p>
+<section id="setting-the-supported-languages">
+<h4>Setting the supported languages<a class="headerlink" href="#setting-the-supported-languages" title="Link to this heading">#</a></h4>
+<p>You can set the default language for Wildbook in <strong>commonConfiguration.properties</strong> with the <strong>defaultLanguage</strong> attribute, which takes a two-letter code for input. The full list of supported language, which must include the default in position 0, is configured with sequential language//X// name-value pairs. Corresponding localized Strings could be found in the appropriate language directory of Wildbook, such as WEB-INF/classes/bundles/es for ‘es’ (Spanish).</p>
+<p>In the example below, English is set as the default language “en”, and Wildbook is configured to provide the user with English and Spanish options for display.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">defaultLanguage</span> <span class="o">=</span> <span class="n">en</span>
+<span class="n">language0</span> <span class="o">=</span> <span class="n">en</span>
+<span class="n">language1</span> <span class="o">=</span> <span class="n">es</span>
+<span class="c1">#language2 = fr</span>
+<span class="c1">#language3 = de</span>
+
+<span class="n">The</span> <span class="n">name</span> <span class="n">displayed</span> <span class="k">for</span> <span class="n">each</span> <span class="n">language</span> <span class="n">can</span> <span class="n">also</span> <span class="n">be</span> <span class="n">configured</span> <span class="ow">in</span> <span class="n">commonConfiguration</span><span class="o">.</span><span class="n">properties</span><span class="o">.</span>
+<span class="n">en</span> <span class="o">=</span> <span class="n">English</span> <span class="n">es</span> <span class="o">=</span> <span class="n">español</span> <span class="n">fr</span> <span class="o">=</span> <span class="n">français</span>
+</pre></div>
+</div>
+<p>With languages configured and Tomcat restarted, Wildbook displays configured languages as flag options.</p>
+<p>It looks for a correspinding flag icon in the images directory. Examples:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="n">flag_es</span><span class="o">.</span><span class="n">gif</span>
+<span class="o">*</span> <span class="n">flag_en</span><span class="o">.</span><span class="n">gif</span>
+<span class="o">*</span> <span class="n">flag_fr</span><span class="o">.</span><span class="n">gif</span>
+</pre></div>
+</div>
+<p>If your language flag is not present in Wildbook, you may need to add it.</p>
+</section>
+<section id="translating-text">
+<h4>Translating text<a class="headerlink" href="#translating-text" title="Link to this heading">#</a></h4>
+<p>Most pieces of text in Wildbook pages <strong>(HTML and JSP files)</strong> are contained in translatable properties files. For example, the page for an Encounter <strong>(encounter.jsp)</strong> pulls its strings from WEB-INF/classes/bundles/en/encounter.properties (English text).</p>
+<p>Here is an example of the contents of encounter.properties.</p>
+<p>encounter = Encounter
+unidentifiable_title = Unidentifiable Encounter Number unapproved_title = UNAPPROVED Encounter Number title = Encounter identified_as = Identified as: workflowState = Workflow state: setWorkflowState = Set Workflow State matched_by = Matched by status = Status …</p>
+</section>
+</section>
+<section id="legacy-spot-matching">
+<h3>Legacy Spot Matching<a class="headerlink" href="#legacy-spot-matching" title="Link to this heading">#</a></h3>
+<p>Wildbook was originally developed for use with whale sharks (<em>Rhincodon typus</em>) and other spotted species. The internal spot pattern recognition system is highly accurate and had scaled well to over 25000 patterns on sharkbook.ai. While our newer pattern recognition efforts in Wildbook Image Analysis will eventually replace them, the legacy spot pattern recognition system is still highly accurate and usable in Wildbook.</p>
+<p>By default, the spot pattern recognition system is turned off. It can be turned back on in commonConfiguration.properties by setting the useSpotPatternRecognition value to true.</p>
+<p>#pattern recognition
+useSpotPatternRecognition=true</p>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">System requirements</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="unsupported-developer-tools.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Unsupported developer tools</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wildbook-configuration-structure">Wildbook Configuration Structure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#translation-files">Translation files</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-the-database-and-persistence-behavior">Changing the database and persistence behavior</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-wildbook-s-appearance">Changing Wildbook’s Appearance</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#css-changes">CSS changes</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#encounter-configuration">Encounter Configuration</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#supporting-multiple-species">Supporting multiple species</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-encounter-states-for-workflow">Configuring encounter states for workflow</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-location-ids-study-sites">Configuring location IDs (study sites)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-encounter-measurements">Configuring encounter measurements</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-and-localizing-measurement-labels">Configuring and localizing measurement labels</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-labelled-keywords">Configuring labelled keywords</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-life-stages">Configuring life stages</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-physical-tag-metadata">Configuring physical tag metadata</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-visual-patterning-codes">Configuring visual patterning codes</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-elevation-and-depth">Configuring elevation and depth</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#configuring-tissue-samples-and-analyses">Configuring tissue samples and analyses</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#custom-content-display">Custom content display</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marked-individuals">Marked Individuals</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#social-relationships">Social relationships</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#email-notifications">Email Notifications</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#internationalization-i18n">Internationalization (I18N)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-the-supported-languages">Setting the supported languages</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#translating-text">Translating text</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#legacy-spot-matching">Legacy Spot Matching</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Wild Me
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024 Conservation X Labs.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

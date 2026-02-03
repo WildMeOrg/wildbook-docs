@@ -1,0 +1,574 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Getting Started &#8212; Wildbook  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=dddd19d0" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'getting-started-with-wildbook';</script>
+    <script src="_static/tocjs.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Introduction to Wildbook" href="introduction/index.html" />
+    <link rel="prev" title="Wildbook Docs" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/WildMe-Logo.png" class="logo__image only-light" alt="Wildbook  documentation - Home"/>
+    <script>document.write(`<img src="_static/WildMe-Logo.png" class="logo__image only-dark" alt="Wildbook  documentation - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Getting Started</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="introduction/index.html">Introduction to Wildbook</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction/image-analysis-pipeline.html">Image Analysis Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction/data-entry.html">Data Entry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction/encounter.html">Encounter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction/marked-individual.html">Marked Individual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction/sighting.html">Sighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction/security-overview.html">Security Overview</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="data/index.html">Data Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="data/photography-guidelines.html">Photography Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data/report-encounter.html">Report an encounter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data/bulk-import-beta.html">Bulk Import</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data/matching-process.html">Matching Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data/manual-annotation-beta.html">Manual Annotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data/search.html">Searching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data/data-exports.html">Export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data/wildex-image-export-app.html">WildEx Image Export App</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data/projects.html">Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data/location-ids.html">Location IDs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data/r-package-alpha.html">R Package (alpha)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="security/index.html">Security Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="security/my-account.html">My Account</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="security/silo-security/index.html">Silo Security</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="security/silo-security/org-admin.html">Org admin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security/silo-security/site-admin.html">Site admin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security/silo-security/photo-keywords.html">Photo Keywords</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security/silo-security/data-integrity.html">Data Integrity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security/silo-security/library-management.html">Library Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security/silo-security/bulk-import-logs.html">Bulk Import Logs</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="specifications-and-system-requirements/index.html">System requirements</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="specifications-and-system-requirements/system-configuration.html">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="specifications-and-system-requirements/unsupported-developer-tools.html">Unsupported developer tools</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="faq/index.html">FAQ</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="faq/bulk-import-faq.html">Bulk Import FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq/codex-wildbook-faq.html">Codex to Wildbook FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq/matching-faq.html">Matching FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq/merging-faq.html">Merging FAQ</a></li>
+</ul>
+</details></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="contribute/index.html">Ways to Contribute</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="contribute/dev-setup.html">Dev Environment Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contribute/pr-workflow.html">Pull Request Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contribute/code-guide.html">Code Contribition Guideline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contribute/tests.html">Testing in Wildbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contribute/ia-dev.html">Image Analysis Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contribute/copy-guide.html">Copy Contribution Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contribute/roadmap.html">Roadmap</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute/dev-setup.html">Dev Environment Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute/pr-workflow.html">Pull Request Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute/code-guide.html">Code Contribition Guideline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute/copy-guide.html">Copy Contribution Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute/roadmap.html">Roadmap</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/WildMeOrg/wildbook-docs" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/getting-started-with-wildbook.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Getting Started</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#account-registration">Account Registration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#change-your-password">Change Your Password</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#read-up-on-basic-wildbook-concepts">Read Up on Basic Wildbook Concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submit-and-match-your-first-encounters">Submit and Match Your First Encounters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extend-collaboration-invites">Extend Collaboration Invites</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-further-configuration">Request Further Configuration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bulk-import-legacy-data-for-matching">Bulk Import Legacy Data for Matching</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h1>
+<p>This topic covers some basic tasks and concepts when first logging into Wildbook.</p>
+<section id="account-registration">
+<h2>Account Registration<a class="headerlink" href="#account-registration" title="Link to this heading">#</a></h2>
+<p>To set up a Wildbook account, you will need to contact the Wildbook site managers via the <strong><a class="reference external" href="https://www.wildme.org/contact-us.html">Contact Us</a></strong> page. Wildbook does not currently support self-registration. Once you have your username and a temporary password from the site managers, you can log in by selecting the <strong>Login</strong> button or by accessing any page that requires a user to sign in to access content.</p>
+</section>
+<section id="change-your-password">
+<h2>Change Your Password<a class="headerlink" href="#change-your-password" title="Link to this heading">#</a></h2>
+<p>After logging in with your username and password, change your password. Place your cursor on your profile icon and click on <strong>User Profile</strong> from the menu. Enter your new password in the <strong>New Password</strong> and <strong>Confirm New Password</strong> text boxes.
+<img alt="" src="_images/wb-myaccount-interface.png" /></p>
+</section>
+<section id="read-up-on-basic-wildbook-concepts">
+<h2>Read Up on Basic Wildbook Concepts<a class="headerlink" href="#read-up-on-basic-wildbook-concepts" title="Link to this heading">#</a></h2>
+<p>The <strong>Introduction</strong> section of the Wildbook documentation provides a good overview of concepts and technologies used in Wildbook. We suggest starting with the <a class="reference internal" href="introduction/index.html"><span class="std std-doc">Overview</span></a> page to familiarize yourself with the basics of the platform.</p>
+</section>
+<section id="submit-and-match-your-first-encounters">
+<h2>Submit and Match Your First Encounters<a class="headerlink" href="#submit-and-match-your-first-encounters" title="Link to this heading">#</a></h2>
+<p>A great way to get familiar with the <a class="reference internal" href="introduction/image-analysis-pipeline.html"><span class="std std-doc">Wildbook Image Analysis pipeline</span></a> is to <a class="reference internal" href="data/report-encounter.html"><span class="std std-doc">report your first Encounter</span></a>. Start simple by submitting a single photograph of a single animal for a species supported by the <a class="reference internal" href="introduction/image-analysis-pipeline.html"><span class="std std-doc">Wildbook Image Analysis pipeline</span></a> to generate an individual ID. If you are unsure which species are available for detection and identification, please consult your Wildbook administrator.</p>
+<ol class="arabic simple">
+<li><p>Make sure you are logged in to Wildbook. This ensures that any Encounter report you submit is assigned to you.</p></li>
+<li><p>From your Wildbook’s landing page, select <strong>Report an Encounter</strong> from the <strong>Submit</strong> menu.</p></li>
+<li><p>Click to import or drag a photo to the Photos section and select one photo of one animal for your first Encounter. Wildbook can accept multiple photos of the same animal or even a photo of multiple animals.</p></li>
+<li><p>Once you submit your photo, you must also submit the <strong>Encounter Date</strong>, <strong>Encounter Location</strong>, and <strong>Species</strong> as the minimum required fields. These required fields are indicated by the asterisk, but you can add additional information such as GPS coordinates and elevation.</p></li>
+<li><p>If you’re prompted to complete the Captcha before you submit your Encounter, you are not logged in to your account. Log in and try again.</p></li>
+<li><p>Once you have finished entering your data, click <strong>Submit Encounter</strong>. You will see a confirmation page for your submission.</p></li>
+<li><p>Click the <strong>View Encounter</strong> link on the confirmation page to visit your new Encounter.
+<img alt="quickstart encounter" src="_images/wb-getting-started-encounter.png" /></p></li>
+<li><p>Boxes for Annotations from <a class="reference internal" href="introduction/image-analysis-pipeline.html"><span class="std std-doc">machine learning detection</span></a> may have appeared. If you don’t see Annotation boxes around the animal or its parts, the detection stage may not have been completed yet. It may take a minute or more (depending on how busy the <a class="reference internal" href="introduction/image-analysis-pipeline.html"><span class="std std-doc">Wildbook Image Analysis pipeline </span></a>is) for the Annotation to appear. <em>You must refresh the page periodically for these boxes to appear after detection has completed.</em></p></li>
+<li><p>After the bounding boxes have appeared, if they represent a matchable Annotation class in Wildbook, you can click <strong>Match Results</strong> to view the ongoing or completed matching process.</p></li>
+<li><p>The match results page will show you one set of results for each algorithm run on each Annotation from the submission.</p></li>
+<li><p>Scroll over each potential match (ranked 1-12 from most likely to least likely match) to inspect what each algorithm found similar between the Annotations. Each result includes a rank, an algorithm-specific score, and potentially additional ID and date metadata to help you evaluate the result. See <strong><a class="reference internal" href="introduction/image-analysis-pipeline.html#identification"><span class="std std-ref">Identification</span></a></strong> for more information about each algorithm used in Wildbook.</p></li>
+<li><p>If appropriate, set the ID:</p>
+<ol class="arabic simple">
+<li><p>If you find a matched individual in the results, scroll over the matching results and select the Inspect button. <strong>Set to Individual</strong> will appear and allow you to set the individual ID for the Encounter you submitted. Congratulations! You made your first match!</p></li>
+<li><p>In this example, this orca did not match any of the proposed match results. This is likely a new individual to the catalog. To set a new ID, return to the Encounter page and click the pencil icon in the <strong>Identity</strong> section to set the Individual ID. The name you set will become the default name for the individual, but you can set nicknames and alternative IDs later on.</p></li>
+</ol>
+</li>
+<li><p>Congratulations! You have matched or identified your first Marked Individual in Wildbook! Click on the ID in the Encounter page to view the Marked Individual’s page and see your submitted Encounter.</p></li>
+<li><p>You can return to this Encounter from the table displayed when you select <strong>My Encounters</strong> from the <strong>My Data</strong> menu.</p></li>
+</ol>
+</section>
+<section id="next-steps">
+<h2>Next Steps<a class="headerlink" href="#next-steps" title="Link to this heading">#</a></h2>
+<section id="extend-collaboration-invites">
+<h3>Extend Collaboration Invites<a class="headerlink" href="#extend-collaboration-invites" title="Link to this heading">#</a></h3>
+<p>If your Wildbook supports <a class="reference internal" href="introduction/security-overview.html"><span class="std std-doc">Silo Security</span></a>, you may want to extend invitations to collaborate to other Wildbook users, allowing view-only or edit-level permissions to your data in Wildbook. See <a class="reference internal" href="introduction/security-overview.html"><span class="std std-doc">Silo Security</span></a> for more information about how to extend collaboration invitations from the <strong><a class="reference internal" href="security/my-account.html"><span class="std std-doc">My Account</span></a></strong> page.</p>
+</section>
+<section id="request-further-configuration">
+<h3>Request Further Configuration<a class="headerlink" href="#request-further-configuration" title="Link to this heading">#</a></h3>
+<p>Wildbook may require further configuration to better suit your research. Common configuration changes that can be made include:</p>
+<ul class="simple">
+<li><p>Adding your project’s <a class="reference internal" href="#data/study-sites.md"><span class="xref myst">study sites</span></a> (also known as “location ID” in Wildbook) that represent distinct areas where you conduct your data collection.</p></li>
+<li><p>Associating your user account with an organization and/or providing you with <a class="reference internal" href="security/silo-security/org-admin.html"><span class="std std-doc">orgAdmin privileges</span></a> to allow you to bring additional users into Wildbook for your organization.</p></li>
+<li><p>Adding additional species to Wildbook.</p></li>
+<li><p>Working with Wild Me to create new machine learning or cross-apply existing techniques for a species.</p></li>
+</ul>
+<p>If these categories apply, please post a Feature Requet on the <a class="reference external" href="https://community.wildme.org">Wildbook Community forum</a> or contact your Wildbook system administrator.</p>
+</section>
+<section id="bulk-import-legacy-data-for-matching">
+<h3>Bulk Import Legacy Data for Matching<a class="headerlink" href="#bulk-import-legacy-data-for-matching" title="Link to this heading">#</a></h3>
+<p>Many researchers have past data that needs importing into Wildbook to:</p>
+<ul class="simple">
+<li><p>Create a base catalog of IDs to match new data against.</p></li>
+<li><p>Apply machine learning to existing unprocessed data that needs curation and analysis.</p></li>
+</ul>
+<p>See <a class="reference internal" href="data/bulk-import-beta.html"><span class="std std-doc">Bulk Import</span></a> for more information on how to convert your data to an spreadsheet-based format for import into Wildbook.</p>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Wildbook Docs</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="introduction/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Introduction to Wildbook</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#account-registration">Account Registration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#change-your-password">Change Your Password</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#read-up-on-basic-wildbook-concepts">Read Up on Basic Wildbook Concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submit-and-match-your-first-encounters">Submit and Match Your First Encounters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extend-collaboration-invites">Extend Collaboration Invites</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-further-configuration">Request Further Configuration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bulk-import-legacy-data-for-matching">Bulk Import Legacy Data for Matching</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Wild Me
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024 Conservation X Labs.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

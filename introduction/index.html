@@ -1,0 +1,688 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Introduction to Wildbook &#8212; Wildbook  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=dddd19d0" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'introduction/index';</script>
+    <script src="../_static/tocjs.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Image Analysis Pipeline" href="image-analysis-pipeline.html" />
+    <link rel="prev" title="Getting Started" href="../getting-started-with-wildbook.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/WildMe-Logo.png" class="logo__image only-light" alt="Wildbook  documentation - Home"/>
+    <script>document.write(`<img src="../_static/WildMe-Logo.png" class="logo__image only-dark" alt="Wildbook  documentation - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../getting-started-with-wildbook.html">Getting Started</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Introduction to Wildbook</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="image-analysis-pipeline.html">Image Analysis Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-entry.html">Data Entry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="encounter.html">Encounter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="marked-individual.html">Marked Individual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sighting.html">Sighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="security-overview.html">Security Overview</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../data/index.html">Data Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../data/photography-guidelines.html">Photography Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/report-encounter.html">Report an encounter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/bulk-import-beta.html">Bulk Import</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/matching-process.html">Matching Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/manual-annotation-beta.html">Manual Annotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/search.html">Searching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/data-exports.html">Export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/wildex-image-export-app.html">WildEx Image Export App</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/projects.html">Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/location-ids.html">Location IDs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/r-package-alpha.html">R Package (alpha)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../security/index.html">Security Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../security/my-account.html">My Account</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../security/silo-security/index.html">Silo Security</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/org-admin.html">Org admin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/site-admin.html">Site admin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/photo-keywords.html">Photo Keywords</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/data-integrity.html">Data Integrity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/library-management.html">Library Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security/silo-security/bulk-import-logs.html">Bulk Import Logs</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../specifications-and-system-requirements/index.html">System requirements</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../specifications-and-system-requirements/system-configuration.html">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../specifications-and-system-requirements/unsupported-developer-tools.html">Unsupported developer tools</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../faq/index.html">FAQ</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../faq/bulk-import-faq.html">Bulk Import FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/codex-wildbook-faq.html">Codex to Wildbook FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/matching-faq.html">Matching FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq/merging-faq.html">Merging FAQ</a></li>
+</ul>
+</details></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../contribute/index.html">Ways to Contribute</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/dev-setup.html">Dev Environment Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/pr-workflow.html">Pull Request Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/code-guide.html">Code Contribition Guideline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/tests.html">Testing in Wildbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/ia-dev.html">Image Analysis Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/copy-guide.html">Copy Contribution Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute/roadmap.html">Roadmap</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/dev-setup.html">Dev Environment Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/pr-workflow.html">Pull Request Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/code-guide.html">Code Contribition Guideline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/copy-guide.html">Copy Contribution Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/roadmap.html">Roadmap</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/WildMeOrg/wildbook-docs" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/introduction/index.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Introduction to Wildbook</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wildbook-terminologies">Wildbook Terminologies</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wildbook">Wildbook</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mediaasset-annotation">MediaAsset &amp; Annotation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#encounter">Encounter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sighting">Sighting</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#individual">Individual</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relationship-social-units">Relationship &amp; Social Units</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navigating-the-platform">Navigating the Platform</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#home-page">Home Page</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menu-options">Menu Options</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#submit-menu">Submit Menu</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-menu">Learn Menu</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#individuals-menu">Individuals Menu</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sightings-menu">Sightings Menu</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#encounters-menu">Encounters Menu</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#search-menu">Search Menu</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#account-management">Account Management</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#login">Login</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Account Management</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="introduction-to-wildbook">
+<h1>Introduction to Wildbook<a class="headerlink" href="#introduction-to-wildbook" title="Link to this heading">#</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>Wildbook is a web-based, multi-user software platform to help researchers collaboratively track individual animals in wildlife populations and estimate population sizes. Each Wildbook installation can be used by multiple researchers for multiple species.</p>
+<p>This introduction covers the most common interactions within Wildbook platforms. It is intended to support Wildbook users and researchers collecting data in the field and to illustrate how to use Wildbook for data storage, curation, searching, and analysis.</p>
+<p>Included Wildbook features:</p>
+<ul>
+<li><p>A browser-based user interface <strong>(UI)</strong></p></li>
+<li><p>A high performance <strong>PostgreSQL</strong> database for storing multiple wildlife-related data types</p></li>
+<li><p>Two servers:</p>
+<ul class="simple">
+<li><p><strong>Data Management Server</strong> - Coordinates UI browser display and data storage</p></li>
+<li><p>Wildbook Image Analysis (“WBIA”) - Manages the computer vision pipeline and and artificial intelligence (AI) models and training tools. WBIA does not come pre-configured to detect and/or identify animals from a species. Pre-trained machine learning (ML) models for the species must be used, or new models must be created and configured using training data.</p></li>
+</ul>
+</li>
+<li><p><strong>Artificial intelligence</strong> (AI) tools to enhance image curation by:</p>
+<ul>
+<li><p>Finding one or more animals in a photo or photos <strong>(“Detection”)</strong></p></li>
+<li><p>Individually identifying each animal detected <strong>(“Identification”)</strong></p>
+<p><img alt="Wildbook ecosystem of people, servers, and AI" src="../_images/wb-tech-ecosystem.png" /></p>
+<p><em>The Wildbook ecosystem of people, servers, and AI.</em></p>
+</li>
+</ul>
+</li>
+</ul>
+<section id="wildbook-terminologies">
+<h2>Wildbook Terminologies<a class="headerlink" href="#wildbook-terminologies" title="Link to this heading">#</a></h2>
+<section id="wildbook">
+<h3>Wildbook<a class="headerlink" href="#wildbook" title="Link to this heading">#</a></h3>
+<p>In its simplest usage, <strong>Wildbook</strong> receives a wildlife picture and its related metadata (e.g. where the photo was taken and when), which gets uploaded by a researcher. The following terminology is used by Wildbook programs as users curate their wildlife data. To facilitate a better understanding of these terms, we will work through the process Wildbook and users take to upload and manage their wildlife data. Let’s use the picture below as an example:
+<img alt="two wild dogs" src="../_images/wilddog.png" /></p>
+</section>
+<section id="mediaasset-annotation">
+<h3>MediaAsset &amp; Annotation<a class="headerlink" href="#mediaasset-annotation" title="Link to this heading">#</a></h3>
+<p>When the system runs that image through a machine learning (ML) stage called “Detection”, it generates an <strong>Annotation</strong> for each animal found in the picture. Because this photo contains two African wild dogs, it would be returned with two Annotations, as shown in the bounding boxes below.
+<img alt="two wild dogs with annotations" src="../_images/wilddog-annotation.png" /></p>
+</section>
+<section id="encounter">
+<h3>Encounter<a class="headerlink" href="#encounter" title="Link to this heading">#</a></h3>
+<p>An Encounter represents an interaction with a single animal. If you interacted with five members of a pack at a specific place and time, your result would have five Encounters. Encounters are the foundational components of Wildbooks software. They provide a reference to a time and location where an animal was spotted, forming the basis of whether that animal ultimately should or should not be included in a population analysis. In the photo above, Wildbook’s ML process detected two Annotations of African wild dogs, and thus two Encounters would be generated from the one MediaAsset. Wildbook creates web pages for each Encounter for referencing.
+Because more than one animal appears at the same time in this example MediaAsset, we want to ensure that the relationship between these two Encounters is well understood (i.e. <em>These two animals were sighted together.</em>).</p>
+</section>
+<section id="sighting">
+<h3>Sighting<a class="headerlink" href="#sighting" title="Link to this heading">#</a></h3>
+<p>Therefore, Wildbook creates a <strong>Sighting</strong>, representing a broader observation of one or more animals. A Sighting allows researchers to include information about social relationships and observed behaviors when multiple animals are sighted together. Unlike Encounters, Sightings are one-to-many; if you interact with five members of a pack, you have one Sighting that is made up of five Encounters, one for each animal. Like Encounters, Wildbook also creates web pages for each Sighting.</p>
+</section>
+<section id="individual">
+<h3>Individual<a class="headerlink" href="#individual" title="Link to this heading">#</a></h3>
+<p>An <strong>Individual</strong> is a single animal that has been given an identifying name/Annotation within the Wildbook platform and has one or more Encounters. Individuals are animals whose identities and metadata (eg. tags, keywords, social information) have been confirmed by a researcher.</p>
+</section>
+<section id="relationship-social-units">
+<h3>Relationship &amp; Social Units<a class="headerlink" href="#relationship-social-units" title="Link to this heading">#</a></h3>
+<p>Every Individual has a profile page in Wildbook, summarizing where the individual was sighted over time, any <strong>Relationships</strong> (e.g. mother-calf) or <strong>Social Units</strong> (e.g. a pack or herd) it may be a part of, and which researchers have contributed to building this Individual’s profile.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Throughout Wildbook, <strong>Sightings</strong> may also be called “Occurrences” and <strong>Individuals</strong> may also be called “Marked Individuals”. We are currently working to shift terminology for greater user clarity. If you see an instance of outdated language, you can post a bug report <a class="reference external" href="https://community.wildme.org">here</a>.</p>
+</div>
+</section>
+</section>
+<section id="navigating-the-platform">
+<h2>Navigating the Platform<a class="headerlink" href="#navigating-the-platform" title="Link to this heading">#</a></h2>
+<p>This section provides an overview of the purpose and location of common pages in the Wildbook platform.</p>
+<section id="home-page">
+<h3>Home Page<a class="headerlink" href="#home-page" title="Link to this heading">#</a></h3>
+<p>When you first access Wildbook, you’ll land on the <strong>Home page.</strong> This can be reached at any time by clicking the <strong>Home</strong> button on the <strong>navigation bar</strong>. You can also click the Wildbook site logo to open the home page on a new tab. The home page is intended to provide introduction and context for the work being done leveraging Wildbook. This includes pictures and statistics about the platform.</p>
+</section>
+<section id="menu-options">
+<h3>Menu Options<a class="headerlink" href="#menu-options" title="Link to this heading">#</a></h3>
+<section id="submit-menu">
+<h4>Submit Menu<a class="headerlink" href="#submit-menu" title="Link to this heading">#</a></h4>
+<p>Under the <strong>Submit</strong> menu, there are two options: <strong>Report an Encounter</strong> and <strong>Bulk Import</strong>. Both options are used to submit data. Submissions include photos, videos, and related metadata, requiring at least the date of sighting, location, and species. Additional metadata fields are available.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../data/report-encounter.html"><span class="std std-doc">Report an Encounter</span></a> can be used by anyone to submit a single encounter of one or multiple individuals.</p></li>
+<li><p><strong>Bulk Import</strong> requires a user to log in to the platform before following the instructions to upload photos and their affiliated Excel data spreadsheet(s). The <a class="reference internal" href="../data/bulk-import-beta.html"><span class="std std-doc">Bulk Import</span></a> function allows users to submit both legacy and batched volumes of data in large quantities as opposed to <a class="reference internal" href="../data/report-encounter.html"><span class="std std-doc">Report an Encounter</span></a>, which allows for only single uploads.</p></li>
+</ul>
+</section>
+<section id="learn-menu">
+<h4>Learn Menu<a class="headerlink" href="#learn-menu" title="Link to this heading">#</a></h4>
+<p>Under the <strong>Learn</strong> menu, there are the following options, which are often customized in Wildbook:</p>
+<ul class="simple">
+<li><p><strong>About Us</strong> is a page dedicated to the collaborators who have put together the Wildbook program you are accessing.</p></li>
+<li><p><strong>How to Photograph</strong> advises on the best ways to photograph a given species. This advice is specific to allowing the machine learning (ML) to better process the photograph for detection and identification.</p></li>
+<li><p><strong>Contact Us</strong> provides information you can use to communicate with those who are managing the Wildbook platform you are using.</p></li>
+<li><p><strong>Learn More about Wildbook</strong> takes you to the Wildbook platform documentation.</p></li>
+</ul>
+</section>
+<section id="individuals-menu">
+<h4>Individuals Menu<a class="headerlink" href="#individuals-menu" title="Link to this heading">#</a></h4>
+<p>After signing in to the Wildbook platform, you can access the following features:
+Under the <strong>Individuals</strong> menu, there are the following options:</p>
+<ul class="simple">
+<li><p>The <strong>Gallery</strong> page provides a set of photos with pre-configured filters, tailored to display the photos of a selected Individual in the platform.</p></li>
+<li><p><strong>View All</strong> takes you to an unfiltered list of all Individuals you have access to, presented as the Individual Search Results. From here, you can add filters and sort based on the visible columns, as well as access additional options.</p></li>
+</ul>
+</section>
+<section id="sightings-menu">
+<h4>Sightings Menu<a class="headerlink" href="#sightings-menu" title="Link to this heading">#</a></h4>
+<p>Under the <strong>Sightings</strong> menu, you have the following options:</p>
+<ul class="simple">
+<li><p><strong>Search</strong> pulls up several filters that can be leveraged to generate a filtered list of all Sightings that the signed-in user has access to. Once the list is generated, the data can be exported from this page in various formats.</p></li>
+<li><p><strong>View All</strong> pulls up an unfiltered list of all Sightings you have access to.</p></li>
+</ul>
+</section>
+<section id="encounters-menu">
+<h4>Encounters Menu<a class="headerlink" href="#encounters-menu" title="Link to this heading">#</a></h4>
+<p>Under the <strong>Encounters</strong> menu, you have the following options:</p>
+<ul class="simple">
+<li><p><strong>View Unapproved Encounters</strong> pulls up a list of all Encounters that have not had their state adjusted from “Unapproved”. All individually-uploaded encounters are initially uploaded as Unapproved Encounters. This allows researchers and trained individuals to support citizen scientist involvement while maintaining their data integrity.</p></li>
+<li><p><strong>View Approved Encounters</strong> pulls up a list of all Encounters that have been determined to be acceptable based on data review. The state has been adjusted to “Approved”.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All Encounters entered using the Bulk Import function are set as Approved by default as only users with researcher-or-higher privileges can make use of the importer.</p>
+</div>
+<ul class="simple">
+<li><p><strong>View Unidentifiable Encounters</strong> pulls up a list of all encounters that provide evidence that cannot be conclusively judged, causing a user to set the state to “Unidentifiable” (eg. poor photo quality or missing critical metadata).</p></li>
+<li><p><strong>View Images</strong> pulls up a list of all uploaded images a user has access to, including their Annotation bounding boxes and keyword displays.</p></li>
+<li><p><strong>Encounter Calendar</strong> is an option to display all Encounters in a calendar format.</p></li>
+<li><p><strong>View My Submissions</strong> pulls up a list of all Encounters that were submitted by the signed-in account, regardless of their state of approval.</p></li>
+</ul>
+</section>
+<section id="search-menu">
+<h4>Search Menu<a class="headerlink" href="#search-menu" title="Link to this heading">#</a></h4>
+<p>Under the <strong>Search</strong> menu, you have the following options:</p>
+<ul class="simple">
+<li><p><strong>Encounter Search</strong> pulls up several filters that can be leveraged to generate a filtered list of all the Encounters the signed-in user has access to. Once the list is generated, additional filtering and sorting can be performed on the <strong>Encounter Search Results</strong> page, as well as delving into additional data formats such as matching images and videos, mapped results, export formats, and/or an encounter calendar.</p></li>
+<li><p><strong>Individual Search</strong> pulls up several filters that can be leveraged to generate a filtered list of all Individuals the signed-in user has access to. Once the list is generated, additional filtering and sorting can be performed on the <strong>Individual Search Results</strong> page, as well as delving into additional data formats such as matching images and videos, mapped results, and exportable data formats.</p></li>
+<li><p><strong>Sighting Search</strong> pulls up several filters that can be leveraged to generate a tailored list of all sightings that the signed-in user has access to.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="account-management">
+<h2>Account Management<a class="headerlink" href="#account-management" title="Link to this heading">#</a></h2>
+<p>Wildbook supports security functions that support real world research collaborations and organizations.</p>
+<section id="login">
+<h3>Login<a class="headerlink" href="#login" title="Link to this heading">#</a></h3>
+<p>A user is able to log in by selecting the <strong>Login</strong> button at the top right of the Wildbook program or by selecting any page that requires a user to sign in to access content. A username and password are required. To set up a Wildbook account, you will need to contact the site managers via the <strong>Contact Us</strong> page. Wildbook does not currently support self-registration.</p>
+</section>
+<section id="id1">
+<h3>Account Management<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Under the <strong>Administer</strong> menu, you have the following options:</p>
+<ul class="simple">
+<li><p><strong>My Account</strong> provides a collection of information about the signed-in user, including password reset and profile picture management, a list of accepted collaborations, and statistics about the data associated with the account.</p></li>
+</ul>
+<p>For information about your user accounts and security, see <a class="reference internal" href="../security/my-account.html"><span class="std std-doc">My Account</span></a>.</p>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../getting-started-with-wildbook.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Getting Started</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="image-analysis-pipeline.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Image Analysis Pipeline</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wildbook-terminologies">Wildbook Terminologies</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wildbook">Wildbook</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mediaasset-annotation">MediaAsset &amp; Annotation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#encounter">Encounter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sighting">Sighting</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#individual">Individual</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relationship-social-units">Relationship &amp; Social Units</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navigating-the-platform">Navigating the Platform</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#home-page">Home Page</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menu-options">Menu Options</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#submit-menu">Submit Menu</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-menu">Learn Menu</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#individuals-menu">Individuals Menu</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sightings-menu">Sightings Menu</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#encounters-menu">Encounters Menu</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#search-menu">Search Menu</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#account-management">Account Management</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#login">Login</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Account Management</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Wild Me
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024 Conservation X Labs.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
