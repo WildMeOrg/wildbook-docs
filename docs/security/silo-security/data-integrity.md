@@ -10,15 +10,15 @@ Check your data for annotations that have been assigned to two or more different
 
 Look for duplicated annotations to clean up your data set. From here you can also see which bulk imports contributed to the duplicate annotations or if a single bulk import contained multiple duplicate annotations.
 
-## Check Annotation iaClasses and MediaAsset States by Species (visible to admins only)
+## Check Annotation iaClasses and MediaAsset States by Species (visible to staff, admins, and orgAdmins only)
 
 Look for old iaClasses on annotations and media assets that are stuck in a "pending" state. This can cause poor matching performance as they are ignored. The species list allows you to inspect the iaClass values assigned for each species as well as the detection state of media assets in the database.
 
-## URL Access Security Checks (visible to admins only)
+## URL Access Security Checks (visible to staff only)
 
 Look for URLs in Wildbook that should or should not be accessible to the public or users with certain roles.
 
-## Wildbook Machine Learning Queue Monitoring (visible to admins only)
+## Wildbook Machine Learning Queue Monitoring (visible to staff only)
 
 See a current snapshot and 24 hour historical review of the machine learning pipeline. This can help you determine if a specific user's uploads are contributing to a backlog.
 
