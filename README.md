@@ -7,30 +7,35 @@ The documentation will eventually support:
 - #14 language support
 - #15 generated API documentation
 
-## Local Setup
-1. Install the prereqs:
-- install sphinx
-- install [sphinx-book-theme](https://sphinx-book-theme.readthedocs.io/en/stable/tutorials/get-started.html): `pip install sphinx-book-theme`
-- install [myst-parser](https://www.sphinx-doc.org/en/master/usage/markdown.html) (used by sphinx markdown extension): `pip install myst-parser`
-2. Clone the `wildme-docs` repo: `git clone https://github.com/WildMeOrg/wildbook-docs.git`
+## Quick Start
 
-## Build locally
-To build:
-1. `cd` to the `docs` directory:
-2. Run the following commands:
+### Local Setup
+
+1.  **Clone the repository:**
+    ```bash
+    git clone --depth=5 https://github.com/WildMeOrg/wildbook-docs.git
+    cd wildbook-docs
     ```
-    python -m venv .venv
-    source .venv/bin/activate
+2.  **Set up a virtual environment and install dependencies:**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+    ```
+
+### Running Locally
+
+1.  **Start the development server (with live reload):**
+    ```bash
+    make dev
+    ```
+    This will serve the documentation and automatically reload on changes. Open your browser to the address provided by `sphinx-autobuild` (usually `http://127.0.0.1:8000/`).
+
+2.  **Build the documentation (for deployment):**
+    ```bash
     make html
     ```
-3. Files will be in `docs/_build/html/`
-
-If you aren't seeing your changes, try `make clean html` to force a complete rebuild.
-
-To see files as they will appear online, including url paths:
-1. In a new terminal, `cd` to `docs/_build/html/`
-2. `python -m SimpleHTTPServer` or `python3 -m http.server`
-3. Open `http://localhost:8000` in your browser
+    The static HTML files will be generated in `docs/_build/html/`.
 
 ## Contribute to docs
 Changes to the content of the docs are done in the `/docs` folder in the markdown files (file extension `.md`).
