@@ -230,6 +230,8 @@ The following fields can be included when uploading an Encounter. Review the des
 | Aquatic Name | Type | Example | Description |
 | ---- | ---- | ------------- | ----------- |
 | Encounter.depth | Double | 35 | Depth of water where the Encounter occurred. Aquatic-only. |
+| Encounter.Salinity | x | 40 | Salinity measurement. No units are defined for this measurement. |
+| Encounter.Salinity.samplingProtocol | x | estimated | How salinity was measured. Accepted entries are are "directlymeasured" or "estimated". |
 | Sighting.bearing | Double | 45 | Value to work with decimalLatitude, decimalLongitude, and distance of Sighting. Typically aquatic-only. |
 | Sighting.distance | Double |  | Value to work with decimalLatitude, decimalLongitude, and bearing of Sighting. |
 | Sighting.seaState | V_WString |  | Description of water conditions during the Sighting. Aquatic-only. |
