@@ -17,13 +17,11 @@ Permissions are granted at Encounter-level, meaning a user can access any **Sigh
 
 ## User Roles
 
-* **Contributor** - users that are limited to only submit Sightings
-* **Researcher** - users that can manage their own data (Sightings and Individuals) and collaborations,  match and merge individuals, and search
-* **User Manager** - users that can create and edit users, and manage user collaborations
-* **Exporter** - users that can export all the data they own and collaborate with
-* **Administrator** - users that can manage data and configure the Codex platform they belong to
-* **machinelearning** - not functional
-* **rest** - not functional
+* **Researcher** - Users with this role can upload, export, search and edit their own data and confirm matches.
+* **Org Admin** - Users with this role can create and manage users within their organization. Must be combined with the Researcher role.
+* **Admin** - Users with this role can view and manage data for any user on their Wildbook. Must be combined with the Researcher and Org Admin roles.
+* **machinelearning** - Deprecated. No longer assigned.
+* **rest** - Deprecated. No longer assigned.
 
 ## Collaborations
 
