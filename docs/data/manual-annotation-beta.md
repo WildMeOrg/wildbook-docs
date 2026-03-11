@@ -22,6 +22,7 @@ Select the image from the Encounter page's **Images** section and click **Add An
     * **Animal (ex: turtle_green, whale_orca)**: Select all visible parts of the body in one Annotation.
     * **Animal+body part (ex: turtle_green+head, whale_orca+fin_dorsal)**: Select only the body part used for identification, such as the head, dorsal fin, fluke, etc.
     * If there are multiple animals in your photo or multiple *IA Classes* you want to annotate, add them later. Only one Annotation can be created at a time.
+    * If no *IA Classes* are available in the menu, it means that the species hasn't been configured for identification yet. Let us know in the [Community Forum](https://community.wildme.org/).
 2. In **Viewpoint**, choose the primary viewpoint that the photographer is observing the animal from, such as the animal's **left**, the animal's **right**, looking **down** at the animal, looking **up** at its belly, etc. *Note that for salamanders and newts in Amphibian and Reptile Wildbook only, **up** is used when looking down at the animal from above. For mantas in MantaMatcher, use **down** when looking at its belly.*
 3. In **Draw Annotation**:
     * Hold left-click with your mouse to start drawing the Annotation. 
