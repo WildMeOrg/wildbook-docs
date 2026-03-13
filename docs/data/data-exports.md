@@ -40,8 +40,6 @@ Exports a zip of GIS shapefiles for import into GIS applications.
 
 Exports matching search data in a capture history format compatible with Program Mark, RMark, or other similar programs.
 
-*Note: you should filter the results by a locationID because the comparison will only be made against the first locationID in the results.*
-
 1. To start, set the **Number of capture sessions** by entering a number.
 2. Click submit.
 3. Enter the time frames for each capture session.
