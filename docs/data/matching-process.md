@@ -53,8 +53,6 @@ Click **Match** to start the matching process.
 
 To review the results of the automated matching process, select the image and click the **Match Results** button. If you recently submitted the Encounter, you may need to wait and then refresh your browser periodically for Wildbook to process the results from automated Detection before the match results load.
 
-![simple Gallery Bounding Box Match Results](../assets/images/wb-orca-matchresults.png)
-
 Each match result page may show one or more sets of matches, potentially displaying:
 
 * one algorithm match for one annotation (e.g., by clicking **Start Match** on an annotation for which only one ID algorithm is configured).
@@ -63,39 +61,38 @@ Each match result page may show one or more sets of matches, potentially display
 
 The information displayed depends on where in Wildbook the [Image Analysis Pipeline](../introduction/image-analysis-pipeline.md) was called from and for which species.
 
-![match Results](../assets/images/wb-orca-matchresults.png)
-
 ### Match results page sections
 
 The following sections make up the matching results page.
 
 #### Encounter banner
 
-A banner labeled **Matching results for** at the top of the page provides a link to the related encounter and the associated Marked Individual, if an ID has been assigned to the Encounter.
+The banner provides a link to the related encounter and the associated Marked Individual, if an ID has been assigned to the Encounter.
 
 #### Instructions
 
-Click to expand the **Instructions** section to get instructions for reviewing matches on the page. Some of those are repeated here:
+Click the **i** icon to view instructions on reviewing matches.
 
-* Click on results to compare match candidates.
-* Links to the corresponding **Encounter** and **Individual** are next to each match score.
-* Select the correct match by clicking on the correct result and checking the checkbox.
+* Click on each rank to compare match candidates.
+* Links to the corresponding **Encounter** and **Individual** are next to each ranking.
+* Select the correct match by clicking the checkbox next to the result.
 * Use the buttons to switch between result types:
     * **Individual Scores:** This is the default. It calculates one match score for every *Individual* in the database. This is the aggregate of each image score for that Individual.
     * **Image Scores:** Calculates the match score for every Annotation in the database when compared to the query Annotation.
-* Adjust the number of results that display in each list by changing the value in **Num Results** and clicking the **Set** button.
+* Adjust the number of results that display in each list by changing the value in the **Number of Results** field and pressing **Enter** on your keyboard.
 
 #### Results: One ranked set per Annotation per algorithm
 
-Each block of ranked results represents the top-*N* matches (default top 12) to an Annotation in descending order. Rank 1 is the top suggested match, and each successive match is presented with relatively less confidence. Click on each row in the list to review the potentially matched Annotations. The Annotation from your Encounter appears on the left, labeled as the TARGET image. Potential candidates for matching appear on the right side, labeled to match their position in the list.
+Each block of ranked results represents the top-*N* matches (default top 12) to an Annotation in descending order. Rank 1 is the top suggested match, and each consecutive match is presented with relatively less confidence. Click on each row in the list to review the potential matches. The Annotation from your Encounter appears on the left, labeled as *This Encounter*. Potential candidates for matching appear on the right side, labeled *Possible Match*.
 
-![match Results Section](../assets/images/wb-matchresults-table.png)
-
-* **Rank:** The position in the listing (1,2,3,4, etc.).
-* **Match score:** The match score represents the numeric value returned from the algorithm. *These scores are not standardized between algorithms or platforms and are generally not bounded.* For more information about interpreting algorithm scores, see [Identification](../introduction/image-analysis-pipeline.md#identification).
-* **Encounter link:** Opens a new tab to the potential match encounter.
-* **Inspect:** Opens a new page focused on the features being matched. Areas that are highlighted display potentially matched features. Not every algorithm will provide additional detail. Only the first 12 matches may have additional detail.
+* **Rank:** The position in the listing (1, 2, 3, 4, etc.).
+* **Match score:** The match score represents the numeric value returned from the algorithm. These scores are not standardized between algorithms or Wildbooks and are generally not bounded. For more information about interpreting algorithm scores, see [Identification](../introduction/image-analysis-pipeline.md#identification).
+* **Encounter link:** Embedded in the match score. Opens a new tab to the match candidate encounter.
 * **Checkbox**: Select the checkbox to indicate that an encounter is a match with the target Annotation.
+* **Zoom in/Zoom out:** Appears as a set of magnifying glasses. Your encounter image and the possible match will each have their own set of zoom icons so that you can more closely examine matching areas.
+* **Inspect icon:** Appears as a diagonally shaded box next to match results. Opens a new page focused on the features being matched. Areas that are highlighted display potentially matched features. Not every algorithm will provide additional detail. Only the first 12 matches may have additional detail.
+* **Show/hide annotations icon:** Appears as a pencil drawing a line. Click to show or hide annotations on your encounter image and possible match.
+* **Full screen icon:** Appears as box. Click to view the encounter and possible match image enlarged side-by-side.
 
 ### Setting the ID using the checkbox
 
@@ -115,7 +112,7 @@ Visual Matcher is a separate, very limited user interface to support visual matc
 
 For certain species in Sharkbook, the match process begins with spot mapping instead of an automated detection.
 
-Spot mapping is available in Sharkbook, Spotting Giant Sea Bass, Spot-a-Shark USA, and MantaMatcher. Spot mapping allows only one left side pattern and one right side pattern per Encounter.
+Spot mapping is available in Sharkbook, Spotting Giant Sea Bass, and Spot-a-Shark USA. Spot mapping allows only one left side pattern and one right side pattern per Encounter.
 
 From the Encounter image gallery, click on the menu icon of the image and select **spot mapping**. From here, you'll set your spot mapping region.
 
