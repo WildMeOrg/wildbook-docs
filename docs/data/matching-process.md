@@ -112,7 +112,7 @@ Visual Matcher is a separate, very limited user interface to support visual matc
 
 For certain species in Sharkbook, the match process begins with spot mapping instead of an automated detection.
 
-Spot mapping is available in Sharkbook, Spotting Giant Sea Bass, Spot-a-Shark USA, and MantaMatcher. Spot mapping allows only one left side pattern and one right side pattern per Encounter.
+Spot mapping is available in Sharkbook, Spotting Giant Sea Bass, and Spot-a-Shark USA. Spot mapping allows only one left side pattern and one right side pattern per Encounter.
 
 From the Encounter image gallery, click on the menu icon of the image and select **spot mapping**. From here, you'll set your spot mapping region.
 
