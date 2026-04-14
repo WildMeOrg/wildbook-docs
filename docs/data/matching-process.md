@@ -110,11 +110,11 @@ Visual Matcher is a separate, very limited user interface to support visual matc
 
 ## Spot Mapping
 
-For certain species in Sharkbook, the match process begins with spot mapping instead of an automated detection.
+For certain species in seelct Wildbooks, the match process begins with spot mapping instead of an automated detection.
 
 Spot mapping is available in Sharkbook, Spotting Giant Sea Bass, and Spot-a-Shark USA. Spot mapping allows only one left side pattern and one right side pattern per Encounter.
 
-From the Encounter image gallery, click on the menu icon of the image and select **spot mapping**. From here, you'll set your spot mapping region.
+From the Encounter image, click on the 3 dot cluster icon on the image. From here, you'll set your spot mapping region.
 
 To create your region, use the the rotation icons to align the top blue line of the box with the dorsal fins. Grab anywhere else on the box to resize. Once you've set your region, toggle the radio buttons to set the anchor points for where the fins meet the body and map the spots. If you misplace a spot, click it again to remove it. The minimum number of spots you should add, not including the markers for the fins, is 3-5. **Save** your spot data when you're finished.
 
@@ -134,7 +134,7 @@ If you want to create an association between two locations that don't already ap
 
 ### Delete a Spot Map
 
-From the Encounter page, scroll down to the *Spot Matching Algorithms* section and click on the *Remove spots* link beneath the side you want the spots removed.
+From the Encounter page, click on the *More Details* tab and click on *Spot Mapping Algorithms* in the side navigation. Click the **-** icon next to the spots you want removed.
 
 ### Delete a Scan Task
 
