@@ -5,27 +5,26 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+from datetime import datetime
 
-project = 'Wildbook'
-copyright = '2024 Conservation X Labs'
-author = 'Wild Me'
+project = "Wildbook"
+current_year = datetime.now().strftime("%Y")
+copyright = f"{current_year} Conservation X Labs"
+author = "Wild Me"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = [
-    'myst_parser'
-]
+extensions = ["myst_parser"]
 
-templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.venv']
-
+templates_path = ["_templates"]
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", ".venv"]
 
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'sphinx_book_theme'
+html_theme = "sphinx_book_theme"
 html_theme_options = {
     "max_navbar_depth": 4,
     "repository_url": "https://github.com/WildMeOrg/wildbook-docs",
@@ -35,6 +34,7 @@ html_theme_options = {
     "home_page_in_toc": "true",
 }
 html_logo = "_static/WildMe-Logo.png"
-html_static_path = ['_static']
-html_css_files = ['custom.css']
-html_js_files = ['tocjs.js']
+html_static_path = ["_static"]
+html_css_files = ["custom.css"]
+html_js_files = ["tocjs.js"]
+
