@@ -221,7 +221,7 @@ The following fields can be included when uploading an Encounter. Review the des
 | --------------- | ---- | ------------- | ----------- |
 | SurveyTrack.vesselID | V_WString | Car 45 | User-provided identifier of ship used during survey. |
 | survey.vessel | V_WString | Car 45 | Duplicate of SurveyTrack.vesselID. |
-| survey.id | String |  | Record number of the survey performed. |
+| Survey.id | String |  | Record number of the survey performed. |
 ```
 
 ### Aquatic Fields
