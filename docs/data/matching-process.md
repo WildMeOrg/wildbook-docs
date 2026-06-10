@@ -13,7 +13,7 @@ When you [Report an Encounter](report-encounter.md) of a single animal, if you s
 
 Because **Detection** and **Identification** reside in a queue of computer vision jobs requested by all users of your Wildbook, you may not immediately see the results of the [Image Analysis Pipeline](../introduction/image-analysis-pipeline.md).
 
-If you see green bounding boxes on images in your submitted Encounter, then Detection has completed. You may need to periodically refresh the Encounter page for Annotations to appear.
+If you see bounding boxes on images in your submitted Encounter, then Detection has completed. You may need to periodically refresh the Encounter page for Annotations to appear.
 
 Click the **Match Results** button to review potential matches.
 
@@ -42,16 +42,14 @@ For a matchable Annotation, you can start or re-run matching from the Encounter 
 **Choose criteria to match against** dialog box appears and allows you to:
 
 * select multiple location IDs to match against. The location ID of the Encounter will be selected by default.
-* filter to only your data.
+* filter match candidates to only your uploads.
 * select one or more algorithms to use for identification.
-
-![match Criteria](../assets/images/wb-encounter-customalg.png)
 
 Click **Match** to start the matching process.
 
 ## Reviewing Match Results
 
-To review the results of the automated matching process, select the image and click the **Match Results** button. If you recently submitted the Encounter, you may need to wait and then refresh your browser periodically for Wildbook to process the results from automated Detection before the match results load.
+To review the match results, select the image and click the **Match Results** button. If you recently submitted the Encounter, you may need to wait and then refresh your browser periodically for Wildbook to process the results from automated Detection before the match results load.
 
 Each match result page may show one or more sets of matches, potentially displaying:
 
@@ -110,7 +108,7 @@ Visual Matcher is a separate, very limited user interface to support visual matc
 
 ## Spot Mapping
 
-For certain species in seelct Wildbooks, the match process begins with spot mapping instead of an automated detection.
+For certain species in select Wildbooks, the match process begins with spot mapping instead of an automated detection.
 
 Spot mapping is available in Sharkbook, Spotting Giant Sea Bass, and Spot-a-Shark USA. Spot mapping allows only one left side pattern and one right side pattern per Encounter.
 
@@ -122,7 +120,7 @@ For whale sharks, click the **return to encounter** button. From the image menu 
 
 For grey nurse sharks and broadnose sevengill sharks, click the **start ScanTask** button. Click the **Go to sharkGrid administration to monitor for completion** link. **My Pending scanTasks** will display the spot map you just worked on. When it's ready, your completed tasks will appear in **My Completed scanTasks**.
 
-Each scan will show the results of two algorithms: [Modified Groth and I3s](../introduction/image-analysis-pipeline.md#modified-groth-and-i3s-spot-pattern-matching). The match score for Modified Groth means that the higher the score, the more likely the match is a correct one. For I3s, it’s the opposite: the higher the score, the less likely the match is a correct one.
+Each scan will show the results of two algorithms: [Modified Groth and I3S](../introduction/image-analysis-pipeline.md#modified-groth-and-i3s-spot-pattern-matching). The match score for Modified Groth means that the higher the score, the more likely the match is a correct one. For I3S, it’s the opposite: the higher the score, the less likely the match is a correct one.
 
 If you’ve found a match, go back to your Encounter and edit the **[Identity](../introduction/encounter.md#identity)** section to add to an existing Marked Individual or create a new one. Select matched by **Pattern match**.
 
