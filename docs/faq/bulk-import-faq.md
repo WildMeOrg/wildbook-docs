@@ -10,7 +10,7 @@ Media asset columns should be named `"Encounter.MediaAssetX"`, where **X** is an
 
 Although bulk imports can support up to 1000 encounters in a single spreadsheet, that also makes it slow to process and slow to load. Try to limit each spreadsheet to a few hundred encounters or less.
 
-## What do the statuses in the Match Results By Class column mean?
+## What do the statuses in the Class column mean?
 
 * waiting to queue - Images haven't sent to [WBIA](../introduction/index.md) yet
 * queuing - Trying to send images to WBIA
@@ -33,7 +33,7 @@ If you're searching for a bulk import or encounters that you have just uploaded,
 
 ### What Excel file formats are supported?
 
-.xlsx only
+.xlsx and .csv
 
 ### I found other fields in the database, but they don't work when I try to use them in the importer.
 
@@ -51,14 +51,6 @@ There are a number of additional fields that cannot be set using the Bulk Import
 
 You can [delete your bulk import](../data/bulk-import-beta.md#deleting-a-bulk-import) and reimport your data.
 
-### I uploaded the wrong image, but when I clicked back to try again, the image was still listed in the Photo Review page.
-
-The Photo Review page is a temporary storage space of recently imported photos. This is the first step of the bulk import process. The second step happens when the spreadsheet is uploaded and connects the data to the images from that temporary folder.
-
-If any of the images are re-imported with the same file name, the new image data will overwrite the image in that temporary folder, but historical data that has already completed the second step of the bulk import process is left alone.
-
-If the wrong image isn't cited in your spreadsheet or if you didn't upload your spreadsheet yet before going back to fix your images, then it won't appear in your encounters.
-
 ### How do I associate multiple images with a single encounter?
 
 You can add a virtually infinite number of images with a single encounter using the Encounter.mediaAsset**X** field. For each photo you want to associate with a given encounter, create an Encounter.mediaAsset**X** column, where **X** is a variable you replace with a number starting with X=0.
@@ -71,7 +63,7 @@ You can add a virtually infinite number of images with a single encounter using 
 
 ### I want to set photographerX.affiliation or photographerX.fullName without providing an email address.
 
-At present, there is no way to provide this information without providing an email address because these fields are tied into the system user management.
+An email address is required because these fields are tied into the system user management.
 
 To work around this, you can provide an email that is used system-wide for all submissions that don't have an email associated (e.g., if you have a photograph submitted by a tourist through an external site, you can reference an email associated with the site along with the tourist's name). This is also true for submitter**X**.affiliation and submitter**X**.fullName.
 
