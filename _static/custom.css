@@ -1,0 +1,35 @@
+html[data-theme='dark'] {
+    --pst-color-background: #18191B;
+    --pst-color-on-surface:#F2F2F3;
+    --pst-color-primary: #007599;
+    --pst-color-secondary: #007599;
+}
+
+html[data-theme='light'] {
+    --pst-color-primary: #007599;
+    --pst-color-secondary: #007599;
+}
+
+html[data-theme='dark'] a {
+    color:#007599;
+    text-decoration: none;
+}
+
+html[data-theme='dark'] a:hover {
+    color:#007599;
+    text-decoration: underline;
+}
+
+html [data-theme='dark'] .search-button-field {
+    background-color: #18191B;
+}
+
+html[data-theme='light'] a {
+    color:#007599;
+    text-decoration: none;
+}
+
+html[data-theme='light'] a:hover {
+    color:#007599;
+    text-decoration: underline;
+}
