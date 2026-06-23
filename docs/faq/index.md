@@ -1,11 +1,5 @@
 # FAQ
 
-## How do I delete an encounter?
-
-Click the Edit button on the [Metadata](../introduction/encounter.md#metadata) window of an Encounter. Then click **Delete Encounter?**
-
-Additional help with managing [Metadata](../introduction/encounter.md#metadata) in Wildbook is available in our docs.
-
 ## My search results aren't loading
 
 Your browser may need a hard refresh. On Windows, hold Ctrl + F5 and on a Mac, hold Cmd + Shift + R. 
