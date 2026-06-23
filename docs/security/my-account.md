@@ -100,6 +100,6 @@ The person who initiates the collaboration has an assumed acceptance, so the rec
 * **If User Barry does not grant edit permission or revokes edit permission after granting it:**
     Ana and Barry can view each other's data, but they cannot edit it.
 
-## My Data
+## Data
 
 Follow these links to see Encounter Search and Individual Search results filtered to data assigned to your User account.
