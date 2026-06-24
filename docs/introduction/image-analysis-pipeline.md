@@ -44,7 +44,7 @@ The following ID algorithms are supported by Wildbook:
 
 MIEW-ID (µID) is used to identify individuals. MIEW-ID uses deep learning and can learn what makes images similar or dissimilar (or what differentiates one animal from another). Distinguishing individuals through their unique body markings is a key concept for wildlife conservation. However, from the huge database of wildlife images, only a limited number can be used for individual identification, due to constraints on image quality and viewpoint. MIEW-ID can identify individuals from their unique body markings across real world photographic conditions.
 
-MIEW-ID learns embeddings for images from the database. Embeddings are a fixed-length list of numbers that represent the unique markings in individuals. When new images are analyzed, their embeddings are interpreted as angles on a sphere and matched against the database. As an added benefit, MIEW-ID is able generate visualizations of matched features, providing import inspectability inside its neural network.
+MIEW-ID learns embeddings for images from the database. Embeddings are a fixed-length list of numbers that represent the unique markings in individuals. When new images are analyzed, their embeddings are interpreted as angles on a sphere and matched against the database. As an added benefit, MIEW-ID is able to generate visualizations of matched features, providing import inspectability inside its neural network.
 
 ![](../assets/images/beluga-gradCAM.png)
 
