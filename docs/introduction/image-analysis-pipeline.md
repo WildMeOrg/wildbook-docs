@@ -44,7 +44,7 @@ The following ID algorithms are supported by Wildbook:
 
 MIEW-ID (µID) is used to identify individuals. MIEW-ID uses deep learning and can learn what makes images similar or dissimilar (or what differentiates one animal from another). Distinguishing individuals through their unique body markings is a key concept for wildlife conservation. However, from the huge database of wildlife images, only a limited number can be used for individual identification, due to constraints on image quality and viewpoint. MIEW-ID can identify individuals from their unique body markings across real world photographic conditions.
 
-MIEW-ID learns embeddings for images from the database. Embeddings are the unique markings that represent individuals. When new images are analyzed, their embeddings are matched against those in the database. As an added benefit, MIEW-ID is able generate visualizations of matched features, providing import inspectability inside its neural network.
+MIEW-ID learns embeddings for images from the database. Embeddings are a fixed-length list of numbers that represent the unique markings in individuals. When new images are analyzed, their embeddings are interpreted as angles on a sphere and matched against the database. As an added benefit, MIEW-ID is able generate visualizations of matched features, providing import inspectability inside its neural network.
 
 ![](../assets/images/beluga-gradCAM.png)
 
@@ -56,7 +56,7 @@ MIEW-ID can be trained on a per-species or multi-species basis and has been succ
 
 **Pose Invariant Embeddings** (PIE) is used to identify individuals. PIE uses a type of machine learning known as deep learning. This means it can learn what makes images similar or dissimilar (or what differentiates one animal from another). Distinguishing individuals through their unique body markings is a key concept for wildlife conservation. However, from the huge database of wildlife images, only a limited number can be used for individual identification, due to constraints on image quality and viewpoint. PIE can identify individuals from their unique body markings, regardless of quality or angles.
 
-PIE learns embeddings for images from the database. Embeddings are the unique markings that represent individuals. When new images are analyzed, their embeddings are matched against those in the database.
+PIE learns embeddings for images from the database. Embeddings are a fixed-length list of numbers that represent the unique markings in individuals. New images are analyzed as triplets: your anchor or source image, a positive representing the same individual, and a negative representing a different individual. Potential matches place the anchor closer to its positive than to its negative.
 
 PIE can be trained on a per-species basis. Currently, Wild Me has generated separate PIE models for different species including hyenas, leopards, manta rays, humpback whales, right whales, bottlenose dolphins, and orcas.
 
