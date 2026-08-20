@@ -9,9 +9,9 @@ Move all encounters from one individual to the other. When the individual you do
 1. Open each individual’s page and see which one has fewer encounters to reassign.
 2. From the marked individual page with fewer encounters, open each encounter from the list.
 3. Click the Edit button in the Identity section of an encounter.
-4. Under Manage Identity, click "Remove from marked individual."
-5. In the same section, you'll now see the option to "Add to existing individual ID." Type in the ID of the individual you want to reassign the encounter to.
-6. Click the Add button to save your changes and close the edit window.
+4. Click "Unassign Individual."
+5. Type in the ID of the individual you want to reassign the encounter to.
+6. Click Save and close the edit window.
 7. Repeat steps 3-6 for the encounters you opened.
 
 ## How to merge via URL
@@ -30,9 +30,9 @@ You can also merge two individuals without having to go through the match result
 
 ## How do I unmerge two animals?
 
-Click the Edit button in the Identity section of an encounter. Under Manage Identity, click "Remove from marked individual." 
+Click the Edit button in the Identity section of an encounter. Click "Unassign Individual." 
 
-Enter the correct ID in the "Set new individual ID" field if it’s a new individual or in the "Add to existing individual ID" field if the individual already exists in Wildbook.
+Enter the correct ID in the "Individual ID" field.
 
 ## How do I cancel a merge request?
 
