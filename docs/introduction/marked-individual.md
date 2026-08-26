@@ -1,32 +1,31 @@
 # Marked Individual
 
-**An Individual**, or **Marked Individual**, is an animal that has been given an identifying name within the Wildbook platform. Individuals are animals that have been confirmed by a researcher to have accurate metadata, such as *tags, keywords, and social information.*
+**An Individual**, or **Marked Individual**, is an animal that has been given an identifying name on Wildbook. 
 
 Individuals have one or more encounters associated with them, which can be accessed by viewing the individual’s profile. This allows a researcher to review and study where the individual was over time.
 
-Individual pages can be accessed using the Individual search or by navigating from a linked encounter.
+Individual pages can be accessed using the Individual search or from a linked encounter.
 
-## Navigating an Individual
+## Managing an Individual
 
 When you first navigate to an Individual page, you can view and edit the following information.
 
 ### Individual Overview
 
-The overview contains the following information; to change the information, select the **Edit** button located in the overview section.
+To change the following details, click the **Edit** button in the overview section.
 
-* **Individual name:** Each individual is named at creation. This name is assigned as the *Default*. You can enter a new name and select **Update**. If you remove the given name, the individual will display the UUID in the database. Additional names can be assigned to the individual, such as nicknames or project identifiers. To do so, select **Add New Name**, then provide a *label* and a *name value* to go with the label before you select **Update**. Name changes that impact display require a page refresh before they display. *(Note: the label "newname" is not supported and will cause visual errors until redefined.)*
+* **Individual name:** This name is assigned as the *Default* ID. You can enter a new name and select **Update**. If you remove the given name, the individual will display the UUID in the database. Additional names can be assigned to the individual, such as nicknames or project identifiers. To do so, select **Add New Name**, then provide a *label* and a *name value* to go with the label before you select **Update**. Name changes that impact display require a page refresh before they display. *(Note: the label "newname" is not supported and will cause visual errors until redefined.)*
 
-![individual name form](../assets/images/wb-individual-add-name.png)
-
-* **Sex**: If the sex is known, it can be set or adjusted using the Sex dropdown.
-* **Taxonomy**: Taxonomy is derived from the species associated with the linked encounters.
-* **Date of Birth**: The date of birth of the individual. This gets entered in the format **YYYY-MM-DD**. The field contains an example of the format, but is blank until a date is entered by a researcher.
-* **Date of Death**: The date of death of the individual. This gets entered in the format **YYYY-MM-DD**. The field contains an example of the format, but is blank until a date is entered by a researcher.
-* **Alternate ID**: Another position to add an ID. Planned to be deprecated. *Encounter Gallery*: a carousel of each media asset associated with the linked encounters.
+* **Sex**: Can be set or edited using the Sex drop-down menu.
+* **Taxonomy**: Pulled from the species associated with the linked encounters.
+* **Date of Birth**: This gets entered in the format **YYYY-MM-DD**. The field contains an example of the format, but is blank until a date is entered by a researcher.
+* **Date of Death**: This gets entered in the format **YYYY-MM-DD**. The field contains an example of the format, but is blank until a date is entered by a researcher.
+* **Alternate ID**: Another position to add an ID.
+* **Encounter Gallery**: A carousel of each image associated with the linked encounters.
 
 ### Social Group Memberships
 
-To support tracking animals that operate in social groups, Wildbook can support the creation and assignment of individuals to groups, representative of social orders like packs or pods. **Membership** is what to use when naming a role as related to the group, such as alpha or scout.
+Wildbook supports the creation and assignment of individuals to groups, representative of social orders like packs or pods. **Membership** is what to use when naming a role as related to the group, such as alpha or scout.
 
 #### Create a New Group
 
@@ -48,12 +47,12 @@ To support tracking animals that operate in social groups, Wildbook can support 
 #### Remove an Existing Group
 
 1. Under **Social Group Memberships**, select **Edit/Add**.
-2. In the **Social Group Name** dropdown, select the group you intend to remove.
+2. In the **Social Group Name** drop-down manu, select the group you intend to remove.
 3. Select **Remove**.
 
 ### Supporting Data
 
-The tables show major data contributions that support the creation of the individual, including all linked encounters and all provided biological samples.
+The tables show contributions that support the creation of the individual, including all linked encounters and available biological samples.
 
 * **Encounter Table:** All encounters that the user has access to display in a table. A total count of the number of encounters that make up the individual is also provided.
 * **Biological Samples:** All biological samples associated with the encounters that make up the individual are displayed.
@@ -98,15 +97,15 @@ Navigate to the table to see all relationships that have been created including 
 
 #### Co-occurrences
 
-Co-occurrences are used to display instances of individuals being sighted together.
+Displays instances of individuals being sighted together.
 
 #### Co-occurrences Diagram
 
-The co-occurrence diagram is a tool to allow for easy visualization of the co-sightings between individuals.
+A tool to allow for easy visualization of the co-sightings between individuals.
 
 #### Co-occurences Table
 
-Navigate to the table to see all instances of sightings that include this individual and others.
+Contains all sightings that include this individual and others.
 
 ### Mapping
 
@@ -114,7 +113,7 @@ The map found here displays the locations associated with the linked encounters.
 
 ### Additional Data Files
 
-If there are data files that need to be associated with the Individual, you are able to upload them. To do so, **Browse** to the file on your local machine, select **Open**, the confirm to **Send file**.
+If there are data files that need to be associated with the Individual, you are able to upload them. To do so, **Browse** to the file, select **Open**, the confirm to **Send file**.
 
 ### Collaborating Researchers
 
