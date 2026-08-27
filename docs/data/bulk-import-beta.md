@@ -23,7 +23,7 @@ In an Excel (.xlsx) file, create a column for each field you want to upload to W
 
 1. **Location**: `Encounter.verbatimLocality`, `Encounter.locationID`, and/or `Encounter.decimalLatitude` and `Encounter.decimalLongitude`
 2. **Date or Time:** `Encounter.year`, `Encounter.month`, `Encounter.day`, etc. If the date is unknown, a year is required for the encounter.
-3. **Photo**: `Encounter.MediaAsset0`
+3. **Photo**: `Encounter.mediaAsset0`
 4. **Taxonomy**: `Encounter.genus` and `Encounter.specificEpithet`
 
 **All other fields are optional.** Encounters are uploaded as *approved* Encounters if **Encounter.state** is not set. Here are important guidelines for preparing your spreadsheet:
