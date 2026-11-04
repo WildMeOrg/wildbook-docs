@@ -59,6 +59,10 @@ This will cause Wildbook to assume the context of this project by default, such 
 1. Under **Default Project**, select the project you want to use as your primary context.
 2. Select **Update**.
 
+## API Access
+
+For access from a script or AI assistant, open **API Access** from your account menu. See [API Access](api-access.md) for personal tokens and [Organization Service Keys](organization-service-keys.md) for ongoing integrations.
+
 ## Social Media Authentication
 
 This functionality is no longer supported and may no longer appear in Wildbook.

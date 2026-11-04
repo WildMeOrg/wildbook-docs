@@ -2,6 +2,8 @@
 
 When you've performed a [search ](search.md)in Wildbook, you can navigate to the **Export** tab to export the data that matches your search results in various formats. Available formats vary by search type and may include the following.
 
+For programmatic access from a script or AI assistant, see [API Access](../security/api-access.md). Personal read tokens and organization service keys provide access through the read API according to the account's permissions.
+
 ## Encounter Search Exports
 
 ### Standard Format Export

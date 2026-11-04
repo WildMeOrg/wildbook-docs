@@ -41,6 +41,10 @@ As an Org Admin, you are able to create and add users to your organization. Here
 5. Select your organization to add a user to it.
 6. Click **Save**.
 
+## Organization Service Keys
+
+In Wildbook 11.0, users with **orgAdmin** can create and revoke API service keys for organizations they belong to directly. Open **API Access** from your account menu, then select **Manage service keys**. See [Organization Service Keys](../organization-service-keys.md) for scopes, expiration, and replacement steps. Submission writes require a site administrator to enroll the organization's service account separately.
+
 ## Addressing Bulk Import Concerns
 
 As an Org Admin, you can manage **bulk imports** for any user in your organization.
