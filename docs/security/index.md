@@ -4,6 +4,8 @@
 :hidden:
 
 my-account
+api-access
+organization-service-keys
 silo-security/index
 ```
 

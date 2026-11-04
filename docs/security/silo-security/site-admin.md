@@ -58,6 +58,12 @@ Only delete test accounts or accounts that have no data.
 3. Select a user from the user grid.
 4. Click **Delete User** beneath the user’s information.
 
+## API Access
+
+Users can create short-lived [personal API tokens](../api-access.md) from **API Access** in their account menu when token issuance is configured. Site administrators can also manage [organization service keys](../organization-service-keys.md) for any organization.
+
+The **Data import** token purpose and the `submissions:write` service-key scope require the submissions pilot to be enabled. Assign **api-submission** explicitly to the account that will import data: the person for a personal token, or the organization's dedicated service account for a service key. An administrator role alone does not grant submission access. Follow the [Wildbook 11.0 submissions runbook](https://github.com/WildMeOrg/Wildbook/blob/11.0/docs/design/submissions/pilot-runbook.md) before enabling the pilot.
+
 ## Data Integrity
 
 ### Check for Annotations with Multiple Individual IDs
