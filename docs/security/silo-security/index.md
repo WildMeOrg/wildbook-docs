@@ -29,7 +29,7 @@ Collaborations between users allow them to share data. Here’s what you need to
 
 * Whether a user you’re in collaboration with can edit or just view your data is based on the permission you set.
 * If you attempt access to an **Encounter** you don’t have access to, you will be prompted to start a collaboration with the user that **Encounter** belongs to.
-* You can also search for a user you want to collaborate with if you go to **Administer** > **My Account**. *(Note: search by username and name)*
+* You can also search for a user you want to collaborate with if you click on your profile icon and select **User Profile** from the drop-down menu. *(Note: search by username and name)*
 * You cannot establish a collaboration with yourself.
 
 Here’s a list of *associated permission* levels and available actions that you might encounter:
